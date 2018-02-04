@@ -13,21 +13,21 @@ Building Inter-chain Service Infrastructure and protocol for Trustworthy and Eff
 
 ## Table of Contents ###########################################################
 
-* [IRIS OVERVIEW](#IRIS-OVERVIEW)
-	* [Cosmos/Tendermint](#Cosmos/Tendermint)
-	* [New Innovations from IRIS](#New-Innovations-from-IRIS) 
-* [IRIS Network Design](#IRIS-Network-Design)
-	* [Network Actors](#Network-Actors)
-	* [IRIS Services](#IRIS-Services)
-	* [IBC Enhancement](#IBC-Enhancement)
-* [Use Cases](#Use-Case)
-* [Token Economics](#Token-Economics)
-* [Fundraiser](#Fundraiser)
-* [Roadmap](#Roadmap)
-* [The Team](#The-Team)
-* [Core Members](#Core-Members)
-* [Advisors](#Advisors)
-* [Reference](#Reference)
+* [IRIS OVERVIEW](#iris-overview)
+	* [Cosmos/Tendermint](#cosmos/tendermint)
+	* [New Innovations from IRIS](#new-innovations-from-iris) 
+* [IRIS Network Design](#iris-network-design)
+	* [Network Actors](#network-actors)
+	* [IRIS Services](#iris-services)
+	* [IBC Enhancement](#ibc-enhancement)
+* [Use Cases](#use-case)
+* [Token Economics](#token-economics)
+* [Fundraiser](#fundraiser)
+* [Roadmap](#roadmap)
+* [The Team](#the-team)
+* [Core Members](#core-members)
+* [Advisors](#advisors)
+* [Reference](#reference)
 
 
 ## IRIS OVERVIEW
