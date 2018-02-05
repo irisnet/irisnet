@@ -1153,11 +1153,11 @@ Distributed Ledger Systems", USA Patent Application 20170236120, August
 
 * [9] "Hyperledger Burrow", https://github.com/hyperledger/burrow
 
-* [10]  Joseph Poon, Thaddeus Dryja,"The Bitcoin Lightning Network:
+* [10] Joseph Poon, Thaddeus Dryja,"The Bitcoin Lightning Network:
 Scalable Off-Chain Instant Payments",January 14, 2016,https://lightning.network/lightning-network-paper.pdf
 
 
-* [11]Joseph Poon, Vitalik Buterin, "Plasma: Scalable Autonomous Smart
+* [11] Joseph Poon, Vitalik Buterin, "Plasma: Scalable Autonomous Smart
 Contracts", https://www.plasma.io/plasma.pdf, August 11, 2017
 
 * [12] Ethan Frey, "Cosmos IBC Specification", Sep. 29, 2017,https://github.com/cosmos/ibc/blob/master/README.md
