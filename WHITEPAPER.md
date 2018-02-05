@@ -1,4 +1,4 @@
-Whitepaper Version 0.2 
+Whitepaper Version 0.2
 
 
 
@@ -15,7 +15,7 @@ Building Inter-chain Service Infrastructure and protocol for Trustworthy and Eff
 
 * [IRIS OVERVIEW](#iris-overview)
 	* [Cosmos/Tendermint](#cosmos/tendermint)
-	* [New Innovations from IRIS](#new-innovations-from-iris) 
+	* [New Innovations from IRIS](#new-innovations-from-iris)
 * [IRIS Network Design](#iris-network-design)
 	* [Network Actors](#network-actors)
 	* [IRIS Services](#iris-services)
@@ -35,8 +35,8 @@ Building Inter-chain Service Infrastructure and protocol for Trustworthy and Eff
 > IRIS network is named after the Greek goddess of Rainbow who is the
 > faithful messenger between heaven and the mortals
 
-As we all agree, [contractual
-relationship](http://www.baidu.com/link?url=KhVK0OgIDwEjNp8ktOEEQT6B0BfQGQMU2xZZz_m9ZgXdLfwagXyqfDJw2DAAYf2jNoywaOxUWKepvQnCK7j2wuydn7QQXM-49mc40icufHBPDhtlW2IyCMZ2bx7_Fxps)
+As we all agree, contractual
+relationship
 is one of the most basic relationships constituting human society, the
 importance of blockchain technology lies in providing a very efficient
 and cost effective way of realizing a most reliable contractual
@@ -113,7 +113,7 @@ Besides, there are many (near) real-time business transactions do need
 more close form consortium/permission/private chains to address
 performance, security and business governance requirements.
 
-**Our vision of distributed business infrastructure needs to have the Interoperability of many heterogeneous chains including public/consortium/ permission/private chains.** 
+**Our vision of distributed business infrastructure needs to have the Interoperability of many heterogeneous chains including public/consortium/ permission/private chains.**
 
 Inter-chain technology is a very nature answer to the requirement.
 However, till today, the existing Inter-chain technologies are mainly
@@ -137,7 +137,7 @@ Cosmos/Tendermint to set the stage, summarize the features we inherit
 from Cosmos/Tendermint and the innovations we are building on top of
 existing work.
 
-### Cosmos/Tendermint 
+### Cosmos/Tendermint
 ------------------------------
 
 Cosmos \[3\] is an ambitious project aiming at building the internet
@@ -165,21 +165,21 @@ or a trusted third party between zones.
 
 To develop robust interoperable blockchains and blockchain applications
 with Cosmos Hub, Cosmos SDK provides blockchain development
-\'starter-kit\' of common blockchain modules while not enforcing 
+\'starter-kit\' of common blockchain modules while not enforcing
 user stories thus giving maximum flexibility for application customization.
 
-### New Innovations from IRIS 
+### New Innovations from IRIS
 ------------------------------
 
 IRIS network aims to build technology foundation which facilitate
 construction of distributed business applications. It goes beyond today's
 blockchain systems which are mainly for digitalized assets.
 
-The key challenges we are addressing in IRIS are two parts: 
+The key challenges we are addressing in IRIS are two parts:
 * Integration and collaboration of off-chain computing and resources on
-a distributed ledger; 
+a distributed ledger;
 * interoperability of the services across
-heterogeneous chains. 
+heterogeneous chains.
 
 We address those challenges through incorporation
 of a service oriented infrastructure into Cosmos/Tendermint which is
@@ -230,9 +230,9 @@ case is in later chapter.
 IRIS network provides the service infrastructure for handing the
 coordination of on-chain transaction processing with off-chain data
 processing and business logic execution. The `iServices` also have defined
-protocols for them to be invoked cross chain if required. IRIS also provides 
-client-side tools including smart wallet for inter-chain multi-asset as well as for accessing `iServices`. 
-IRIS project plans to provide SDKs for easy construction of `iServices`. 
+protocols for them to be invoked cross chain if required. IRIS also provides
+client-side tools including smart wallet for inter-chain multi-asset as well as for accessing `iServices`.
+IRIS project plans to provide SDKs for easy construction of `iServices`.
 For example, for a specific service definition, SDKs are provided for generating the
 service provider side skeleton as well as service consumer side stub for
 major languages.
@@ -269,7 +269,7 @@ to increase the scalability and diversity of the Cosmos network, to increase
 value transfer volume through the Cosmos hub, and to increase the
 overall value of the network.
 
-### Network Actors 
+### Network Actors
 --------------
 
 1. **Consumers** are users who consume off-chain services by sending
@@ -293,7 +293,7 @@ invoke iServices in the profiling mode, which helps to create and
 maintain objective *provider profiles* that become handy for consumers
 when it comes to selecting the right providers (see ?).
 
-### IRIS Services 
+### IRIS Services
 -------------
 
 **Service Definition**
@@ -679,7 +679,7 @@ Below is a (not exhaustive) summary of supported queries:
   Consumer (service, binding)| Requests made, requests confirmed (in time and missed), complaints made, resolutions confirmed, ... |Anyone can query|
 
 
-### IBC Enhancement 
+### IBC Enhancement
 -------------
 
 One unique advantage of establishing our service infrastructure on top
@@ -784,7 +784,7 @@ Below is a complete list of application-dependent `IBCPacket` types:
   "iris-resolution"      |     Resolution|
 
 
-## Use Cases 
+## Use Cases
 
 ### Distributed AI for privacy preserving data analysis
 
@@ -805,9 +805,9 @@ definition. Since only partial model is released to the client, the
 model developer doesn\'t have to worry about someone stealing his/her
 idea; on the other hand, the data owner never needs to worry about their
 data leaving the premises and thus losing control of its usage. Other
-benefits include: 
+benefits include:
 1. only a small amount of parametric data is
-exchanged on blockchain providing a lot of performance gain; 
+exchanged on blockchain providing a lot of performance gain;
 2. providing a more practical way for data usage auditing, which is often
 needed in the healthcare domain.
 
@@ -882,7 +882,7 @@ envisioned business value more efficiently.
 Same as Cosmos Network, the IRIS network also supports a multi-token
 model. Besides the tokens held by zone themselves and can be moved from
 one zone to another via Hub. There are two types of tokens supporting
-IRIS Network's operation: 
+IRIS Network's operation:
 * staking token **IRIS**
 * fee token **iGas**
 
@@ -910,12 +910,12 @@ in circulation will be bonded as staking token.
 ### IRIS fee token
 ------
 
-There are two types of fee token in IRIS network: 
+There are two types of fee token in IRIS network:
 * **Network fee** token is for spam-prevention and payment to validators in maintaining the
-ledger; 
+ledger;
 * **Service fee** token is used for payment to service providers
 who deploys iServices and a default payment service token is called
-`iGas`. 
+`iGas`.
 
 IRIS Network will support all the whitelisted fee tokens from
 Cosmos plus IRIS staking token as well as iGas. The benefit for
@@ -948,7 +948,7 @@ for the bonded services.
 
 Tax, % from all fees (Haifeng ?)
 
-## Fundraiser 
+## Fundraiser
 
 On Genesis, the initial token supply will be 2,000,000,000 IRIS, and the
 distribution of IRIS tokens is following:
@@ -992,7 +992,7 @@ etc.)
 
 * **Risk Contingency**: 25%
 
-## Roadmap 
+## Roadmap
 
 
 The IRIS project roadmap includes the following milestones:
@@ -1020,7 +1020,7 @@ distributed business ecosystem, through relentless technology
 innovations, effective community building and sustained developer
 empowerment.
 
-## The Team 
+## The Team
 
 **Tendermint** (the team building Cosmos), **Wancloud**(a subsidiary of Wanxiang
 Blockchain) and **Bianjie AI** will team together to build IRIS
