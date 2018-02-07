@@ -296,8 +296,6 @@ when it comes to selecting the right providers (see ?).
 
 **Service Definition**
 
-##### CreateServiceDefinitionTx
-
 A Method is composed of:
 
 * `ID (int)`: The unique ID of this method in the encompassing iService
@@ -337,8 +335,6 @@ A CreateServiceDefinitionTx transaction is composed of:
 * `Definition (ServiceDefinition)`: The service definition to be created
 
 **Service Binding**:
-
-##### CreateServiceBindingTx and UpdateServiceBindingTx
 
 A CreateServiceBindingTx transaction is composed of:
 
@@ -948,47 +944,42 @@ Tax, % from all fees (Haifeng ?)
 
 ## Fundraiser
 
-On Genesis, the initial token supply will be 2,000,000,000 IRIS, and the
-distribution of IRIS tokens is following:
+On Genesis, the initial token supply will be 2,000,000,000 IRIS, and they will
+be distributed as follows:
 
 * **Pre-Sale**: 20%
 
-* **IRIS Foundation**: 15%, reserved to support the operation of foundation,
-POS validation etc.
+* **ATOM Holders**: 5% (detailed airdrop plan will be announced after
+Cosmos Hub goes alive)
 
-* **Core Developer Team**: 15% (locked up for 12 months starting from IRIS hub
+* **Core Developer Team**: 15% (locked up for 6 months starting from IRIS Hub
 launch, and linear monthly release for 2 years afterwards)
 
-* **ATOM Holder Airdrop**: 5% (detailed airdrop plan will be announced after
-Cosmos Hub is alive)
+* **IRIS Foundation**: 15% (staff and advisor compensation, PoS staking, and
+	service profiling etc.)
 
-* **Ecosystem Development**: 45% (swap with zones connecting to IRIS hub;
-bestowal to potential users; awards to outstanding partners)
+* **Ecosystem Empowerment**: 45% (bestowal to potential users, swap with
+	zones connecting to IRIS Hub, and contigency reserve)
 
 After the IRIS network is fully deployed, the annual inflation rate is
 expected to be between 7%\~20% which is adjusted to motivate about 2/3
-IRIS token in circulation will be bonded as staking token. This
-inflation will be payment to bonded validators and delegators for
+IRIS tokens in circulation to be bonded for staking. This
+inflation will be paid to bonded validators and delegators for
 safeguarding the network.
 
-Funds raised will be used for the development of IRIS network and for
-the ongoing expenses required to support the growth of the ecosystem,
-following is planned usage distribution:
-
-* **Foundation Operations**: 5% (advisor compensation, fees for professional
-services etc.)
+Funds raised will be used for the development and promotion of IRIS network
+and for the ongoing expenses required to sustain the growth of the community.
+The planned usage is as follows:
 
 * **Software Development**: 40%
 
-* **Developer Enablement**: 10% (hackathons, awards to volunteers, training
-programs etc.)
+* **Community Building**: 20% (meetups and online engagement, developer enablement, and academic sponsorship)
 
-* **R&D Sponsorship**: 10% (conference, research programs, university outreach
-etc.)
+* **Marketing**: 10%
 
-* **Marketing & Operations**: 10%
+* **Professional Services**: 5% (legal, accounting and auditing)
 
-* **Risk Contingency**: 25%
+* **Contingency**: 25%
 
 ## Roadmap
 
