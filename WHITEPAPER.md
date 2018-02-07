@@ -1,15 +1,11 @@
-Whitepaper Version 0.2
+# IRIS Network
+**Inter-chain service infrastructure and protocol for building trustworthy and distributed business applications**
 
+Harriet Cao harriet@bianjie.ai<br/>
+Haifeng Xi haifeng@bianjie.ai
 
-
-Building inter-chain service infrastructure and protocol for trustworthy and efficient business collaborations
-===========================
-
-**Technology Foundation for the Distributed Business New Digital Economy**
-
-**IRIS NETWORK**
-
-**January 2018**
+_NOTE: If you can read this on GitHub, then we're still actively developing this
+document.  Please check regularly for updates!_
 
 ## Table of Contents ###########################################################
 
@@ -30,7 +26,7 @@ Building inter-chain service infrastructure and protocol for trustworthy and eff
 * [Reference](#reference)
 
 
-## IRIS OVERVIEW
+## IRIS OVERVIEW ################################################################
 
 > IRIS network is named after the Greek goddess of the Rainbow who is the
 > faithful messenger between heaven and mortals.
@@ -131,8 +127,7 @@ Cosmos/Tendermint to set the stage, summarize the features we inherit
 from Cosmos/Tendermint and the innovations we are building on top of
 existing work.
 
-### Cosmos and Tendermint
-------------------------------
+### Cosmos and Tendermint ################################################################
 
 Cosmos \[3\] is an ambitious project aiming at building the internet
 of blockchain. It is a network of many independent blockchains, called
@@ -162,8 +157,7 @@ with Cosmos Hub, Cosmos SDK provides blockchain development
 \'starter-kit\' of common blockchain modules while not enforcing
 user stories thus giving maximum flexibility for application customization.
 
-### New Innovations from IRIS
-------------------------------
+### New Innovations from IRIS ################################################################
 
 IRIS network aims to build technology foundation which facilitate
 construction of distributed business applications. It goes beyond today's
@@ -232,7 +226,8 @@ service provider side skeleton as well as service consumer side stub for
 major languages.
 
 
-## IRIS Network Design
+## IRIS Network Design ################################################################
+
 ![Figure of IRIS Network](https://github.com/irisnet/iris-community/blob/query/pics/chap2.png)
 
 Being part of the Cosmos ecosystem, IRIS network builds on top of
@@ -264,7 +259,6 @@ value transfer volume through the Cosmos hub, and to increase the
 overall value of the network.
 
 ### Network Actors
---------------
 
 1. **Consumers** are users who consume off-chain services by sending
 requests to and receiving responses from the network.
@@ -288,7 +282,6 @@ maintain objective *provider profiles* that become handy for consumers
 when it comes to selecting the right providers (see ?).
 
 ### IRIS Services
--------------
 
 **Service Definition**
 
@@ -670,7 +663,6 @@ Below is a (not exhaustive) summary of supported queries:
 
 
 ### IBC Enhancement
--------------
 
 One unique advantage of establishing our service infrastructure on top
 of Cosmos is to allow services to be *deployed once and invoked
@@ -774,7 +766,7 @@ Below is a complete list of application-dependent `IBCPacket` types:
   "iris-resolution"      |     Resolution|
 
 
-## Use Cases
+## Use Cases ################################################################
 
 ### Distributed AI for privacy preserving data analysis
 
@@ -867,7 +859,7 @@ such application project teams to support and enable them with needed
 blockchain infrastructure and allow them to focus on delivering the
 envisioned business value more efficiently.
 
-## Token Economics
+## Token Economics ################################################################
 
 Same as Cosmos Network, the IRIS network also supports a multi-token
 model. Besides the tokens held by zone themselves and can be moved from
@@ -877,7 +869,7 @@ IRIS Network's operation:
 * fee token **iGas**
 
 ### IRIS staking token
-------
+
 Taking the same staking mechanism design of Cosmos\[16\], IRIS Hub has
 its own special native token for staking which is called IRIS. IRIS will
 be used in following ways:
@@ -898,7 +890,6 @@ to safeguard the network. The yearly inflation rate (a number between
 in circulation will be bonded as staking token.
 
 ### IRIS fee token
-------
 
 There are two types of fee token in IRIS network:
 * **Network fee** token is for spam-prevention and payment to validators in maintaining the
@@ -938,7 +929,7 @@ for the bonded services.
 
 Tax, % from all fees (Haifeng ?)
 
-## Fundraiser
+## Fundraiser ################################################################
 
 On Genesis, the initial token supply will be 2,000,000,000 IRIS, and they will
 be distributed as follows:
@@ -977,8 +968,7 @@ The planned usage is as follows:
 
 * **Contingency**: 25%
 
-## Roadmap
-
+## Roadmap ################################################################
 
 The IRIS project roadmap includes the following milestones:
 
@@ -1005,7 +995,7 @@ distributed business ecosystem, through relentless technology
 innovations, effective community building and sustained developer
 empowerment.
 
-## The Team
+## The Team ################################################################
 
 **Tendermint** (the team building Cosmos), **Wancloud**(a subsidiary of Wanxiang
 Blockchain) and **Bianjie AI** will team together to build IRIS
@@ -1030,7 +1020,6 @@ inter-blockchain network for distributed business ecosystems. **Bianjie AI**
 is also the operation and service partner of Cosmos Network in China.
 
 ### Core Members
-----------------
 
 **Harriet Cao**
 
@@ -1086,7 +1075,6 @@ Fudan University and a Bachelor's degree in Electronic Engineering from
 Nankai University.
 
 ### Advisors
-------------
 
 Jim Yang
 
@@ -1096,7 +1084,7 @@ Adrian Brink
 
 Michael Yuan
 
-## Reference
+## Reference ################################################################
 
 [1]: https://drive.google.com/file/d/1bI7JIOe-CfJ5fPHKxYlFub2Kg-KCGU6r/view?usp=sharing
 [2]: http://ethdocs.org/en/latest/
@@ -1165,9 +1153,3 @@ Hook, NY, 2013, 1223-1232.
 Impossible", April 2016, https://www.coindesk.com/three-smart-contract-misconceptions/
 
 * [19] Vitalik Buterin, "Engineering Security Through Coordination Problems", August 2017, http://vitalik.ca/
-
-## Acknowledgements
-
-FOR MORE INFORMATION CONTACT:
-
-Harriet Cao, harriet@bianjie.ai
