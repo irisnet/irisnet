@@ -2,7 +2,7 @@ Whitepaper Version 0.2
 
 
 
-Building Inter-chain Service Infrastructure and protocol for Trustworthy and Efficient Business Collaborations
+Building inter-chain service infrastructure and protocol for trustworthy and efficient business collaborations
 ===========================
 
 **Technology Foundation for the Distributed Business New Digital Economy**
@@ -32,39 +32,37 @@ Building Inter-chain Service Infrastructure and protocol for Trustworthy and Eff
 
 ## IRIS OVERVIEW
 
-> IRIS network is named after the Greek goddess of Rainbow who is the
-> faithful messenger between heaven and the mortals
+> IRIS network is named after the Greek goddess of the Rainbow who is the
+> faithful messenger between heaven and mortals.
 
-As we all agree, contractual
-relationship
-is one of the most basic relationships constituting human society, the
+Contractual relationships are a fundamental building block of human society and the
 importance of blockchain technology lies in providing a very efficient
-and cost effective way of realizing a most reliable contractual
-relationship. For the first time, trust is not needed (which is also very
-costly to establish) when multi-parties participating in sophisticated
-business interactions. It has been said, blockchain technology provides
-the important elements for distributed business: lifting network effect,
-very low transaction cost. More and more people see the potential of
-blockchain as the new internet of value and can gradually transform the
+and cost effective way of realizing reliable contractual
+relationships. For the first time, trust is not needed (which is also very
+costly to establish) when multiple parties participate in sophisticated
+business interactions. It has been said that blockchain technology provides
+the most important elements for distributed business to take place: lifting network effect
+and very low transaction cost. More and more people see the potential of
+blockchains as the new internet of value and will gradually transform the
 current business models into more efficient distributed ones. Especially
-the token mechanism embedded by blockchain emphasizing each network
-participant's right will disrupt the business form \[1\].
+the token mechanism embedded in most modern blockchain emphasizes each network
+participant's right and will disrupt business in its current form \[1\].
 
 However, blockchain technology is still in its infancy with drawbacks
 such as poor or limited performance and immature governance mechanisms,
 making it unfit to support real-world distributed business
-collaboration. Consortium chains such as Hyperledger Fabric, R3 Corda,
+applications. Consortium chains such as Hyperledger Fabric, R3 Corda, or
 Ethereum Enterprise are trying to address the performance and governance
-issues and make blockchain technology more suitable for business
-collaboration. However, today consortium chains are basically big
-enterprise's game and its closed-form off chain governance model
-establishment is very inefficient. Without token economics model and the
-openness existing in public chains, the consortium chains are lack of
+issues in order to make blockchain technology more suitable for business
+collaboration. However, today consortium chains are dominated by huge
+enterprise companies. Furthermore their close-form off on-chain governance model
+is very inefficient. Without a token economics model and the
+openness and the excitement in public chains, the consortium chains lack
 vitality. We would like to enhance the current blockchain technology and
 make it possible to enable thousands and millions of SMBs and even
 individual freelance business service providers to provide their
 services and enjoy the rewards in an open network. To achieve this goal,
-we identified following challenges/opportunities for technology
+we have identified the following challenges/opportunities for technology
 innovations:
 
 * Not all computation could or should be implemented as on-chain computations such as smart contracts
