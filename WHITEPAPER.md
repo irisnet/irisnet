@@ -14,7 +14,7 @@ Building inter-chain service infrastructure and protocol for trustworthy and eff
 ## Table of Contents ###########################################################
 
 * [IRIS OVERVIEW](#iris-overview)
-	* [Cosmos/Tendermint](#cosmos/tendermint)
+	* [Cosmos and Tendermint](#cosmos-and-tendermint)
 	* [New Innovations from IRIS](#new-innovations-from-iris)
 * [IRIS Network Design](#iris-network-design)
 	* [Network Actors](#network-actors)
@@ -46,7 +46,7 @@ and very low transaction cost. More and more people see the potential of
 blockchains as the new internet of value and will gradually transform the
 current business models into more efficient distributed ones. Especially
 the token mechanism embedded in most modern blockchain emphasizes each network
-participant's right and will disrupt business in its current form \[1\].
+participant's right and will disrupt business in its current form [\[1\]][1].
 
 However, blockchain technology is still in its infancy with drawbacks
 such as poor or limited performance and immature governance mechanisms,
@@ -67,13 +67,9 @@ innovations:
 
 * Not all computation could or should be implemented as on-chain computations such as smart contracts
 
-The
- [Turing-complete](https://en.wikipedia.org/wiki/Turing_completeness) [virtual
-machine](https://en.wikipedia.org/wiki/Virtual_machine) provided by
-Ethereum runs Smart Contracts gives people a lot of hope of [developing
-decentralized
-applications](https://cointelegraph.com/news/blockchain-in-energy-sector-iota-to-offer-decentralization-scalability-no-transaction-fees)
-\[2\]. However Smart contracts can only handle deterministic logic (so
+The [Turing-complete](https://en.wikipedia.org/wiki/Turing_completeness) virtual
+machine provided by Ethereum [\[2\]][2] runs Smart Contracts gives people a lot of hope of developing
+decentralized applications. However Smart contracts can only handle deterministic logic (so
 every node can reach an identical state after processing every
 transaction and block) while huge amount of existing business logic that
 is not deterministic and might vary at different time and under
@@ -135,7 +131,7 @@ Cosmos/Tendermint to set the stage, summarize the features we inherit
 from Cosmos/Tendermint and the innovations we are building on top of
 existing work.
 
-### Cosmos/Tendermint
+### Cosmos and Tendermint
 ------------------------------
 
 Cosmos \[3\] is an ambitious project aiming at building the internet
@@ -1127,12 +1123,12 @@ Michael Yuan
 * [3] Jae Kwon, Ethan Buchman，"Cosmos, A Network of Distributed
 Ledgers", https://cosmos.network/whitepaper
 
-* [4] Gavin Wood,"Polkadot: Vision For a Heterogeneous Muilti-chain
-Framework", https://polkadot.io/)
+* [4] Gavin Wood, "Polkadot: Vision For a Heterogeneous Muilti-chain
+Framework", https://polkadot.io/
 
 * [5] Tendermint, https://tendermint.readthedocs.io/en/master/
 
-* [6]  Ethermint,https://ethermint.zone/
+* [6] Ethermint, https://ethermint.zone/
 
 * [7]  Oracle International Corporation, "Accountability and Trust in
 Distributed Ledger Systems", USA Patent Application 20170236120, August
@@ -1140,21 +1136,20 @@ Distributed Ledger Systems", USA Patent Application 20170236120, August
 
 * [8] Jan Xie, "CITA Technical Whitepaper", https://github.com/cryptape/cita-whitepaper/blob/master/en/technical-whitepaper.md
 
-* [9] "Hyperledger Burrow", https://github.com/hyperledger/burrow
+* [9] Hyperledger Burrow, https://github.com/hyperledger/burrow
 
-* [10] Joseph Poon, Thaddeus Dryja,"The Bitcoin Lightning Network:
-Scalable Off-Chain Instant Payments",January 14, 2016,https://lightning.network/lightning-network-paper.pdf
-
+* [10] Joseph Poon, Thaddeus Dryja, "The Bitcoin Lightning Network:
+Scalable Off-Chain Instant Payments", January 14, 2016, https://lightning.network/lightning-network-paper.pdf
 
 * [11] Joseph Poon, Vitalik Buterin, "Plasma: Scalable Autonomous Smart
-Contracts", https://www.plasma.io/plasma.pdf, August 11, 2017
+Contracts", August 11, 2017, https://www.plasma.io/plasma.pdf
 
-* [12] Ethan Frey, "Cosmos IBC Specification", Sep. 29, 2017,https://github.com/cosmos/ibc/blob/master/README.md
+* [12] Ethan Frey, "Cosmos IBC Specification", Sep. 29, 2017, https://github.com/cosmos/ibc/blob/master/README.md
 
 * [13] Thomas Erl,  "SOA: Principles of Service Design", Prentice Hall;
 1st edition (July 28, 2007)
 
-* [14] \[buf\] protobuf referece goes here
+* [14] Protocol Buffers: https://developers.google.com/protocol-buffers/
 
 * [15] Dean, J., Corrado, G.S., Monga, R., et al, Ng, A. Y. "Large Scale
 Distributed Deep Networks". In Proceedings of the Neural Information
@@ -1162,18 +1157,14 @@ Processing Systems (NIPS'12) (Lake Tahoe, Nevada, United States,
 December 3--6, 2012). Curran Associates, Inc, 57 Morehouse Lane, Red
 Hook, NY, 2013, 1223-1232.
 
-* [16] Tendermint Blog, "Cosmos Validator Economics ---Revenue Streams", https://medium.com/@tendermint/b5b2c682a292),
-Jan, 2018
+* [16] Tendermint Blog, "Cosmos Validator Economics -- Revenue Streams", January 2018, https://medium.com/@tendermint/b5b2c682a292
 
-* [17] Sunny Aggarwal, "Cosmos Token Model",https://drive.google.com/file/d/1jtyYtx7t1xy9gxEi2T5lXFNd8xUY7bhJ/view,
-Dec, 2017
+* [17] Sunny Aggarwal, "Cosmos Token Model", December 2017, https://drive.google.com/file/d/1jtyYtx7t1xy9gxEi2T5lXFNd8xUY7bhJ/view
 
 * [18] Gideon Greenspan, "Why Many Smart Contract Use Cases Are Simply
-Impossible", https://www.coindesk.com/three-smart-contract-misconceptions/, 2016
-April
+Impossible", April 2016, https://www.coindesk.com/three-smart-contract-misconceptions/
 
-* [19] Vitalik Buterin(http://vitalik.ca/), "Engineering Security Through
-Coordination Problems", http://vitalik.ca/, 2017 Aug
+* [19] Vitalik Buterin, "Engineering Security Through Coordination Problems", August 2017, http://vitalik.ca/
 
 ## Acknowledgements
 
