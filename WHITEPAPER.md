@@ -1092,6 +1092,7 @@ Michael Yuan
 [4]: https://polkadot.io/
 [5]: https://tendermint.readthedocs.io/en/master/
 [6]: https://ethermint.zone/
+[7]: http://www.freepatentsonline.com/y2017/0236120.html
 [8]: https://github.com/cryptape/cita-whitepaper/blob/master/en/technical-whitepaper.md
 [9]: https://github.com/hyperledger/burrow
 [10]: https://lightning.network/lightning-network-paper.pdf
@@ -1119,7 +1120,7 @@ Framework", https://polkadot.io/
 
 * [7]  Oracle International Corporation, "Accountability and Trust in
 Distributed Ledger Systems", USA Patent Application 20170236120, August
-17, 2017
+17, 2017, http://www.freepatentsonline.com/y2017/0236120.html
 
 * [8] Jan Xie, "CITA Technical Whitepaper",
 https://github.com/cryptape/cita-whitepaper/blob/master/en/technical-whitepaper.md
