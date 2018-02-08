@@ -9,21 +9,21 @@ document.  Please check regularly for updates!_
 
 ## Table of Contents ###########################################################
 
-* [IRIS OVERVIEW](#iris-overview)
+* [IRIS Overview](#iris-overview)
 	* [Cosmos and Tendermint](#cosmos-and-tendermint)
 	* [New Innovations from IRIS](#new-innovations-from-iris)
 * [IRIS Network Design](#iris-network-design)
 	* [Network Actors](#network-actors)
 	* [IRIS Services](#iris-services)
 	* [IBC Enhancement](#ibc-enhancement)
-* [Use Cases](#use-case)
+* [Use Cases](#use-cases)
 * [Token Economics](#token-economics)
 * [Fundraiser](#fundraiser)
 * [Roadmap](#roadmap)
 * [The Team](#the-team)
 * [Core Members](#core-members)
 * [Advisors](#advisors)
-* [Reference](#reference)
+* [References](#references)
 
 
 ## IRIS OVERVIEW ################################################################
@@ -111,8 +111,8 @@ designed to provide interoperability among existing blockchains and
 focus on token value transfer. The question of how to consume the
 resource provided in different chains still remains unanswered.
 
-Comparing the proposed inter-chain technologies like Cosmos \[3\] and
-Polkadot \[4\], we find out that Cosmos provides more mature base for
+Comparing the proposed inter-chain technologies like Cosmos [\[3\]][3] and
+Polkadot [\[4\]][4], we find out that Cosmos provides more mature base for
 interoperability and scalability. Especially, we found the design of
 "`many hubs and many zones`" and "`each zones are independent blockchains
 having independent governance models`" from Cosmos provides a very
@@ -120,7 +120,7 @@ suitable architecture for modeling the real world complexity in a SOC
 way. To best reuse the existing framework, we present the IRIS Network, a
 decentralized inter-chain network composing hub and zones with
 implementing a layer of service infrastructure based on
-Cosmos/Tendermint\[5\], with enhanced usage of token .
+Cosmos/Tendermint [\[5\]][5], with enhanced usage of token .
 
 Since our work is built on top of Cosmos/Tendermint, we will overview
 Cosmos/Tendermint to set the stage, summarize the features we inherit
@@ -138,11 +138,11 @@ Tendermint provides a high-performance, consistent, secure BFT consensus
 engine, where strict fork-accountability guarantees hold over the
 behavior of malicious actors. Tendermint is well suited for scaling
 heterogeneous blockchains including public blockchains such as Ethermint
-\[6\], which is a blazing fast Proof-of-Stake implementation of
+[\[6\]][6], which is a blazing fast Proof-of-Stake implementation of
 Ethereum, as well as performance critical permission/consortium chains.
 The successful stories on using Tendermint in the permission/consortium
-chain domain including Oracle \[7\], Hyperledger Burrow \[9\] and
-CITA \[8\].
+chain domain including Oracle [\[7\]][7], CITA [\[8\]][8] and
+Hyperledger Burrow [\[9\]][9].
 
 Tendermint is used as the consensus protocol for building the first zone
 on Cosmos Hub. Hub can connect to many different
@@ -176,7 +176,7 @@ called `iService`.
 The design of iService inherits the  thinking pattern from
 many years' SOA practices. SOA is an architectural approach to create
 systems built from autonomous services which have explicit boundaries,
-share schema and contract \[13\]. Earlier practice of SOA focus
+share schema and contract [\[13\]][13]. Earlier practice of SOA focus
 on implementation of Enterprise Service Bus (ESB) which enables
 communication among services via a common communication bus which
 consists of a variety of point-to-point connections between providers
@@ -202,13 +202,13 @@ blockchain itself and use the blockchain only to get consensus on the
 results generated through those services. This idea is also inspired by
 existing work from blockchain community when address performance issues
 of moving some complicated computation off the main chain, such as Lightning
-Network's off-chain state channels \[10\] as well as Plasma's fraud
-proof side chains \[11\]. Although we are not implementing side chains,
+Network's off-chain state channels [\[10\]][10] as well as Plasma's fraud
+proof side chains [\[11\]][11]. Although we are not implementing side chains,
 we rip traditional business logic computation off the blockchain
  and use it as a trustworthy mediation bus for
 complicated business collaboration.
 
-For inter chain communication, Cosmos IBC\[12\] defines a protocol for
+For inter chain communication, Cosmos IBC [\[12\]][12] defines a protocol for
 transferring values from an account on one chain to an account on the
 other chain. IRIS  designe new semantics to allow cross
 chain computation to be invoked by leveraging IBC. This capability is very important when
@@ -777,7 +777,7 @@ data for running analytics models. Although homomorphic encryption is
 one of the methods which allows computing to be done over encrypted
 data, due to its impractical for solving real world machine learning
 problems, BEAN took a different route which is borrowing the idea of
-model parallelism from the traditional distributed AI study \[15\] and
+model parallelism from the traditional distributed AI study [\[14\]][14] and
 utilizing SOA design patterns in developing distributed analytics
 services over blockchain.
 
@@ -814,7 +814,7 @@ well as service consumers, utilizing blockchain to provide audible
 transaction ledge as well as trustworthy distributed computing
 foundation.
 
-### AI + Blockchain use cases
+### Data and analytics e-marketplace
 
 We have studied many proposed AI+Blockchain projects. Most of the
 projects are mainly targeting to provide data exchange markets as well
@@ -834,7 +834,7 @@ e-commerce applications, it is possible for distributed e-commerce
 applications to provide similar user experience as the centralized
 systems such as Amazon, Alibaba provides.
 
-### Public chain & consortium chain hybrid system example
+### Public chain & consortium chain hybrid system
 
 For many business scenario, taking a hybrid architecture of combining
 the good features from both public chain and consortium chain can
@@ -870,7 +870,7 @@ IRIS Network's operation:
 
 ### IRIS staking token
 
-Taking the same staking mechanism design of Cosmos\[16\], IRIS Hub has
+Taking the same staking mechanism design of Cosmos [\[15\]][15], IRIS Hub has
 its own special native token for staking which is called IRIS. IRIS will
 be used in following ways:
 
@@ -900,7 +900,7 @@ who deploys iServices and a default payment service token is called
 
 IRIS Network will support all the whitelisted fee tokens from
 Cosmos plus IRIS staking token as well as iGas. The benefit for
-separating fee token from staking token is explained in \[17\].
+separating fee token from staking token is explained in [\[16\]][16].
 
 Supporting variety of whitelisted fee tokens is a very innovative design
 from Cosmos and it provides better experience for both validators as well
@@ -1084,7 +1084,7 @@ Adrian Brink
 
 Michael Yuan
 
-## Reference ################################################################
+## References ################################################################
 
 [1]: https://drive.google.com/file/d/1bI7JIOe-CfJ5fPHKxYlFub2Kg-KCGU6r/view?usp=sharing
 [2]: http://ethdocs.org/en/latest/
@@ -1097,16 +1097,15 @@ Michael Yuan
 [10]: https://lightning.network/lightning-network-paper.pdf
 [11]:  https://www.plasma.io/plasma.pdf
 [12]: https://github.com/cosmos/ibc/blob/master/README.md
-[16]: https://medium.com/@tendermint/b5b2c682a292
-[17]: https://drive.google.com/file/d/1jtyYtx7t1xy9gxEi2T5lXFNd8xUY7bhJ/view
-[18]: https://www.coindesk.com/three-smart-contract-misconceptions/
-[19]: http://vitalik.ca/
+[15]: https://medium.com/@tendermint/b5b2c682a292
+[16]: https://drive.google.com/file/d/1jtyYtx7t1xy9gxEi2T5lXFNd8xUY7bhJ/view
 
 
 * [1] Wanxiang Blochchain Inc., Distributed Business Value Research Institute,
-" Blockchain and Distributed Business Whitepaper", September, 2017.
+"Blockchain and Distributed Business Whitepaper", September 2017.
 
-* [2] Ethereum Foundation, "Ethereum Homestead Documentation", http://ethdocs.org/en/latest/
+* [2] Ethereum Foundation, "Ethereum Homestead Documentation",
+http://ethdocs.org/en/latest/
 
 * [3] Jae Kwon, Ethan Buchman，"Cosmos, A Network of Distributed
 Ledgers", https://cosmos.network/whitepaper
@@ -1122,34 +1121,32 @@ Framework", https://polkadot.io/
 Distributed Ledger Systems", USA Patent Application 20170236120, August
 17, 2017
 
-* [8] Jan Xie, "CITA Technical Whitepaper", https://github.com/cryptape/cita-whitepaper/blob/master/en/technical-whitepaper.md
+* [8] Jan Xie, "CITA Technical Whitepaper",
+https://github.com/cryptape/cita-whitepaper/blob/master/en/technical-whitepaper.md
 
 * [9] Hyperledger Burrow, https://github.com/hyperledger/burrow
 
 * [10] Joseph Poon, Thaddeus Dryja, "The Bitcoin Lightning Network:
-Scalable Off-Chain Instant Payments", January 14, 2016, https://lightning.network/lightning-network-paper.pdf
+Scalable Off-Chain Instant Payments", January 14, 2016,
+https://lightning.network/lightning-network-paper.pdf
 
 * [11] Joseph Poon, Vitalik Buterin, "Plasma: Scalable Autonomous Smart
 Contracts", August 11, 2017, https://www.plasma.io/plasma.pdf
 
-* [12] Ethan Frey, "Cosmos IBC Specification", Sep. 29, 2017, https://github.com/cosmos/ibc/blob/master/README.md
+* [12] Ethan Frey, "Cosmos IBC Specification", Sep. 29, 2017,
+https://github.com/cosmos/ibc/blob/master/README.md
 
 * [13] Thomas Erl,  "SOA: Principles of Service Design", Prentice Hall;
 1st edition (July 28, 2007)
 
-* [14] Protocol Buffers: https://developers.google.com/protocol-buffers/
-
-* [15] Dean, J., Corrado, G.S., Monga, R., et al, Ng, A. Y. "Large Scale
+* [14] Dean, J., Corrado, G.S., Monga, R., et al, Ng, A. Y. "Large Scale
 Distributed Deep Networks". In Proceedings of the Neural Information
 Processing Systems (NIPS'12) (Lake Tahoe, Nevada, United States,
 December 3--6, 2012). Curran Associates, Inc, 57 Morehouse Lane, Red
 Hook, NY, 2013, 1223-1232.
 
-* [16] Tendermint Blog, "Cosmos Validator Economics -- Revenue Streams", January 2018, https://medium.com/@tendermint/b5b2c682a292
+* [15] Tendermint Blog, "Cosmos Validator Economics -- Revenue Streams",
+January 2018, https://medium.com/@tendermint/b5b2c682a292
 
-* [17] Sunny Aggarwal, "Cosmos Token Model", December 2017, https://drive.google.com/file/d/1jtyYtx7t1xy9gxEi2T5lXFNd8xUY7bhJ/view
-
-* [18] Gideon Greenspan, "Why Many Smart Contract Use Cases Are Simply
-Impossible", April 2016, https://www.coindesk.com/three-smart-contract-misconceptions/
-
-* [19] Vitalik Buterin, "Engineering Security Through Coordination Problems", August 2017, http://vitalik.ca/
+* [16] Sunny Aggarwal, "Cosmos Token Model", December 2017,
+https://drive.google.com/file/d/1jtyYtx7t1xy9gxEi2T5lXFNd8xUY7bhJ/view
