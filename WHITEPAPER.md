@@ -2,6 +2,7 @@
 **Inter-chain service infrastructure and protocol for building trustworthy and distributed business applications**
 
 Harriet Cao harriet@bianjie.ai
+
 Haifeng Xi haifeng@bianjie.ai
 
 _NOTE: If you can read this on GitHub, then we're still actively developing this
@@ -25,7 +26,7 @@ document.  Please check regularly for updates!_
 * [Advisors](#advisors)
 * [References](#references)
 
-***
+<div STYLE="page-break-after: always;"></div>
 
 ## Disclaimer
 
@@ -75,7 +76,7 @@ References in this whitepaper to specific companies and platforms are for illust
 
 You must consult a lawyer, accountant and/or tax professional, as well as any other professional advisors, as necessary prior to determining whether to purchase IRIS tokens or otherwise participate in the IRIS network.
 
-***
+<div STYLE="page-break-after: always;"></div>
 
 
 ## IRIS OVERVIEW ################################################################
@@ -695,23 +696,23 @@ Below is a (not exhaustive) summary of supported queries:
 **Service Objects**
 
 
-**Object**  | **Commonly Used Filters**|**Authorization**|
---------- | --------|--------|
- Service Definition  | Name, keywords, source (chain id), messaging type, with active bindings... |Anyone can query|
- Service Binding (for a given definition)  | Location (local or remote), pricing, service level, expiration... |Anyone can query|
- Service Request|Service definition and binding, blockchain height, batch size|Service definition and binding, blockchain height, batch size|Only matched provider|
- Service Response|Service request, blockchain height, batch size|Only matched consumer|
+| **Object**                               | **Commonly Used Filters**                | **Authorization**                        |
+| ---------------------------------------- | ---------------------------------------- | ---------------------------------------- |
+| Service Definition                       | Name, keywords, source (chain id), messaging type, with active bindings... | Anyone can query                         |
+| Service Binding (for a given definition) | Location (local or remote), pricing, service level, expiration... | Anyone can query                         |
+| Service Request                          | Service definition and binding, blockchain height, batch size | Service definition and binding, blockchain height, batch size |
+| Service Response                         | Service request, blockchain height, batch size | Only matched consumer                    |
 
 
 **Performance Metrics**
 
 
-  **Area** | **Metrics** | **Authorization**|
-  --------- | --------|--------|
-  Provider (address) | Number of services provided (ever and active), active time, requests served (local and remote), requests missed, complaints received, complaints missed, ...  | Anyone can query|
-  Provider (binding) |Active time, requests served (local and remote), requests missed, complaints received, complaints missed, ... | Anyone can query|
-  Consumer (address) | Number of services ever used, requests made, requests confirmed (in time and missed), complaints made, resolutions confirmed, ... |Anyone can query|
-  Consumer (service, binding)| Requests made, requests confirmed (in time and missed), complaints made, resolutions confirmed, ... |Anyone can query|
+| **Area**                    | **Metrics**                              | **Authorization** |
+| --------------------------- | ---------------------------------------- | ----------------- |
+| Provider (address)          | Number of services provided (ever and active), active time, requests served (local and remote), requests missed, complaints received, complaints missed, ... | Anyone can query  |
+| Provider (binding)          | Active time, requests served (local and remote), requests missed, complaints received, complaints missed, ... | Anyone can query  |
+| Consumer (address)          | Number of services ever used, requests made, requests confirmed (in time and missed), complaints made, resolutions confirmed, ... | Anyone can query  |
+| Consumer (service, binding) | Requests made, requests confirmed (in time and missed), complaints made, resolutions confirmed, ... | Anyone can query  |
 
 
 ### IBC Enhancement
@@ -808,14 +809,14 @@ responses, and therefore will not be elaborated here.
 
 Below is a complete list of application-dependent `IBCPacket` types:
 
-  **Type** | **iService Object**|
-  --------- | --------|
-  "iris-service-definition"  | ServiceDefinition|
-  "iris-service-binding"     | ServiceBinding|
-  "iris-service-request"    |  ServiceRequest|
-  "iris-service-response"  |   ServiceResponse|
-  "iris-complaint"        |    Complaint|
-  "iris-resolution"      |     Resolution|
+| **Type**                  | **iService Object** |
+| ------------------------- | ------------------- |
+| "iris-service-definition" | ServiceDefinition   |
+| "iris-service-binding"    | ServiceBinding      |
+| "iris-service-request"    | ServiceRequest      |
+| "iris-service-response"   | ServiceResponse     |
+| "iris-complaint"          | Complaint           |
+| "iris-resolution"         | Resolution          |
 
 
 ## Use Cases ################################################################
