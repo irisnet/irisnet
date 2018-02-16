@@ -19,7 +19,7 @@ document.  Please check regularly for updates!_
   * [IBC Enhancement](#ibc-enhancement)
 * [Use Cases](#use-cases)
 * [Token Economics](#token-economics)
-* [Innitial Token Distribution](#distribution)
+* [Innitial Token Distribution](#innitial-token-distribution)
 * [Roadmap](#roadmap)
 * [The Team](#the-team)
 * [Core Members](#core-members)
@@ -1017,7 +1017,6 @@ The expected IRIS project is set out below. We reiterate that the roadmap is ind
 
 
 * **NUWA** (July 2018 \~ November 2018)
-
 The second stage will focus on building the fundamental IRIS Service Layer. This will involve enabling service definition, binding, invocation and query.
 In this stage we are also aiming to have a beta version of the IRIS SDK ready for developers.
 
@@ -1030,20 +1029,14 @@ The fourth stage will focus on further technology innovations to the IRIS networ
 
 ## The Team ################################################################
 
-**Tendermint** (the team that developed the Tendermint consensus engine and is currently building Cosmos), **Wancloud**(a subsidiary of Wanxiang
+**Tendermint** (the team that developed the Tendermint consensus engine and is currently building Cosmos), **Wancloud** (a subsidiary of Wanxiang
 Blockchain) and **Bianjie AI** will work together to build the IRIS network's infrastructure.  
 
 Tendermint's intended role to give technical advice and development support to the IRIS project team in extending the Tendermint ABCI and the Cosmos IBC technologies.
 Wancloud is envisaged as the key strategy partner to both the Cosmos and IRIS ecosystems, and we understand that it intends to participate in Cosmos and IRIS development across Asia.
 
-
-
-
-
 **Bianjie AI**
-will be the core development team for the IRIS network, leveraging the team's experience established from building distributed AI analytics services for healthcare data analysis and exchange.
-
-Bianjie AI is a Shanghai-based start-up established in 2016. It focuses on developing innovative products and solutions for healthcare and financial industries, using advanced Blockchain and AI technologies. One of Bianjie's core products,  `BEAN (Blockchain Edge Analytics Network)` BEAN (Blockchain Edge Analytics Network), is a permission chain which delivers distributed data analytics services for privacy preserving healthcare data analysis and exchange using NLP and machine learning technologies. Bianjie AI is
+will be the core development team for the IRIS network, leveraging the team's experience established from building distributed AI analytics services for healthcare data analysis and exchange. Bianjie AI is a Shanghai-based start-up established in 2016. It focuses on developing innovative products and solutions for healthcare and financial industries, using advanced Blockchain and AI technologies. One of Bianjie's core products,  `BEAN (Blockchain Edge Analytics Network)` BEAN (Blockchain Edge Analytics Network), is a permission chain which delivers distributed data analytics services for privacy preserving healthcare data analysis and exchange using NLP and machine learning technologies. Bianjie AI is
 currently extending `BEAN` capabilities to build the IRIS network.
 **Bianjie AI**
 is also the operation and service partner of Cosmos Network in China.
