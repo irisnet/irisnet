@@ -3,6 +3,8 @@
 
 Harriet Cao harriet@bianjie.ai<br/>
 Haifeng Xi haifeng@bianjie.ai
+Harriet Cao harriet@irisnet.org<br/>
+Haifeng Xi haifeng@irisnet.org
 
 _NOTE: If you can read this on GitHub, then we're still actively developing this
 document.  Please check regularly for updates!_
