@@ -10,12 +10,12 @@ document.  Please check regularly for updates!_
 ## Table of Contents ###########################################################
 
 * [IRIS Overview](#iris-overview)
-	* [Cosmos and Tendermint](#cosmos-and-tendermint)
-	* [New Innovations from IRIS](#new-innovations-from-iris)
+  * [Cosmos and Tendermint](#cosmos-and-tendermint)
+  * [New Innovations from IRIS](#new-innovations-from-iris)
 * [IRIS Network Design](#iris-network-design)
-	* [Network Actors](#network-actors)
-	* [IRIS Services](#iris-services)
-	* [IBC Enhancement](#ibc-enhancement)
+  * [Network Actors](#network-actors)
+  * [IRIS Services](#iris-services)
+  * [IBC Enhancement](#ibc-enhancement)
 * [Use Cases](#use-cases)
 * [Token Economics](#token-economics)
 * [Fundraiser](#fundraiser)
@@ -24,6 +24,58 @@ document.  Please check regularly for updates!_
 * [Core Members](#core-members)
 * [Advisors](#advisors)
 * [References](#references)
+
+
+
+
+## Disclaimer
+
+This whitepaper and any other documents published in association with this whitepaper relate to the intended development and use of the IRIS network.  They are information purposes only and may be subject to change.
+
+* This whitepaper describes a developing project
+
+This whitepaper contains forward-looking statements that are based on the beliefs of IRIS Foundation Limited, as well as certain assumptions made by and information available to IRIS Foundation Limited.  
+
+The IRIS network as envisaged in this whitepaper is under development and is being constantly updated, including but not limited to key governance and technical features. The IRIS token involves and relates to the development and use of experimental platforms (software) and technologies that may not come to fruition or achieve the objectives specified in this whitepaper.
+
+If and when the IRIS network is completed, it may differ significantly from the network set out in this whitepaper. No representation or warranty is given as to the achievement or reasonableness of any plans, future projections or prospects and nothing in this document is or should be relied upon as a promise or representation as to the future.
+
+* No offer of regulated products
+
+The IRIS tokens are not intended to represent a security or any other regulated product in any jurisdiction.
+
+This document does not constitute an offer or solicitation of securities or any other regulated product, nor a promotion, invitation or solicitation for investment purposes. The terms of the purchase are not intended to be a financial service offering document or a prospectus of any sort.
+
+The IRIS tokens do not represent equity, shares, units, royalties or rights to capital, profit, returns or income in the platform or software or in IRIS Foundation Limited or any other company or intellectual property associated with the platform or any other public or private enterprise, corporation, foundation or other entity in any jurisdiction. 
+
+* This whitepaper is not advice
+
+This whitepaper does not constitute advice to purchase any IRIS tokens. It must not be relied upon in connection with any contract or purchasing decision.
+
+* Risk warning
+
+The purchase of IRIS tokens and participation in the IRIS network carries with it significant risks. 
+
+Prior to purchasing IRIS tokens, you should carefully assess and take into account the risks, including those listed on <https://www.irisnet.org/> and in any other documentation. 
+
+- **Views of IRIS Foundation Limited only**
+
+The views and opinions expressed in this whitepaper are those of IRIS Foundation Limited and do not necessarily reflect the official policy or position of any government, quasi-government, authority or public body (including but not limited to any regulatory body of any jurisdiction) in any jurisdiction.  
+
+Information contained in this whitepaper is based on sources considered reliable by IRIS Foundation Limited but there is no assurance as to their accuracy or completeness.   
+
+* English is the authorised language of this whitepaper
+
+This whitepaper and related materials are issued in English only. Any translation is for reference purposes only and is not certified by IRIS Foundation Limited or any other person. No assurance can be made as to the accuracy and completeness of any translations. If there is any inconsistency between a translation and the English version of this whitepaper, the English version prevails.
+
+* No third party affiliation or endorsements
+
+References in this whitepaper to specific companies and platforms are for illustrative purposes only. The use of any company and/or platform names and trademarks does not imply any affiliation with, or endorsement by, any of those parties.
+
+* You must obtain all necessary professional advice
+
+You must consult a lawyer, accountant and/or tax professional, as well as any other professional advisors, as necessary prior to determining whether to purchase IRIS tokens or otherwise participate in the IRIS network.
+
 
 
 ## IRIS OVERVIEW ################################################################
@@ -165,9 +217,9 @@ blockchain systems which are mainly for digitalized assets.
 
 The key challenges we are addressing in IRIS are two parts:
 * Integration and collaboration of off-chain computing and resources on
-a distributed ledger;
+  a distributed ledger;
 * interoperability of the services across
-heterogeneous chains.
+  heterogeneous chains.
 
 We address those challenges through incorporation
 of a service oriented infrastructure into Cosmos/Tendermint which is
@@ -261,25 +313,25 @@ overall value of the network.
 ### Network Actors
 
 1. **Consumers** are users who consume off-chain services by sending
-requests to and receiving responses from the network.
+  requests to and receiving responses from the network.
 
 2. **Providers** offer implementation of one or more `iService` definitions
-and often act as *adaptors* of off-chain services and resources located
-in other public and consortium chains as well as enterprise legacy
-systems. They monitor and process incoming requests and send responses
-back to the network. A provider could at the same time act as a consumer
-by sending requests to other providers. Providers will charge a fee for
-any services they might offer, and the service fee, by default, is
-priced in the IRIS network's native fee token known as `*iGas*`; providers
-could also price their services in other whitelisted Cosmos fee tokens
-such as photon \[?\].
+  and often act as *adaptors* of off-chain services and resources located
+  in other public and consortium chains as well as enterprise legacy
+  systems. They monitor and process incoming requests and send responses
+  back to the network. A provider could at the same time act as a consumer
+  by sending requests to other providers. Providers will charge a fee for
+  any services they might offer, and the service fee, by default, is
+  priced in the IRIS network's native fee token known as `*iGas*`; providers
+  could also price their services in other whitelisted Cosmos fee tokens
+  such as photon \[?\].
 
 3. **Profiler** is a special user working on behalf of the IRIS Foundation,
-a Hong Kong based nonprofit organization in charge of building and
-promoting the IRIS network. Profiler is the sole user authorized to
-invoke iServices in the profiling mode, which helps to create and
-maintain objective *provider profiles* that become handy for consumers
-when it comes to selecting the right providers (see ?).
+  a Hong Kong based nonprofit organization in charge of building and
+  promoting the IRIS network. Profiler is the sole user authorized to
+  invoke iServices in the profiling mode, which helps to create and
+  maintain objective *provider profiles* that become handy for consumers
+  when it comes to selecting the right providers (see ?).
 
 ### IRIS Services
 
@@ -312,12 +364,12 @@ A ServiceDefinition is composed of:
 * `Creator (string)`: A self-description of the iService creator. *Optional*
 
 * `ChainID (string)`: The ID of the blockchain where this iService was
-originally defined
+  originally defined
 
 * `Messaging (enum)`: Can be one of Unicast or Multicast
 
 * `Methods ([]Method)`: The definition of methods available in this
-`iService`
+  `iService`
 
 A CreateServiceDefinitionTx transaction is composed of:
 
@@ -328,46 +380,46 @@ A CreateServiceDefinitionTx transaction is composed of:
 A CreateServiceBindingTx transaction is composed of:
 
 * `DefinitionHash ([]byte)`: The hash of the service definition that the
-provider is binding to
+  provider is binding to
 
 * `ChainID (string)`: The ID of the blockchain where the provider is
-connected
+  connected
 
 * `ProviderAddress ([]byte)`: The provider's blockchain address
 
 * `BindingType (enum)`: Can be one of Local or Global; choose Global if a
-provider wants the binding to be exposed to the rest of the world;
-otherwise, use Local
+  provider wants the binding to be exposed to the rest of the world;
+  otherwise, use Local
 
 * `ProviderDeposit (int64)`: To create an effective binding, the provider
-must put down a deposit (in terms of iGas amount) that is greater than
-the value of the system parameter MinProviderDeposit; a larger deposit
-may imply more trustworthiness of the provider
+  must put down a deposit (in terms of iGas amount) that is greater than
+  the value of the system parameter MinProviderDeposit; a larger deposit
+  may imply more trustworthiness of the provider
 
 * `ServicePricing (string)`: A structured definition of the service pricing
-model on a per method basis, including cost per call, volume discount,
-promotional terms etc.; service fee is by default listed in iGas but
-could also be quoted in other whitelisted fee tokens.
+  model on a per method basis, including cost per call, volume discount,
+  promotional terms etc.; service fee is by default listed in iGas but
+  could also be quoted in other whitelisted fee tokens.
 
 * `ServiceLevel (string)`: A structured definition of service level the
-provider agrees to bind himself to, in terms of response time,
-availability etc.
+  provider agrees to bind himself to, in terms of response time,
+  availability etc.
 
 * `BindingExpiration (int64)`: The blockchain height where this binding
-expires; a negative number means "never expire"
+  expires; a negative number means "never expire"
 
 An UpdateServiceBindingTx transaction is composed of:
 
 * `DefinitionHash ([]byte)`: The hash of the service definition the
-provider has bound to
+  provider has bound to
 
 * `ChainID (string)`: The ID of the blockchain where the provider is
-connected
+  connected
 
 * `ProviderAddress ([]byte)`: The provider's blockchain address
 
 * `ChangeSet (string)`: A structured definition of desired changes to an
-existing binding identified by the preceding three fields
+  existing binding identified by the preceding three fields
 
 A provider can update ServicePricing, ServiceLevel and BindingExpiration
 at any time, but a small amount of his deposit will be slashed for
@@ -433,7 +485,7 @@ dedicated response table will be created and managed for each consumer.
 A ServiceRequest is composed of:
 
 * `ChainID (string)`: The ID of the blockchain where the consumer is
-connected
+  connected
 
 * `ConsumerAddress ([]byte)`: The blockchain address of the consumer
 
@@ -444,22 +496,22 @@ connected
 * `InputValue (string)`: A structured representation of input values
 
 * `BindingHash ([]byte)`: The hash of the target binding, in case of a
-Unicast service. *Optional*
+  Unicast service. *Optional*
 
 * `MaxServiceFee (int64)`: The max amount of service fee the consumer is
-willing to pay for a Multicast request. *Optional*
+  willing to pay for a Multicast request. *Optional*
 
 * `Timeout (int)`: The max number of blocks the consumer is willing to wait
-for response(s) to come back
+  for response(s) to come back
 
 A PostServiceRequestTx transaction is composed of:
 
 * `Requests ([]ServiceRequest)`: The service requests to be posted
 
 * `RequestDeposits ([]int64)`: The consumer must put down for each request
-a deposit (in terms of iGas amount) that is greater than the value of
-MinRequestDeposit; a larger deposit may imply more sincerity of the
-consumer
+  a deposit (in terms of iGas amount) that is greater than the value of
+  MinRequestDeposit; a larger deposit may imply more sincerity of the
+  consumer
 
 The application will verify that the requests are coming from a consumer
 with matching ChainID and ConsumerAddress, the targeted bindings are
@@ -476,12 +528,12 @@ A GetServiceRequest query is composed of:
 * `DefinitionHash ([]byte)`: The hash of the service definition
 
 * `BindingHash ([]byte)`: The hash of this provider's binding to the
-service in question; the application will verify that the binding is
-valid and the caller matches the binding's ChainID and ProviderAddress
+  service in question; the application will verify that the binding is
+  valid and the caller matches the binding's ChainID and ProviderAddress
 
 * `BeginHeight (uint64)`: The blockchain height from where the application
-should start to retrieve requests for the provider, up to a total number
-that is the lesser of BatchSize and MaxRequestGetBatch
+  should start to retrieve requests for the provider, up to a total number
+  that is the lesser of BatchSize and MaxRequestGetBatch
 
 * `BatchSize (int)`: The max number of requests to be returned
 
@@ -492,10 +544,10 @@ A ServiceResponse is composed of:
 * `BindingHash ([]byte)`: The hash of this provider's service binding
 
 * `OutputValue ([]byte)`: A structured (potentially encrypted)
-representation of output result. *Optional*
+  representation of output result. *Optional*
 
 * `ErrorMsg (string)`: A structured representation of error messages.
-*Optional*
+  *Optional*
 
 A PostServiceResponseTx transaction is composed of:
 
@@ -510,12 +562,12 @@ consumer.
 A GetServiceResponse query is composed of:
 
 * `RequestHash ([]byte)`: The hash of the original request; the
-application will verify that the caller matches the request's ChainID
-and ConsumerAddress
+  application will verify that the caller matches the request's ChainID
+  and ConsumerAddress
 
 * `BeginHeight (uint64)`: The blockchain height from where the application
-should start to retrieve responses for the consumer, up to a total
-number that is the lesser of `BatchSize` and `MaxResponseGetBatch`
+  should start to retrieve responses for the consumer, up to a total
+  number that is the lesser of `BatchSize` and `MaxResponseGetBatch`
 
 * `BatchSize (int)`: The max number of responses to be returned
 
@@ -601,7 +653,7 @@ A Resolution is composed of:
 * `Refund (uint64)`: Service fee refund. *Optional*
 
 * `OutputValue ([]byte)`: A structured (potentially encrypted)
-representation of output result. *Optional*
+  representation of output result. *Optional*
 
 **Service Profiling**
 
@@ -674,10 +726,10 @@ accomplish the following:
 2. Global service bindings are broadcast to every zone in the IRIS network;
 
 3. Service requests or complaints targeting a remote provider are routed to
-the blockchain where the provider is connected;
+  the blockchain where the provider is connected;
 
 4. Service responses or resolution meant for a remote consumer are routed
-back to the blockchain where the consumer is connected.
+  back to the blockchain where the consumer is connected.
 
 When processing a `CreateServiceDefinitionTx` transaction, the application
 first validates and stores `ServiceDefinition` locally, and then creates
@@ -700,14 +752,14 @@ An `IBCPacket` described above is composed of:
 * `Header (IBCPacketHeader)`: The packet header
 
 * `Payload (ServiceDefinition or ServiceBinding)`: The bytes of the service
-definition or binding
+  definition or binding
 
 The `IBCPacketHeader` above is composed of:
 
 * `SrcChainID (string)`: The ID of the blockchain creating this packet
 
 * `DstChainID (string)`: The ID of the neighboring blockchain this packet is
-destined for
+  destined for
 
 * `Number (int)`: A unique number for all packets
 
@@ -732,7 +784,7 @@ The IBCPacketHeader above is composed of:
 * `SrcChainID (string)`: The ID of the blockchain creating this packet
 
 * `DstChainID (string)`: The ID of the blockchain where the remote provider
-is located, i.e., ServiceRequest.ServiceBinding.ChainID
+  is located, i.e., ServiceRequest.ServiceBinding.ChainID
 
 * `Number (int)`: A unique number for all packets
 
@@ -789,9 +841,9 @@ idea; on the other hand, the data owner never needs to worry about their
 data leaving the premises and thus losing control of its usage. Other
 benefits include:
 1. only a small amount of parametric data is
-exchanged on blockchain providing a lot of performance gain;
+  exchanged on blockchain providing a lot of performance gain;
 2. providing a more practical way for data usage auditing, which is often
-needed in the healthcare domain.
+  needed in the healthcare domain.
 
 Healthcare data is high private and security requirements put great
 challenge for it being used for cross organization collaboration, such
@@ -875,10 +927,10 @@ its own special native token for staking which is called IRIS. IRIS will
 be used in following ways:
 
 * Stakes deposited by validators to be eligible to validate transactions
-and commit new blocks
+  and commit new blocks
 
 * Non-validator lent out RIS to any validator to earn a share of their
-block fees and rewards
+  block fees and rewards
 
 * Voting power to participate in IRIS network governance
 
@@ -893,10 +945,10 @@ in circulation will be bonded as staking token.
 
 There are two types of fee token in IRIS network:
 * **Network fee** token is for spam-prevention and payment to validators in maintaining the
-ledger;
+  ledger;
 * **Service fee** token is used for payment to service providers
-who deploys iServices and a default payment service token is called
-`iGas`.
+  who deploys iServices and a default payment service token is called
+  `iGas`.
 
 IRIS Network will support all the whitelisted fee tokens from
 Cosmos plus IRIS staking token as well as iGas. The benefit for
@@ -937,16 +989,16 @@ be distributed as follows:
 * **Pre-Sale**: 20%
 
 * **ATOM Holders**: 5% (detailed airdrop plan will be announced after
-Cosmos Hub goes alive)
+  Cosmos Hub goes alive)
 
 * **Core Developer Team**: 15% (locked up for 6 months starting from IRIS Hub
-launch, and linear monthly release for 2 years afterwards)
+  launch, and linear monthly release for 2 years afterwards)
 
 * **IRIS Foundation**: 15% (staff and advisor compensation, PoS staking, and
-	service profiling etc.)
+  service profiling etc.)
 
 * **Ecosystem Empowerment**: 45% (bestowal to potential users, swap with
-	zones connecting to IRIS Hub, and contigency reserve)
+  zones connecting to IRIS Hub, and contigency reserve)
 
 After the IRIS network is fully deployed, the annual inflation rate is
 expected to be between 7%\~20% which is adjusted to motivate about 2/3
@@ -973,27 +1025,27 @@ The planned usage is as follows:
 The IRIS project roadmap includes the following milestones:
 
 * **PANGU** (January 2018 \~ June 2018) As the first stage of the IRIS
-project, we will focus on having the IRIS Hub up and running as one of
-the earliest regional hubs that connect to the Cosmos Hub; we'll get a
-couple of public blockchains to connect to the IRIS Hub as "zones", and
-release an initial version of the mobile client for the IRIS Network.
+  project, we will focus on having the IRIS Hub up and running as one of
+  the earliest regional hubs that connect to the Cosmos Hub; we'll get a
+  couple of public blockchains to connect to the IRIS Hub as "zones", and
+  release an initial version of the mobile client for the IRIS Network.
 
 * **NUWA** (July 2018 \~ November 2018) The is the stage where we will
-build out the fundamental IRIS Service Layer: upgrade the network to
-enable service definition, binding, invocation and query; have a beta
-version of the IRIS SDK ready for developers and upgrade the mobile
-client to support IRIS Services; form strategic alliances with service
-providers and have more zones connected the IRIS Hub.
+  build out the fundamental IRIS Service Layer: upgrade the network to
+  enable service definition, binding, invocation and query; have a beta
+  version of the IRIS SDK ready for developers and upgrade the mobile
+  client to support IRIS Services; form strategic alliances with service
+  providers and have more zones connected the IRIS Hub.
 
 * **KUAFU** (December 2018 \~ May 2019) Upgrade the network to support
-advanced IRIS Service governance features, such as profiling and dispute
-resolution; keep improving the SDK and mobile client; rapidly expand the
-network to connect with more zones and integrate more service providers.
+  advanced IRIS Service governance features, such as profiling and dispute
+  resolution; keep improving the SDK and mobile client; rapidly expand the
+  network to connect with more zones and integrate more service providers.
 
 * **HOUYI** (Beyond June 2019) Move toward the realization of a
-distributed business ecosystem, through relentless technology
-innovations, effective community building and sustained developer
-empowerment.
+  distributed business ecosystem, through relentless technology
+  innovations, effective community building and sustained developer
+  empowerment.
 
 ## The Team ################################################################
 
@@ -1103,51 +1155,51 @@ Michael Yuan
 
 
 * [1] Wanxiang Blochchain Inc., Distributed Business Value Research Institute,
-"Blockchain and Distributed Business Whitepaper", September 2017.
+  "Blockchain and Distributed Business Whitepaper", September 2017.
 
 * [2] Ethereum Foundation, "Ethereum Homestead Documentation",
-http://ethdocs.org/en/latest/
+  http://ethdocs.org/en/latest/
 
 * [3] Jae Kwon, Ethan Buchman，"Cosmos, A Network of Distributed
-Ledgers", https://cosmos.network/whitepaper
+  Ledgers", https://cosmos.network/whitepaper
 
 * [4] Gavin Wood, "Polkadot: Vision For a Heterogeneous Muilti-chain
-Framework", https://polkadot.io/
+  Framework", https://polkadot.io/
 
 * [5] Tendermint, https://tendermint.readthedocs.io/en/master/
 
 * [6] Ethermint, https://ethermint.zone/
 
 * [7]  Oracle International Corporation, "Accountability and Trust in
-Distributed Ledger Systems", USA Patent Application 20170236120, August
-17, 2017, http://www.freepatentsonline.com/y2017/0236120.html
+  Distributed Ledger Systems", USA Patent Application 20170236120, August
+  17, 2017, http://www.freepatentsonline.com/y2017/0236120.html
 
 * [8] Jan Xie, "CITA Technical Whitepaper",
-https://github.com/cryptape/cita-whitepaper/blob/master/en/technical-whitepaper.md
+  https://github.com/cryptape/cita-whitepaper/blob/master/en/technical-whitepaper.md
 
 * [9] Hyperledger Burrow, https://github.com/hyperledger/burrow
 
 * [10] Joseph Poon, Thaddeus Dryja, "The Bitcoin Lightning Network:
-Scalable Off-Chain Instant Payments", January 14, 2016,
-https://lightning.network/lightning-network-paper.pdf
+  Scalable Off-Chain Instant Payments", January 14, 2016,
+  https://lightning.network/lightning-network-paper.pdf
 
 * [11] Joseph Poon, Vitalik Buterin, "Plasma: Scalable Autonomous Smart
-Contracts", August 11, 2017, https://www.plasma.io/plasma.pdf
+  Contracts", August 11, 2017, https://www.plasma.io/plasma.pdf
 
 * [12] Ethan Frey, "Cosmos IBC Specification", Sep. 29, 2017,
-https://github.com/cosmos/ibc/blob/master/README.md
+  https://github.com/cosmos/ibc/blob/master/README.md
 
 * [13] Thomas Erl,  "SOA: Principles of Service Design", Prentice Hall;
-1st edition (July 28, 2007)
+  1st edition (July 28, 2007)
 
 * [14] Dean, J., Corrado, G.S., Monga, R., et al, Ng, A. Y. "Large Scale
-Distributed Deep Networks". In Proceedings of the Neural Information
-Processing Systems (NIPS'12) (Lake Tahoe, Nevada, United States,
-December 3--6, 2012). Curran Associates, Inc, 57 Morehouse Lane, Red
-Hook, NY, 2013, 1223-1232.
+  Distributed Deep Networks". In Proceedings of the Neural Information
+  Processing Systems (NIPS'12) (Lake Tahoe, Nevada, United States,
+  December 3--6, 2012). Curran Associates, Inc, 57 Morehouse Lane, Red
+  Hook, NY, 2013, 1223-1232.
 
 * [15] Tendermint Blog, "Cosmos Validator Economics -- Revenue Streams",
-January 2018, https://medium.com/@tendermint/b5b2c682a292
+  January 2018, https://medium.com/@tendermint/b5b2c682a292
 
 * [16] Sunny Aggarwal, "Cosmos Token Model", December 2017,
-https://drive.google.com/file/d/1jtyYtx7t1xy9gxEi2T5lXFNd8xUY7bhJ/view
+  https://drive.google.com/file/d/1jtyYtx7t1xy9gxEi2T5lXFNd8xUY7bhJ/view
