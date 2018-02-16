@@ -1,7 +1,7 @@
 # IRIS Network
 **Inter-chain service infrastructure and protocol for building trustworthy and distributed business applications**
 
-Harriet Cao harriet@bianjie.ai<br/>
+Harriet Cao harriet@bianjie.ai
 Haifeng Xi haifeng@bianjie.ai
 
 _NOTE: If you can read this on GitHub, then we're still actively developing this
@@ -25,8 +25,7 @@ document.  Please check regularly for updates!_
 * [Advisors](#advisors)
 * [References](#references)
 
-
-
+***
 
 ## Disclaimer
 
@@ -58,7 +57,7 @@ The purchase of IRIS tokens and participation in the IRIS network carries with i
 
 Prior to purchasing IRIS tokens, you should carefully assess and take into account the risks, including those listed on <https://www.irisnet.org/> and in any other documentation. 
 
-- **Views of IRIS Foundation Limited only**
+* Views of IRIS Foundation Limited only
 
 The views and opinions expressed in this whitepaper are those of IRIS Foundation Limited and do not necessarily reflect the official policy or position of any government, quasi-government, authority or public body (including but not limited to any regulatory body of any jurisdiction) in any jurisdiction.  
 
@@ -76,6 +75,7 @@ References in this whitepaper to specific companies and platforms are for illust
 
 You must consult a lawyer, accountant and/or tax professional, as well as any other professional advisors, as necessary prior to determining whether to purchase IRIS tokens or otherwise participate in the IRIS network.
 
+***
 
 
 ## IRIS OVERVIEW ################################################################
@@ -280,7 +280,7 @@ major languages.
 
 ## IRIS Network Design ################################################################
 
-![Figure of IRIS Network](https://github.com/irisnet/iris-community/blob/query/pics/chap2.png)
+![Figure of IRIS Network](https://github.com/irisnet/iris-community/blob/query/pics/chap2.png?raw=true)
 
 Being part of the Cosmos ecosystem, IRIS network builds on top of
 the Tendermint & Cosmos technology stack by introducing a comprehensive
@@ -465,7 +465,7 @@ A ServiceBinding is composed of:
 
 * `IsValid (enum)`: Can be one of True or False
 
-![Figure of IRIS Service](https://github.com/irisnet/iris-community/blob/query/pics/chap2-2.png)
+![Figure of IRIS Service](https://github.com/irisnet/iris-community/blob/query/pics/chap2-2.png?raw=true)
 
 
 **Service Invocation**
@@ -611,7 +611,7 @@ will be released to the provider as usual.
 (A summary of the nice things about the design, especially the service
 invocation process, would be added later...)
 
-![Figure of Multicast Service](https://github.com/irisnet/iris-community/blob/query/pics/chap2-3.png)
+![Figure of Multicast Service](https://github.com/irisnet/iris-community/blob/query/pics/chap2-3.png?raw=true)
 
 
 **Dispute Resolution**
