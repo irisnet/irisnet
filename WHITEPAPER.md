@@ -19,7 +19,7 @@ document.  Please check regularly for updates!_
   * [IBC Enhancement](#ibc-enhancement)
 * [Use Cases](#use-cases)
 * [Token Economics](#token-economics)
-* [Fundraiser](#fundraiser)
+* [Innitial Token Distribution](#distribution)
 * [Roadmap](#roadmap)
 * [The Team](#the-team)
 * [Core Members](#core-members)
@@ -980,152 +980,102 @@ can be conveniently used by validators as well as service providers to
 define the weights in config file as well as adjusting the `iGas` amount
 for the bonded services.
 
-Tax, % from all fees (Haifeng ?)
+## Innitial Token Distribution ################################################################
 
-## Fundraiser ################################################################
+On Genesis, the initial token supply will be 2,000,000,000 IRIS tokens.  The distribution of IRIS tokens is planned to be as follows:
 
-On Genesis, the initial token supply will be 2,000,000,000 IRIS, and they will
-be distributed as follows:
+* **Private Sale**: 20%
 
-* **Pre-Sale**: 20%
+* **IRIS Foundation**: 15%, reserved to support the operations of the Foundation.
 
-* **ATOM Holders**: 5% (detailed airdrop plan will be announced after
-  Cosmos Hub goes alive)
+* **ATOM Holder Airdrop**: 5% (detailed airdrop plan will be announced after Cosmos Hub is operational)
 
-* **Core Developer Team**: 15% (locked up for 6 months starting from IRIS Hub
-  launch, and linear monthly release for 2 years afterwards)
+* **Core Developer Team**: 15% (locked up for 6 months starting from IRIS Hub launch, followed by a linear monthly release for 2 years afterwards)
 
-* **IRIS Foundation**: 15% (staff and advisor compensation, PoS staking, and
-  service profiling etc.)
+* **Ecosystem Development**: 45% (swap with zones connecting to IRIS hub; grant to potential users; awards to outstanding partners)
 
-* **Ecosystem Empowerment**: 45% (bestowal to potential users, swap with
-  zones connecting to IRIS Hub, and contigency reserve)
+If and when the IRIS network is fully deployed, the annual inflation rate of IRIS tokens is expected to be 7% to 20%. The exact rate will be adjusted to account for the fact that a substantial portion of IRIS tokens in circulation may be voluntarily staked by participants to participate in the consensus engine.
 
-After the IRIS network is fully deployed, the annual inflation rate is
-expected to be between 7%\~20% which is adjusted to motivate about 2/3
-IRIS tokens in circulation to be bonded for staking. This
-inflation will be paid to bonded validators and delegators for
-safeguarding the network.
+Proceeds from the private sale of IRIS tokens will be used, first and foremost, for the development of the IRIS network. The planned usage distribution is as follows:
 
-Funds raised will be used for the development and promotion of IRIS network
-and for the ongoing expenses required to sustain the growth of the community.
-The planned usage is as follows:
+* **Foundation Operations**: 5% (fees for processional services including legal, accounting and auditing etc.)
 
 * **Software Development**: 40%
 
-* **Community Building**: 20% (meetups and online engagement, developer enablement, and academic sponsorship)
+* **Developer Enablement**: 20% (meetups and online engagement, developer enablement, and academic sponsorship)
 
 * **Marketing**: 10%
 
-* **Professional Services**: 5% (legal, accounting and auditing)
+* **Risk Contingency**: 25%
 
-* **Contingency**: 25%
 
 ## Roadmap ################################################################
 
-The IRIS project roadmap includes the following milestones:
+The expected IRIS project is set out below. We reiterate that the roadmap is indicative only, and subject to change.
 
-* **PANGU** (January 2018 \~ June 2018) As the first stage of the IRIS
-  project, we will focus on having the IRIS Hub up and running as one of
-  the earliest regional hubs that connect to the Cosmos Hub; we'll get a
-  couple of public blockchains to connect to the IRIS Hub as "zones", and
-  release an initial version of the mobile client for the IRIS Network.
+* **PANGU** (January 2018 \~ June 2018) The first stage of the IRIS project will focus on having the IRIS Hub up and running and connected to the Cosmos Hub. We also intend to release an initial version of the mobile client for the IRIS network.
 
-* **NUWA** (July 2018 \~ November 2018) The is the stage where we will
-  build out the fundamental IRIS Service Layer: upgrade the network to
-  enable service definition, binding, invocation and query; have a beta
-  version of the IRIS SDK ready for developers and upgrade the mobile
-  client to support IRIS Services; form strategic alliances with service
-  providers and have more zones connected the IRIS Hub.
 
-* **KUAFU** (December 2018 \~ May 2019) Upgrade the network to support
-  advanced IRIS Service governance features, such as profiling and dispute
-  resolution; keep improving the SDK and mobile client; rapidly expand the
-  network to connect with more zones and integrate more service providers.
+* **NUWA** (July 2018 \~ November 2018)
 
-* **HOUYI** (Beyond June 2019) Move toward the realization of a
-  distributed business ecosystem, through relentless technology
-  innovations, effective community building and sustained developer
-  empowerment.
+The second stage will focus on building the fundamental IRIS Service Layer. This will involve enabling service definition, binding, invocation and query.
+In this stage we are also aiming to have a beta version of the IRIS SDK ready for developers.
+
+* **KUAFU** (December 2018 \~ May 2019) The third stage will focus on incremental upgrades to the IRIS network in order to support our planned advanced IRIS Service governance features.
+
+
+* **HOUYI** (Beyond June 2019)
+The fourth stage will focus on further technology innovations to the IRIS network, IRIS SDK and mobile client, as well as developer engagement.
+
 
 ## The Team ################################################################
 
-**Tendermint** (the team building Cosmos), **Wancloud**(a subsidiary of Wanxiang
-Blockchain) and **Bianjie AI** will team together to build IRIS
-infrastructure. Tendermint is going to give technical advice/development
-support to IRIS project in extending Tendermint ABCI and Cosmos IBC
-(inter blockchain communication). Wancloud will be the key strategy
-partner to Cosmos/IRIS ecosystems when participating in Cosmos/IRIS
-business development in Asia.
+**Tendermint** (the team that developed the Tendermint consensus engine and is currently building Cosmos), **Wancloud**(a subsidiary of Wanxiang
+Blockchain) and **Bianjie AI** will work together to build the IRIS network's infrastructure.  
 
-**Bianjie AI** will be the core development team for IRIS project
-leveraging experience established from building distributed AI analytics
-services for healthcare data analysis and exchange.  Bianjie AI is a
-Shanghai based startup established in 2016 and focuses on developing
-innovative products and solutions for healthcare and financial
-industries, using advanced Blockchain and AI technologies. One of
-Bianjie's core products `BEAN (Blockchain Edge Analytics Network)` is a
-permission chain which delivers distributed data analytics services for
-privacy preserving healthcare data analysis and exchange using nature
-language processing and machine learning technologies. Bianjie AI is
-currently extending `BEAN` capabilities to build IRIS -- a public
-inter-blockchain network for distributed business ecosystems. **Bianjie AI**
+Tendermint's intended role to give technical advice and development support to the IRIS project team in extending the Tendermint ABCI and the Cosmos IBC technologies.
+Wancloud is envisaged as the key strategy partner to both the Cosmos and IRIS ecosystems, and we understand that it intends to participate in Cosmos and IRIS development across Asia.
+
+
+
+
+
+**Bianjie AI**
+will be the core development team for the IRIS network, leveraging the team's experience established from building distributed AI analytics services for healthcare data analysis and exchange.
+
+Bianjie AI is a Shanghai-based start-up established in 2016. It focuses on developing innovative products and solutions for healthcare and financial industries, using advanced Blockchain and AI technologies. One of Bianjie's core products,  `BEAN (Blockchain Edge Analytics Network)` BEAN (Blockchain Edge Analytics Network), is a permission chain which delivers distributed data analytics services for privacy preserving healthcare data analysis and exchange using NLP and machine learning technologies. Bianjie AI is
+currently extending `BEAN` capabilities to build the IRIS network.
+**Bianjie AI**
 is also the operation and service partner of Cosmos Network in China.
+
 
 ### Core Members
 
 **Harriet Cao**
 
-Founder of Bianjie AI, which a shanghai based startup focusing on
-building smart services for Blockchain that enable trustworthy and
-efficient business collaborations using distributed AI technology.
-Harriet is an award-winning practitioner of data analytics and
-artificial intelligence technologies, and was the recipient of 2010
-INFORMS Daniel H. Wagner Prize. Prior to the startup, Harriet worked for
-IBM Research for more than 16 years in various capacities including
-Director of IBM Research Shanghai Lab and Big Data Analytics Leader for
-IBM Global Labs. Harriet has a M.S degree on Robotics from Carnegie
-Mellon University and M.S. degree on Automation Control from Tsinghua
-University.
+Harriet is the founder of Bianjie AI, which a Shanghai-based start-up focusing on building smart services for blockchain that enable trustworthy and efficient business collaborations using distributed AI technology. Harriet is an award-winning practitioner of data analytics and artificial intelligence technologies, and was the recipient of 2010 INFORMS Daniel H. Wagner Prize. Prior to establishing Bianjie AI, Harriet worked for IBM Research for more than 16 years in various capacities including Director of IBM Research Shanghai Lab and Big Data Analytics Leader for IBM Global Labs.
+Harriet has an M.S degree in Robotics from Carnegie Mellon University and an M.S. degree in Automation Control from Tsinghua University.
+
 
 **Haifeng Xi**
 
-Mr. Haifeng Xi is a senior technologist and entrepreneur. Since
-returning to China from the United States in 2009, he had worked in the
-capacity of Chief Technology Officer for three companies, one of them is
-NASDAQ listed and the other one is a domestic conglomerate. He also
-co-founded two startups in Shanghai, where he plays an active role of
-technical leader and engineering champion. Haifeng has a Master's degree
-in Electrical and Computer Engineering from the University of Maryland,
-and a Master's and Bachelor's degree in Automatic Control from Tsinghua
-University.
+Haifeng is a senior technologist and entrepreneur. Since returning to China from the United States in 2009, he had worked in the capacity of Chief Technology Officer for three companies, one of which is NASDAQ listed. He also co-founded two start-ups in Shanghai, where he plays an active role of technical leader and engineering champion.
+Haifeng has a Master's degree in Electrical and Computer Engineering from the University of Maryland, and a Master's and Bachelor's degree in Automatic Control from Tsinghua University.
+
 
 **Jae Kwon**
 
-After graduating from Cornell in 2005 with an undergraduate degree in
-computer science, Jae worked as a software developer in Silicon Valley,
-first at Alexa/Amazon, then later at Yelp, where he led their mobile app
-development team. After getting the Bitcoin bug, Jae created the
-Tendermint BFT consensus algorithm and Tendermint Core blockchain engine
-to create a provably secure proof-of-stake algorithm, an alternative to
-proof-of-work mining. In addition to Tendermint, Jae is also the creator
-of Cosmos, the network of blockchains.
+After graduating from Cornell in 2005 with an undergraduate degree in computer science, Jae worked as a software developer in Silicon Valley, first at Amazon (where he worked on the Alexa digital assistant), then later at Yelp, where he led their mobile app development team.
+After getting the blockchain bug, Jae created the Tendermint BFT consensus algorithm and the Tendermint Core blockchain engine, with the intent of creating a provably secure proof-of-stake algorithm.
+In addition to Tendermint, Jae is also the creator of Cosmos.
+
 
 **Tom Tao**
 
-Since joining Wanxiang in August 2016. Tom Tao is responsible for
-Wanxiang Blcokchain Consulting service, WanCloud Baas Platform as well
-as ChainBase accelerator and incubator service. Before Wanxiang, he had
-already accumulated rich practical experience in service management and
-business management for over 18 years in global leading companies. With
-sharp and forward-looking insight, he introduced industry-leading cloud
-service, IoT data service platform, creative accelerator technology and
-business into Chinese market. He started tracking the trend of
-blockchain, cloud computing, IoT and smart manufacturing industry since
-2013, and explored the application scenarios relating to these
-Leading-edge technologies. Tom has a Master's degree in Physics from
-Fudan University and a Bachelor's degree in Electronic Engineering from
-Nankai University.
+Since joining Wanxiang in August 2016, Tom is responsible for Wanxiang Blockhain Group's consulting service, Wancloud BaaS Platform as well as the ChainBase accelerator and incubator service. Before Wanxiang, Tom worked in service management and business management for over 18 years in a number of global leading companies.
+Tom has spearheaded the introduction of cloud services, IoT data service platforms, and creative accelerator technologies into the Chinese market.
+Tom has been tracking trends in the blockchain, cloud computing, IoT and smart manufacturing industries since 2013. Tom has a Master's degree in Physics from Fudan University and a Bachelor's degree in Electrical Engineering from Nankai University.
+
 
 ### Advisors
 
