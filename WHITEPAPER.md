@@ -1,14 +1,12 @@
 # IRIS Network
 **Inter-chain service infrastructure and protocol for building trustworthy and distributed business applications**
 
-Harriet Cao harriet@bianjie.ai
-
+Harriet Cao harriet@bianjie.ai<br/>
 Haifeng Xi haifeng@bianjie.ai
-Harriet Cao harriet@irisnet.org<br/>
-Haifeng Xi haifeng@irisnet.org
 
 _NOTE: If you can read this on GitHub, then we're still actively developing this
 document.  Please check regularly for updates!_
+<div STYLE="page-break-after: always;"></div>
 
 ## Table of Contents ###########################################################
 
@@ -48,7 +46,7 @@ The IRIS tokens are not intended to represent a security or any other regulated 
 
 This document does not constitute an offer or solicitation of securities or any other regulated product, nor a promotion, invitation or solicitation for investment purposes. The terms of the purchase are not intended to be a financial service offering document or a prospectus of any sort.
 
-The IRIS tokens do not represent equity, shares, units, royalties or rights to capital, profit, returns or income in the platform or software or in IRIS Foundation Limited or any other company or intellectual property associated with the platform or any other public or private enterprise, corporation, foundation or other entity in any jurisdiction. 
+The IRIS tokens do not represent equity, shares, units, royalties or rights to capital, profit, returns or income in the platform or software or in IRIS Foundation Limited or any other company or intellectual property associated with the platform or any other public or private enterprise, corporation, foundation or other entity in any jurisdiction.
 
 * This whitepaper is not advice
 
@@ -56,9 +54,9 @@ This whitepaper does not constitute advice to purchase any IRIS tokens. It must 
 
 * Risk warning
 
-The purchase of IRIS tokens and participation in the IRIS network carries with it significant risks. 
+The purchase of IRIS tokens and participation in the IRIS network carries with it significant risks.
 
-Prior to purchasing IRIS tokens, you should carefully assess and take into account the risks, including those listed on <https://www.irisnet.org/> and in any other documentation. 
+Prior to purchasing IRIS tokens, you should carefully assess and take into account the risks, including those listed on <https://www.irisnet.org/> and in any other documentation.
 
 * Views of IRIS Foundation Limited only
 
