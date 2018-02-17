@@ -308,11 +308,9 @@ of the Cosmos network.
 iService definitions and often act as *adaptors* of off-chain services and resources located
   in other public and consortium chains, as well as in enterprise legacy
   systems.  Providers monitor and process incoming requests and send responses
-  back to the network. A provider could at the same time act as a consumer
-  by sending requests to other providers.
-
-  As planned, providers would be required to charge a fee for
-  any services they might offer, and the service fee, by default, would be
+  back to the network.  A provider could at the same time act as a consumer
+  by sending requests to other providers.  As planned, providers would be required to
+  charge a fee for any services they might offer, and the service fee, by default, would be
   priced in the IRIS network's native fee token known as "iGas"; providers
   could also price their services in other whitelisted Cosmos fee tokens, to be
   considered in due course.
