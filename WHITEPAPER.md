@@ -274,7 +274,7 @@ provider side skeleton as well as consumer side stub for major programming langu
 
 ## IRIS Network Design ################################################################
 
-![Figure of IRIS Network](https://github.com/irisnet/iris-community/blob/query/pics/chap2.png?raw=true)
+![Figure of IRIS Network](https://github.com/irisnet/irisnet/blob/master/images/chap2-1.png?raw=true)
 
 As illustrated in the figure above, the IRIS network is intended to have the
 same topology as the Cosmos network.  We plan to connect the IRIS Hub to
