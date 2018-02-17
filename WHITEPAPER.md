@@ -10,9 +10,10 @@ document.  Please check regularly for updates!_
 
 ## Table of Contents ###########################################################
 
+* [Disclaimer](#disclaimer)
 * [IRIS Overview](#iris-overview)
   * [Cosmos and Tendermint](#cosmos-and-tendermint)
-  * [New Innovations from IRIS](#new-innovations-from-iris)
+  * [IRIS Innovations](#iris-innovations)
 * [IRIS Network Design](#iris-network-design)
   * [Network Actors](#network-actors)
   * [IRIS Services](#iris-services)
@@ -32,7 +33,7 @@ document.  Please check regularly for updates!_
 
 This whitepaper and any other documents published in association with this whitepaper relate to the intended development and use of the IRIS network.  They are information purposes only and may be subject to change.
 
-* This whitepaper describes a developing project
+### This whitepaper describes a developing project
 
 This whitepaper contains forward-looking statements that are based on the beliefs of IRIS Foundation Limited, as well as certain assumptions made by and information available to IRIS Foundation Limited.  
 
@@ -40,7 +41,7 @@ The IRIS network as envisaged in this whitepaper is under development and is bei
 
 If and when the IRIS network is completed, it may differ significantly from the network set out in this whitepaper. No representation or warranty is given as to the achievement or reasonableness of any plans, future projections or prospects and nothing in this document is or should be relied upon as a promise or representation as to the future.
 
-* No offer of regulated products
+### No offer of regulated products
 
 The IRIS tokens are not intended to represent a security or any other regulated product in any jurisdiction.
 
@@ -48,31 +49,31 @@ This document does not constitute an offer or solicitation of securities or any 
 
 The IRIS tokens do not represent equity, shares, units, royalties or rights to capital, profit, returns or income in the platform or software or in IRIS Foundation Limited or any other company or intellectual property associated with the platform or any other public or private enterprise, corporation, foundation or other entity in any jurisdiction.
 
-* This whitepaper is not advice
+### This whitepaper is not advice
 
 This whitepaper does not constitute advice to purchase any IRIS tokens. It must not be relied upon in connection with any contract or purchasing decision.
 
-* Risk warning
+### Risk warning
 
 The purchase of IRIS tokens and participation in the IRIS network carries with it significant risks.
 
 Prior to purchasing IRIS tokens, you should carefully assess and take into account the risks, including those listed on <https://www.irisnet.org/> and in any other documentation.
 
-* Views of IRIS Foundation Limited only
+### Views of IRIS Foundation Limited only
 
 The views and opinions expressed in this whitepaper are those of IRIS Foundation Limited and do not necessarily reflect the official policy or position of any government, quasi-government, authority or public body (including but not limited to any regulatory body of any jurisdiction) in any jurisdiction.  
 
 Information contained in this whitepaper is based on sources considered reliable by IRIS Foundation Limited but there is no assurance as to their accuracy or completeness.   
 
-* English is the authorised language of this whitepaper
+### English is the authorised language of this whitepaper
 
 This whitepaper and related materials are issued in English only. Any translation is for reference purposes only and is not certified by IRIS Foundation Limited or any other person. No assurance can be made as to the accuracy and completeness of any translations. If there is any inconsistency between a translation and the English version of this whitepaper, the English version prevails.
 
-* No third party affiliation or endorsements
+### No third party affiliation or endorsements
 
 References in this whitepaper to specific companies and platforms are for illustrative purposes only. The use of any company and/or platform names and trademarks does not imply any affiliation with, or endorsement by, any of those parties.
 
-* You must obtain all necessary professional advice
+### You must obtain all necessary professional advice
 
 You must consult a lawyer, accountant and/or tax professional, as well as any other professional advisors, as necessary prior to determining whether to purchase IRIS tokens or otherwise participate in the IRIS network.
 
@@ -114,7 +115,7 @@ services and enjoy the rewards in an open network. To achieve this goal,
 we have identified the following challenges/opportunities for technology
 innovations:
 
-* Not all computation could or should be implemented as on-chain computations such as smart contracts
+**Not all computation could or should be implemented as on-chain computations such as smart contracts**
 
 The [Turing-complete](https://en.wikipedia.org/wiki/Turing_completeness) virtual
 machine provided by Ethereum [\[2\]][2] runs Smart Contracts gives people a lot of hope of developing
@@ -131,13 +132,11 @@ better sub-optimal result.
 
 On the other hand, some of the real world business logics are meant to
 be run once off-chain and shouldn't be implemented as smart contracts
-this type of replicated computing.
-
-**Integration and collaboration of off-chain services and resources with
+this type of replicated computing.  Integration and collaboration of off-chain services and resources with
 a distributed ledger is key to further advance the adoption of
-blockchain technology for more real-world use scenarios.**
+blockchain technology for more real-world use scenarios.
 
-* How to reuse the existing blockchain resources? : both public chains and consortium chains
+**How to reuse the existing blockchain resources, including both public chains and consortium chains**
 
 It is infeasible to use one public chain addressing all the problems.
 Every day there are different chains going live which focus on one aspect
@@ -154,9 +153,7 @@ dedicated blockchains and not reinventing the wheel.
 
 Besides, there are many (near) real-time business transactions do need
 more close form consortium/permission/private chains to address
-performance, security and business governance requirements.
-
-**Our vision of distributed business infrastructure needs to have the Interoperability of many heterogeneous chains including public/consortium/ permission/private chains.**
+performance, security and business governance requirements.  Our vision of distributed business infrastructure needs to have the Interoperability of many heterogeneous chains including public/consortium/ permission/private chains.
 
 Inter-chain technology is a very nature answer to the requirement.
 However, till today, the existing Inter-chain technologies are mainly
@@ -182,7 +179,7 @@ existing work.
 
 ### Cosmos and Tendermint ################################################################
 
-Cosmos \[3\] is an ambitious project aiming at building the internet
+Cosmos [\[3\]][3] is an ambitious project aiming at building the internet
 of blockchain. It is a network of many independent blockchains, called
 zones. Each zone is powered by classical Byzantine fault-tolerant (BFT)
 consensus protocols like [Tendermint](https://tendermint.com/).
@@ -210,7 +207,7 @@ with Cosmos Hub, Cosmos SDK provides blockchain development
 \'starter-kit\' of common blockchain modules while not enforcing
 user stories thus giving maximum flexibility for application customization.
 
-### New Innovations from IRIS ################################################################
+### IRIS Innovations ################################################################
 
 IRIS network aims to build technology foundation which facilitate
 construction of distributed business applications. It goes beyond today's
@@ -336,9 +333,11 @@ overall value of the network.
 
 ### IRIS Services
 
+In this section, we set out the intended technical parameters for deploying IRIS Services on the IRS network.
+
 **Service Definition**
 
-A Method is composed of:
+A `Method` is composed of:
 
 * `ID (int)`: The unique ID of this method in the encompassing iService
 
@@ -352,9 +351,9 @@ A Method is composed of:
 
 * `Error (string)`: A structured definition of all possible error conditions
 
-* `OutputPrivacy (enum)`: Can be one of NoPrivacy or PubKeyEncryption
+* `OutputPrivacy (enum)`: Can be one of `NoPrivacy` or `PubKeyEncryption`
 
-A ServiceDefinition is composed of:
+A `ServiceDefinition` is composed of:
 
 * `Name (string)`: The name of this iService
 
@@ -367,34 +366,31 @@ A ServiceDefinition is composed of:
 * `ChainID (string)`: The ID of the blockchain where this iService was
   originally defined
 
-* `Messaging (enum)`: Can be one of Unicast or Multicast
+* `Messaging (enum)`: Can be one of `Unicast` or `Multicast`
 
-* `Methods ([]Method)`: The definition of methods available in this
-  `iService`
+* `Methods ([]Method)`: The definition of methods available in this iService
 
-A CreateServiceDefinitionTx transaction is composed of:
+A `CreateServiceDefinitionTx` transaction is composed of:
 
 * `Definition (ServiceDefinition)`: The service definition to be created
 
 **Service Binding**:
 
-A CreateServiceBindingTx transaction is composed of:
+A `CreateServiceBindingTx` transaction is composed of:
 
-* `DefinitionHash ([]byte)`: The hash of the service definition that the
-  provider is binding to
+* `DefinitionHash ([]byte)`: The hash of the service definition that the provider is binding to
 
-* `ChainID (string)`: The ID of the blockchain where the provider is
-  connected
+* `ChainID (string)`: The ID of the blockchain where the provider is connected
 
 * `ProviderAddress ([]byte)`: The provider's blockchain address
 
-* `BindingType (enum)`: Can be one of Local or Global; choose Global if a
+* `BindingType (enum)`: Can be one of `Local` or `Global`; choose `Global` if a
   provider wants the binding to be exposed to the rest of the world;
-  otherwise, use Local
+  otherwise, use `Local`
 
 * `ProviderDeposit (int64)`: To create an effective binding, the provider
   must put down a deposit (in terms of iGas amount) that is greater than
-  the value of the system parameter MinProviderDeposit; a larger deposit
+  the value of the system parameter `MinProviderDeposit`; a larger deposit
   may imply more trustworthiness of the provider
 
 * `ServicePricing (string)`: A structured definition of the service pricing
@@ -409,7 +405,7 @@ A CreateServiceBindingTx transaction is composed of:
 * `BindingExpiration (int64)`: The blockchain height where this binding
   expires; a negative number means "never expire"
 
-An UpdateServiceBindingTx transaction is composed of:
+An `UpdateServiceBindingTx` transaction is composed of:
 
 * `DefinitionHash ([]byte)`: The hash of the service definition the
   provider has bound to
@@ -422,10 +418,10 @@ An UpdateServiceBindingTx transaction is composed of:
 * `ChangeSet (string)`: A structured definition of desired changes to an
   existing binding identified by the preceding three fields
 
-A provider can update ServicePricing, ServiceLevel and BindingExpiration
-at any time, but a small amount of his deposit will be slashed for
+A provider can update `ServicePricing`, `ServiceLevel` and `BindingExpiration`
+at any time, but a small amount of their deposit will be slashed for
 changing the latter two (specified by `ServiceLevelUpdateSlash` and
-`BindingExpirationUpdateSlash` respectively). Setting BindingExpiration to
+`BindingExpirationUpdateSlash` respectively). Setting `BindingExpiration` to
 a height that is lower than the current height will be interpreted as
 invalidating the binding immediately.
 
@@ -447,10 +443,10 @@ should invalidate the current binding and create another one with the
 desired new `ProviderAddress`.
 
 Upon successful execution of these two transactions by the application
-(i.e., `iService` business logic in the IRIS-SDK), a ServiceBinding object
+(i.e., iService business logic in the IRIS SDK), a `ServiceBinding` object
 will be created or updated accordingly.
 
-A ServiceBinding is composed of:
+A `ServiceBinding` is composed of:
 
 * `DefinitionHash ([]byte)`
 
@@ -464,26 +460,25 @@ A ServiceBinding is composed of:
 
 * `BindingExpiration (int64)`
 
-* `IsValid (enum)`: Can be one of True or False
+* `IsValid (enum)`: Can be one of `True` or `False`
 
 ![Figure of IRIS Service](https://github.com/irisnet/iris-community/blob/query/pics/chap2-2.png?raw=true)
 
 
 **Service Invocation**
 
-Consumers and providers interact with each other through `*endpoints*`.
-There are two kinds of endpoints -- `*request table*` and `*response table*`
+Consumers and providers are proposed to interact with each other through *endpoints*.
+There are two kinds of endpoints -- *request table* and *response table*
 (see Figure above). Service requests are posted to request tables monitored
 by interested provider(s) which pick up and process requests addressed
 to them; service results (or errors) are posted back to response tables
 monitored in turn by matched consumers.
 
-For a Multicast service, all of its bindings share one request table;
-for a Unicast service, however, a separate request table is created and
-maintained for each of its bindings. As for the other direction, a
-dedicated response table will be created and managed for each consumer.
+For a `Multicast` service, all of its bindings share one request table;
+for a `Unicast` service, however, a separate request table is created and
+maintained for each of its bindings. As for the other direction, we anticipate that a dedicated response table will be created and managed for each consumer.
 
-A ServiceRequest is composed of:
+A `ServiceRequest` is composed of:
 
 * `ChainID (string)`: The ID of the blockchain where the consumer is
   connected
@@ -497,48 +492,47 @@ A ServiceRequest is composed of:
 * `InputValue (string)`: A structured representation of input values
 
 * `BindingHash ([]byte)`: The hash of the target binding, in case of a
-  Unicast service. *Optional*
+  `Unicast` service. *Optional*
 
 * `MaxServiceFee (int64)`: The max amount of service fee the consumer is
-  willing to pay for a Multicast request. *Optional*
+  willing to pay for a `Multicast` request. *Optional*
 
 * `Timeout (int)`: The max number of blocks the consumer is willing to wait
   for response(s) to come back
 
-A PostServiceRequestTx transaction is composed of:
+A `PostServiceRequestTx` transaction is composed of:
 
 * `Requests ([]ServiceRequest)`: The service requests to be posted
 
 * `RequestDeposits ([]int64)`: The consumer must put down for each request
   a deposit (in terms of iGas amount) that is greater than the value of
-  MinRequestDeposit; a larger deposit may imply more sincerity of the
-  consumer
+  `MinRequestDeposit`; this deposit is meant to incentivize the consumer to acknowledge receipt of service responses in a timely manner (see `ConfirmServiceResponseTx`).
 
-The application will verify that the requests are coming from a consumer
-with matching ChainID and ConsumerAddress, the targeted bindings are
-valid, request deposits are sufficient, consumer's account balance is
-enough to cover the request deposits and service fees, and that the
-number of requests in the transaction is less than MaxRequestPostBatch.
+The application will verify that each request is coming from a consumer
+with matching `ChainID` and `ConsumerAddress`, the targeted binding is
+valid, the request deposit is sufficient, the consumer's account balance is
+enough to cover the request deposits and service fees, and that the total
+number of requests in the transaction is less than `MaxRequestPostBatch`.
 
 When a verified request is appended to the request table, the related
-service fee (MaxServiceFee in case of a Multicast request) will be
+service fee (`MaxServiceFee` in case of a `Multicast` request) will be
 deducted from the consumer's account and locked up in escrow.
 
-A GetServiceRequest query is composed of:
+A `GetServiceRequest` query is composed of:
 
 * `DefinitionHash ([]byte)`: The hash of the service definition
 
 * `BindingHash ([]byte)`: The hash of this provider's binding to the
   service in question; the application will verify that the binding is
-  valid and the caller matches the binding's ChainID and ProviderAddress
+  valid and the caller matches the binding's `ChainID` and `ProviderAddress`
 
 * `BeginHeight (uint64)`: The blockchain height from where the application
   should start to retrieve requests for the provider, up to a total number
-  that is the lesser of BatchSize and MaxRequestGetBatch
+  that is the lesser of `BatchSize` and `MaxRequestGetBatch`
 
 * `BatchSize (int)`: The max number of requests to be returned
 
-A ServiceResponse is composed of:
+A `ServiceResponse` is composed of:
 
 * `RequestHash ([]byte)`: The hash of the matched request
 
@@ -550,21 +544,21 @@ A ServiceResponse is composed of:
 * `ErrorMsg (string)`: A structured representation of error messages.
   *Optional*
 
-A PostServiceResponseTx transaction is composed of:
+A `PostServiceResponseTx` transaction is composed of:
 
 * `Responses ([]ServiceResponse)`: The service responses to be posted
 
-The application will verify that the responses are coming from a
+The application will verify that each response is coming from a
 provider with matching `ChainID` and `ProviderAddress`, and that the number
-of responses in the transaction is less than MaxResponsePostBatch. A
+of responses in the transaction is less than `MaxResponsePostBatch`. A
 verified request will be appended to the response table for the intended
 consumer.
 
-A GetServiceResponse query is composed of:
+A `GetServiceResponse` query is composed of:
 
 * `RequestHash ([]byte)`: The hash of the original request; the
-  application will verify that the caller matches the request's ChainID
-  and ConsumerAddress
+  application will verify that the caller matches the request's `ChainID`
+  and `ConsumerAddress`
 
 * `BeginHeight (uint64)`: The blockchain height from where the application
   should start to retrieve responses for the consumer, up to a total
@@ -572,78 +566,61 @@ A GetServiceResponse query is composed of:
 
 * `BatchSize (int)`: The max number of responses to be returned
 
-A ConfirmServiceResponseTx transaction is composed of:
+A `ConfirmServiceResponseTx` transaction is composed of:
 
 * `ResponseHash ([][]byte)`: The hash of responses to be confirmed
 
-The application will verify that the responses to be confirmed are
+The application will verify that the each response to be confirmed are
 indeed for a request originated by the caller, and that the number of
 responses in the transaction is less than `MaxResponseConfirmBatch`.
 
-Responses that fall out of the Timeout window (and, in case of Multicast
+Responses that fall out of the `Timeout` window (and, in case of `Multicast`
 responses, when `MaxServiceFee` runs out as more responses come back) will
 not be accepted by the application. A consumer starts processing a
-Unicast response immediately upon receiving it. However, for Multicast
-responses, a consumer will wait until the Timeout window elapses before
+`Unicast` response immediately upon receiving it. However, for `Multicast`
+responses, a consumer will need to wait until the `Timeout` window elapses before
 starting to process all responses received, if any.
 
-When a Unicast response is confirmed by the consumer, the associated
+When a `Unicast` response is confirmed by the consumer, the associated
 service fee will be released from escrow to the matched provider account
--- after a small tax (defined by ServiceFeeTaxRate) is deducted and
+-- after a small tax (defined by `ServiceFeeTaxRate`) is deducted and
 added to the *system reserve*; and the associated request deposit will
 be returned to the consumer as well.
 
-In case of a Multicast request, the situation is a bit more complex:
+In the case of a `Multicast` request, the situation is a bit more complex:
 when a response is confirmed, only part of the request deposit is
 returned to the consumer, in proportion to the response related service
-fee vs MaxServiceFee; and after all responses are confirmed, the
+fee vs `MaxServiceFee`; and after all responses are confirmed, the
 remaining escrow balance for the request will be returned to the
 consumer.
 
 If a request timeouts without seeing any response come back, the
-application will refund the associated escrow balance and request
+application will refund the associated balance held in escrow plus the request
 deposit, in full, back to the consumer. However, if the consumer does
-not confirm a response in time (before ResponseConfirmTimeout +
+not confirm a response in time (before `ResponseConfirmTimeout` +
 blockchain height of the response), a small penalty (defined by
 `ResponseConfirmDelayPenaltyRate`) will be applied before the request
 deposit is refunded to the consumer, while the associated service fee
 will be released to the provider as usual.
 
-(A summary of the nice things about the design, especially the service
-invocation process, would be added later...)
-
 ![Figure of Multicast Service](https://github.com/irisnet/iris-community/blob/query/pics/chap2-3.png?raw=true)
-
 
 **Dispute Resolution**
 
-When a consumer is not satisfied with some service response, there needs
-to be a mechanism in place for him to issue a complaint to the provider,
-who in turn has an opportunity to present a resolution. Due to the lack
-of central authorities in a decentralized world, the dispute resolution
-mechanism cannot rely on third party arbitration, and should avoid
-introducing subjective evaluation -- which could be abused
-by either side. The blockchain faithfully records what happened and let
-the facts speak for themselves.
+In any case where a consumer is unsatisfied with a service response, a mechanism should exist allowing the consumer to issue a complaint and consequently, to receive an acceptable solution to that complaint, without having to resort to a centralized authority such as the legal system.  Also, this mechanism should avoid
+introducing subjective evaluation, which could be abused by either side.
 
-The process to resolve a dispute is very much like that of service
-invocation, except that a consumer sends a `Complaint` to the provider,
-and the provider responds with a Resolution; and the interactions happen
-through a pair of global endpoints known as `*complaint table*` and
-`*resolution table*`.
+The process to resolve a dispute that arises on the IRIS network resembles that of service invocation, except that a consumer sends a `Complaint` to the provider, and the provider responds with a `Resolution`.  These interactions are intended to happen through a pair of global endpoints known as *complaint table* and *resolution table*.
 
-A consumer deposit is required for filing a complaint, and a penalty
-will be deducted from this deposit if the consumer does not confirm a
-Resolution in time. Similarly, a provider's deposit will be partially
-slashed if he fails to respond to a complaint in a timely manner.
+Under the present design for the IRIS network, a consumer deposit is required for filing a complaint.  Where a consumer does not confirm a resolution in a timely manner, a penalty will be deducted from this deposit.  Similarly, a provider's deposit will be partially slashed if he fails to respond to a complaint in a timely manner.
 
-A Complaint is composed of:
+A `Complaint` is composed of:
 
 * `ResponseHash ([]byte)`: The hash of the response in dispute
 
 * `Problem (string)`: A description of the problem with the service response
 
-* `PreferredDisposal (enum)`: Can be one of Refund or Redo
+* `PreferredDisposal (enum)`: Can be one of `Refund` or `Redo`
 
 A Resolution is composed of:
 
@@ -656,51 +633,42 @@ A Resolution is composed of:
 * `OutputValue ([]byte)`: A structured (potentially encrypted)
   representation of output result. *Optional*
 
+Our intended dispute resolution process, as outlined above, may not be legally binding.  Nonetheless, we believe that it will provide an efficient means of resolving common disputes on the IRIS network.
+
 **Service Profiling**
 
-Bootstrapping the `iService` ecosystem presents a few challenges, one of
-which is how to make it easy for consumers to find the right providers.
-This is a chicken-and-egg problem: consumers need performance metrics to
-evaluate and select a provider, yet without consumer usage no
-performance metrics will be available.
+Bootstrapping the iService ecosystem presents a few challenges.  A major challenge is finding a way to make it easy for consumers to discover suitable providers - consumers need performance metrics to evaluate and select a provider, yet without consumer usage no performance metrics will be available.
 
-Here we introduce a profiling mechanism where a privileged system user,
-known as `Profiler`, invokes all the active services on a regular
-schedule, leaving objective performance traces in the network (such as
-response time, availability, complaint handling etc.) that are useful
-for real consumers.
+With the intention to solve this circular issue, we plan to introduce a profiling mechanism where a privileged system user, the `Profiler`, invokes all the active services on a regular schedule.  This would leave objective performance data in the network (such as response time, availability, complaint handling etc.) that are useful for real consumers.
 
-Service profiling calls are exempt from service fees and consumer
-deposits, but they do incur network transaction fees. These calls
-originate from a few reserved addresses that are recognized and honored
-by the application.
+Service profiling calls would be exempt from service fees and consumer
+deposits, but they would incur network transaction fees. These calls
+would originate from a few reserved addresses that are intended to be recognized and honored by the application.
 
-Profiling activities stay at a relatively stable level for new services
-and will gradually wind down for individual services as they start to
-attract real consumer calls and thus generate more performance data on
-their own.
+Profiling activities would stay at a relatively stable level for new services
+and will gradually decline for individual services as they start to
+attract real consumer calls, which is expected to generate more performance data on their own.
 
-Profiling cost will be paid out from the system reserve by default, and
-the IRIS Foundation reserve will step in if necessary.
+Transaction fees incurred during profiling would be paid out from the system reserve by default, and the IRIS Foundation reserve would step in if necessary.
 
 **Query**
 
 All the service related lifecycle objects described above can be queried
-using the ABCI Query interface (Ref?). These queries are executed over
+using the ABCI Query interface [\[3\]][3]. These queries would be executed over
 the Query connection and do not participate in the consensus process. We
-have already seen how GetServiceRequest and GetServiceResponse queries
+have already seen how `GetServiceRequest` and `GetServiceResponse` queries
 work as part of the service invocation process.
 
-Below is a (not exhaustive) summary of supported queries:
+Below is a non-exhaustive summary of our currently planned queries:
 
 **Service Objects**
 
 
 | **Object**                               | **Commonly Used Filters**                | **Authorization**                        |
 | ---------------------------------------- | ---------------------------------------- | ---------------------------------------- |
-| Service Definition                       | Name, keywords, source (chain id), messaging type, with active bindings... | Anyone can query                         |
+| Service Definition                       | Name, keywords, source (chain ID), messaging type, with active bindings... | Anyone can query                         |
 | Service Binding (for a given definition) | Location (local or remote), pricing, service level, expiration... | Anyone can query                         |
-| Service Request                          | Service definition and binding, blockchain height, batch size | Service definition and binding, blockchain height, batch size |
+| Service Request                          | Service definition and binding, blockchain height, batch size | Only matched provider(s) |
 | Service Response                         | Service request, blockchain height, batch size | Only matched consumer                    |
 
 
@@ -717,9 +685,8 @@ Below is a (not exhaustive) summary of supported queries:
 
 ### IBC Enhancement
 
-One unique advantage of establishing our service infrastructure on top
-of Cosmos is to allow services to be *deployed once and invoked
-everywhere*, over an internet of blockchains. Specifically, we need to
+One unique advantage of establishing our service infrastructure on top of Cosmos is the potential for services to be *deployed once and invoked
+everywhere*, over an internet of blockchains. Specifically, our plan is to
 accomplish the following:
 
 1. Service definitions are broadcast to every zone in the IRIS network;
@@ -727,16 +694,16 @@ accomplish the following:
 2. Global service bindings are broadcast to every zone in the IRIS network;
 
 3. Service requests or complaints targeting a remote provider are routed to
-  the blockchain where the provider is connected;
+  the blockchain to which the provider is connected;
 
 4. Service responses or resolution meant for a remote consumer are routed
-  back to the blockchain where the consumer is connected.
+  back to the blockchain to which the consumer is connected.
 
 When processing a `CreateServiceDefinitionTx` transaction, the application
-first validates and stores `ServiceDefinition` locally, and then creates
-an `IBCPacket` containing the definition for each neighboring chain. Each
-neighbor eventually receives -- from the corresponding relay process --
-an `IBCPacketTx` containing the packet, if the definition does not already
+is designed to first validate and store the `ServiceDefinition` object locally, before creating an `IBCPacket` containing the definition for each neighboring chain.
+
+Each neighbor eventually receives -- from the corresponding relay process --
+an `IBCPacketTx` containing the packet; if the definition does not already
 exist in the receiving chain, the latter will pass on the definition by
 creating an `IBCPacket` for each of *its* neighbors -- except the source
 chain from which it received the packet in the first place; if the
@@ -744,9 +711,9 @@ definition already exists, the receiving chain stops passing on the
 definition.
 
 Similarly, when a `ServiceBinding` is created or updated with its
-BindingType set or updated to Global, an IBCPacket containing the
-binding is created for each neighboring chain, and gets propagated to
-the whole IRIS network.
+`BindingType` set or updated to `Global`, an `IBCPacket` containing the
+binding is created for each neighboring chain, and gets propagated across
+the entire IRIS network.
 
 An `IBCPacket` described above is composed of:
 
@@ -764,48 +731,47 @@ The `IBCPacketHeader` above is composed of:
 
 * `Number (int)`: A unique number for all packets
 
-* `Status (enum): NoAck`
+* `Status (enum)`: `NoAck`
 
-* `Type (string): "iris-service-definition" or "iris-service-binding"`
+* `Type (string)`: "iris-service-definition" or "iris-service-binding"
 
-Now let's look at how interchain service invocation happens through IBC.
-When a request is made for a Unicast service, the application checks if
-the target binding is local, if so, the ServiceRequest is appended to
-the corresponding request table as explained in 2.2; otherwise, an
-IBCPacket containing the ServiceRequest will be created instead.
+Now let's take a look at how interchain service invocation happens through IBC.
+When a request is made for a `Unicast` service, the application checks if
+the target binding is `Local`; where this is true, the `ServiceRequest` is appended to the corresponding request table as explained in 2.2; otherwise, an
+`IBCPacket` containing the `ServiceRequest` will be created instead.
 
-An IBCPacket containing a ServiceRequest is composed of:
+An `IBCPacket` containing a `ServiceRequest` is composed of:
 
 * `Header (IBCPacketHeader)`: The packet header
 
 * `Payload (ServiceRequest)`: The bytes of the service request
 
-The IBCPacketHeader above is composed of:
+The `IBCPacketHeader` above is composed of:
 
 * `SrcChainID (string)`: The ID of the blockchain creating this packet
 
 * `DstChainID (string)`: The ID of the blockchain where the remote provider
-  is located, i.e., ServiceRequest.ServiceBinding.ChainID
+  is located, i.e., `ServiceRequest.ServiceBinding.ChainID`
 
 * `Number (int)`: A unique number for all packets
 
-* `Status (enum)`: AckPending
+* `Status (enum)`: `AckPending`
 
 * `Type (string)`: "iris-service-request"
 
-* `MaxHeight (int)`: Current height + ServiceRequest.Timeout
+* `MaxHeight (int)`: Current height + `ServiceRequest.Timeout`
 
 As a remote request finally arrives at the destination chain, the
-application will append it to the corresponding endpoint (request table)
-for the targeted binding. A response to this remote request will be
-wrapped in a receipt IBCPacket that is routed all the way back to the
-source chain and appended to the remote endpoint (response table) for
+application would append it to the corresponding endpoint (the request table)
+for the targeted binding. A response to this remote request would be
+wrapped in a receipt `IBCPacket` that is routed all the way back to the
+source chain and appended to the remote endpoint (the response table) for
 the originating consumer.
 
-Request for a remote Multicast service is treated in the same way except
+Request for a remote `Multicast` service is treated in the same way except
 that more than one `IBCPacket` could be generated in the source chain.
-Remote complaints and resolutions work exactly like requests and
-responses, and therefore will not be elaborated here.
+
+Remote complaints and resolutions are expected to work in the same manner as requests and responses, and therefore will not be elaborated here.
 
 Below is a complete list of application-dependent `IBCPacket` types:
 
