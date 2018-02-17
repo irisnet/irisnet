@@ -20,7 +20,7 @@ document.  Please check regularly for updates!_
   * [IBC Enhancement](#ibc-enhancement)
 * [Use Cases](#use-cases)
 * [Token Economics](#token-economics)
-* [Innitial Token Distribution](#innitial-token-distribution)
+* [Initial Token Distribution](#initial-token-distribution)
 * [Roadmap](#roadmap)
 * [The Team](#the-team)
 * [Core Members](#core-members)
@@ -220,10 +220,9 @@ The key challenges we are addressing in IRIS are two parts:
   heterogeneous chains.
 
 We address those challenges through incorporation
-of a service oriented infrastructure into Cosmos/Tendermint which is
-called `iService`.
+of a service oriented infrastructure into Cosmos/Tendermint.
 
-The design of iService inherits the  thinking pattern from
+Our design inherits the thinking pattern from
 many years' SOA practices. SOA is an architectural approach to create
 systems built from autonomous services which have explicit boundaries,
 share schema and contract [\[13\]][13]. Earlier practice of SOA focus
@@ -258,82 +257,76 @@ we rip traditional business logic computation off the blockchain
  and use it as a trustworthy mediation bus for
 complicated business collaboration.
 
-For inter chain communication, Cosmos IBC [\[12\]][12] defines a protocol for
+For interchain communication, Cosmos IBC [\[12\]][12] defines a protocol for
 transferring values from an account on one chain to an account on the
-other chain. IRIS  designe new semantics to allow cross
-chain computation to be invoked by leveraging IBC. This capability is very important when
+other chain.  IRIS designs new semantics to allow cross-chain computation
+to be invoked by leveraging IBC.  This capability is very important when
 building scalable business applications. More on its use
 case is in later chapter.
 
-IRIS network provides the service infrastructure for handing the
+IRIS network provides the service infrastructure for handling the
 coordination of on-chain transaction processing with off-chain data
-processing and business logic execution. The `iServices` also have defined
-protocols for them to be invoked cross chain if required. IRIS also provides
-client-side tools including smart wallet for inter-chain multi-asset as well as for accessing `iServices`.
-IRIS project plans to provide SDKs for easy construction of `iServices`.
-For example, for a specific service definition, SDKs are provided for generating the
-service provider side skeleton as well as service consumer side stub for
-major languages.
-
+processing and business logic execution.  Enhanced IBC capability
+allows those off-chain processing to be invoked cross chain if required. IRIS also provides
+client-side wallet and SDK to make it easier for people to consume and provide services.
+For example, for a specific service definition, the Client SDK would generate the
+provider side skeleton as well as consumer side stub for major programming languages.
 
 ## IRIS Network Design ################################################################
 
 ![Figure of IRIS Network](https://github.com/irisnet/iris-community/blob/query/pics/chap2.png?raw=true)
 
-Being part of the Cosmos ecosystem, IRIS network builds on top of
-the Tendermint & Cosmos technology stack by introducing a comprehensive
-service infrastructure and enhanced IBC processing.
+As illustrated in the figure above, the IRIS network is intended to have the
+same topology as the Cosmos network.  We plan to connect the IRIS Hub to
+the Cosmos Hub as one of its zones and regional hubs.  IRIS full nodes,
+developed with the IRIS SDK (which is itself a planned extension of the
+Cosmos SDK), are proposed to provide a service infrastructure as well as
+offer integration with an embedded InterPlanetary File System ("IPFS") node.
 
-As illustrated in figure above, IRIS network has the same topology as
-Cosmos network, with IRIS Hub itself being connected to the
-Cosmos Hub as one of IRIS zones. IRIS full nodes are developed with
-IRIS-SDK, which extends Cosmos-SDK with a service infrastructure and
-integrates with an embeded IPFS node.
-
-IRIS Services (a.k.a. `iServices`) bridge the gap between blockchain
-world and conventional business application world, mediating a
+IRIS Services (a.k.a. "iServices") intend to bridge the gap between the blockchain
+world and the conventional business application world, by mediating a
 complete lifecycle of off-chain services -- from their definition,
 binding (provider registration), invocation, to their governance
 (profiling and dispute resolution). By enhancing the IBC processing
-logic to support service semantics, IRIS-SDK allows distributed business
-services to be available across the internet of blockchains.
+logic to support service semantics, the IRIS SDK is intended to allow
+distributed business services to be available across the internet of blockchains.
 
-Although the IRIS network focus on providing an innovative solution
+While the IRIS network focuses on providing an innovative solution
 for distributed business applications, it is still part of
-the broader Cosmos network. All zones connected to the IRIS hub can
-interact with any other zone in the Cosmos network over the standard IBC
-protocol. In fact, by introducing a layer of service semantics and thus
-enabling a whole new set of business scenarios, the IRIS network helps
-to increase the scalability and diversity of the Cosmos network, to increase
-value transfer volume through the Cosmos hub, and to increase the
-overall value of the network.
+the broader Cosmos network.  All zones connected to our proposed IRIS hub would be able to interact with any other zone in the Cosmos network over
+the standard IBC protocol.  Furthermore, by introducing a layer of service
+semantics, which we believe could enable a whole new set of business scenarios,
+the planned IRIS network would represent an increase in scale and diversity
+of the Cosmos network.
 
 ### Network Actors
 
-1. **Consumers** are users who consume off-chain services by sending
-  requests to and receiving responses from the network.
+1. **Consumers** are those users who may consume off-chain services by sending
+  requests to the network and receiving responses from the network.
 
-2. **Providers** offer implementation of one or more `iService` definitions
-  and often act as *adaptors* of off-chain services and resources located
-  in other public and consortium chains as well as enterprise legacy
-  systems. They monitor and process incoming requests and send responses
+2. **Providers** are those users who may offer the implementation of one or more
+iService definitions and often act as *adaptors* of off-chain services and resources located
+  in other public and consortium chains, as well as in enterprise legacy
+  systems.  Providers monitor and process incoming requests and send responses
   back to the network. A provider could at the same time act as a consumer
-  by sending requests to other providers. Providers will charge a fee for
-  any services they might offer, and the service fee, by default, is
-  priced in the IRIS network's native fee token known as `*iGas*`; providers
-  could also price their services in other whitelisted Cosmos fee tokens
-  such as photon \[?\].
+  by sending requests to other providers.
 
-3. **Profiler** is a special user working on behalf of the IRIS Foundation,
-  a Hong Kong based nonprofit organization in charge of building and
-  promoting the IRIS network. Profiler is the sole user authorized to
-  invoke iServices in the profiling mode, which helps to create and
-  maintain objective *provider profiles* that become handy for consumers
-  when it comes to selecting the right providers (see ?).
+  As planned, providers would be required to charge a fee for
+  any services they might offer, and the service fee, by default, would be
+  priced in the IRIS network's native fee token known as "iGas"; providers
+  could also price their services in other whitelisted Cosmos fee tokens, to be
+  considered in due course.
+
+3. **Profiler** is the special user who works on behalf of the IRIS Foundation
+Limited ("Foundation"), a Hong Kong incorporated company limited by guarantee.
+The Foundation will take the lead in building the IRIS network.  The profiler
+is the sole user authorized to invoke iServices in the profiling mode, which
+is intended to help create and maintain objective *provider profiles* that
+consumers use to select suitable providers.
 
 ### IRIS Services
 
-In this section, we set out the intended technical parameters for deploying IRIS Services on the IRS network.
+In this section, we set out the intended technical parameters for deploying iServices on the IRS network.
 
 **Service Definition**
 
@@ -418,6 +411,8 @@ An `UpdateServiceBindingTx` transaction is composed of:
 * `ChangeSet (string)`: A structured definition of desired changes to an
   existing binding identified by the preceding three fields
 
+![Figure of iService Definition and Bindings](https://github.com/irisnet/irisnet/blob/master/images/chap2-2.png?raw=true)
+
 A provider can update `ServicePricing`, `ServiceLevel` and `BindingExpiration`
 at any time, but a small amount of their deposit will be slashed for
 changing the latter two (specified by `ServiceLevelUpdateSlash` and
@@ -432,13 +427,13 @@ increases the balance above the threshold. Upon expiration or
 invalidation of a binding, the provider will automatically get back the
 remaining balance of its deposit.
 
-`BindingType` can be changed from Local to Global, but not the other way
-around. To downgrade a binding from Global to Local, a provider must
-first invalidate the binding in question and then create a new Local
+`BindingType` can be changed from `Local` to `Global`, but not the other way
+around. To downgrade a binding from `Global` to `Local`, a provider must
+first invalidate the binding in question and then create a new `Local`
 binding.
 
 If a provider somehow needs to move the binding to a new address, it is
-not allowed to update ProviderAddress directly; instead, the provider
+not allowed to update `ProviderAddress` directly; instead, the provider
 should invalidate the current binding and create another one with the
 desired new `ProviderAddress`.
 
@@ -462,10 +457,9 @@ A `ServiceBinding` is composed of:
 
 * `IsValid (enum)`: Can be one of `True` or `False`
 
-![Figure of IRIS Service](https://github.com/irisnet/iris-community/blob/query/pics/chap2-2.png?raw=true)
-
-
 **Service Invocation**
+
+![Figure of Service Invocation](https://github.com/irisnet/irisnet/blob/master/images/chap2-3.png?raw=true)
 
 Consumers and providers are proposed to interact with each other through *endpoints*.
 There are two kinds of endpoints -- *request table* and *response table*
@@ -476,7 +470,7 @@ monitored in turn by matched consumers.
 
 For a `Multicast` service, all of its bindings share one request table;
 for a `Unicast` service, however, a separate request table is created and
-maintained for each of its bindings. As for the other direction, we anticipate that a dedicated response table will be created and managed for each consumer.
+maintained for each of its bindings. As for the other direction, a dedicated response table would be created and managed for each consumer.
 
 A `ServiceRequest` is composed of:
 
@@ -570,7 +564,7 @@ A `ConfirmServiceResponseTx` transaction is composed of:
 
 * `ResponseHash ([][]byte)`: The hash of responses to be confirmed
 
-The application will verify that the each response to be confirmed are
+The application will verify that the each response to be confirmed is
 indeed for a request originated by the caller, and that the number of
 responses in the transaction is less than `MaxResponseConfirmBatch`.
 
@@ -603,8 +597,6 @@ blockchain height of the response), a small penalty (defined by
 deposit is refunded to the consumer, while the associated service fee
 will be released to the provider as usual.
 
-![Figure of Multicast Service](https://github.com/irisnet/iris-community/blob/query/pics/chap2-3.png?raw=true)
-
 **Dispute Resolution**
 
 In any case where a consumer is unsatisfied with a service response, a mechanism should exist allowing the consumer to issue a complaint and consequently, to receive an acceptable solution to that complaint, without having to resort to a centralized authority such as the legal system.  Also, this mechanism should avoid
@@ -626,7 +618,7 @@ A Resolution is composed of:
 
 * `ComplaintHash ([]byte)`: The hash of the matched complaint
 
-* `Disposal (enum)`: Can be one of Refund or Redo
+* `Disposal (enum)`: Can be one of `Refund` or `Redo`
 
 * `Refund (uint64)`: Service fee refund. *Optional*
 
@@ -639,17 +631,17 @@ Our intended dispute resolution process, as outlined above, may not be legally b
 
 Bootstrapping the iService ecosystem presents a few challenges.  A major challenge is finding a way to make it easy for consumers to discover suitable providers - consumers need performance metrics to evaluate and select a provider, yet without consumer usage no performance metrics will be available.
 
-With the intention to solve this circular issue, we plan to introduce a profiling mechanism where a privileged system user, the `Profiler`, invokes all the active services on a regular schedule.  This would leave objective performance data in the network (such as response time, availability, complaint handling etc.) that are useful for real consumers.
+With the intention to solve this circular issue, we plan to introduce a profiling mechanism where a privileged system user, the profiler, invokes all the active services on a regular schedule.  This would leave objective performance data in the network (such as response time, availability, complaint handling etc.) that are useful for real consumers.
 
 Service profiling calls would be exempt from service fees and consumer
 deposits, but they would incur network transaction fees. These calls
 would originate from a few reserved addresses that are intended to be recognized and honored by the application.
 
 Profiling activities would stay at a relatively stable level for new services
-and will gradually decline for individual services as they start to
+and gradually decline for individual services as they start to
 attract real consumer calls, which is expected to generate more performance data on their own.
 
-Transaction fees incurred during profiling would be paid out from the system reserve by default, and the IRIS Foundation reserve would step in if necessary.
+Transaction fees incurred during profiling would be paid out from the system reserve by default, and the Foundation reserve would step in if necessary.
 
 **Query**
 
@@ -663,8 +655,7 @@ Below is a non-exhaustive summary of our currently planned queries:
 
 **Service Objects**
 
-
-| **Object**                               | **Commonly Used Filters**                | **Authorization**                        |
+| Object                               | Commonly Used Filters                | Authorization                        |
 | ---------------------------------------- | ---------------------------------------- | ---------------------------------------- |
 | Service Definition                       | Name, keywords, source (chain ID), messaging type, with active bindings... | Anyone can query                         |
 | Service Binding (for a given definition) | Location (local or remote), pricing, service level, expiration... | Anyone can query                         |
@@ -674,12 +665,11 @@ Below is a non-exhaustive summary of our currently planned queries:
 
 **Performance Metrics**
 
-
-| **Area**                    | **Metrics**                              | **Authorization** |
+| Area                    | Metrics                              | Authorization |
 | --------------------------- | ---------------------------------------- | ----------------- |
-| Provider (address)          | Number of services provided (ever and active), active time, requests served (local and remote), requests missed, complaints received, complaints missed, ... | Anyone can query  |
-| Provider (binding)          | Active time, requests served (local and remote), requests missed, complaints received, complaints missed, ... | Anyone can query  |
-| Consumer (address)          | Number of services ever used, requests made, requests confirmed (in time and missed), complaints made, resolutions confirmed, ... | Anyone can query  |
+| Provider (address)          | Number of services provided (ever and active), response time (min, max and average), requests served (local and remote), requests missed, complaints received, complaints ignored, ... | Anyone can query  |
+| Provider (binding)          | Active time, response time (min, max and average), requests served (local and remote), requests missed, complaints received, complaints ignored, ... | Anyone can query  |
+| Consumer          | Number of services ever used, requests made, requests confirmed (in time and missed), complaints made, resolutions confirmed, ... | Anyone can query  |
 | Consumer (service, binding) | Requests made, requests confirmed (in time and missed), complaints made, resolutions confirmed, ... | Anyone can query  |
 
 
@@ -946,29 +936,29 @@ can be conveniently used by validators as well as service providers to
 define the weights in config file as well as adjusting the `iGas` amount
 for the bonded services.
 
-## Innitial Token Distribution ################################################################
+## Initial Token Distribution ################################################################
 
 On Genesis, the initial token supply will be 2,000,000,000 IRIS tokens.  The distribution of IRIS tokens is planned to be as follows:
 
 * **Private Sale**: 20%
 
-* **IRIS Foundation**: 15%, reserved to support the operations of the Foundation.
-
-* **ATOM Holder Airdrop**: 5% (detailed airdrop plan will be announced after Cosmos Hub is operational)
+* **ATOM Holders**: 5% (detailed airdrop plan will be announced after Cosmos Hub becomes operational)
 
 * **Core Developer Team**: 15% (locked up for 6 months starting from IRIS Hub launch, followed by a linear monthly release for 2 years afterwards)
 
-* **Ecosystem Development**: 45% (swap with zones connecting to IRIS hub; grant to potential users; awards to outstanding partners)
+* **IRIS Foundation**: 15% (reserved to support the operations of the Foundation)
+
+* **Ecosystem Development**: 45% (swap with zones connecting to IRIS Hub; grant to potential users; awards to outstanding partners)
 
 If and when the IRIS network is fully deployed, the annual inflation rate of IRIS tokens is expected to be 7% to 20%. The exact rate will be adjusted to account for the fact that a substantial portion of IRIS tokens in circulation may be voluntarily staked by participants to participate in the consensus engine.
 
 Proceeds from the private sale of IRIS tokens will be used, first and foremost, for the development of the IRIS network. The planned usage distribution is as follows:
 
-* **Foundation Operations**: 5% (fees for processional services including legal, accounting and auditing etc.)
+* **Foundation Operations**: 5% (professional services including legal, accounting, tax returns and auditing etc.)
 
 * **Software Development**: 40%
 
-* **Developer Enablement**: 20% (meetups and online engagement, developer enablement, and academic sponsorship)
+* **Community Empowerment**: 20% (meetups and online engagement, developer enablement, and academic sponsorship)
 
 * **Marketing**: 10%
 
