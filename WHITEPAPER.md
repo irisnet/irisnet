@@ -974,8 +974,10 @@ Tom has been tracking trends in the blockchain, cloud computing, IoT and smart m
 [8]: https://github.com/cryptape/cita-whitepaper/blob/master/en/technical-whitepaper.md
 [9]: https://github.com/hyperledger/burrow
 [10]: https://lightning.network/lightning-network-paper.pdf
-[11]:  https://www.plasma.io/plasma.pdf
+[11]: https://www.plasma.io/plasma.pdf
 [12]: https://github.com/cosmos/ibc/blob/master/README.md
+[13]: https://www.amazon.com/SOA-Principles-Service-Thomas-Erl/dp/0132344823
+[14]: http://www.cs.toronto.edu/~ranzato/publications/DistBeliefNIPS2012_withAppendix.pdf
 [15]: https://medium.com/@tendermint/b5b2c682a292
 [16]: https://drive.google.com/file/d/1jtyYtx7t1xy9gxEi2T5lXFNd8xUY7bhJ/view
 
