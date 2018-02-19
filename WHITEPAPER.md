@@ -812,33 +812,19 @@ envisioned business value more efficiently.
 
 ## Token Economics ################################################################
 
-Same as Cosmos Network, the IRIS network also supports a multi-token
-model. Besides the tokens held by zone themselves and can be moved from
-one zone to another via Hub. There are two types of tokens supporting
-IRIS Network's operation:
+Similar to the Cosmos Network, the IRIS network, as presently designed, is intended to support a multi-token model. The tokens will be held on the various zones, and can be moved from one zone to another via the IRIS Hub. There are two types of tokens that are expected to support IRIS network's operation:
+
 * staking token **IRIS**
 * fee token **iGas**
 
 ### IRIS staking token
 
-Taking the same staking mechanism design of Cosmos [\[15\]][15], IRIS Hub has
-its own special native token for staking which is called IRIS. IRIS will
-be used in following ways:
+Adopting the same staking mechanism design used in the Cosmos network [\[15\]][15], the IRIS Hub will have its own special native token for staking. This token will be called "IRIS". We have a number of ideas in mind regarding the specific functionality of the IRIS token, including:
 
-* Stakes deposited by validators to be eligible to validate transactions
-  and commit new blocks
+* integration of the IRIS token in the IRIS network's consensus engine validators, through a system of validators and delegators;
 
-* Non-validator lent out RIS to any validator to earn a share of their
-  block fees and rewards
+* voting power to participate in the IRIS network's governance
 
-* Voting power to participate in IRIS network governance
-
-Additional inflationary IRIS and block transaction fees are rewarded to
-validators and delegators who delegate to validators. The inflation rate
-will be carefully designed to encourage the bounding of sufficient IRIS token
-to safeguard the network. The yearly inflation rate (a number between
-7% and 20%) is dynamically adjusted to support a convergence of 2/3 IRIS
-in circulation will be bonded as staking token.
 
 ### IRIS fee token
 
@@ -846,37 +832,22 @@ There are two types of fee token in IRIS network:
 * **Network fee** token is for spam-prevention and payment to validators in maintaining the
   ledger;
 * **Service fee** token is used for payment to service providers
-  who deploys iServices and a default payment service token is called
+  who deploy iServices and a default payment service token is called
   `iGas`.
 
-IRIS Network will support all the whitelisted fee tokens from
-Cosmos plus IRIS staking token as well as iGas. The benefit for
-separating fee token from staking token is explained in [\[16\]][16].
+The IRIS network is intended to support all whitelisted fee tokens from the Cosmos network, plus the IRIS token and the iGas token. The benefit of separating the fee token from staking token is explained in [\[16\]][16].
 
-Supporting variety of whitelisted fee tokens is a very innovative design
-from Cosmos and it provides better experience for both validators as well
-as users. In Cosmos, for `network fee token`, each validator has a config
+Supporting a variety of whitelisted fee tokens is a feature that we plan to adopt from Cosmos. It can provide an enhanced experience for network participants. In Cosmos, for `network fee token`, each validator has a config
 file defines his personal weighting of how much they value each fee
 token. Validator can run a separate cron job to update the config file
 based on validator preferred live market data or maybe just use a
 default config value.
 
-For the `service fee token` design, similarly multi-token model is
-supported, the service provider has the freedom to charge the service
-through his preferred token on whitelist or simply using the `iGas`.
-Generation of `iGas` will help bootstrapping the service binding and
-consumption. When service provider binds a service, `iGas` deposits need
-to be escrowed. The deposit might be slashed as punishment if service
-provider conducts bad behaviors. Detailed design of `iGas` token economics
-will be released in future technical yellow papers.
+For the `service fee token` design, similarly a multi-token model is planned to be supported.  A service provider on the IRIS network should therefore have the freedom to charge for their services in their preferred token, provided that it appears on the whitelist.
 
-To help IRIS network validators and service providers to mitigating the
-crypto-currency price volatility, IRIS foundation plans to facilitate
-the deployment of global iServices for retrieving market data from
-different exchanges or introducing oracles. Those market data iServices
-can be conveniently used by validators as well as service providers to
-define the weights in config file as well as adjusting the `iGas` amount
-for the bonded services.
+To help IRIS network participants mitigate cryptocurrency price volatility, the Foundation intends to facilitate the deployment of global iServices for retrieving market data from different exchanges, or through the potential introduction of oracles.
+
+Both staking and fee tokens are subject to further refinement to ensure compliance with legal and regulatory obligations.
 
 <div STYLE="page-break-after: always;"></div>
 
