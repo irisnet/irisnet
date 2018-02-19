@@ -23,8 +23,8 @@ document.  Please check regularly for updates!_
 * [Initial Token Distribution](#initial-token-distribution)
 * [Roadmap](#roadmap)
 * [The Team](#the-team)
-* [Core Members](#core-members)
-* [Advisors](#advisors)
+  * [Core Members](#core-members)
+  * [Advisors](#advisors)
 * [References](#references)
 
 <div STYLE="page-break-after: always;"></div>
