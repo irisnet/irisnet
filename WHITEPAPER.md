@@ -752,47 +752,30 @@ Below is a complete list of application-dependent `IBCPacket` types:
 
 ## Use Cases ################################################################
 
+In this section, we have set out some potential use cases for the IRIS network.
+
 ### Distributed AI for privacy preserving data analysis
 
 The proposed service infrastructure has been prototyped by Bianjie AI, a
 Shanghai based startup, into its permission product `BEAN (Blockchain
 Edge Analytics Network)` to solve the longstanding challenge of getting
 data for running analytics models. Although homomorphic encryption is
-one of the methods which allows computing to be done over encrypted
-data, due to its impractical for solving real world machine learning
-problems, BEAN took a different route which is borrowing the idea of
-model parallelism from the traditional distributed AI study [\[14\]][14] and
-utilizing SOA design patterns in developing distributed analytics
-services over blockchain.
+one of the key methods allowing computing to be achieved over encrypted data, it is said to be unable to practically solve real world machine learning problems due to its slow performance. As a result, BEAN was created to take a different approach. This approach uses the idea of model parallelism taken from the traditional distributed AI study [\[14\]][14] and
+utilizing SOA design patterns to develop distributed analytics services as an additional layer to the blockchain.
 
-To protect data access, the (partial) model that runs on the data side
-needs to be open sourced to the client and specified in the service
-definition. Since only partial model is released to the client, the
-model developer doesn\'t have to worry about someone stealing his/her
-idea; on the other hand, the data owner never needs to worry about their
-data leaving the premises and thus losing control of its usage. Other
-benefits include:
-1. only a small amount of parametric data is
-  exchanged on blockchain providing a lot of performance gain;
-2. providing a more practical way for data usage auditing, which is often
-  needed in the healthcare domain.
+To protect data access, the (partial) model that runs on the data side needs to be open sourced to the client and specified in the service definition. Since only the partial model is released to the client, the model developers do not have to worry about someone stealing their idea; equally, the data owners never need to worry about losing control of data usage as their data will not be leaving its origin.
 
-Healthcare data is high private and security requirements put great
-challenge for it being used for cross organization collaboration, such
-as cross hospital clinic records search for diagnosis assistance, new
-drug clinic test patient identification, health insurance automatic
-claim process etc. This MVP service layer implementation is built on top
-of `Ethermint` for connecting hospitals, insurance companies as well as
-analytics service providers in providing privacy preserving healthcare
-data analytics capability. Smart contracts have been implemented to
-support on-chain service registration and invocation. One example of the
-off-chain data processing is to support DRGs (Diagnosis Related Group)
-grouping analytics service. When hospital user invokes DRGs service, the
-raw medical record is processed off-chain using service provider
-provided client side NLP(implemented as SQL and Python) code stub to
-exact structured data inputs for receiving DRGs service over blockchain
-without passing the highly confidential raw medical records. The `BEAN`
-scenario demonstrated a most complicated service use case including
+Other potential benefits could include the following:
+1.	Only a small amount of parametric data being exchanged on-chain, which can help enhance performance.
+
+2.	A more practical way for data usage auditing, which is often needed in the healthcare domain.
+
+Healthcare data is highly private, involving numerous security requirements. This puts forward the challenge for healthcare data to be used for the purposes of cross-organization collaboration (such as a cross-hospital clinic records search for diagnosis assistance, new drug clinic test patient identification, health insurance automatic claim processing etc.). This minimum viable product ("MVP") service layer implementation is built on top of `Ethermint` in attempt to connect hospitals, insurance companies and analytics service providers to provide privacy preserving healthcare data analytics capability.
+
+Smart contracts have been implemented to support on-chain service registration and invocation. One example of the off-chain data processing could be to support a Diagnosis Related Group ("DRG") grouping analytics service. More specifically, when a hospital user invokes the DRG service, the raw medical record is processed off-chain using service provider provided client side NLP (implemented as SQL and Python) code stub to exact structured data inputs for receiving DRGs service over blockchain without passing the highly confidential raw medical records.
+
+The `BEAN`
+scenario demonstrates a more complicated service use case including
 implementing distributed analytics, and connecting service providers as
 well as service consumers, utilizing blockchain to provide audible
 transaction ledge as well as trustworthy distributed computing
@@ -800,42 +783,24 @@ foundation.
 
 ### Data and analytics e-marketplace
 
-We have studied many proposed AI+Blockchain projects. Most of the
-projects are mainly targeting to provide data exchange markets as well
-as analytics API markets. With proposed `IRIS` infrastructure, those
-networks can be built with ease through publishing data as data services
-and wrapping analytics API as analytics services utilizing the `IRIS`
-service provider SDK.
+From studying several proposed AI+Blockchain projects, it seems that most of the projects aim to provide data exchange markets and analytics API markets. With proposed `IRIS` infrastructure, those
+networks could potentially be built with ease through publishing data as data services and wrapping analytics API as analytics services utilizing the `IRIS` service provider SDK.
 
 ### Distributed e-commerce
 
-With proposed `IRIS` infrastructure, integration with traditional systems
-like `ERP` to get inventory info, or inter-chain query on trusted data
-sources on getting information like transportation and weather will be
-quite similar way as many enterprise application developers are already
-familiar with. With those services integrated to support distributed
-e-commerce applications, it is possible for distributed e-commerce
-applications to provide similar user experience as the centralized
-systems such as Amazon, Alibaba provides.
+With the proposed `IRIS` infrastructure, integration with traditional systems
+like `ERP` to obtain inventory information, or inter-chain query on trusted data sources to obtain information such as transportation and weather data, will be quite similar to the approach with which many enterprise application developers are already familiar. With those services integrated to support
+distributed e-commerce applications, it could be possible for distributed e-commerce applications to provide a similar user experience as centralized systems, such as Amazon or Alibaba.
 
-### Public chain & consortium chain hybrid system
+### Combining public chains & consortium chains
 
-For many business scenario, taking a hybrid architecture of combining
-the good features from both public chain and consortium chain can
-provide performance, security as well as economic incentives. For
-example, hospitals and insurance companies can form consortium
-blockchain when supporting high performance medical insurance claim
-transactions, while exposing certain information such as the statistics
-of certain diseases occurrence as global service which can be invoked
-from other public chains. The received fee can be awarded back to
+For many business scenarios, taking a hybrid architecture of combining the good features of a public chain and a consortium chain can provide beneficial results, particularly with regards to performance, security and economic incentives.
+
+For example, hospitals and insurance companies could form a consortium blockchain to support high performance medical insurance transactions, whilst identifying other information such as statistics regarding certain diseases as a global service, which can be invoked from other public chains. The tokens received from public chains can be awarded back to
 those information providers in the consortium chain, which motivate the
-system participants to improve and promote services. With the
-infrastructure provided by `IRIS` to efficient support a hybrid system
-architecture, large-scale spontaneous collaboration is made possible
-while still support the performance and security requirements needed
-from many business applications.
+system participants to improve and promote services. With this infrastructure provided by `IRIS`, large-scale spontaneous collaboration could be made possible while still supporting stringent performance and security requirements.
 
-There are many use cases can be supported by the `IRIS` service
+There are many use cases that could be supported by the `IRIS` service
 infrastructure, such as more efficient asset based security systems,
 distributed regulation technology such as due diligence, mutual aid
 marketplace etc. One of `IRIS` project plans is also working closely with
