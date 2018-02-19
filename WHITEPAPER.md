@@ -87,8 +87,8 @@ You must consult a lawyer, accountant and/or tax professional, as well as any ot
 Contractual relationships are a fundamental building block of human society and the
 importance of blockchain technology lies in providing a very efficient
 and cost effective way of realizing reliable contractual
-relationships. For the first time, trust is not needed (which is also very
-costly to establish) when multiple parties participate in sophisticated
+relationships: for the first time, trust (which is also very
+costly to establish) is not needed when multiple parties participate in sophisticated
 business interactions. It has been said that blockchain technology provides
 the most important elements for distributed business to take place: lifting network effect
 and very low transaction cost. More and more people see the potential of
@@ -97,22 +97,14 @@ current business models into more efficient distributed ones. Especially
 the token mechanism embedded in most modern blockchain emphasizes each network
 participant's right and will disrupt business in its current form [\[1\]][1].
 
-However, blockchain technology is still in its infancy with drawbacks
-such as poor or limited performance and immature governance mechanisms,
-making it unfit to support real-world distributed business
-applications. Consortium chains such as Hyperledger Fabric, R3 Corda, or
-Ethereum Enterprise are trying to address the performance and governance
-issues in order to make blockchain technology more suitable for business
-collaboration. However, today consortium chains are dominated by huge
+However, blockchain technology is still in its early stages. As with any new technology, there are drawbacks. These include limited performance and undeveloped governance mechanisms. Presently, these drawbacks make it difficult for blockchains to support real-world distributed business collaboration. Consortium chains, such as Hyperledger Fabric and R3 Corda, and organisations such as the Ethereum Enterprise Alliance, have tried to address those performance and governance issues to make blockchain technology more suitable for enterprises. However, today consortium chains are dominated by huge
 enterprise companies. Furthermore their close-form off on-chain governance model
 is very inefficient. Without a token economics model and the
-openness and the excitement in public chains, the consortium chains lack
-vitality. We would like to enhance the current blockchain technology and
-make it possible to enable thousands and millions of SMBs and even
-individual freelance business service providers to provide their
-services and enjoy the rewards in an open network. To achieve this goal,
-we have identified the following challenges/opportunities for technology
-innovations:
+openness and the excitement in public chains, consortium chains may be viewed as lacking vitality.
+
+We would like to enhance the current blockchain technology and
+make it possible to enable thousands and millions of Small Medium Busiensses(SMBs) and even individual freelance business service providers to provide their
+services and enjoy the rewards in an open network. To achieve this, we have identified the following challenges and consequent opportunities for technology innovations:
 
 **Not all computation could or should be implemented as on-chain computations such as smart contracts**
 
@@ -137,9 +129,9 @@ blockchain technology for more real-world use scenarios.
 
 **How to reuse the existing blockchain resources, including both public chains and consortium chains**
 
-It is infeasible to use one public chain addressing all the problems.
+It is infeasible to use one public chain to address all use cases.
 Every day there are different chains going live which focus on one aspect
-of problem solving such as distributed storage, predict market etc.
+of problem solving such as distributed storage,asset ownership or predict market etc.
 According to the coinmarketcap.com, there are more than 1000
 cryptocurrencies currently active on various exchanges.
 
@@ -171,16 +163,11 @@ decentralized inter-chain network composing hub and zones with
 implementing a layer of service infrastructure based on
 Cosmos/Tendermint [\[5\]][5], with enhanced usage of token .
 
-Since our work is built on top of Cosmos/Tendermint, we will overview
-Cosmos/Tendermint to set the stage, summarize the features we inherit
-from Cosmos/Tendermint and the innovations we are building on top of
-existing work.
+Since the IRIS network is designed on top of Cosmos/Tendermint, we will first discuss Cosmos/Tendermint, summarize the features we inherit from Cosmos/Tendermint and summarize the innovations we have created.
 
 ### Cosmos and Tendermint ################################################################
 
-Cosmos [\[3\]][3] is an ambitious project aiming at building the internet
-of blockchain. It is a network of many independent blockchains, called
-zones. Each zone is powered by classical Byzantine fault-tolerant (BFT)
+Cosmos [\[3\]][3] intends to build the 'internet of blockchains'. It is a network of many independent blockchains, called "zones". Each zone is powered by classical Byzantine fault-tolerant (BFT)
 consensus protocols like [Tendermint](https://tendermint.com/).
 
 Tendermint provides a high-performance, consistent, secure BFT consensus
@@ -194,7 +181,7 @@ chain domain including Oracle [\[7\]][7], CITA [\[8\]][8] and
 Hyperledger Burrow [\[9\]][9].
 
 Tendermint is used as the consensus protocol for building the first zone
-on Cosmos Hub. Hub can connect to many different
+on the Cosmos Hub. Hub can connect to many different
 kinds of zones, and the communication is achieved via an
 inter-blockchain communication (IBC) protocol, a kind of virtual UDP or
 TCP for blockchains. Tokens can be transferred from one zone to another
@@ -212,7 +199,7 @@ IRIS network aims to build technology foundation which facilitate
 construction of distributed business applications. It goes beyond today's
 blockchain systems which are mainly for digitalized assets.
 
-The key challenges we are addressing in IRIS are two parts:
+The key challenges that we aim to address via the IRIS network are two-fold:
 * Integration and collaboration of off-chain computing and resources on
   a distributed ledger;
 * interoperability of the services across
@@ -222,23 +209,24 @@ We address those challenges through incorporation
 of a service oriented infrastructure into Cosmos/Tendermint.
 
 Our design inherits the thinking pattern from
-many years' SOA practices. SOA is an architectural approach to create
+many years of service-oriented architecture ("SOA") practices. SOA is an architectural approach to create
 systems built from autonomous services which have explicit boundaries,
-share schema and contract [\[13\]][13]. Earlier practice of SOA focus
-on implementation of Enterprise Service Bus (ESB) which enables
+share schemas and contracts [\[13\]][13]. Earlier practice of SOA focused
+on the implementation of Enterprise Service Bus ("ESB") which enables
 communication among services via a common communication bus which
 consists of a variety of point-to-point connections between providers
-and consumers. Centralized management of services through ESB could
+and consumers. However, centralized management of services through ESB could
 trigger a single point of failure, also adds dependency of service
-deployment. The recent surge of Micro-services Architectural Style can be
-seen as a development of SOA without focusing on ESB rather using
+deployment. The recent surge of micro-services architectural style can be
+seen as a development of SOA without focusing on the ESB rather using
 light message queues for inter service communication. In IRIS network,
-the inter service communication is implemented over blockchain to
+the inter service communication is intended to be implemented over blockchain to
 leverage blockchain as a trusted machine for mediating business
 collaborations. It runs without prerequisite of existing trust among service
 provider and service consumer which is very hard to establish.
 
-IRIS network use Tendermint protocol as a high-performance consensus
+
+The IRIS network uses Tendermint protocol as a high-performance consensus
 engine. Leveraging the flexibility provided by tendermint's Application
 BlockChain Interface (ABCI), we define a set of service infrastructure
 transaction types including service provisioning, service consumption
@@ -257,19 +245,12 @@ we rip traditional business logic computation off the blockchain
 complicated business collaboration.
 
 For interchain communication, Cosmos IBC [\[12\]][12] defines a protocol for
-transferring values from an account on one chain to an account on the
-other chain.  IRIS designs new semantics to allow cross-chain computation
-to be invoked by leveraging IBC.  This capability is very important when
-building scalable business applications. More on its use
-case is in later chapter.
+transferring values from an account on one chain to an account on another
+chain.  The IRIS network designs new semantics to allow cross-chain computation to be invoked by leveraging IBC.  We believe this capability is very important when building scalable business applications. Further details of potential use cases are set out below.
 
-IRIS network provides the service infrastructure for handling the
-coordination of on-chain transaction processing with off-chain data
-processing and business logic execution.  Enhanced IBC capability
-allows those off-chain processing to be invoked cross chain if required. IRIS also provides
-client-side wallet and SDK to make it easier for people to consume and provide services.
-For example, for a specific service definition, the Client SDK would generate the
-provider side skeleton as well as consumer side stub for major programming languages.
+The IRIS network is intended to provide the service infrastructure for handing and coordinating on-chain transaction processing with off-chain data processing and business logic execution. Enhanced IBC capability
+allows those off-chain processing to be invoked cross chain, if required. The IRIS network, as presently envisaged, will also include client-side tools, including a smart wallet enabling cross-chain multi-asset storage, as well as consume and provide iServices. We plan to provide SDKs for easy construction of iServices. For example, for a specific service definition, the Client SDK would generate the provider side skeleton as well as consumer side stub for major programming languages.
+
 
 ## IRIS Network Design ################################################################
 
