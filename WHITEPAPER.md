@@ -1,4 +1,4 @@
-# IRIS Network
+# The IRIS Network
 **Inter-chain service infrastructure and protocol for building trustworthy and distributed business applications**
 
 Harriet Cao harriet@bianjie.ai<br/>
@@ -82,8 +82,7 @@ You must consult a lawyer, accountant and/or tax professional, as well as any ot
 
 ## IRIS OVERVIEW ################################################################
 
-> IRIS network is named after the Greek goddess of the Rainbow who is the
-> faithful messenger between heaven and mortals.
+> The IRIS network is named after the Greek goddess Iris, said to be the  personification of the rainbow and the faithful messenger between heaven and humanity.
 
 Contractual relationships are a fundamental building block of human society and the
 importance of blockchain technology lies in providing a very efficient
