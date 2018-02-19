@@ -79,7 +79,6 @@ You must consult a lawyer, accountant and/or tax professional, as well as any ot
 
 <div STYLE="page-break-after: always;"></div>
 
-
 ## IRIS OVERVIEW ################################################################
 
 > The IRIS network is named after the Greek goddess Iris, said to be the  personification of the rainbow and the faithful messenger between heaven and humanity.
@@ -103,8 +102,7 @@ is very inefficient. Without a token economics model and the
 openness and the excitement in public chains, consortium chains may be viewed as lacking vitality.
 
 We would like to enhance the current blockchain technology and
-make it possible to enable thousands and millions of Small Medium Busiensses(SMBs) and even individual freelance business service providers to provide their
-services and enjoy the rewards in an open network. To achieve this, we have identified the following challenges and consequent opportunities for technology innovations:
+make it possible to enable thousands and millions of Small Medium Busiensses ("SMBs") and even individual freelance business service providers to provide their services and enjoy the rewards in an open network. To achieve this, we have identified the following challenges and consequent opportunities for technology innovations:
 
 **Not all computation could or should be implemented as on-chain computations such as smart contracts**
 
@@ -114,16 +112,14 @@ decentralized applications. However Smart contracts can only handle deterministi
 every node can reach an identical state after processing every
 transaction and block) while huge amount of existing business logic that
 is not deterministic and might vary at different time and under
-different environmental parameters. Especially these days, business
-systems have been using more and more computer algorithms（NLP, machine
-learning, operation research algorithms）for decision optimization. In
+different environmental parameters. Especially these days, business systems have placed an increasing amount of reliance on computer algorithms, including Natural Language Processing ("NLP"), machine learning, and operation research algorithms, for decision optimization. In those
 algorithms, very often we purposely add some randomness to make the
 decision not to get stuck at local optimal states while trying to find a
 better sub-optimal result.
 
 On the other hand, some of the real world business logics are meant to
 be run once off-chain and shouldn't be implemented as smart contracts
-this type of replicated computing.  Integration and collaboration of off-chain services and resources with
+this type of replicated computing. Integration and collaboration of off-chain services and resources with
 a distributed ledger is key to further advance the adoption of
 blockchain technology for more real-world use scenarios.
 
@@ -144,7 +140,7 @@ dedicated blockchains and not reinventing the wheel.
 
 Besides, there are many (near) real-time business transactions do need
 more close form consortium/permission/private chains to address
-performance, security and business governance requirements.  Our vision of distributed business infrastructure needs to have the Interoperability of many heterogeneous chains including public/consortium/ permission/private chains.
+performance, security and business governance requirements.  Our vision of distributed business infrastructure needs to have the Interoperability of many heterogeneous chains including public/consortium/permission/private chains.
 
 Inter-chain technology is a very nature answer to the requirement.
 However, till today, the existing Inter-chain technologies are mainly
@@ -167,7 +163,7 @@ Since the IRIS network is designed on top of Cosmos/Tendermint, we will first di
 
 ### Cosmos and Tendermint ################################################################
 
-Cosmos [\[3\]][3] intends to build the 'internet of blockchains'. It is a network of many independent blockchains, called "zones". Each zone is powered by classical Byzantine fault-tolerant (BFT)
+Cosmos [\[3\]][3] intends to build the 'internet of blockchains'. It is a network of many independent blockchains, called "zones". Each zone is powered by classical Byzantine fault-tolerant ("BFT")
 consensus protocols like [Tendermint](https://tendermint.com/).
 
 Tendermint provides a high-performance, consistent, secure BFT consensus
@@ -183,7 +179,7 @@ Hyperledger Burrow [\[9\]][9].
 Tendermint is used as the consensus protocol for building the first zone
 on the Cosmos Hub. Hub can connect to many different
 kinds of zones, and the communication is achieved via an
-inter-blockchain communication (IBC) protocol, a kind of virtual UDP or
+inter-blockchain communication ("IBC") protocol, a kind of virtual UDP or
 TCP for blockchains. Tokens can be transferred from one zone to another
 securely through the Cosmos Hub, without the need for an exchange
 or a trusted third party between zones.
@@ -225,10 +221,9 @@ leverage blockchain as a trusted machine for mediating business
 collaborations. It runs without prerequisite of existing trust among service
 provider and service consumer which is very hard to establish.
 
-
 The IRIS network uses Tendermint protocol as a high-performance consensus
 engine. Leveraging the flexibility provided by tendermint's Application
-BlockChain Interface (ABCI), we define a set of service infrastructure
+BlockChain Interface ("ABCI"), we define a set of service infrastructure
 transaction types including service provisioning, service consumption
 and service governance. As explained earlier, most business logic is not
 suitable for implementation as deterministic smart contracts on
@@ -251,6 +246,7 @@ chain.  The IRIS network designs new semantics to allow cross-chain computation 
 The IRIS network is intended to provide the service infrastructure for handing and coordinating on-chain transaction processing with off-chain data processing and business logic execution. Enhanced IBC capability
 allows those off-chain processing to be invoked cross chain, if required. The IRIS network, as presently envisaged, will also include client-side tools, including a smart wallet enabling cross-chain multi-asset storage, as well as consume and provide iServices. We plan to provide SDKs for easy construction of iServices. For example, for a specific service definition, the Client SDK would generate the provider side skeleton as well as consumer side stub for major programming languages.
 
+<div STYLE="page-break-after: always;"></div>
 
 ## IRIS Network Design ################################################################
 
@@ -752,6 +748,7 @@ Below is a complete list of application-dependent `IBCPacket` types:
 | "iris-complaint"          | Complaint           |
 | "iris-resolution"         | Resolution          |
 
+<div STYLE="page-break-after: always;"></div>
 
 ## Use Cases ################################################################
 
@@ -846,6 +843,8 @@ such application project teams to support and enable them with needed
 blockchain infrastructure and allow them to focus on delivering the
 envisioned business value more efficiently.
 
+<div STYLE="page-break-after: always;"></div>
+
 ## Token Economics ################################################################
 
 Same as Cosmos Network, the IRIS network also supports a multi-token
@@ -914,6 +913,8 @@ can be conveniently used by validators as well as service providers to
 define the weights in config file as well as adjusting the `iGas` amount
 for the bonded services.
 
+<div STYLE="page-break-after: always;"></div>
+
 ## Initial Token Distribution ################################################################
 
 On Genesis, the initial token supply will be 2,000,000,000 IRIS tokens.  The distribution of IRIS tokens is planned to be as follows:
@@ -942,6 +943,7 @@ Proceeds from the private sale of IRIS tokens will be used, first and foremost, 
 
 * **Risk Contingency**: 25%
 
+<div STYLE="page-break-after: always;"></div>
 
 ## Roadmap ################################################################
 
@@ -1013,6 +1015,8 @@ Zaki Manian
 Adrian Brink
 
 Michael Yuan
+
+<div STYLE="page-break-after: always;"></div>
 
 ## References ################################################################
 
