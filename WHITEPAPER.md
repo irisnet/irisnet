@@ -835,7 +835,7 @@ There are two types of fee token in IRIS network:
   who deploy iServices and a default payment service token is called
   `iGas`.
 
-The IRIS network is intended to support all whitelisted fee tokens from the Cosmos network, plus the IRIS token and the iGas token. The benefit of separating the fee token from staking token is explained in [\[16\]][16].
+The IRIS network is intended to support all whitelisted fee tokens from the Cosmos network, e.g [Photon](https://blog.cosmos.network/cosmos-fee-token-introducing-the-photon-8a62b2f51aa) plus the IRIS token and the iGas token. The benefit of separating the fee token from staking token is explained in [\[16\]][16].
 
 Supporting a variety of whitelisted fee tokens is a feature that we plan to adopt from Cosmos. It can provide an enhanced experience for network participants. In Cosmos, for `network fee token`, each validator has a config
 file defines his personal weighting of how much they value each fee
@@ -898,11 +898,12 @@ In this stage we are also aiming to have a beta version of the IRIS SDK ready fo
 * **HOUYI** (Beyond June 2019)
 The fourth stage will focus on further technology innovations to the IRIS network, IRIS SDK and mobile client, as well as developer engagement.
 
+<div STYLE="page-break-after: always;"></div>
 
 ## The Team ################################################################
 
 **Tendermint** (the team that developed the [Tendermint](https://www.tendermint.com) consensus engine and is currently building Cosmos), **Wancloud** (a subsidiary of [Wanxiang
-Blockchain](http://www.wxblockchain.com)) and **Bianjie AI** will work together to build the IRIS network's infrastructure.  
+Blockchain](http://www.wxblockchain.com) and **Bianjie AI** will work together to build the IRIS network's infrastructure.  
 
 Tendermint's intended role to give technical advice and development support to the IRIS project team in extending the Tendermint ABCI and the Cosmos IBC technologies.
 [Wancloud](https://www.wancloud.io) is envisaged as the key strategy partner to both the Cosmos and IRIS ecosystems, and we understand that it intends to participate in Cosmos and IRIS development across Asia.
