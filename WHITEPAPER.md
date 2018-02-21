@@ -835,7 +835,7 @@ There are two types of fee token in IRIS network:
   who deploy iServices and a default payment service token is called
   `iGas`.
 
-The IRIS network is intended to support all whitelisted fee tokens from the Cosmos network, e.g [Photon](https://blog.cosmos.network/cosmos-fee-token-introducing-the-photon-8a62b2f51aa) plus the IRIS token and the iGas token. The benefit of separating the fee token from staking token is explained in [\[16\]][16].
+The IRIS network is intended to support all whitelisted fee tokens from the Cosmos network, e.g [Photon](https://blog.cosmos.network/cosmos-fee-token-introducing-the-photon-8a62b2f51aa), plus the IRIS token and the iGas token. The benefit of separating the fee token from staking token is explained in [\[16\]][16].
 
 Supporting a variety of whitelisted fee tokens is a feature that we plan to adopt from Cosmos. It can provide an enhanced experience for network participants. In Cosmos, for `network fee token`, each validator has a config
 file defines his personal weighting of how much they value each fee
@@ -857,9 +857,7 @@ On Genesis, the initial token supply will be 2,000,000,000 IRIS tokens.  The dis
 
 * **Private Sale**: 20%
 
-* **ATOM Holders**: 5% (detailed airdrop plan will be announced after Cosmos Hub becomes operational)
-
-* **Core Developer Team**: 15% (locked up for 6 months starting from IRIS Hub launch, followed by a linear monthly release for 2 years afterwards)
+* **Core Developer Team**: 20% (locked up for 6 months starting from IRIS Hub launch, followed by a linear monthly release for 2 years afterwards)
 
 * **IRIS Foundation**: 15% (reserved to support the operations of the Foundation)
 
