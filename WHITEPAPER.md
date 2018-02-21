@@ -867,15 +867,16 @@ If and when the IRIS network is fully deployed, the annual inflation rate of IRI
 
 Proceeds from the private sale of IRIS tokens will be used, first and foremost, for the development of the IRIS network. The planned usage distribution is as follows:
 
-* **Foundation Operations**: 5% (professional services including legal, accounting, tax returns and auditing etc.)
+* **Foundation Operations**: 10% (including service providers and contractors fees， for example, auditing, consulting, legal and other third party fees， and other overheads)
 
-* **Software Development**: 40%
+* **Software Development**: 50% (including costs, fees and expenses directly attributable to the development of launch)
 
-* **Community Empowerment**: 20% (meetups and online engagement, developer enablement, and academic sponsorship)
+* **Developer Enablement**: 10% (including funding hackathons, awards to volunteers and training programs)
 
-* **Marketing**: 10%
+* **Research and Development Sponsorships**: 10% (including conference, research programs and university outreach)
 
-* **Risk Contingency**: 25%
+* **Marketing and Promotion**: 20% (including business development, community programs and outreach, together with related travel, communication, publication, distribution and other expenses)
+
 
 <div STYLE="page-break-after: always;"></div>
 
