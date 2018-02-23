@@ -842,7 +842,7 @@ token. Validator can run a separate cron job to update the config file
 based on validator preferred live market data or maybe just use a
 default config value.
 
-For the `service fee token` design, similarly a multi-token model is planned to be supported.  A service provider on the IRIS network should therefore have the freedom to charge for their services in their preferred token, provided that it appears on the whitelist.
+For the `service fee token` design, similarly a multi-token model is planned to be supported.  A service provider on the IRIS network should therefore have the freedom to charge for their services in their preferred tokens, provided that it appears on the whitelist.
 
 To help IRIS network participants mitigate cryptocurrency price volatility, the Foundation intends to facilitate the deployment of global iServices for retrieving market data from different exchanges, or through the potential introduction of oracles.
 
