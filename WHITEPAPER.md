@@ -287,7 +287,7 @@ iService definitions and often act as *adaptors* of off-chain services and resou
   back to the network.  A provider could at the same time act as a consumer
   by sending requests to other providers.  As planned, providers would be required to
   charge a fee for any services they might offer, and the service fee, by default, would be
-  priced in the IRIS network's native fee token known as "iGas"; providers
+  priced in the IRIS network's native fee token known as "IRIS"; providers
   could also price their services in other whitelisted Cosmos fee tokens, to be
   considered in due course.
 
@@ -356,7 +356,7 @@ A `CreateServiceBindingTx` transaction is composed of:
   otherwise, use `Local`
 
 * `ProviderDeposit (int64)`: To create an effective binding, the provider
-  must put down a deposit (in terms of iGas amount) that is greater than
+  must put down a deposit (in terms of IRIS token amount) that is greater than
   the value of the system parameter `MinProviderDeposit`; a larger deposit
   may imply more trustworthiness of the provider
 
