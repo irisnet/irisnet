@@ -828,7 +828,7 @@ Adopting the same staking mechanism design used in the Cosmos network [\[15\]][1
 
 ### Fee token
 
-There are two types of fee token in IRIS network:
+There are two types of fee tokens in IRIS network:
 * **Network fee** token is for spam-prevention and payment to validators in maintaining the
   ledger;
 * **Service fee** token is used for payment to service providers
