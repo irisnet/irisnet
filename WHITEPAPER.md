@@ -102,7 +102,7 @@ is very inefficient. Without a token economics model and the
 openness and the excitement in public chains, consortium chains may be viewed as lacking vitality.
 
 We would like to enhance the current blockchain technology and
-make it possible to enable thousands and millions of Small Medium Busiensses ("SMBs") and even individual freelance business service providers to provide their services and enjoy the rewards in an open network. To achieve this, we have identified the following challenges and consequent opportunities for technology innovations:
+make it possible to enable thousands and millions of Small Medium Businesses ("SMBs") and even individual freelance business service providers to provide their services and enjoy the rewards in an open network. To achieve this, we have identified the following challenges and consequent opportunities for technology innovations:
 
 **Not all computation could or should be implemented as on-chain computations such as smart contracts**
 
@@ -362,7 +362,7 @@ A `CreateServiceBindingTx` transaction is composed of:
 
 * `ServicePricing (string)`: A structured definition of the service pricing
   model on a per method basis, including cost per call, volume discount,
-  promotional terms etc.; service fee is by default listed in iGas but
+  promotional terms etc.; service fee is by default listed in IRIS token but
   could also be quoted in other whitelisted fee tokens.
 
 * `ServiceLevel (string)`: A structured definition of service level the
@@ -473,7 +473,7 @@ A `PostServiceRequestTx` transaction is composed of:
 * `Requests ([]ServiceRequest)`: The service requests to be posted
 
 * `RequestDeposits ([]int64)`: The consumer must put down for each request
-  a deposit (in terms of iGas amount) that is greater than the value of
+  a deposit (in terms of IRIS amount) that is greater than the value of
   `MinRequestDeposit`; this deposit is meant to incentivize the consumer to acknowledge receipt of service responses in a timely manner (see `ConfirmServiceResponseTx`).
 
 The application will verify that each request is coming from a consumer
@@ -814,10 +814,10 @@ envisioned business value more efficiently.
 
 Similar to the Cosmos Network, the IRIS network, as presently designed, is intended to support a multi-token model. The tokens will be held on the various zones, and can be moved from one zone to another via the IRIS Hub. There are two types of tokens that are expected to support IRIS network's operation:
 
-* staking token **IRIS**
-* fee token **iGas**
+* staking token
+* fee token
 
-### IRIS staking token
+### Staking token
 
 Adopting the same staking mechanism design used in the Cosmos network [\[15\]][15], the IRIS Hub will have its own special native token for staking. This token will be called "IRIS". We have a number of ideas in mind regarding the specific functionality of the IRIS token, including:
 
@@ -826,16 +826,15 @@ Adopting the same staking mechanism design used in the Cosmos network [\[15\]][1
 * voting power to participate in the IRIS network's governance
 
 
-### IRIS fee token
+### Fee token
 
 There are two types of fee token in IRIS network:
 * **Network fee** token is for spam-prevention and payment to validators in maintaining the
   ledger;
 * **Service fee** token is used for payment to service providers
-  who deploy iServices and a default payment service token is called
-  `iGas`.
+  who deploy iServices and the default payment service token is IRIS token.
 
-The IRIS network is intended to support all whitelisted fee tokens from the Cosmos network, e.g [Photon](https://blog.cosmos.network/cosmos-fee-token-introducing-the-photon-8a62b2f51aa), plus the IRIS token and the iGas token. The benefit of separating the fee token from staking token is explained in [\[16\]][16].
+The IRIS network is intended to support all whitelisted fee tokens from the Cosmos network, e.g [Photon](https://blog.cosmos.network/cosmos-fee-token-introducing-the-photon-8a62b2f51aa), plus the IRIS token.
 
 Supporting a variety of whitelisted fee tokens is a feature that we plan to adopt from Cosmos. It can provide an enhanced experience for network participants. In Cosmos, for `network fee token`, each validator has a config
 file defines his personal weighting of how much they value each fee
