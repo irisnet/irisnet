@@ -768,7 +768,7 @@ To protect data access, the (partial) model that runs on the data side needs to 
 Other potential benefits could include the following:
 1.	Only a small amount of parametric data being exchanged on-chain, which can help enhance performance.
 
-2.	A more practical way for data usage auditing, which is often needed in the healthcare domain.
+	.	A more practical way for data usage auditing, which is often needed in the healthcare domain.
 
 Healthcare data is highly private, involving numerous security requirements. This puts forward the challenge for healthcare data to be used for the purposes of cross-organization collaboration (such as a cross-hospital clinic records search for diagnosis assistance, new drug clinic test patient identification, health insurance automatic claim processing etc.). This minimum viable product ("MVP") service layer implementation is built on top of `Ethermint` in attempt to connect hospitals, insurance companies and analytics service providers to provide privacy preserving healthcare data analytics capability.
 
@@ -900,8 +900,7 @@ The fourth stage will focus on further technology innovations to the IRIS networ
 
 ## The Team ################################################################
 
-**Tendermint** (the team that developed the [Tendermint](https://www.tendermint.com) consensus engine and is currently building Cosmos), **Wancloud** (a subsidiary of [Wanxiang
-Blockchain](http://www.wxblockchain.com) and **Bianjie AI** will work together to build the IRIS network's infrastructure.  
+**Tendermint** (the team that developed the [Tendermint](https://www.tendermint.com) consensus engine and is currently building Cosmos), **Wancloud** (a subsidiary of [Wanxiang Blockchain](http://www.wxblockchain.com) )and **Bianjie AI** will work together to build the IRIS network's infrastructure.  
 
 Tendermint's intended role to give technical advice and development support to the IRIS project team in extending the Tendermint ABCI and the Cosmos IBC technologies.
 [Wancloud](https://www.wancloud.io) is envisaged as the key strategy partner to both the Cosmos and IRIS ecosystems, and we understand that it intends to participate in Cosmos and IRIS development across Asia.
