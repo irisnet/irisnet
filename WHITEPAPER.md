@@ -127,7 +127,7 @@ blockchain technology for more real-world use scenarios.
 
 It is infeasible to use one public chain to address all use cases.
 Every day there are different chains going live which focus on one aspect
-of problem solving such as distributed storage,asset ownership or predict market etc.
+of problem solving such as distributed storage, asset ownership or predict market etc.
 According to the coinmarketcap.com, there are more than 1000
 cryptocurrencies currently active on various exchanges.
 
@@ -856,13 +856,13 @@ On Genesis, the initial token supply will be 2,000,000,000 IRIS tokens.  The dis
 
 * **Private Sale**: 20%
 
-* **Core Developer Team**: 20% (locked up for 6 months starting from IRIS Hub launch, followed by a linear monthly release for 2 years afterwards)
+* **Core Developer Team**: 20% (4-year vesting period starting from IRIS Hub launch, during which the team will vest 1/48th of its IRIS tokens each month)
 
 * **IRIS Foundation**: 15% (reserved to support the operations of the Foundation)
 
-* **Ecosystem Development**: 45% (swap with zones connecting to IRIS Hub; grant to potential users; awards to outstanding partners)
+* **Ecosystem Development**: 45% (swap with zones connecting to IRIS Hub; grant to potential users; awards to outstanding partners; potential public sale)
 
-If and when the IRIS network is fully deployed, the annual inflation rate of IRIS tokens is expected to be 7% to 20%. The exact rate will be adjusted to account for the fact that a substantial portion of IRIS tokens in circulation may be voluntarily staked by participants to participate in the consensus engine.
+If and when the IRIS network is fully deployed, the annual inflation rate of IRIS tokens will be adjusted to account for the fact that a substantial portion of IRIS tokens in circulation may be voluntarily staked by participants to participate in the consensus engine.
 
 Proceeds from the private sale of IRIS tokens will be used, first and foremost, for the development of the IRIS network. The planned usage distribution is as follows:
 
@@ -900,7 +900,8 @@ The fourth stage will focus on further technology innovations to the IRIS networ
 
 ## The Team ################################################################
 
-**Tendermint** (the team that developed the [Tendermint](https://www.tendermint.com) consensus engine and is currently building Cosmos), **Wancloud** (a subsidiary of [Wanxiang Blockchain](http://www.wxblockchain.com) )and **Bianjie AI** will work together to build the IRIS network's infrastructure.  
+**Tendermint** (the team that developed the [Tendermint](https://www.tendermint.com) consensus engine and is currently building Cosmos), **Wancloud** (a subsidiary of [Wanxiang
+Blockchain](http://www.wxblockchain.com) and **Bianjie AI** will work together to build the IRIS network's infrastructure.  
 
 Tendermint's intended role to give technical advice and development support to the IRIS project team in extending the Tendermint ABCI and the Cosmos IBC technologies.
 [Wancloud](https://www.wancloud.io) is envisaged as the key strategy partner to both the Cosmos and IRIS ecosystems, and we understand that it intends to participate in Cosmos and IRIS development across Asia.
