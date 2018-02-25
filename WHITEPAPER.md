@@ -900,8 +900,7 @@ The fourth stage will focus on further technology innovations to the IRIS networ
 
 ## The Team ################################################################
 
-**Tendermint** (the team that developed the [Tendermint](https://www.tendermint.com) consensus engine and is currently building Cosmos), **Wancloud** (a subsidiary of [Wanxiang
-Blockchain](http://www.wxblockchain.com) and **Bianjie AI** will work together to build the IRIS network's infrastructure.  
+**Tendermint** (the team that developed the [Tendermint](https://www.tendermint.com) consensus engine and is currently building Cosmos), **Wancloud** (a subsidiary of [Wanxiang Blockchain](http://www.wxblockchain.com) )and **Bianjie AI** will work together to build the IRIS network's infrastructure.  
 
 Tendermint's intended role to give technical advice and development support to the IRIS project team in extending the Tendermint ABCI and the Cosmos IBC technologies.
 [Wancloud](https://www.wancloud.io) is envisaged as the key strategy partner to both the Cosmos and IRIS ecosystems, and we understand that it intends to participate in Cosmos and IRIS development across Asia.
