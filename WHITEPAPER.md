@@ -140,7 +140,7 @@ dedicated blockchains and not reinventing the wheel.
 
 Besides, there are many (near) real-time business transactions do need
 more close form consortium/permission/private chains to address
-performance, security and business governance requirements.  Our vision of distributed business infrastructure needs to have the Interoperability of many heterogeneous chains including public/consortium/permission/private chains.
+performance, security and business governance requirements. Our vision of distributed business infrastructure needs to have the Interoperability of many heterogeneous chains including public/consortium/permission/private chains.
 
 Inter-chain technology is a very nature answer to the requirement.
 However, till today, the existing Inter-chain technologies are mainly
