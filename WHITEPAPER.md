@@ -300,7 +300,7 @@ consumers use to select suitable providers.
 
 ### IRIS Services
 
-In this section, we set out the intended technical parameters for deploying iServices on the IRS network.
+In this section, we set out the intended technical parameters for deploying iServices on the IRIS network.
 
 **Service Definition**
 
