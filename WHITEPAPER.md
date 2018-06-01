@@ -768,7 +768,7 @@ To protect data access, the (partial) model that runs on the data side needs to 
 Other potential benefits could include the following:
 1.	Only a small amount of parametric data being exchanged on-chain, which can help enhance performance.
 
-2.	A more practical way for data usage auditing, which is often needed in the healthcare domain.
+	.	A more practical way for data usage auditing, which is often needed in the healthcare domain.
 
 Healthcare data is highly private, involving numerous security requirements. This puts forward the challenge for healthcare data to be used for the purposes of cross-organization collaboration (such as a cross-hospital clinic records search for diagnosis assistance, new drug clinic test patient identification, health insurance automatic claim processing etc.). This minimum viable product ("MVP") service layer implementation is built on top of `Ethermint` in attempt to connect hospitals, insurance companies and analytics service providers to provide privacy preserving healthcare data analytics capability.
 
@@ -883,7 +883,7 @@ Proceeds from the private sale of IRIS tokens will be used, first and foremost, 
 
 The expected IRIS project is set out below. We reiterate that the roadmap is indicative only, and subject to change.
 
-* **PANGU** (January 2018 \~ June 2018) The first stage of the IRIS project will focus on having the IRIS Hub up and running and connected to the Cosmos Hub. We also intend to release an initial version of the mobile client for the IRIS network.
+* **PANGU** (January 2018 \~ July 2018) The first stage of the IRIS project will focus on having the IRIS Hub up and running and connected to the Cosmos Hub. We also intend to release an initial version of the mobile client for the IRIS network.
 
 
 * **NUWA** (July 2018 \~ November 2018)
