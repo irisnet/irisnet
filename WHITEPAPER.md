@@ -883,17 +883,17 @@ Proceeds from the private sale of IRIS tokens will be used, first and foremost, 
 
 The expected IRIS project is set out below. We reiterate that the roadmap is indicative only, and subject to change.
 
-* **PANGU** (January 2018 \~ July 2018) The first stage of the IRIS project will focus on having the IRIS Hub up and running and connected to the Cosmos Hub. We also intend to release an initial version of the mobile client for the IRIS network.
+* **PANGU** (January 2018 \~ September 2018) The first stage of the IRIS project will focus on having the IRIS Hub up and running and connected to the Cosmos Hub. We also intend to release an initial version of the mobile client for the IRIS network.
 
 
-* **NUWA** (July 2018 \~ November 2018)
+* **NUWA** (October 2018 \~ December 2018)
 The second stage will focus on building the fundamental IRIS Service Layer. This will involve enabling service definition, binding, invocation and query.
 In this stage we are also aiming to have a beta version of the IRIS SDK ready for developers.
 
-* **KUAFU** (December 2018 \~ May 2019) The third stage will focus on incremental upgrades to the IRIS network in order to support our planned advanced IRIS Service governance features.
+* **KUAFU** (January 2018 \~ June 2019) The third stage will focus on incremental upgrades to the IRIS network in order to support our planned advanced IRIS Service governance features.
 
 
-* **HOUYI** (Beyond June 2019)
+* **HOUYI** (Beyond July 2019)
 The fourth stage will focus on further technology innovations to the IRIS network, IRIS SDK and mobile client, as well as developer engagement.
 
 <div STYLE="page-break-after: always;"></div>
