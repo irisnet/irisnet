@@ -959,6 +959,10 @@ Tom has been tracking trends in the blockchain, cloud computing, IoT and smart m
 
 [Dr. Michael Yuan](http://www.michaelyuan.com) is the Director of the [CyberMiles Foundation](https://cm.5miles.com). Michael received a PhD in Astrophysics from University of Texas at Austin. He is the author of 5 books on software development, published by Prentice Hall, Addison-Wesley, and O'Reilly. Michael was an active code committer in large Open Source projects such as Firefox, Fedora, JBoss, and others. He is an expert on enterprise and mobile software, and was a Principle Investigator on multiple research projects funded by the US government.
 
+**Yubo Ruan**
+
+[Yubo](https://www.linkedin.com/in/yubo-ruan/) is the founder of 8 Decimal Capital. The fund invested in IRISnet，0x、Kyber、Ontology、Fcoin、Zilliqa、ICON、Wanchian、Bibox、BiShiJie. Yubo is the co-founder of Skylight Investment, a boston based venture fund backed by New Oriental(NYSE:EDU). Previously, Yubo started two highly successful companies, including Alisimba (Acquired by TopHacker Group) held 4 national patents and won the 2017 AACYF 30 under 30, Silver Medal Winner, iENA International Inventions Competition, 2012.
+
 <div STYLE="page-break-after: always;"></div>
 
 ## References ################################################################
