@@ -945,7 +945,7 @@ Tom has been tracking trends in the blockchain, cloud computing, IoT and smart m
 
 **Dr. Shuo Bai**
 
-Dr. Bai is the director of ChinaLedger Technical Committee, and former Chief Architect of Shanghai Stock Exchange. He is a senior blockchain professional who graduated from Peking University with doctorate of science. He worked as researcher, doctoral student advisor , director of software department, and chief scientist in the Institute of Computing Technology, Chinese Academy of Sciences. He also led the establishment of China National Internet Emergency Center (CNCERT/CC) since 2000. Mr. Bai has rich experiences in theoretical research and technical practices in the fields of financial exchanges, consortium and public blockchains.
+Dr. Bai is the director of ChinaLedger Technical Committee, and former Chief Architect of Shanghai Stock Exchange. He is a senior blockchain professional who graduated from Peking University with doctorate of science. He worked in various capacities including researcher, doctoral student advisor, director of software department, and chief scientist in the Institute of Computing Technology, Chinese Academy of Sciences. He also led the establishment of China National Internet Emergency Center (CNCERT/CC) since 2000. Dr. Bai has rich experiences in theoretical research and technical practices in the fields of financial exchanges, consortium and public blockchains.
 
 **Jim Yang**
 
