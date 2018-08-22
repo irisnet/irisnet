@@ -943,6 +943,10 @@ Tom has been tracking trends in the blockchain, cloud computing, IoT and smart m
 
 ### Advisors
 
+**Dr. Shuo Bai**
+
+Dr. Bai is the director of ChinaLedger Technical Committee, and former Chief Architect of Shanghai Stock Exchange. He is a senior blockchain professional who graduated from Peking University with doctorate of science. Previously, he has been worked as researcher, doctoral student advisor , director of software department, and chief scientist in the Institute of Computing Technology, Chinese Academy of Sciences. He led the establishment of China National Internet Emergency Center (CNCERT/CC) since 2000. Mr. Bai has rich experiences in theoretical research and technical practices in the fields of financial exchanges, consortium and public blockchains.
+
 **Jim Yang**
 
 [Jim Yang](https://www.linkedin.com/in/jimyang/) runs Strategy for Tendermint. He was the founder and CEO at ChatX, mobile messaging studio. ChatX developed various mobile messaging/social apps. He also co-founded Identyx, where he served as CEO until its acquisition by Red Hat. Identyx developed an open source enterprise identity management software.
