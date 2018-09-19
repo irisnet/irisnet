@@ -1,8 +1,8 @@
 # The IRIS Network
 **Inter-chain service infrastructure and protocol for building trustworthy and distributed business applications**
 
-Harriet Cao harriet@bianjie.ai<br/>
-Haifeng Xi haifeng@bianjie.ai
+Haifeng Xi haifeng@bianjie.ai<br/>
+Harriet Cao harriet@bianjie.ai
 
 _NOTE: If you can read this on GitHub, then we're still actively developing this
 document.  Please check regularly for updates!_
