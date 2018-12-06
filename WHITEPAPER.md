@@ -854,13 +854,18 @@ Both staking and fee tokens are subject to further refinement to ensure complian
 
 On Genesis, the initial token supply will be 2,000,000,000 IRIS tokens.  The distribution of IRIS tokens is planned to be as follows:
 
-* **Private Sale**: 20%
+* **Private Sale**: 25%
 
-* **Core Developer Team**: 20% (4-year vesting period starting from IRIS Hub launch, during which the team will vest 1/48th of its IRIS tokens each month)
+* **Bianjie Developer Team**: 15% (4-year vesting period starting from IRIS Hub launch, during which the team will vest 1/48th of its IRIS tokens each month)
+
+
+* **Tendermint Developer Team**: 10% (2-year vesting period starting from IRIS Hub launch, during which the team will vest 1/24th of its IRIS tokens each month)
 
 * **IRIS Foundation**: 15% (reserved to support the operations of the Foundation)
 
-* **Ecosystem Development**: 45% (swap with zones connecting to IRIS Hub; grant to potential users; awards to outstanding partners; potential public sale)
+* **Ecosystem Development**: 30% (swap with zones connecting to IRIS Hub; grant to potential users; awards to outstanding partners; potential public sale)
+
+* **Cosmos ATOM Holder Airdrop**: 5% (airdrop to ATOM holders through a special airdrop to a wallet owned by the Cosmos Hub for ATOM holders subject to an one year vesting period. The vesting period will begin on the date of the IRIS Hub Launch, and the tokens will vest monthly over a one-year period such that 1/12th of the tokens vest each month).
 
 If and when the IRIS network is fully deployed, the annual inflation rate of IRIS tokens will be adjusted to account for the fact that a substantial portion of IRIS tokens in circulation may be voluntarily staked by participants to participate in the consensus engine.
 
@@ -898,8 +903,8 @@ The fourth stage will focus on further technology innovations to the IRIS networ
 
 ## The Team ################################################################
 
-**Bianjie AI**
-is the core development team for the IRIS network, leveraging the team's experience established from building distributed applications. [Bianjie AI](https://www.bianjie.ai) is a Shanghai-based start-up established in 2016. It focuses on developing innovative products and solutions for healthcare and financial industries, using advanced Blockchain and AI technologies. Besides IRISnet, Bianjie's also building another core product ---  `BEAN (Blockchain Edge Analytics Network)` BEAN (Blockchain Edge Analytics Network), which is a permission chain which delivers distributed data analytics services for privacy preserving healthcare data analysis and exchange using NLP and machine learning technologies.
+**Bianjie **
+is the core development team for the IRIS network, leveraging the team's experience established from building distributed applications. [Bianjie](https://www.bianjie.ai) is a Shanghai-based start-up established in 2016. It focuses on developing innovative products and solutions for healthcare and financial industries, using advanced Blockchain and AI technologies. Besides IRISnet, Bianjie's also building another core product ---  `BEAN (Blockchain Edge Analytics Network)` BEAN (Blockchain Edge Analytics Network), which is a permission chain which delivers distributed data analytics services for privacy preserving healthcare data analysis and exchange using NLP and machine learning technologies.
 **Bianjie AI**
 is also the operation and service partner of Cosmos Network in China.
 
