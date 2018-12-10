@@ -108,7 +108,7 @@ You must consult a lawyer, accountant and/or tax professional, as well as any ot
 
 하지만 다수의 비즈니스 로직들은 결정론적이지 않다. 환경적 매개변수(environmental parameter)와 시간 등 상황과 환경에 따라서 변화할 수 있다.
 
-최근 들어 비즈니스 시스템들의 자연어 처리(Natural Language Processing, NLP), 머신 러닝, 그리고 오퍼레이션 연구 같은 컴퓨터 알고리즘에 대한 의존도가 증가하고 있다. 이런 알고리즘에는 더 나은 차선책을 찾으려고 노력하는 과정에서 로컬 최적 상태(local optimal state)에 묶여있지 않도록 빈번하게 의도적으로 임의성(randomness)을 추가한다.
+최근 들어 비즈니스 시스템들의 자연어 처리(NLP, Natural Language Processing), 머신 러닝, 그리고 오퍼레이션 연구 같은 컴퓨터 알고리즘에 대한 의존도가 증가하고 있다. 이런 알고리즘에는 더 나은 차선책을 찾으려고 노력하는 과정에서 로컬 최적 상태(local optimal state)에 묶여있지 않도록 빈번하게 의도적으로 임의성(randomness)을 추가한다.
 
 다른 한 편으로, 일부 비즈니스 로직들은 오프체인(off-chain)에서 구동되는 것이 더 적합할 수 있고, 스마트 컨트랙트 같은 분산 복제 환경으로 구동되면 안되는 경우도 있다.
 
@@ -137,8 +137,10 @@ You must consult a lawyer, accountant and/or tax professional, as well as any ot
 
 ### 코스모스와 텐더민트 ################################################################
 
-Cosmos [\[3\]][3] intends to build the 'internet of blockchains'. It is a network of many independent blockchains, called "zones". Each zone is powered by classical Byzantine fault-tolerant ("BFT")
-consensus protocols like [Tendermint](https://tendermint.com/).
+코스모스는 [\[3\]][3] ‘블록체인의 인터넷(Internet of Blockchains)’을 만드는 프로젝트다.
+
+코스모스 생태계는 수많은 독립적인 “존(zone)”으로 이루어지며, 각 존은 [텐더민트](https://tendermint.com/) 같은 클래시컬 비잔틴 장애 허용(Byzantine Fault-Tolerant, BFT)~~여기에서는 코스모스 백서 따름~~ 합의 프로토콜을 중심으로 작동된다.
+
 
 Tendermint provides a high-performance, consistent, secure BFT consensus
 engine, where strict fork-accountability guarantees hold over the
