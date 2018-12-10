@@ -139,18 +139,11 @@ You must consult a lawyer, accountant and/or tax professional, as well as any ot
 
 코스모스는 [\[3\]][3] ‘블록체인의 인터넷(Internet of Blockchains)’을 만드는 프로젝트다.
 
-코스모스 생태계는 수많은 독립적인 “존(zone)”으로 이루어지며, 각 존은 [텐더민트](https://tendermint.com/) 같은 클래시컬 비잔틴 장애 허용(Byzantine Fault-Tolerant, BFT)~~여기에서는 코스모스 백서 따름~~ 합의 프로토콜을 중심으로 작동된다.
+코스모스 생태계는 수많은 독립적인 “존(zone)”으로 이루어지며, 각 존은 [텐더민트](https://tendermint.com/) 같은 클래시컬 비잔틴 장애 허용(BFT, Byzantine Fault-Tolerant)~~여기에서는 코스모스 백서 따름~~ 합의 프로토콜을 중심으로 작동된다.
+
+텐더민트는 엄격한 '포크 책임(fork accountability)'을 기반으로 악의적인 행위를 억제하여 일관성, 안전성, 고성능이 보장되는 BFT 합의 엔진을 제공한다. 텐더민트는 이더리움의 고성능 지분증명 구현 모델인 이더민트(Ethermint)[\[6\]][6] 같은 퍼블릭 블록체인 부터 오라클(Oracle) [\[7\]][7], CITA[\[8\]][8], 그리고 하이퍼렛저 버로우(Hyperledger Burrow)[\[9\]][9] 같은 안전성과 성능이 보장되어야 하는 컨소시엄/허가형 블록체인 까지 다양한 형태의 블록체인에 성공적으로 적용되었다.
 
 
-Tendermint provides a high-performance, consistent, secure BFT consensus
-engine, where strict fork-accountability guarantees hold over the
-behavior of malicious actors. Tendermint is well suited for scaling
-heterogeneous blockchains including public blockchains such as Ethermint
-[\[6\]][6], which is a blazing fast Proof-of-Stake implementation of
-Ethereum, as well as performance critical permission/consortium chains.
-The successful stories on using Tendermint in the permission/consortium
-chain domain including Oracle [\[7\]][7], CITA [\[8\]][8] and
-Hyperledger Burrow [\[9\]][9].
 
 Tendermint is used as the consensus protocol for building the first zone
 on the Cosmos Hub. Hub can connect to many different
