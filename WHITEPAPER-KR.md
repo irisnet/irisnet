@@ -143,15 +143,8 @@ You must consult a lawyer, accountant and/or tax professional, as well as any ot
 
 텐더민트는 엄격한 '포크 책임(fork accountability)'을 기반으로 악의적인 행위를 억제하여 일관성, 안전성, 고성능이 보장되는 BFT 합의 엔진을 제공한다. 텐더민트는 이더리움의 고성능 지분증명 구현 모델인 이더민트(Ethermint)[\[6\]][6] 같은 퍼블릭 블록체인 부터 오라클(Oracle) [\[7\]][7], CITA[\[8\]][8], 그리고 하이퍼렛저 버로우(Hyperledger Burrow)[\[9\]][9] 같은 안전성과 성능이 보장되어야 하는 컨소시엄/허가형 블록체인 까지 다양한 형태의 블록체인에 성공적으로 적용되었다.
 
+현재 텐더민트는 코스모스 생태계의 첫 존이자 허브(Hub)인 '코스모스 허브'의 합의 프로토콜로 이용되고 있다. 허브는 다수의 존들과 연결될 수 있으며, 일종의 블록체인을 위한 가상 UDP/TCP 인 ~~'인터블록체인 통신???'~~(IBC, Inter-Blockchain Communication)을 통해 상호 통신이 가능하다. IBC를 통해 이동하는 토큰은 거래소 또는 제3자의 중개자 없이 코스모스 허브를 통해 한 존에서 부터 다른 존으로 안전하게 이동할 수 있다
 
-
-Tendermint is used as the consensus protocol for building the first zone
-on the Cosmos Hub. Hub can connect to many different
-kinds of zones, and the communication is achieved via an
-inter-blockchain communication ("IBC") protocol, a kind of virtual UDP or
-TCP for blockchains. Tokens can be transferred from one zone to another
-securely through the Cosmos Hub, without the need for an exchange
-or a trusted third party between zones.
 
 To develop robust interoperable blockchains and blockchain applications
 with Cosmos Hub, Cosmos SDK provides blockchain development
