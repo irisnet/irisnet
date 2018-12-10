@@ -143,67 +143,36 @@ You must consult a lawyer, accountant and/or tax professional, as well as any ot
 
 텐더민트는 엄격한 '포크 책임(fork accountability)'을 기반으로 악의적인 행위를 억제하여 일관성, 안전성, 고성능이 보장되는 BFT 합의 엔진을 제공한다. 텐더민트는 이더리움의 고성능 지분증명 구현 모델인 이더민트(Ethermint)[\[6\]][6] 같은 퍼블릭 블록체인 부터 오라클(Oracle) [\[7\]][7], CITA[\[8\]][8], 그리고 하이퍼렛저 버로우(Hyperledger Burrow)[\[9\]][9] 같은 안전성과 성능이 보장되어야 하는 컨소시엄/허가형 블록체인 까지 다양한 형태의 블록체인에 성공적으로 적용되었다.
 
-현재 텐더민트는 코스모스 생태계의 첫 존이자 허브(Hub)인 '코스모스 허브'의 합의 프로토콜로 이용되고 있다. 허브는 다수의 존들과 연결될 수 있으며, 일종의 블록체인을 위한 가상 UDP/TCP 인 ~~'인터블록체인 통신???'~~(IBC, Inter-Blockchain Communication)을 통해 상호 통신이 가능하다. IBC를 통해 이동하는 토큰은 거래소 또는 제3자의 중개자 없이 코스모스 허브를 통해 한 존에서 부터 다른 존으로 안전하게 이동할 수 있다
+현재 텐더민트는 코스모스 생태계의 첫 존이자 허브(Hub)인 '코스모스 허브'의 합의 프로토콜로 이용되고 있다. 허브는 다수의 존들과 연결될 수 있으며, 일종의 블록체인을 위한 가상 UDP/TCP 인 ~~'인터블록체인 통신???'~~(IBC, Inter-Blockchain Communication)을 통해 상호 통신이 가능하다. IBC를 통해 이동하는 토큰은 거래소 또는 제3자의 중개자 없이 코스모스 허브를 통해 한 존에서 부터 다른 존으로 안전하게 이동할 수 있다.
+
+또한 코스모스 SDK를 이용해 누구나 상호호환이 가능한 블록체인을 개발할 수 있다. 일종의 '블록체인 스타터 키트'인 코스모스 SDK는 높은 적응성을 제공하여 목적에 따른 특수화 또한 가능하다.
+
+### IRIS의 혁신 ################################################################
+
+아이리스 네트워크는 분산화 비즈니스 애플리케이션 개발을 위한 기술적 기반을 제공하는 것이 목표다. 이런 점에서 아이리스는 디지털 자산에 특화되어있는 기존 블록체인  시스템과 차별점을 제공한다.
+
+아이리스 네트워크를 통해 해결하려는 문제점의 두가지 핵심은 다음과 같다:
+* 오프체인 컴퓨팅/오프체인 리소스와 분산원장의 연동성
+* 다양한 형태의(heterogeneous) 블록체인 간의 상호운영성
+
+우리는 코스모스/텐더민트 환경에 서비스 기반 인프라를 적용하여 해결하고자 한다.
+
+아이리스의 설계는 수년간의 서비스 특화 아키텍처(SOA, Service-oriented Architecture)의 사고방식에서 유래한다. SOA는 명확한 경계, 공유 스키마(Shared Schema) 그리고 컨트랙트가 있는 자율서비스 설계 방식이다. [\[13\]][13] 초기 SOA는 엔터프라이즈 서비스 버스(ESB, Enterprise Service Bus) 같은 일종의공통 통신 버스(common communication bus)를 통해 서비스 간 통신을 가능하게 했다. 이런 '공통 통신 버스'는 서비스 제공자와 서비스 소비자가 공유하는 다수의 통신 지점을 연결해 상호 통신이 가능했다. 하지만 ESB 같은 중앙화된 운영 체계에는 단일 장애 지점(single point of fauilure)가 존재했으며, 서비스 배포에 대한 의존도가 있었다.
+
+반면, 최근 들어 인기를 끌고 있는 마이크로-서비스 유형의 아키텍처는 SOA의 라이트 메시지 대기열(light message queues) 보다 ESB에 중점을 두며 한 단계 진보한 모습을 보이고 있다.
+
+아이리스 네트워크의 서비스간 소통(Inter service communication)은 블록체인을 하나의 '신뢰 가능한 머신'으로 두며 비즈니스 협업을 중재하게 된다. 이런 형태의 시스템은 서비스 제공자와 서비스 소비자의 근본적인 '신뢰'가 없어도 소통이 가능하게 한다.
+
+아이리스 네트워크는 텐더민트를 고성능 합의 엔진으로 적용했다. 텐더민트의 애플리케이션 특화 블록체인 인터페이스(ABCI, Application BlockChain Interface) 계층이 제공하는 유연성을 응용하여 서비스 권할 설정, 서비스 소비, 그리고 서비스 거버넌스를 일종의 '거래(transaction)'로 정의한다.
+
+상단에서 설명했던 바와 같이, 대다수의 비즈니스 로직은 결정론적인(deterministic) 블록체인 스마트 컨트랙트로 구연하기에 부적절하다. 아이리스는 서비스 계층(service layer)을 이용해 비즈니스 애플리케이션에 특화된 로직을 블록체인 외로(off-chain) 통신하고 처리할 수 있게된다. 여기에서 블록체인은 이런 오프체인 서비스가 제공하는 결과(result)에 대한 합의를 제공하는 것에만 적용이 된다.
+
+이런 아이디어는 라이트닝 네트워크의 오프체인 스테이트 채널(state channel)과 플라즈마의 사기방지 사이드체인(fraud proof side chains)에서 영감을 받았다. 아이리스는 사이드체인을 이용하지는 않지만, 기존 비즈니스 연산 로직을 블록체인 외에서 처리하고 추후 블록체인을 하나의 '합의 도구'로 이용한다는 것에서는 유사한 점이 있다.
+
+코스모스 IBC는 인터체인 통신을 '한 체인의 계좌의 '값(value)'을 다른 체인의 계좌로 이동하는 것'으로 정의한다. 추가적으로, 아이리스 네트워크는 IBC를 통해 블록체인 간 연산(computation) 요청을 표준화하여 설계했다. 아이리스는 이런 기능이 확장 가능한 비즈니스 애플리케이션을 개발하기 위해서 필수라고 판단하며, 기능의 적용 가능 사례는 하단에 설명 되어있다.
 
 
-To develop robust interoperable blockchains and blockchain applications
-with Cosmos Hub, Cosmos SDK provides blockchain development
-\'starter-kit\' of common blockchain modules while not enforcing
-user stories thus giving maximum flexibility for application customization.
-
-### IRIS Innovations ################################################################
-
-IRIS network aims to build technology foundation which facilitate
-construction of distributed business applications. It goes beyond today's
-blockchain systems which are mainly for digitalized assets.
-
-The key challenges that we aim to address via the IRIS network are two-fold:
-* Integration and collaboration of off-chain computing and resources on
-  a distributed ledger;
-* interoperability of the services across
-  heterogeneous chains.
-
-We address those challenges through incorporation
-of a service oriented infrastructure into Cosmos/Tendermint.
-
-Our design inherits the thinking pattern from
-many years of service-oriented architecture ("SOA") practices. SOA is an architectural approach to create
-systems built from autonomous services which have explicit boundaries,
-share schemas and contracts [\[13\]][13]. Earlier practice of SOA focused
-on the implementation of Enterprise Service Bus ("ESB") which enables
-communication among services via a common communication bus which
-consists of a variety of point-to-point connections between providers
-and consumers. However, centralized management of services through ESB could
-trigger a single point of failure, also adds dependency of service
-deployment. The recent surge of micro-services architectural style can be
-seen as a development of SOA without focusing on the ESB rather using
-light message queues for inter service communication. In IRIS network,
-the inter service communication is intended to be implemented over blockchain to
-leverage blockchain as a trusted machine for mediating business
-collaborations. It runs without prerequisite of existing trust among service
-provider and service consumer which is very hard to establish.
-
-The IRIS network uses Tendermint protocol as a high-performance consensus
-engine. Leveraging the flexibility provided by tendermint's Application
-BlockChain Interface ("ABCI"), we define a set of service infrastructure
-transaction types including service provisioning, service consumption
-and service governance. As explained earlier, most business logic is not
-suitable for implementation as deterministic smart contracts on
-blockchain, we are using this service layer to move the business
-application specific logics and transaction processing off the
-blockchain itself and use the blockchain only to get consensus on the
-results generated through those services. This idea is also inspired by
-existing work from blockchain community when address performance issues
-of moving some complicated computation off the main chain, such as Lightning
-Network's off-chain state channels [\[10\]][10] as well as Plasma's fraud
-proof side chains [\[11\]][11]. Although we are not implementing side chains,
-we rip traditional business logic computation off the blockchain
- and use it as a trustworthy mediation bus for
-complicated business collaboration.
-
-For interchain communication, Cosmos IBC [\[12\]][12] defines a protocol for
-transferring values from an account on one chain to an account on another
-chain.  The IRIS network designs new semantics to allow cross-chain computation to be invoked by leveraging IBC.  We believe this capability is very important when building scalable business applications. Further details of potential use cases are set out below.
+~~아이리스 네트워크는 거래의 온-체인 처리와 
 
 The IRIS network is intended to provide the service infrastructure for handing and coordinating on-chain transaction processing with off-chain data processing and business logic execution. Enhanced IBC capability
 allows those off-chain processing to be invoked cross chain, if required. The IRIS network, as presently envisaged, will also include client-side tools, including a smart wallet enabling cross-chain multi-asset storage, as well as consume and provide iServices. We plan to provide SDKs for easy construction of iServices. For example, for a specific service definition, the Client SDK would generate the provider side skeleton as well as consumer side stub for major programming languages.
