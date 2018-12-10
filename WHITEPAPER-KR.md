@@ -100,49 +100,32 @@ You must consult a lawyer, accountant and/or tax professional, as well as any ot
 이를 현실화하기 위해서 다음과 같은 과제들이 해결되어아 할 것으로 보인다.
 
 
-**Not all computation could or should be implemented as on-chain computations such as smart contracts**
+**모든 연산(computation)이 스마트 컨트랙트 같은 온체인(on-chain) 연산으로 구현될 필요는 없다**
 
-The [Turing-complete](https://en.wikipedia.org/wiki/Turing_completeness) virtual
-machine provided by Ethereum [\[2\]][2] runs Smart Contracts gives people a lot of hope of developing
-decentralized applications. However Smart contracts can only handle deterministic logic (so
-every node can reach an identical state after processing every
-transaction and block) while huge amount of existing business logic that
-is not deterministic and might vary at different time and under
-different environmental parameters. Especially these days, business systems have placed an increasing amount of reliance on computer algorithms, including Natural Language Processing ("NLP"), machine learning, and operation research algorithms, for decision optimization. In those
-algorithms, very often we purposely add some randomness to make the
-decision not to get stuck at local optimal states while trying to find a
-better sub-optimal result.
+이더리움[\[2\]][2]의 [튜링 완전(Turing-complete)](https://en.wikipedia.org/wiki/Turing_completeness) 가상머신은 ‘스마트 컨트랙트'를 구동한다. 사람들은 이런 스마트 컨트랙트를 이용해 탈중앙 애플리케이션을 만들 수 있을 것을 기대한다.
 
-On the other hand, some of the real world business logics are meant to
-be run once off-chain and shouldn't be implemented as smart contracts
-this type of replicated computing. Integration and collaboration of off-chain services and resources with
-a distributed ledger is key to further advance the adoption of
-blockchain technology for more real-world use scenarios.
+하지만 스마트 컨트랙트는 오직 결정론적 로직(deterministic logic)만을 처리할 수 있다 (모든 노드가 서로 동일한 상태(state)에 도달해야만 거래를 처리하고 블록을 생성할 수 있기 때문이다). 
 
-**How to reuse the existing blockchain resources, including both public chains and consortium chains**
+하지만 다수의 비즈니스 로직들은 결정론적이지 않다. 환경적 매개변수(environmental parameter)와 시간 등 상황과 환경에 따라서 변화할 수 있다.
 
-It is infeasible to use one public chain to address all use cases.
-Every day there are different chains going live which focus on one aspect
-of problem solving such as distributed storage, asset ownership or predict market etc.
-According to the coinmarketcap.com, there are more than 1000
-cryptocurrencies currently active on various exchanges.
+최근 들어 비즈니스 시스템들의 자연어 처리(Natural Language Processing, NLP), 머신 러닝, 그리고 오퍼레이션 연구 같은 컴퓨터 알고리즘에 대한 의존도가 증가하고 있다. 이런 알고리즘에는 더 나은 차선책을 찾으려고 노력하는 과정에서 로컬 최적 상태(local optimal state)에 묶여있지 않도록 빈번하게 의도적으로 임의성(randomness)을 추가한다.
 
-While building business applications involve handling storage and also
-different source of data feeds. Another motivation of our work involves
-how to support building distributed business applications by reusing
-some of the existing work like storage (IPFS, SIA, Storj.io etc.), data feed
-(Augur, Gnosis, Oraclize etc.) and IoT (IOTA etc.) provided by those
-dedicated blockchains and not reinventing the wheel.
+다른 한 편으로, 일부 비즈니스 로직들은 오프체인(off-chain)에서 구동되는 것이 더 적합할 수 있고, 스마트 컨트랙트 같은 분산 복제 환경으로 구동되면 안되는 경우도 있다.
 
-Besides, there are many (near) real-time business transactions do need
-more close form consortium/permission/private chains to address
-performance, security and business governance requirements. Our vision of distributed business infrastructure needs to have the Interoperability of many heterogeneous chains including public/consortium/permission/private chains.
+앞으로 블록체인 기술이 현실적으로 상용화 되기 위해서는 이런 오프체인 서비스를 분산원장에 이어주는 것이 핵심이다. 
 
-Inter-chain technology is a very nature answer to the requirement.
-However, till today, the existing Inter-chain technologies are mainly
-designed to provide interoperability among existing blockchains and
-focus on token value transfer. The question of how to consume the
-resource provided in different chains still remains unanswered.
+**퍼블릭 체인, 컨소시엄 체인에 이미 존재하는 블록체인 리소스, 어떻게 재사용 할 것인가?**
+
+하나의 퍼블릭 체인이 모든 유즈 케이스(use case)를 충족시키는 것은 불가능하다. 매일 새로운 블록체인 플랫폼이 세상에 소개되고, 각 프로젝트는 각자 분야에 특화된 솔루션을 제공한다.
+
+암호화폐 데이터 사이트 코인마켓캡(Coinmarketcap)을 참고하면, 현재 무려 1천개 이상의 암호화폐들이 다양한 거래소에서 거래되고 있는 상황이다.
+
+비즈니스 애플리케이션을 구축하기 위해서는 스토리지 솔루션, 데이터 피드 등이 필요하다. 그리고 시장에는 스토리지 (IPFS, SIA, Storj.io 등), 데이터 피드 (Augur, Gnosis, Oraclize 등) 그리고 사물인터넷(IOTA 등)과 같은 블록체인 서비스들이 존재한다. 아이리스는 이미 퍼블릭 블록체인으로 존재하는 해결책을 다시 고민하려고 하지 않는다. 오히려 이미 존재하는 퍼블릭 솔루션들을 기반으로 분산화 비즈니스 애플리케이션을 만드는 것이 더 효율적이라고 판단한다.
+
+반면, 비즈니스 거래는 성능, 보안, 사업 운영 등의 이유로 컨소시엄/허가형 블록체인에 대한 필요성도 존재한다.
+아이리스 네트워크가 보는 분산화 비즈니스 인프라 비전은 각자의 특성을 가진 수많은 블록체인들이 상호호환성을 가지며 공존하는 것이다. 그리고 이 비전의 가장 기본적이 필수 요소는 인터체인(Inter-chain) 기술이다.
+
+하지만 지금까지의 인터체인 기술은 오직 토큰 수량의 이동(token value transfer)에 초점을 두었다. “다수의 체인이 제공하는 리소스는 어떻게 처리할 것일까?”에 대한 정답은 아직 나오지 않았다.
 
 Comparing the proposed inter-chain technologies like Cosmos [\[3\]][3] and
 Polkadot [\[4\]][4], we find out that Cosmos provides more mature base for
