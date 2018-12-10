@@ -125,22 +125,17 @@ You must consult a lawyer, accountant and/or tax professional, as well as any ot
 반면, 비즈니스 거래는 성능, 보안, 사업 운영 등의 이유로 컨소시엄/허가형 블록체인에 대한 필요성도 존재한다.
 아이리스 네트워크가 보는 분산화 비즈니스 인프라 비전은 각자의 특성을 가진 수많은 블록체인들이 상호호환성을 가지며 공존하는 것이다. 그리고 이 비전의 가장 기본적이 필수 요소는 인터체인(Inter-chain) 기술이다.
 
-하지만 지금까지의 인터체인 기술은 오직 토큰 수량의 이동(token value transfer)에 초점을 두었다. “다수의 체인이 제공하는 리소스는 어떻게 처리할 것일까?”에 대한 정답은 아직 나오지 않았다.
+~~하지만 지금까지의 인터체인 기술은 오직 토큰 수량의 이동(token value transfer)에 초점을 두었다. “다수의 체인이 제공하는 리소스는 어떻게 처리할 것일까?”에 대한 정답은 아직 나오지 않았다.~~
 
-Comparing the proposed inter-chain technologies like Cosmos [\[3\]][3] and
-Polkadot [\[4\]][4], we find out that Cosmos provides more mature base for
-interoperability and scalability. Especially, we found the design of
-"`many hubs and many zones`" and "`each zones are independent blockchains
-having independent governance models`" from Cosmos provides a very
-suitable architecture for modeling the real world complexity in a SOC
-way. To best reuse the existing framework, we present the IRIS Network, a
-decentralized inter-chain network composing hub and zones with
-implementing a layer of service infrastructure based on
-Cosmos/Tendermint [\[5\]][5], with enhanced usage of token .
+아이리스는 코스모스[\[3\]][3]와 폴카닷(Polkadot)[\[4\]][4] 같은 여러 인터체인 기술을 비교했다. 코스모스가 상호운용성(interoperability)과 확장성(scalability) 측면에서 더욱 성숙한 기반을 제공한다는 결론에 도달했다.
 
-Since the IRIS network is designed on top of Cosmos/Tendermint, we will first discuss Cosmos/Tendermint, summarize the features we inherit from Cosmos/Tendermint and summarize the innovations we have created.
+코스모스는 “다수의 허브, 다수의 존(many hubs and many zones)” 그리고 “각자의 거버넌스 모델을 가진 독립된 블록체인(each zones are independent blockchains having independent governance models)”의 블록체인 생태계를 지향한다. 코스모스가 설계한 블록체인 생태계의 디자인은 아이리스가 지향하는 실사용 가능한 서비스-지향 아키텍쳐(SOC, Service-Oriented Architecture)에 적합하다.
 
-### Cosmos and Tendermint ################################################################
+이런 이유로 아이리스는 코스모스 프레임워크를 기반으로 설계하였다. 아이리스 네트워크는 기존의 허브와 존으로 이루어진 탈중앙화 인터체인 네트워크에 코스모스/텐더민트[\[5\]][5] 기반의 서비스 인프라를 적용하였고, 토큰 활용성을 추가했다.
+
+이 문서는 먼저 코스모스/텐더민트를 설명한 후, 아이리스 네트워크가 개발한 혁신들에 대한 설명으로 이어진다.
+
+### 코스모스와 텐더민트 ################################################################
 
 Cosmos [\[3\]][3] intends to build the 'internet of blockchains'. It is a network of many independent blockchains, called "zones". Each zone is powered by classical Byzantine fault-tolerant ("BFT")
 consensus protocols like [Tendermint](https://tendermint.com/).
