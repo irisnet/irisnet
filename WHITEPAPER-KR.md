@@ -83,17 +83,22 @@ You must consult a lawyer, accountant and/or tax professional, as well as any ot
 > 아이리스 네트워크는 그리스 신화에서 무지개의 화신이자 천국과 인간 사이의 충실한 메신저인‘아이리스’신에서 유래합니다.
 
 계약 관계(contractual relationship)는 인간 사회의 근본적인 요소 중 하나이다. 블록체인의 중요성은 바로 계약 관계를  합리적인 비용에 효율적으로 제공한다는 것에서 시작된다.
+
 비즈니스 환경에서 개인 간 또는 기관 간 신뢰를 쌓기 위해서는 수많은 시간과 비용이 소모된다. 하지만 블록체인 환경에서는 다양한 당사자들이 참여하는 환경에서 ‘신뢰’가 없어도 계약 관계를 맺을 수 있게 되었다.
+
 블록체인이 분산화 비즈니스의 핵심이 되는 이유는 바로 네트워크 효과의 증대와 거래 비용(transaction cost)의 감소라고 여겨진다. 사람들은 이런 블록체인 기술이 불러오는 “가치의 인터넷(Internet of Value)”의 가능성을 보기 시작했으며, 이는 각자가 가진 기존 비즈니스 모델을 효율적인 분산화 구조로 바꾸는 것으로 이어질 것이다. 특히 블록체인 시스템에 내장되어있는 토큰 메커니즘은 네트워크 참여자들의 권리를 보장하는 방식을 제공하며 기존 비즈니스를 혁신할 것이다.
 [\[1\]][1].
 
-However, blockchain technology is still in its early stages. As with any new technology, there are drawbacks. These include limited performance and undeveloped governance mechanisms. Presently, these drawbacks make it difficult for blockchains to support real-world distributed business collaboration. Consortium chains, such as Hyperledger Fabric and R3 Corda, and organisations such as the Ethereum Enterprise Alliance, have tried to address those performance and governance issues to make blockchain technology more suitable for enterprises. However, today consortium chains are dominated by huge
-enterprise companies. Furthermore their close-form off on-chain governance model
-is very inefficient. Without a token economics model and the
-openness and the excitement in public chains, consortium chains may be viewed as lacking vitality.
+하지만, 블록체인 기술은 신생 기술이다. 다른 신생 기술들의 특성과 마찬가지로 아직은 다수의 단점들이 존재한다.
 
-We would like to enhance the current blockchain technology and
-make it possible to enable thousands and millions of Small Medium Businesses ("SMBs") and even individual freelance business service providers to provide their services and enjoy the rewards in an open network. To achieve this, we have identified the following challenges and consequent opportunities for technology innovations:
+블록체인 기술은 제한된 성능, 거버넌스 메커니즘의 부재 등의 단점이 존재한다. 이런 단점들이 존재하기 때문에 현실적인 환경에서의 분산화 비즈니스 협업을 지원하기에는 부족함이 많다.
+
+컨소시엄 체인(Hyperledger Fabric, R3 Corda, Ethereum Enterprise Alliance 등)은 이런 성능 및 거버넌스 문제를 해결하여 기업환경에 적합 블록체인을 만들기 위해 노력해왔다. 하지만 이런 컨소시엄 체인들은 거대한 기업들에 의해서만 주도되고 있다는 문제가 있다. 또한, 컨소시엄 체인들의 폐쇄적인 온체인(on-chain) 거버넌스 모델은 비효율적이다. 개방성과 토큰 이코노미 모델을 통해 대중들의 기대감을 받고 있는 퍼블릭 체인과는 달리, 컨소시엄 체인은 기술적 활력이 부족하다고 평가된다.
+
+아이리스는 현존하는 블록체인 기술을 개선하여 수천개에서 수백만개의 중소 비즈니스(SMB, Small Medium Businesses)와 프리랜스 서비스 제공자들이 공존하며 보상을 받는 네트워크를 구상한다.
+
+이를 현실화하기 위해서 다음과 같은 과제들이 해결되어아 할 것으로 보인다.
+
 
 **Not all computation could or should be implemented as on-chain computations such as smart contracts**
 
