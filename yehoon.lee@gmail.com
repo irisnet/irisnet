@@ -4,7 +4,7 @@
 Haifeng Xi haifeng@bianjie.ai<br/>
 Harriet Cao harriet@bianjie.ai
 
-_NOTE: 원문 백서는 GitHub에 쓰여져 있으며 내용이 활발하게 업데이트되고 있습니다. 정기적으로 업데이트를 확인하십시오!_
+_NOTE: 원문 백서는 [아이리스 GitHub]<https://github.com/irisnet/irisnet/blob/master/WHITEPAPER.md>에 있으며 내용이 활발하게 업데이트되고 있습니다. 정기적으로 업데이트를 확인하십시오!_
 <div STYLE="page-break-after: always;"></div>
 
 ## Table of Contents ###########################################################
@@ -179,66 +179,39 @@ _NOTE: 원문 백서는 GitHub에 쓰여져 있으며 내용이 활발하게 업
 
 아이리스 SDK(코스모스 SDK를 기반으로 만들어져 아이리스에 특화된 확장된 기능을 제공하는 도구)를 기반으로 만들어진 아이리스 풀 노드(full node)들은 아이리스 네트워크의 서비스 인프라를 제공하며 IPFS(InterPlanetary File System) 노드의 기능을 내장 한다.
 
-iService(아이리스 서비스, IRIS Services)는 블록체인 생태계와 기존 
+iService(아이리스 서비스, IRIS Services)는 블록체인 생태계와 기존 비즈니스 애플리케이션 생태계를 이어주는 다리 역할을 한다. iService는 오프체인 서비스의 서비스 정의 부터 서비스 바인딩(binding, 제공자 등록), 서비스 요청(invocation), 거버넌스(프로파일링과 분쟁 해결)까지 서비스 라이프사이클(lifecycle)의 포괄적인 중재 역할을 한다.  아이리스 SDK는 IBC 처리 로직에 서비스 의미(service semantics)를 지원하여 분산화 비즈니스 서비스가 블록체인에도 제공될 수 있게 한다.
 
-IRIS Services (a.k.a. "iServices") intend to bridge the gap between the blockchain
-world and the conventional business application world, by mediating a
-complete lifecycle of off-chain services -- from their definition,
-binding (provider registration), invocation, to their governance
-(profiling and dispute resolution). By enhancing the IBC processing
-logic to support service semantics, the IRIS SDK is intended to allow
-distributed business services to be available across the internet of blockchains.
+아이리스 네트워크는 자체적으로 혁신적인 분산화 비즈니스 솔루션을 제공하는데 초점을 두지만, 포괄적인 코스모스 생태계의 일원이기도 하다. 그렇기 때문에, 아이리스 허브에 연결된 모든 존은 표준 IBC 프로토콜을 이용해 코스모스 네트워크에 있는 모든 존들과 소통할 수 있다. 또한, 아이리스는 서비스 의미(service semantics) 계층을 추가하여 새로운 비즈니스 시나리오들이 펼쳐지며 코스모스 생태계 크기와 다양성을 키우는데 기여할 것으로 기대하고 있다.
 
-While the IRIS network focuses on providing an innovative solution
-for distributed business applications, it is still part of
-the broader Cosmos network.  All zones connected to our proposed IRIS hub would be able to interact with any other zone in the Cosmos network over
-the standard IBC protocol.  Furthermore, by introducing a layer of service
-semantics, which we believe could enable a whole new set of business scenarios,
-the planned IRIS network would represent an increase in scale and diversity
-of the Cosmos network.
+### 네트워크 참가자
 
-### Network Actors
+1. **소비자** 네트워크에 요청을 하고 응답을 받아 오프체인 서비스를 사용하는 유저.
 
-1. **Consumers** are those users who may consume off-chain services by sending
-  requests to the network and receiving responses from the network.
+2. **제공자** 하나 또는 그 이상의 iService 정의 제공자로써 오프체인 서비스와 다른 퍼블릭/컨소시엄 블록체인/기존 엔터프라이즈 시스템의 리소스를 제공하는 유저이다. 제공자는 들어오는 요청을 모니터링한 후 처리하고, 네트워크에 응답(response)한다. 제공자는 소비자와 동일하게 다른 프로바이더에게 서비스 요청을 할 수도 있다.
 
-2. **Providers** are those users who may offer the implementation of one or more
-iService definitions and often act as *adaptors* of off-chain services and resources located
-  in other public and consortium chains, as well as in enterprise legacy
-  systems.  Providers monitor and process incoming requests and send responses
-  back to the network.  A provider could at the same time act as a consumer
-  by sending requests to other providers.  As planned, providers would be required to
-  charge a fee for any services they might offer, and the service fee, by default, would be
-  priced in the IRIS network's native fee token known as "IRIS"; providers
-  could also price their services in other whitelisted Cosmos fee tokens, to be
-  considered in due course.
+현재 계획으로써는 제공자는 본인이 제공하는 서비스에 대해서 일정의 수수료를 요청해야 한다. 이때 수수료는 아이리스 네트워크의 고유 토큰 IRIS로 지불된다. 서비스 제공자는 본인이 승인한 다른 코스모스 수수료 토큰으로 제공받을 수 있는 방안은 추후 검토할 예정이다.
 
-3. **Profiler** is the special user who works on behalf of the IRIS Foundation
-Limited ("Foundation"), a Hong Kong incorporated company limited by guarantee.
-The Foundation will take the lead in building the IRIS network.  The profiler
-is the sole user authorized to invoke iServices in the profiling mode, which
-is intended to help create and maintain objective *provider profiles* that
-consumers use to select suitable providers.
+3. **프로파일러** 홍콩의 기업인 아이리스 재단(IRIS Foundation Limited)을 대표하여 일하는 유저이다. 프로파일러는 아이리스 네트워크에서 유일하게 '프로파일링 모드(profiling mode)'로 iService 요청을 할 수 있는 유저이다. 프로파일러는 소비자들이 서비스 제공자를 선택할때 이용할 수 있는 제공자 프로파일을 제공하는 일을 한다.
 
-### IRIS Services
+### 아이리스 서비스
 
-In this section, we set out the intended technical parameters for deploying iServices on the IRIS network.
+이하 아이리스 네트워크에 iService를 전개하는 기술적 파라미터를 정의한다.
 
-**Service Definition**
+**서비스 정의**
 
-A `Method` is composed of:
+`Method` 는 다음과 같은 값으로 구성된다:
 
-* `ID (int)`: The unique ID of this method in the encompassing iService
+* `ID (int)`: 해당 iService 메소드(method)의 고유 아이디
 
-* `Name (string)`: The unique name of this method in the iService
+* `Name (string)`: 해당 iService 메소드의 고유 이름
 
-* `Description (string)`: A description of this method
+* `Description (string)`: 메소드 설명 문구
 
-* `Input (string)`: A structured definition of the input parameters
+* `Input (string)`: 인풋 파라미터들에 대한 구조화된 정의
 
-* `Output (string)`: A structured definition of the output result
+* `Output (string)`: 아웃풋 값에 대한 구조화된 정의
 
-* `Error (string)`: A structured definition of all possible error conditions
+* `Error (string)`: 모든 에러 변수에 대한 구조화된 정의
 
 * `OutputPrivacy (enum)`: Can be one of `NoPrivacy` or `PubKeyEncryption`
 
