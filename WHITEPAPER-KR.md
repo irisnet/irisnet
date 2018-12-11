@@ -28,57 +28,61 @@ _NOTE: 원문 백서는 GitHub에 쓰여져 있으며 내용이 활발하게 업
 
 <div STYLE="page-break-after: always;"></div>
 
-## Disclaimer
+## 주의사항
 
-This whitepaper and any other documents published in association with this whitepaper relate to the intended development and use of the IRIS network.  They are information purposes only and may be subject to change.
+해당 백서와 그 외에 관련된 문서는 아이리스 네트워크 개발의 진행 상황의 방향을 제시하는 문서입니다. 해당 문서는 정보 제공 용도로만 작성되었으며, 추후 내용이 변경될 수 있다는점을 인지하시기 바랍니다.
 
-### This whitepaper describes a developing project
+### 이 백서는 개발이 진행되고 있는 프로젝트를 설명하는 문서입니다
 
-This whitepaper contains forward-looking statements that are based on the beliefs of IRIS Foundation Limited, as well as certain assumptions made by and information available to IRIS Foundation Limited.  
+이 백서는 아이리스 재단(IRIS Foundation Limited) 미래지향적인 목표를 기반으로 작성되었습니다. 백서에 포함되어 있는 일부 정보는 아이리스 재단이 가진 정보와 일부 추정하는 사항에 대한 내용이 포함되어 있습니다.
 
-The IRIS network as envisaged in this whitepaper is under development and is being constantly updated, including but not limited to key governance and technical features. The IRIS token involves and relates to the development and use of experimental platforms (software) and technologies that may not come to fruition or achieve the objectives specified in this whitepaper.
+해당 백서에서 설명하고 있는 아이리스 네트워크는 꾸준하게 개발되고 있는 상태이며, 이에 따라 거버넌스, 기술적 스펙 등의 일부 내용이 반영되지 않거나 변경될 수 있습니다. 아이리스 토큰은 실험적인 요소가 있는 플랫폼에서 이용되는 토큰입니다. 해당 플랫폼은 이 백서에 따라서 개발되지 않을 수 있습니다.
 
-If and when the IRIS network is completed, it may differ significantly from the network set out in this whitepaper. No representation or warranty is given as to the achievement or reasonableness of any plans, future projections or prospects and nothing in this document is or should be relied upon as a promise or representation as to the future.
+만약 아이리스 네트워크가 완성될 경우, 이 백서에서 설명한 네트워크의 형태와 매우 다른 형태로 완성될 수 있습니다. 이 백서의 내용은 미래 계획, 일정, 목표 등을 보장하지는 않습니다.
 
-### No offer of regulated products
 
-The IRIS tokens are not intended to represent a security or any other regulated product in any jurisdiction.
+### 비규제 상품에 대한 안내
 
-This document does not constitute an offer or solicitation of securities or any other regulated product, nor a promotion, invitation or solicitation for investment purposes. The terms of the purchase are not intended to be a financial service offering document or a prospectus of any sort.
+아이리스 토큰은 그 어떤 국가에서도 증권 또는 규제된 상품을 대체할 용도로 만들어지지 않았습니다.
 
-The IRIS tokens do not represent equity, shares, units, royalties or rights to capital, profit, returns or income in the platform or software or in IRIS Foundation Limited or any other company or intellectual property associated with the platform or any other public or private enterprise, corporation, foundation or other entity in any jurisdiction.
+해당 문서는 증권의 유사수신행위의 용도로 작성된 것이 아니며, 투자 권유, 홍보, 추천 등의 목적이 있지 않습니다. 이 문서는 금융안내서가 아닙니다.
 
-### This whitepaper is not advice
+아이리스 토큰은 아이리스 플랫폼과 그 외의 기업, 재단, 등의 지분, 증권, 주식, 로열티, 수익배분 등의 목적으로 제공되는 상품이 아닙니다. 
 
-This whitepaper does not constitute advice to purchase any IRIS tokens. It must not be relied upon in connection with any contract or purchasing decision.
+### 백서는 투자 권유가 아닙니다
 
-### Risk warning
+이 백서는 아이리스 토큰 투자에 대한 안내가 아닙니다. 백서는 그 어떤 계약 또는 투자 결정의 참고서로 이용될 수 없습니다
 
-The purchase of IRIS tokens and participation in the IRIS network carries with it significant risks.
+### 위험성에 대한 안내
 
-Prior to purchasing IRIS tokens, you should carefully assess and take into account the risks, including those listed on <https://www.irisnet.org/> and in any other documentation.
+아이리스 토큰을 구매하는 행위와 아이리스 네트워크에 참여하는 것은 위험한 행위일 수 있습니다.
 
-### Views of IRIS Foundation Limited only
+아이리스 토큰을 구매하기 전, 개인은 [아이리스 웹사이트]<https://www.irisnet.org/>에 공지되어있는 경고 외의 모든 리스크를 분석할 의무가 있습니다.
 
-The views and opinions expressed in this whitepaper are those of IRIS Foundation Limited and do not necessarily reflect the official policy or position of any government, quasi-government, authority or public body (including but not limited to any regulatory body of any jurisdiction) in any jurisdiction.  
+### 이 문서는 오직 아이리스 재단의 입장을 대변합니다
 
-Information contained in this whitepaper is based on sources considered reliable by IRIS Foundation Limited but there is no assurance as to their accuracy or completeness.   
+이 문서에 나열된 입장, 의견 등은 오직 아이리스 재단의 것이며 그 어떤 정부의 정부, 준-정부, 기관 등의 입장이 포함되어있지 않습니다.
 
-### English is the authorised language of this whitepaper
+이 문서에 포함되어 있는 정보는 아이리스 재단의 판단 하에 신뢰성 있는 출처를 기반으로 작성되었지만, 특정 정보의 정확성과 완결성을 보장하지 않습니다.
 
-This whitepaper and related materials are issued in English only. Any translation is for reference purposes only and is not certified by IRIS Foundation Limited or any other person. No assurance can be made as to the accuracy and completeness of any translations. If there is any inconsistency between a translation and the English version of this whitepaper, the English version prevails.
+### 아이리스가 제공하는 백서의 원본은 영어로만 작성되었습니다
 
-### No third party affiliation or endorsements
+이 백서의 원본은 영문으로 작성되었습니다. 이 번역본을 포함한 그 어떤 번역본은 아이리스 재단의 검증을 거치지 않은 사본임을 명시합니다. 
 
-References in this whitepaper to specific companies and platforms are for illustrative purposes only. The use of any company and/or platform names and trademarks does not imply any affiliation with, or endorsement by, any of those parties.
+아이리스 재단은 특정 번역본의 정확성과 완결성을 보장하지 않습니다. 만약 번역본과 원본의 차이가 있을 경우, 영문 원본이 제공하는 정보가 우위를 가집니다.
 
-### You must obtain all necessary professional advice
 
-You must consult a lawyer, accountant and/or tax professional, as well as any other professional advisors, as necessary prior to determining whether to purchase IRIS tokens or otherwise participate in the IRIS network.
+### 제3자 연관성과 후원은 없습니다
+
+이 백서에 포함되어있는 레퍼런스들은 오직 예시를 목적으로 포함되었습니다. 특정 회사, 플랫폼 명칭 그리고 상표는 해당 기관의 후원, 연관성 또는 협력 관계를 뜻하지 않습니다.
+
+### 전문적인 의견에 대한 공지
+
+아이리스 토큰을 구매하거나 아이리스 네트워크에 참여하기 전에, 개인은 본인의 변호사, 세무사, 회계사 등 해당 분야의 전문가의 의견을 구해야 합니다.
 
 <div STYLE="page-break-after: always;"></div>
 
-## IRIS Network 개요 ################################################################
+## 아이리스  개요 ################################################################
 
 > 아이리스 네트워크는 그리스 신화에서 무지개의 화신이자 천국과 인간 사이의 충실한 메신저인‘아이리스’신에서 유래합니다.
 
@@ -171,24 +175,21 @@ You must consult a lawyer, accountant and/or tax professional, as well as any ot
 
 코스모스 IBC는 인터체인 통신을 '한 체인의 계좌의 '값(value)'을 다른 체인의 계좌로 이동하는 것'으로 정의한다. 추가적으로, 아이리스 네트워크는 IBC를 통해 블록체인 간 연산(computation) 요청을 표준화하여 설계했다. 아이리스는 이런 기능이 확장 가능한 비즈니스 애플리케이션을 개발하기 위해서 필수라고 판단하며, 기능의 적용 가능 사례는 하단에 설명 되어있다.
 
+아이리스 네트워크는 온체인 거래의 처리와 오프체인 데이터 프로세싱/비즈니스 로직 실행의 협엽이 가능한 서비스 인프라를 제공하기 위해 개발된다. 또한 IBC 기능을 향상하여 오프체인 데이터 프로세싱이 필요에 따라 크로스-체인 형태로 요청될 수 있게 한다.
 
-~~아이리스 네트워크는 거래의 온-체인 처리와 
-
-The IRIS network is intended to provide the service infrastructure for handing and coordinating on-chain transaction processing with off-chain data processing and business logic execution. Enhanced IBC capability
-allows those off-chain processing to be invoked cross chain, if required. The IRIS network, as presently envisaged, will also include client-side tools, including a smart wallet enabling cross-chain multi-asset storage, as well as consume and provide iServices. We plan to provide SDKs for easy construction of iServices. For example, for a specific service definition, the Client SDK would generate the provider side skeleton as well as consumer side stub for major programming languages.
+아이리스 네트워크가 현재 가지고 있는 비전에는 스마트 월렛 같은 클라이언트 특화 도구를 제공하는 것 또한 포함되어있다. 해당 스마트 월렛은 크로스체인 멀티애셋 보관 및 관리 외에도 아이리스의 iService 이용도 가능할 것이다. 예를 들어, 특정 서비스 정의를 요청하는 소비자는 클라이언트 SDK를 이용해 서비스 제공자의 스켈레톤(skeleton) 또는 대다수의 프로그래밍 언어 기반의 소비자용 스텁(stub)을 생성할 수 있을 것이다.
 
 <div STYLE="page-break-after: always;"></div>
 
-## IRIS Network Design ################################################################
+## 아이리스 네트워크 디자인 ################################################################
 
 ![Figure of IRIS Network](https://github.com/irisnet/irisnet/blob/master/images/chap2-1.png?raw=true)
 
-As illustrated in the figure above, the IRIS network is intended to have the
-same topology as the Cosmos network.  We plan to connect the IRIS Hub to
-the Cosmos Hub as one of its zones and regional hubs.  IRIS full nodes,
-developed with the IRIS SDK (which is itself a planned extension of the
-Cosmos SDK), are proposed to provide a service infrastructure as well as
-offer integration with an embedded InterPlanetary File System ("IPFS") node.
+위 그림과 같이, 아이리스 네트워크는 코스모스 네트워크와 동일한 토폴로지(topology)를 기반으로 만들어진다. 아이리스는 아이리스 허브를 코스모스 허브와 연결하여 일종의 코스모스 존이자 지역 허브로 자리잡게 된다.
+
+아이리스 SDK(코스모스 SDK를 기반으로 만들어져 아이리스에 특화된 확장된 기능을 제공하는 도구)를 기반으로 만들어진 아이리스 풀 노드(full node)들은 아이리스 네트워크의 서비스 인프라를 제공하며 IPFS(InterPlanetary File System) 노드의 기능을 내장 한다.
+
+iService(아이리스 서비스, IRIS Services)는 블록체인 생태계와 기존 
 
 IRIS Services (a.k.a. "iServices") intend to bridge the gap between the blockchain
 world and the conventional business application world, by mediating a
