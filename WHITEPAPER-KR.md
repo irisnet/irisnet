@@ -119,7 +119,7 @@ _NOTE: 원문 백서는 [아이리스 GitHub]<https://github.com/irisnet/irisnet
 반면, 비즈니스 거래는 성능, 보안, 사업 운영 등의 이유로 컨소시엄/허가형 블록체인에 대한 필요성도 존재한다.
 아이리스 네트워크가 보는 분산화 비즈니스 인프라 비전은 각자의 특성을 가진 수많은 블록체인들이 상호호환성을 가지며 공존하는 것이다. 그리고 이 비전의 가장 기본적이 필수 요소는 인터체인(Inter-chain) 기술이다.
 
-~~하지만 지금까지의 인터체인 기술은 오직 토큰 수량의 이동(token value transfer)에 초점을 두었다. “다수의 체인이 제공하는 리소스는 어떻게 처리할 것일까?”에 대한 정답은 아직 나오지 않았다.~~
+하지만 지금까지의 인터체인 기술은 오직 토큰 수량의 이동(token value transfer)에 초점을 두었다. “다수의 체인이 제공하는 리소스는 어떻게 처리할 것일까?”에 대한 정답은 아직 나오지 않았다.
 
 아이리스는 코스모스[\[3\]][3]와 폴카닷(Polkadot)[\[4\]][4] 같은 여러 인터체인 기술을 비교했다. 코스모스가 상호운용성(interoperability)과 확장성(scalability) 측면에서 더욱 성숙한 기반을 제공한다는 결론에 도달했다.
 
@@ -133,11 +133,11 @@ _NOTE: 원문 백서는 [아이리스 GitHub]<https://github.com/irisnet/irisnet
 
 코스모스는 [\[3\]][3] ‘블록체인의 인터넷(Internet of Blockchains)’을 만드는 프로젝트다.
 
-코스모스 생태계는 수많은 독립적인 “존(zone)”으로 이루어지며, 각 존은 [텐더민트](https://tendermint.com/) 같은 클래시컬 비잔틴 장애 허용(BFT, Byzantine Fault-Tolerant)~~여기에서는 코스모스 백서 따름~~ 합의 프로토콜을 중심으로 작동된다.
+코스모스 생태계는 수많은 독립적인 “존(zone)”으로 이루어지며, 각 존은 [텐더민트](https://tendermint.com/) 같은 클래시컬 비잔틴 장애 허용(BFT, Byzantine Fault-Tolerant) 합의 프로토콜을 중심으로 작동된다.
 
 텐더민트는 엄격한 '포크 책임(fork accountability)'을 기반으로 악의적인 행위를 억제하여 일관성, 안전성, 고성능이 보장되는 BFT 합의 엔진을 제공한다. 텐더민트는 이더리움의 고성능 지분증명 구현 모델인 이더민트(Ethermint)[\[6\]][6] 같은 퍼블릭 블록체인 부터 오라클(Oracle) [\[7\]][7], CITA[\[8\]][8], 그리고 하이퍼렛저 버로우(Hyperledger Burrow)[\[9\]][9] 같은 안전성과 성능이 보장되어야 하는 컨소시엄/허가형 블록체인 까지 다양한 형태의 블록체인에 성공적으로 적용되었다.
 
-현재 텐더민트는 코스모스 생태계의 첫 존이자 허브(Hub)인 '코스모스 허브'의 합의 프로토콜로 이용되고 있다. 허브는 다수의 존들과 연결될 수 있으며, 일종의 블록체인을 위한 가상 UDP/TCP 인 ~~'인터블록체인 통신???'~~(IBC, Inter-Blockchain Communication)을 통해 상호 통신이 가능하다. IBC를 통해 이동하는 토큰은 거래소 또는 제3자의 중개자 없이 코스모스 허브를 통해 한 존에서 부터 다른 존으로 안전하게 이동할 수 있다.
+현재 텐더민트는 코스모스 생태계의 첫 존이자 허브(Hub)인 '코스모스 허브'의 합의 프로토콜로 이용되고 있다. 허브는 다수의 존들과 연결될 수 있으며, 일종의 블록체인을 위한 가상 UDP/TCP 인 IBC(Inter-Blockchain Communication)을 통해 상호 통신이 가능하다. IBC를 통해 이동하는 토큰은 거래소 또는 제3자의 중개자 없이 코스모스 허브를 통해 한 존에서 부터 다른 존으로 안전하게 이동할 수 있다.
 
 또한 코스모스 SDK를 이용해 누구나 상호호환이 가능한 블록체인을 개발할 수 있다. 일종의 '블록체인 스타터 키트'인 코스모스 SDK는 높은 적응성을 제공하여 목적에 따른 특수화 또한 가능하다.
 
@@ -458,20 +458,11 @@ iService 생태계를 구축하는데에는 몇가지 문제점들이 있따. �
 
 애플리케이션은 `CreateServiceDefinitionTx`를 처리하는 과정에서 이웃 체인들에 대한 정보가 포함된 `IBCPacket`을 생성하기 전에 `ServiceDefinition` 오브젝트를 먼저 검증하고 로컬 환경에 저장하도록 설계되어있다.
 
-~~각 이웃 체인은 릴레이 과정에서 해당 패킷이 포함된 `IBCPacketTx` 를 전달받게 된다. 만약 `IBCPacketTx`를 전달받은 체인에 전달 받은 서비스 정의가 포함되지 않은 상태인 경우, 수신자 체인은 새로 `IBCPacket`을 생성해 `IBCPacketTx`를 전달받은 체인을 제외한 다른 체인에게 새로 생성한 `IBCPacket` 을 전달한다.
-
-반대로
-Each neighbor eventually receives -- from the corresponding relay process --
-an `IBCPacketTx` containing the packet; if the definition does not already
-exist in the receiving chain, the latter will pass on the definition by
-creating an `IBCPacket` for each of *its* neighbors -- except the source
-chain from which it received the packet in the first place; if the
-definition already exists, the receiving chain stops passing on the
-definition.
+각 이웃 체인은 릴레이 과정에서 해당 패킷이 포함된 `IBCPacketTx` 를 전달받게 된다. 만약 `IBCPacketTx`를 전달받은 체인에 전달 받은 서비스 정의가 포함되지 않은 상태인 경우, 수신자 체인은 새로 `IBCPacket`을 생성해 `IBCPacketTx`를 전달받은 체인을 제외한 다른 체인에게 새로 생성한 `IBCPacket` 을 전달한다. 만약 서비스 정의가 수신자 체인에 존재하는 경우, 수신자 체인은 서비스 정의를 전파하지 않는다.
 
 위와 비슷하게 `ServiceBinding`의`BindingType`이 `Global`로 설정되어 생성되었거나 기존 `Local`에서 `Global`로 변경된 경우, 해당 바인딩이 포함된 `IBCPacket`이 각 이웃 체인 대상으로 만들어지고 아이리스 네트워크를 통해서 모든 체인에 전파된다. 
 
-위에 설명된 `IBCPacket`은 다음과 같은 값으로 구성되어있다:
+위에 설명된 `IBCPacket`은 다음과 같은 값으로 구성된다:
 
 * `Header (IBCPacketHeader)`: 패킷 헤더
 
@@ -489,69 +480,60 @@ definition.
 
 * `Type (string)`: "iris-service-definition" 또는 "iris-service-binding"
 
-Now let's take a look at how interchain service invocation happens through IBC.
-When a request is made for a `Unicast` service, the application checks if
-the target binding is `Local`; where this is true, the `ServiceRequest` is appended to the corresponding request table as explained in 2.2; otherwise, an
-`IBCPacket` containing the `ServiceRequest` will be created instead.
+하단에서는 인터체인 서비스 요청이 어떻게 IBC를 통해 이루어지는지에 대한 설명이다. 
 
-An `IBCPacket` containing a `ServiceRequest` is composed of:
+`Unicast` 서비스 요청이 발생하는 경우, 애플리케이션은 타겟 바인딩이 `Local`인지 확인을 한다. 만약 `Local`이 맞는 경우, `ServiceRequest`는 상단 2.2절에서 설명된 요청 테이블에 추가가 된다. 하지만 만약 `Local`이 아닌 경우, `ServiceRequest`가 포함된`IBCPacket`이 별도로 생성된다. 
 
-* `Header (IBCPacketHeader)`: The packet header
+`ServiceRequest`는 다음과 같은 값으로 구성된다: 
 
-* `Payload (ServiceRequest)`: The bytes of the service request
+* `Header (IBCPacketHeader)`: 패킷 헤더
 
-The `IBCPacketHeader` above is composed of:
+* `Payload (ServiceRequest)`: 서비스 요청의 바이트(byte)
 
-* `SrcChainID (string)`: The ID of the blockchain creating this packet
+상단의 `IBCPacketHeader`는 다음과 같은 값으로 구성된다:
 
-* `DstChainID (string)`: The ID of the blockchain where the remote provider
-  is located, i.e., `ServiceRequest.ServiceBinding.ChainID`
+* `SrcChainID (string)`: 해당 패킷을 생성하는 체인의 ID
 
-* `Number (int)`: A unique number for all packets
+* `DstChainID (string)`: 원격 서비스 제공자가 연결되어있는 블록체인의 ID (예시, `ServiceRequest.ServiceBinding.ChainID`)
+
+* `Number (int)`: 모든 패킷의 고유 번호
 
 * `Status (enum)`: `AckPending`
 
 * `Type (string)`: "iris-service-request"
 
-* `MaxHeight (int)`: Current height + `ServiceRequest.Timeout`
+* `MaxHeight (int)`: 현재 블록높이 + `ServiceRequest.Timeout`값
 
-As a remote request finally arrives at the destination chain, the
-application would append it to the corresponding endpoint (the request table)
-for the targeted binding. A response to this remote request would be
-wrapped in a receipt `IBCPacket` that is routed all the way back to the
-source chain and appended to the remote endpoint (the response table) for
-the originating consumer.
+원격 요청이 목적지 체인에 도착하는 경우, 애플리케이션은 타겟 바인딩을 위해 해당되는 엔드포인트(요청 테이블)에 해당 요청(request)를 추가한다. 이 원격 요청에 대한 확인은 `IBCPacket` 형태의 확인서를 통해 요청이 시작된 체인으로 돌아가 해당 체인의 엔드포인트(여기의 경우 응답 테이블)에 추가되어 요청한 소비자에게 돌아간다.
 
-Request for a remote `Multicast` service is treated in the same way except
-that more than one `IBCPacket` could be generated in the source chain.
+`Multicast` 서비스는 기존 `Unicast` 서비스의 이동 형태와 비슷하지만, 요청이 시작된 체인에서 1개 이상의 `IBCPacket`이 생성된다는 점에서 다르다.
 
-Remote complaints and resolutions are expected to work in the same manner as requests and responses, and therefore will not be elaborated here.
+원격 컴플레인(complaint)과 해결책(resolution)은 기존 요청-응답 형태와 동일하기 때문에 설명을 생략한다.
 
-Below is a complete list of application-dependent `IBCPacket` types:
+다음은 모든 애플리케이션-의존(application-dependent) `IBCPacket` 종류다:
 
-| **Type**                  | **iService Object** |
+| **종류**                  | **iService 오브젝트** |
 | ------------------------- | ------------------- |
-| "iris-service-definition" | ServiceDefinition   |
-| "iris-service-binding"    | ServiceBinding      |
-| "iris-service-request"    | ServiceRequest      |
-| "iris-service-response"   | ServiceResponse     |
-| "iris-complaint"          | Complaint           |
-| "iris-resolution"         | Resolution          |
+| "iris-service-definition" | 서비스 정의(ServiceDefinition)   |
+| "iris-service-binding"    | 서비스 바인딩(ServiceBinding)      |
+| "iris-service-request"    | 서비스 요청(ServiceRequest)      |
+| "iris-service-response"   | 서비스 응답(ServiceResponse)     |
+| "iris-complaint"          | 컴플레인(Complaint)           |
+| "iris-resolution"         | 해결책(Resolution)          |
 
 <div STYLE="page-break-after: always;"></div>
 
-## Use Cases ################################################################
+## 이용 사례 ################################################################
 
-In this section, we have set out some potential use cases for the IRIS network.
+다음 부분에서는 아이리스 네트워크의 이용 사례에 대해서 설명한다.
 
-### Distributed AI for privacy preserving data analysis
+### 프라이버시 보호 데이터 분석을 위한 분산화 AI
 
-The proposed service infrastructure has been prototyped by Bianjie AI, a
-Shanghai based startup, into its permission product `BEAN (Blockchain
-Edge Analytics Network)` to solve the longstanding challenge of getting
-data for running analytics models. Although homomorphic encryption is
-one of the key methods allowing computing to be achieved over encrypted data, it is said to be unable to practically solve real world machine learning problems due to its slow performance. As a result, BEAN was created to take a different approach. This approach uses the idea of model parallelism taken from the traditional distributed AI study [\[14\]][14] and
-utilizing SOA design patterns to develop distributed analytics services as an additional layer to the blockchain.
+우리가 여기에 제시하는 서비스는 상하이 기반 스타트엄 Bianjie AI가 프로토타이핑을 진행한 서비스 인프라다. 현재 Bianjie AI는 이 서비스를 `BEAN (Blockchain Edge Analytics Network)`에 응용하여 분석 모델을 위한 데이터 부족 문제를 해결하려고 한다. 동종적 암호화(homomorphic encryption)은 암호화된 데이터에 대한 연산을 가능하게 하는 방법 중 하나이지만, 느린 속도 때문에 현실적인 머신러닝 문제를 해결하는데에 한계가 있다.
+
+BEAN은 이런 문제를 조금 다른 형식으로 풀어나가기 위해 만들어졌다. BEAN은 기존 분산화 AI 연구 자료[\[14\]][14]가 제시하는 모델 평행화(model parallelism)와 서비스 지향 아키텍처(SOA) 디자인을 결합하여 분산화 분석 서비스를 블록체인 상위 계층으로 도입하는 방식이다.
+
+데이터 접근성 문제를 해결하기 위해 데이터 부분에서 운용되는 (부분적) 모델은 오픈소스화 되어 특정 서비스 정의로 소비자에게 제공되어야 한다. 소비자는 부분적 모델만 
 
 To protect data access, the (partial) model that runs on the data side needs to be open sourced to the client and specified in the service definition. Since only the partial model is released to the client, the model developers do not have to worry about someone stealing their idea; equally, the data owners never need to worry about losing control of data usage as their data will not be leaving its origin.
 
@@ -640,37 +622,36 @@ Both staking and fee tokens are subject to further refinement to ensure complian
 
 <div STYLE="page-break-after: always;"></div>
 
-## Initial Token Distribution ################################################################
+## 초기 토큰 분배 ################################################################
 
-On Genesis, the initial token supply will be 2,000,000,000 IRIS tokens.  The distribution of IRIS tokens is planned to be as follows:
+제네시스에서 총 2,000,000,000개의 IRIS 토큰이 생성된다.  IRIS 토큰의 분배는 다음과 같이 예정되어있다:
 
-* **Private Sale**: 25%
+* **프라이빗 세일**: 25%
 
-* **Bianjie Developer Team**: 15% (4-year vesting period starting from IRIS Hub launch, during which the team will vest 1/48th of its IRIS tokens each month)
+* **Bianjie 개발팀**: 15% (4년에 걸쳐서 매월 1/48이 언락)
 
 
-* **Tendermint Developer Team**: 10% (2-year vesting period starting from IRIS Hub launch, during which the team will vest 1/24th of its IRIS tokens each month)
+* **텐더민트 개발팀**: 10% (2년에 걸쳐서 매월 1/24이 언락)
 
-* **IRIS Foundation**: 15% (reserved to support the operations of the Foundation)
+* **아이리스 재단**: 15% (아이리스 재단 운영을 위해 보유)
 
-* **Ecosystem Development**: 30% (swap with zones connecting to IRIS Hub; grant to potential users; awards to outstanding partners; potential public sale)
+* **생태계 개발**: 30% (아이리스 허브에 연결되는 존과 토큰 스왑; 잠재적 사용자 후원; 우수 파트너 지원; 퍼블릭 세일 가능성 있음)
 
-* **Cosmos ATOM Holder Airdrop**: 5% (airdrop to ATOM holders through a special airdrop to a wallet owned by the Cosmos Hub for ATOM holders subject to an one year vesting period. The vesting period will begin on the date of the IRIS Hub Launch, and the tokens will vest monthly over a one-year period such that 1/12th of the tokens vest each month).
+* **ATOM 보유자 에어드랍**: 5% (코스모스 허브 월렛을 이용해 ATOM 보유자 대상 에어드랍. 에어드랍은 1년에 걸쳐서 매월 총 에어드랍 개수의 1/12가 분배)
 
-If and when the IRIS network is fully deployed, the annual inflation rate of IRIS tokens will be adjusted to account for the fact that a substantial portion of IRIS tokens in circulation may be voluntarily staked by participants to participate in the consensus engine.
+아이리스 네트워크가 완성될 경우, IRIS 토큰의 연 인플레이션은 자발적으로 합의에 참가하기위해 스테이킹 되었다는 것을 고려해서 유동적이게 변경될 예정.
 
-Proceeds from the private sale of IRIS tokens will be used, first and foremost, for the development of the IRIS network. The planned usage distribution is as follows:
+IRIS의 프라이빗 세일로 받은 수익금은 아이리스 네트워크 개발을 위해 다음과 같이 이용될 예정이다:
 
-* **Foundation Operations**: 10% (including service providers and contractors fees, for example, auditing, consulting, legal and other third party fees, and other overheads)
+* **재단 운영비**: 10% (서비스 제공자, 법적 자문, 컨설팅, 감사 같은 외부 서비스 비용 포함)
 
-* **Software Development**: 50% (including costs, fees and expenses directly attributable to the development of launch)
+* **소프트웨어 개발비**: 50% (메인넷 개발과 직접적으로 연관된 비용)
 
-* **Developer Enablement**: 10% (including funding hackathons, awards to volunteers and training programs)
+* **개발 지원**: 10% (해커톤 지원, 봉사자 지원, 교육 훈련 프로그램 등)
 
-* **Research and Development Sponsorships**: 10% (including conference, research programs and university outreach)
+* **R&D 지원**: 10% (컨퍼런스, 연구 프로그램, 대학 활동)
 
-* **Marketing and Promotion**: 20% (including business development, community programs and outreach, together with related travel, communication, publication, distribution and other expenses)
-
+* **마케팅 및 홍보**: 20% (사업 개발, 커뮤니티 프로그램, 여행비, 홍보, 출판, 등에 필요한 비용)
 
 <div STYLE="page-break-after: always;"></div>
 
