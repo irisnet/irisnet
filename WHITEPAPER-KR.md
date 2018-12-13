@@ -301,110 +301,78 @@ iService(아이리스 서비스, IRIS Services)는 블록체인 생태계와 기
 
 `Multicast` 서비스의 경우, 모든 바인딩은 하나의 요청테이블을 공유한다. `Unicast` 서비스의 경우 각 바인딩 별로 새로운 요청 테이블이 생산되고 유지되며, 각 소비자 별로 다른 응답 테이블이 생성되고 유지된다.
 
-`ServiceRequest`는 다음과 같은 
+`ServiceRequest`는 다음과 같은 값으로 구성된다:
 
-A `ServiceRequest` is composed of:
 
-* `ChainID (string)`: The ID of the blockchain where the consumer is
-  connected
+* `ChainID (string)`: 소비자 연결되어있는 블록체인의 ID
 
-* `ConsumerAddress ([]byte)`: The blockchain address of the consumer
+* `ConsumerAddress ([]byte)`: 소비자의 블록체인 주소
 
-* `DefinitionHash ([]byte)`: The hash of the service definition
+* `DefinitionHash ([]byte)`: 서비스 정의의 해쉬값
 
-* `MethodID (int)`: The ID of the method to be invoked
+* `MethodID (int)`: 호출하는 메소드의 ID
 
-* `InputValue (string)`: A structured representation of input values
+* `InputValue (string)`: 구조화된 인풋 값
 
-* `BindingHash ([]byte)`: The hash of the target binding, in case of a
-  `Unicast` service. *Optional*
+* `BindingHash ([]byte)`: 타겟 바인딩의 해쉬 값 (`Unicast`인 경우 해당됨) *선택*
 
-* `MaxServiceFee (int64)`: The max amount of service fee the consumer is
-  willing to pay for a `Multicast` request. *Optional*
+* `MaxServiceFee (int64)`: 특정 `Multicast`요청에 대해서 소비자가 지불 할 의사가 있는 최대 수수료 값 *선택*
 
-* `Timeout (int)`: The max number of blocks the consumer is willing to wait
-  for response(s) to come back
+* `Timeout (int)`: 소비자가 정의한 최대 응답 대기 기간(블록 수로 계산)
 
-A `PostServiceRequestTx` transaction is composed of:
+`PostServiceRequestTx` 트랜잭션은 다음과 같은 값으로 구성되어 있다:
 
-* `Requests ([]ServiceRequest)`: The service requests to be posted
+* `Requests ([]ServiceRequest)`: 게시할 서비스 요청
 
-* `RequestDeposits ([]int64)`: The consumer must put down for each request
-  a deposit (in terms of IRIS amount) that is greater than the value of
-  `MinRequestDeposit`; this deposit is meant to incentivize the consumer to acknowledge receipt of service responses in a timely manner (see `ConfirmServiceResponseTx`).
+* `RequestDeposits ([]int64)`: 소비자가 각 요청마다 예치해야하는 예치금(IRIS 토큰으로 계산). 이 값은 `MinRequestDeposit`에 정의되어있는 값 보다 높아야 한다. 이 요청 예치금(request deposit)은 서비스를 제공 받은 소비자가 해당 사실을 확인하는 것을 장려하기 위해 존재한다 (`ConfirmServiceResponseTx` 참고)
 
-The application will verify that each request is coming from a consumer
-with matching `ChainID` and `ConsumerAddress`, the targeted binding is
-valid, the request deposit is sufficient, the consumer's account balance is
-enough to cover the request deposits and service fees, and that the total
-number of requests in the transaction is less than `MaxRequestPostBatch`.
+애플리케이션은 각 소비자 요청의 `ChainID` 와 `ConsumerAddress`, 바인딩 타켓의 유효성, 예치금 충족 여부, 소비자 잔고가 해당 서비스 예치금과 수수료를 지불할 수 있는지, 그리고 트랜잭션의 요청(request)수가 `MaxRequestPostBatch`에 정의된 값 보다 낮은지 검증한다.
 
-When a verified request is appended to the request table, the related
-service fee (`MaxServiceFee` in case of a `Multicast` request) will be
-deducted from the consumer's account and locked up in escrow.
+서비스 요청이 검증된 후 요청 테이블에 게시된다. 이때 수수료(`Multicast` 요청의 경우 `MaxServiceFee`)는 소비자 잔고에서 공제되고 에스크로에 보관된다.
 
-A `GetServiceRequest` query is composed of:
+`GetServiceRequest` 쿼리(query)는 다음과 같은 값으로 구성된다:
 
-* `DefinitionHash ([]byte)`: The hash of the service definition
+* `DefinitionHash ([]byte)`: 서비스 정의의 해쉬값
 
-* `BindingHash ([]byte)`: The hash of this provider's binding to the
-  service in question; the application will verify that the binding is
-  valid and the caller matches the binding's `ChainID` and `ProviderAddress`
+* `BindingHash ([]byte)`: 특정 서비스 바인딩을 제공하는 제공자의 해쉬값. 애플리케이션은 해당 바인딩의 유효성을 확인하고 요청 값이 제공자의 `ChainID`와 `ProviderAddress`와 일치하는지 확인한다.
 
-* `BeginHeight (uint64)`: The blockchain height from where the application
-  should start to retrieve requests for the provider, up to a total number
-  that is the lesser of `BatchSize` and `MaxRequestGetBatch`
+* `BeginHeight (uint64)`: 애플리케이션이 제공자에게 요청(request)을 전달하기 시작하는 블록 높이. `BatchSize`와 `MaxRequestBatch`의 값 중 작은 숫자로 처리된다.
 
-* `BatchSize (int)`: The max number of requests to be returned
+* `BatchSize (int)`: 최대 요청 응답 수 
 
-A `ServiceResponse` is composed of:
+`ServiceResponse` 는 다음과 같은 값으로 구성된다:
 
-* `RequestHash ([]byte)`: The hash of the matched request
+* `RequestHash ([]byte)`: 매칭 된 요청의 해쉬값
 
-* `BindingHash ([]byte)`: The hash of this provider's service binding
+* `BindingHash ([]byte)`: 제공자 서비스 바인딩의 해쉬값
 
-* `OutputValue ([]byte)`: A structured (potentially encrypted)
-  representation of output result. *Optional*
+* `OutputValue ([]byte)`: 구조화된 아웃풋 결과(output result). (상황에 따라 암호화될 수 있다) *선택*
 
-* `ErrorMsg (string)`: A structured representation of error messages.
-  *Optional*
+* `ErrorMsg (string)`: 구조화된 에러 메시지 *선택*
 
-A `PostServiceResponseTx` transaction is composed of:
+`PostServiceResponseTx` 트랜잭션은 다음과 같은 값으로 구성된다:
 
-* `Responses ([]ServiceResponse)`: The service responses to be posted
+* `Responses ([]ServiceResponse)`: 응답 테이블에 게시할 서비스 응답
 
-The application will verify that each response is coming from a
-provider with matching `ChainID` and `ProviderAddress`, and that the number
-of responses in the transaction is less than `MaxResponsePostBatch`. A
-verified request will be appended to the response table for the intended
-consumer.
+애플리케이션은 모든 응답의 `ChainID`와 `ProviderAddress`가 제공자의 정보와 일치하는지 그리고 트랜잭션의 응답수가 `MaxResponsePostBatch`의 값 보다 낮은지 검증한다. 검증된 요청은 소비자에게 전달되기 위해 응답 테이블에 게시된다.
 
-A `GetServiceResponse` query is composed of:
+`GetServiceResponse` 쿼리(Query)는 다음과 같은 값으로 구성된다:
 
-* `RequestHash ([]byte)`: The hash of the original request; the
-  application will verify that the caller matches the request's `ChainID`
-  and `ConsumerAddress`
+* `RequestHash ([]byte)`: 기존 요청(original request)의 해쉬값. 애플리케이션은 쿼리 요청자가 기존 요청의 `ChainID`와 `ConsumerAddress`가 동일한지 검증한다.
 
-* `BeginHeight (uint64)`: The blockchain height from where the application
-  should start to retrieve responses for the consumer, up to a total
-  number that is the lesser of `BatchSize` and `MaxResponseGetBatch`
+* `BeginHeight (uint64)`: 애플리케이션이 소비자에게 요청(request)을 전달하기 시작하는 블록 높이. `BatchSize`와 `MaxResponseGetBatch` 값 중 작은 숫자로 처리된다.
 
-* `BatchSize (int)`: The max number of responses to be returned
+* `BatchSize (int)`: 최대 요청 응답 수
 
-A `ConfirmServiceResponseTx` transaction is composed of:
+`ConfirmServiceResponseTx` 트랜잭션은 다음과 같은 값으루 구성된다:
 
-* `ResponseHash ([][]byte)`: The hash of responses to be confirmed
+* `ResponseHash ([][]byte)`: 확인할 요청(response)의 해쉬값
 
-The application will verify that the each response to be confirmed is
-indeed for a request originated by the caller, and that the number of
-responses in the transaction is less than `MaxResponseConfirmBatch`.
+애플리케이션은 `ConfirmServiceResponseTx`를 요청한 유저가 확인 대상 요청(response)을 생성한 유저인지 확인하며, 트랜잭션의 요청 수가 `MaxResponseConfirmBatch`의 값 보다 낮은지를 검증한다.
 
-Responses that fall out of the `Timeout` window (and, in case of `Multicast`
-responses, when `MaxServiceFee` runs out as more responses come back) will
-not be accepted by the application. A consumer starts processing a
-`Unicast` response immediately upon receiving it. However, for `Multicast`
-responses, a consumer will need to wait until the `Timeout` window elapses before
-starting to process all responses received, if any.
+`Timeout`에 지정된 값 밖(`Multicast` 요청의 경우 추가적인 요청이 들어오며 `MaxServiceFee`가 소진된 경우)의 요청은 애플리케이션이 거절한다. `Unicast`요청을 받은 소비자는 요청을 받은 즉시 처리를 작한다. 반면, `Multicast`의 경우 소비자는 전달 받은 요청을 처리하기 전에 `Timeout` 기간이 만료될 때까지 기다려야 한다.
+
+소비자가 `Unicast`
 
 When a `Unicast` response is confirmed by the consumer, the associated
 service fee will be released from escrow to the matched provider account
