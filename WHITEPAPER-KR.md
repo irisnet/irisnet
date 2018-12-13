@@ -458,8 +458,9 @@ iService 생태계를 구축하는데에는 몇가지 문제점들이 있따. �
 
 애플리케이션은 `CreateServiceDefinitionTx`를 처리하는 과정에서 이웃 체인들에 대한 정보가 포함된 `IBCPacket`을 생성하기 전에 `ServiceDefinition` 오브젝트를 먼저 검증하고 로컬 환경에 저장하도록 설계되어있다.
 
-각 이웃은 추후에 ##아시발이거뭐야
+~~각 이웃 체인은 릴레이 과정에서 해당 패킷이 포함된 `IBCPacketTx` 를 전달받게 된다. 만약 `IBCPacketTx`를 전달받은 체인에 전달 받은 서비스 정의가 포함되지 않은 상태인 경우, 수신자 체인은 새로 `IBCPacket`을 생성해 `IBCPacketTx`를 전달받은 체인을 제외한 다른 체인에게 새로 생성한 `IBCPacket` 을 전달한다.
 
+반대로
 Each neighbor eventually receives -- from the corresponding relay process --
 an `IBCPacketTx` containing the packet; if the definition does not already
 exist in the receiving chain, the latter will pass on the definition by
