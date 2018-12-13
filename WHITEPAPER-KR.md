@@ -533,9 +533,11 @@ iService 생태계를 구축하는데에는 몇가지 문제점들이 있따. �
 
 BEAN은 이런 문제를 조금 다른 형식으로 풀어나가기 위해 만들어졌다. BEAN은 기존 분산화 AI 연구 자료[\[14\]][14]가 제시하는 모델 평행화(model parallelism)와 서비스 지향 아키텍처(SOA) 디자인을 결합하여 분산화 분석 서비스를 블록체인 상위 계층으로 도입하는 방식이다.
 
-데이터 접근성 문제를 해결하기 위해 데이터 부분에서 운용되는 (부분적) 모델은 오픈소스화 되어 특정 서비스 정의로 소비자에게 제공되어야 한다. 소비자는 부분적 모델만 
+데이터 접근성 문제를 해결하기 위해 데이터 부분에서 운용되는 (부분적) 모델은 오픈소스화 되어 특정 서비스 정의로 소비자에게 제공되어야 한다. 소비자는 부분적 모델에만 접근할 수 있기 때문에, 모델 개발자는 누군가 본인들의 분석 모델을 도용할 수 있다는 걱정을 할 필요가 없게된다. 이와 동일하게 데이터 제공자는 본인들의 소유권을 떠나지 않기 때문에 데이터 접근성을 관리하기 수월해진다.
 
-To protect data access, the (partial) model that runs on the data side needs to be open sourced to the client and specified in the service definition. Since only the partial model is released to the client, the model developers do not have to worry about someone stealing their idea; equally, the data owners never need to worry about losing control of data usage as their data will not be leaving its origin.
+이 외에 장점은 다음과 같다:
+1. 파라메트릭 데이터의 일부분만 블록체인에서 교환된다. 그렇기 때문에 성능 분야에서 큰 문제가 없다
+* 
 
 Other potential benefits could include the following:
 1.	Only a small amount of parametric data being exchanged on-chain, which can help enhance performance.
