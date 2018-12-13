@@ -173,7 +173,7 @@ _NOTE: 원문 백서는 [아이리스 GitHub]<https://github.com/irisnet/irisnet
 
 ## 아이리스 네트워크 디자인 ################################################################
 
-![Figure of IRIS Network](https://github.com/irisnet/irisnet/blob/master/images/chap2-1.png?raw=true)
+![아이리스 ](https://github.com/irisnet/irisnet/blob/master/images/chap2-1.png?raw=true)
 
 위 그림과 같이, 아이리스 네트워크는 코스모스 네트워크와 동일한 토폴로지(topology)를 기반으로 만들어진다. 아이리스는 아이리스 허브를 코스모스 허브와 연결하여 일종의 코스모스 존이자 지역 허브로 자리잡게 된다.
 
@@ -205,7 +205,7 @@ iService(아이리스 서비스, IRIS Services)는 블록체인 생태계와 기
 
 * `Name (string)`: 해당 iService 메소드의 고유 이름
 
-* `Description (string)`: 메소드 설명 문구
+* `Description (string)`: 메소드 설명
 
 * `Input (string)`: 인풋 파라미터들에 대한 구조화된 정의
 
@@ -213,104 +213,71 @@ iService(아이리스 서비스, IRIS Services)는 블록체인 생태계와 기
 
 * `Error (string)`: 모든 에러 변수에 대한 구조화된 정의
 
-* `OutputPrivacy (enum)`: Can be one of `NoPrivacy` or `PubKeyEncryption`
+* `OutputPrivacy (enum)`: `NoPrivacy` 또는 `PubKeyEncryption` 중 하나
 
-A `ServiceDefinition` is composed of:
+`ServiceDefinition` (서비스정의) 는 다음과 같은 값으로 구성된다:
 
-* `Name (string)`: The name of this iService
+* `Name (string)`: 해당 iService의 이름
 
-* `Description (string)`: A description of this iService
+* `Description (string)`: 해당 iService 설명
 
-* `Tags (string)`: Comma separated keywords about this iService
+* `Tags (string)`: 해당 iService의 키워드. 쉼표(,)로 분기된다
 
-* `Creator (string)`: A self-description of the iService creator. *Optional*
+* `Creator (string)`: iService 제작자 소개 문구 *선택 사항*
 
-* `ChainID (string)`: The ID of the blockchain where this iService was
-  originally defined
+* `ChainID (string)`: iService가 처음 정의된 블록체인의 ID
 
-* `Messaging (enum)`: Can be one of `Unicast` or `Multicast`
+* `Messaging (enum)`: `Unicast` 또는 `Multicast` 중 하나
 
-* `Methods ([]Method)`: The definition of methods available in this iService
+* `Methods ([]Method)`: 해당 iService에서 이용 가능한 메소드들의 정의
 
-A `CreateServiceDefinitionTx` transaction is composed of:
+`CreateServiceDefinitionTx` 트랜잭션은 다음과 같은 값으로 구성된다:
 
-* `Definition (ServiceDefinition)`: The service definition to be created
+* `Definition (ServiceDefinition)`: 생성되는 서비스 정의
 
-**Service Binding**:
+**서비스 바인딩**:
 
-A `CreateServiceBindingTx` transaction is composed of:
+`CreateServiceBindingTx` 는 다음과 같은 값으로 구성된다:
 
-* `DefinitionHash ([]byte)`: The hash of the service definition that the provider is binding to
+* `DefinitionHash ([]byte)`: 제공자가 바인딩하는 서비스 정의의 해시값
 
-* `ChainID (string)`: The ID of the blockchain where the provider is connected
+* `ChainID (string)`: 제공자가 연결되어있는 블록체인의 ID
 
-* `ProviderAddress ([]byte)`: The provider's blockchain address
+* `ProviderAddress ([]byte)`: 제공자의 블록체인 주소
 
-* `BindingType (enum)`: Can be one of `Local` or `Global`; choose `Global` if a
-  provider wants the binding to be exposed to the rest of the world;
-  otherwise, use `Local`
+* `BindingType (enum)`: `Local` 또는 `Global` 중 하나; 제공자가 본인의 바인딩이 전 세계의 공계되는 것을 원하는 경우 `Global`을 입력한다. 그렇지 않은 경우 `Local`을 선택한다
 
-* `ProviderDeposit (int64)`: To create an effective binding, the provider
-  must put down a deposit (in terms of IRIS token amount) that is greater than
-  the value of the system parameter `MinProviderDeposit`; a larger deposit
-  may imply more trustworthiness of the provider
+* `ProviderDeposit (int64)`: 유효한 바인딩을 만들기 위해서 제공자는 시스템의 `MinProviderDeposit`이 정의하는 값 보다 많은 수량의 아이리스 토큰을 보증금(deposit)으로 예치해야 한다. 예치금이 많을 수록 제공자의 신뢰도가 높은 것을 알릴 수 있다
 
-* `ServicePricing (string)`: A structured definition of the service pricing
-  model on a per method basis, including cost per call, volume discount,
-  promotional terms etc.; service fee is by default listed in IRIS token but
-  could also be quoted in other whitelisted fee tokens.
+* `ServicePricing (string)`: 각 메소드 별로 체계적으로 정리된 서비스의 가격 모델. 요청별 가격, 대량 요청 할인, 할인 행사 등이 있을 경우 모두 포함 되어야 한다. 서비스 가격 지불 수단은 기본적으로 IRIS 토큰으로 정의되나, 제공자가 원하는 수수료 토큰을 화이트리스트에 추가할 수 있다
 
-* `ServiceLevel (string)`: A structured definition of service level the
-  provider agrees to bind himself to, in terms of response time,
-  availability etc.
+* `ServiceLevel (string)`: 반응 시간(response time), 사용 가능여부(availability) 같은 제공자가 보장하는 서비스 레벨의 정의
 
-* `BindingExpiration (int64)`: The blockchain height where this binding
-  expires; a negative number means "never expire"
+* `BindingExpiration (int64)`: 해당 바인딩의 유효성이 만료되는 블록 높이. 마이너스 값은 '만료되지 않음'을 뜻함
 
-An `UpdateServiceBindingTx` transaction is composed of:
+`UpdateServiceBindingTx` 는 다음과 같은 값으로 구성된다:
 
-* `DefinitionHash ([]byte)`: The hash of the service definition the
-  provider has bound to
+* `DefinitionHash ([]byte)`: 제공자가 바인딩 한 서비스 정의의 해시값
 
-* `ChainID (string)`: The ID of the blockchain where the provider is
-  connected
+* `ChainID (string)`: 제공자가 연결되어있는 블록체인의 ID
 
-* `ProviderAddress ([]byte)`: The provider's blockchain address
+* `ProviderAddress ([]byte)`: 제공자의 블록체인 주소
 
-* `ChangeSet (string)`: A structured definition of desired changes to an
-  existing binding identified by the preceding three fields
+* `ChangeSet (string)`: 특정 바인딩의 `DefinitionHash`, `ChainID`, `ProviderAddress` 값의 변경을 체계적으로 나열한 값
 
-![Figure of iService Definition and Bindings](https://github.com/irisnet/irisnet/blob/master/images/chap2-2.png?raw=true)
+![iService 정의와 바인딩](https://github.com/irisnet/irisnet/blob/master/images/chap2-2.png?raw=true)
 
-A provider can update `ServicePricing`, `ServiceLevel` and `BindingExpiration`
-at any time, but a small amount of their deposit will be slashed for
-changing the latter two (specified by `ServiceLevelUpdateSlash` and
-`BindingExpirationUpdateSlash` respectively). Setting `BindingExpiration` to
-a height that is lower than the current height will be interpreted as
-invalidating the binding immediately.
+제공자는 `ServicePricing`,`ServiceLevel` 그리고 `BindingExpiration`의 값을 언제나 변경할 수 있다. 하지만 `ServiceLevel`과 `BindingExpiration`값을 바꿀 경우 소량의 예치금이 `BindingExpirationUpdateSlash` 와`ServiceLevelUpdateSlash`의 로직에 따라 슬래싱 될 수 있다. 만약 `BindingExpiration`의 블록높이 값이 현재 블록높이보다 낮게 설정된 경우, 해당 바인딩은 즉시 무효처리 된다.
 
-Updates to `ProviderDeposit` will always be treated as *adding to* the
-current deposit balance. Whenever the balance drops below
-`MinProviderDeposit`, the binding will be disabled until the provider
-increases the balance above the threshold. Upon expiration or
-invalidation of a binding, the provider will automatically get back the
-remaining balance of its deposit.
+`ProviderDeposit` 값의 변경은 언제나 현재 예치금에 예치금을 *추가*하는 것으로 간주한다. 만약 예치금이 `MinProviderDeposit`값 보다 낮아질 경우, 모든 바인딩 행위는 최소 예치금 값을 넘을 때까지 비활성화된다. 만약 특정 바인딩이 무효처리 되었거나 만료된 경우, 제공자는 본인의 예치금을 자동으로 돌려받게 된다.
 
-`BindingType` can be changed from `Local` to `Global`, but not the other way
-around. To downgrade a binding from `Global` to `Local`, a provider must
-first invalidate the binding in question and then create a new `Local`
-binding.
+`BindingType`는 `Local` 값에서 `Global`값으로 변경될 수 있지만, 반대로 `Global`에서 `Local`로 변경이 불가능하다. 반약 제공자가 본인의 바인딩을 `Global`에서 `Local`로 변경을 원하는 경우, 해당 바인딩을 우선 무효처리 한 후 새로운 `Local`바인딩을 생성해야 한다.
 
-If a provider somehow needs to move the binding to a new address, it is
-not allowed to update `ProviderAddress` directly; instead, the provider
-should invalidate the current binding and create another one with the
-desired new `ProviderAddress`.
+`ProviderAdress` 값은 변경될 수 없다. 만약 제공자가 특정 바인딩을 새로운 주소로 이동해야하는 경우, 기존 바인딩을 무효처리 한 후 변경된 `ProviderAddress`값이 입력된 새로운 바인딩을 생성해야 한다.
 
-Upon successful execution of these two transactions by the application
-(i.e., iService business logic in the IRIS SDK), a `ServiceBinding` object
-will be created or updated accordingly.
+애플리케이션이 위 두개의 트랜잭션이 성공적으로 처리되면, `ServiceBinding` 오브젝트가 생성/변경된다.
 
-A `ServiceBinding` is composed of:
+`ServiceBinding` 은 다음과 같은 값으로 구성된다:
 
 * `DefinitionHash ([]byte)`
 
@@ -324,22 +291,17 @@ A `ServiceBinding` is composed of:
 
 * `BindingExpiration (int64)`
 
-* `IsValid (enum)`: Can be one of `True` or `False`
+* `IsValid (enum)`: `True` 또는 `False`
 
-**Service Invocation**
+**서비스 요청(Service Invocation)**
 
-![Figure of Service Invocation](https://github.com/irisnet/irisnet/blob/master/images/chap2-3.png?raw=true)
+![서비스 요청 도안](https://github.com/irisnet/irisnet/blob/master/images/chap2-3.png?raw=true)
 
-Consumers and providers are proposed to interact with each other through *endpoints*.
-There are two kinds of endpoints -- *request table* and *response table*
-(see Figure above). Service requests are posted to request tables monitored
-by interested provider(s) which pick up and process requests addressed
-to them; service results (or errors) are posted back to response tables
-monitored in turn by matched consumers.
+소비자와 제공자는 서로 *엔드포인트*를 통해 소통한다. 엔드포인트는 *요청 테이블(request table)* 과 *응답 테이블(response table)* 형태로 존재한다. 모든 서비스 요청은 요청 테이블에 합산되며, 서비스 제공자들은 이 테이블을 모니터링 할 수 있다. 서비스 제공자는 요청 테이블에 올라온 서비스 요청 중 본인이 대상인 것을 처리하고, 이후 결과(또는 에러)를 응답 테이블에 합산한다. 소비자는 이 응답 테이블을 모니터링 한다.
 
-For a `Multicast` service, all of its bindings share one request table;
-for a `Unicast` service, however, a separate request table is created and
-maintained for each of its bindings. As for the other direction, a dedicated response table would be created and managed for each consumer.
+`Multicast` 서비스의 경우, 모든 바인딩은 하나의 요청테이블을 공유한다. `Unicast` 서비스의 경우 각 바인딩 별로 새로운 요청 테이블이 생산되고 유지되며, 각 소비자 별로 다른 응답 테이블이 생성되고 유지된다.
+
+`ServiceRequest`는 다음과 같은 
 
 A `ServiceRequest` is composed of:
 
