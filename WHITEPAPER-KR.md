@@ -163,7 +163,7 @@ _NOTE: 원문 백서는 [아이리스 GitHub]<https://github.com/irisnet/irisnet
 
 이런 아이디어는 라이트닝 네트워크의 오프체인 스테이트 채널(state channel)과 플라즈마의 사기방지 사이드체인(fraud proof side chains)에서 영감을 받았다. 아이리스는 사이드체인을 이용하지는 않지만, 기존 비즈니스 연산 로직을 블록체인 외에서 처리하고 추후 블록체인을 하나의 '합의 도구'로 이용한다는 것에서는 유사한 점이 있다.
 
-코스모스 IBC는 인터체인 통신을 '한 체인의 계좌의 '값(value)'을 다른 체인의 계좌로 이동하는 것'으로 정의한다. 추가적으로, 아이리스 네트워크는 IBC를 통해 블록체인 간 연산(computation) 요청을 표준화하여 설계했다. 아이리스는 이런 기능이 확장 가능한 비즈니스 애플리케이션을 개발하기 위해서 필수라고 판단하며, 기능의 적용 가능 사례는 하단에 설명 되어있다.
+코스모스 IBC는 인터체인 통신을 '한 체인의 계좌의 '값(value)'을 다른 체인의 계좌로 이동하는 것'으로 정의한다. 추가적으로, 아이리스 네트워크는 IBC를 통해 블록체인 간 연산(computation) 요청 형식을 표준화하여 설계했다. 아이리스는 이런 기능이 확장 가능한 비즈니스 애플리케이션을 개발하기 위해서 필수라고 판단하며, 기능의 적용 가능 사례는 하단에 설명 되어있다.
 
 아이리스 네트워크는 온체인 거래의 처리와 오프체인 데이터 프로세싱/비즈니스 로직 실행의 협엽이 가능한 서비스 인프라를 제공하기 위해 개발된다. 또한 IBC 기능을 향상하여 오프체인 데이터 프로세싱이 필요에 따라 크로스-체인 형태로 요청될 수 있게 한다.
 
@@ -372,104 +372,76 @@ iService(아이리스 서비스, IRIS Services)는 블록체인 생태계와 기
 
 `Timeout`에 지정된 값 밖(`Multicast` 요청의 경우 추가적인 요청이 들어오며 `MaxServiceFee`가 소진된 경우)의 요청은 애플리케이션이 거절한다. `Unicast`요청을 받은 소비자는 요청을 받은 즉시 처리를 작한다. 반면, `Multicast`의 경우 소비자는 전달 받은 요청을 처리하기 전에 `Timeout` 기간이 만료될 때까지 기다려야 한다.
 
-소비자가 `Unicast`
+소비자가 `Unicast` 요청을 확인하는 경우, 서비스 비용는 소량의 수수료(해당 수수료는 `ServiceFeeTaxRate`에서 정의된다)를 공제한 후 에스크로에서 풀려 *시스템 리저브(system reserve)* 에 추가된다. 해당 요청에 연관이 있는 예치금은 소비자에게 반납된다.
 
-When a `Unicast` response is confirmed by the consumer, the associated
-service fee will be released from escrow to the matched provider account
--- after a small tax (defined by `ServiceFeeTaxRate`) is deducted and
-added to the *system reserve*; and the associated request deposit will
-be returned to the consumer as well.
+반면 `Multicast`의 경우는 조금 더 상황이 복잡하다. 특정 요청이 확인될 경우, `MaxServiceFee`와 해당 요청에 대한 서비스 비용에 비례하는 예치금의 일부만 소비자에게 반납된다. 만약 모든 요청이 확인된다면 에스크로에 보관되어있는 잔고가 소비자에게 반납된다.
 
-In the case of a `Multicast` request, the situation is a bit more complex:
-when a response is confirmed, only part of the request deposit is
-returned to the consumer, in proportion to the response related service
-fee vs `MaxServiceFee`; and after all responses are confirmed, the
-remaining escrow balance for the request will be returned to the
-consumer.
+만약 요청이 특정 응답 없이 꾸준한 타임아웃(timeout)을 한다면, 애플리케이션은 에스크로에 남아있는 잔고와 요청 예치금을 전부 소비자에게 돌려준다. 하지만 만약 소비자가 특정 응답을 지정된(`ResponseConfirmTimeout` + 응답 전송 당시의 블록체인 높이를 더한 값) 기간안에 확인하지 않는다면 `ResponseConfirmDelayPenaltyRate`에 명시된 소량의 벌금을 지불하게 된다. 벌금을 제외한 예치금은 소비자에게 환불되고, 관련 서비스 비용은 서비스 제공자에게 정상적으로 지급된다.
 
-If a request timeouts without seeing any response come back, the
-application will refund the associated balance held in escrow plus the request
-deposit, in full, back to the consumer. However, if the consumer does
-not confirm a response in time (before `ResponseConfirmTimeout` +
-blockchain height of the response), a small penalty (defined by
-`ResponseConfirmDelayPenaltyRate`) will be applied before the request
-deposit is refunded to the consumer, while the associated service fee
-will be released to the provider as usual.
+**분쟁 해결**
 
-**Dispute Resolution**
+만약 특정 소비자가 서비스 응답에 대한 불만이 있을경우, 소비자는 중앙화된 기관 또는 법적 시스템에 의존하지 않고도 문제를 제기하고 해당 문제에 대한 타당한 응대를 받을 메커니즘이 필요하다. 이런 분쟁 해결 메커니즘에서 주관적인 판단이 있을 경우 악용될 확률이 있기때문에 객관적인 판단을 기반으로 해결을 해야할 필요가 있다.
 
-In any case where a consumer is unsatisfied with a service response, a mechanism should exist allowing the consumer to issue a complaint and consequently, to receive an acceptable solution to that complaint, without having to resort to a centralized authority such as the legal system.  Also, this mechanism should avoid
-introducing subjective evaluation, which could be abused by either side.
+아이리스 네트워크의 분쟁 해결 절차는 서비스 요청(service invocation) 절차와 유사한 형태를 가진다. 다만 기존 서비스 요청 절차와 달리 소비자는 서비스 제공자에게 `Complaint`를 보내고, 서비스 제공자는 `Resolution`으로 응답한다. 분쟁해결 절차의 인터랙션은 *컴플레인 테이블(complaint table)* 과 *해결책 테이블(resolution table)* 이라는 글로벌 엔드포인트(endpoint)를 통해 이루어진다.
 
-The process to resolve a dispute that arises on the IRIS network resembles that of service invocation, except that a consumer sends a `Complaint` to the provider, and the provider responds with a `Resolution`.  These interactions are intended to happen through a pair of global endpoints known as *complaint table* and *resolution table*.
+현재 아이리스 네트워크의 디자인에 따르면, 소비자는 문제를 제기할때 일정의 예치금을 입금해야 한다. 소비자가 서비스 제공자가 응답한 해결책을 확인하지 않는 경우, 해당 예치금의 일부는 벌금으로 과금된다.  이는 소비자가 응답이 완료된 해결책을 확인(confirm)하지 않는 것을 방지하기 위함이다. 지정된 기간 내에 소비자의 문제에 대해 응답하지 않는 서비스 제공자 또한 위와 비슷하게 슬래싱을 당할 수 있다.
 
-Under the present design for the IRIS network, a consumer deposit is required for filing a complaint.  Where a consumer does not confirm a resolution in a timely manner, a penalty will be deducted from this deposit.  Similarly, a provider's deposit will be partially slashed if he fails to respond to a complaint in a timely manner.
+`Complaint`는 다음과 같은 값으로 구성된다:
 
-A `Complaint` is composed of:
+* `ResponseHash ([]byte)`: 분쟁 대상인 응답(response)의 해쉬값
 
-* `ResponseHash ([]byte)`: The hash of the response in dispute
+* `Problem (string)`: 서비스 제공자의 응답에 대한 불만의 설명
 
-* `Problem (string)`: A description of the problem with the service response
+* `PreferredDisposal (enum)`: `Refund` 또는 `Redo`
 
-* `PreferredDisposal (enum)`: Can be one of `Refund` or `Redo`
+`Resolution` 은 다음과 같은 값으로 구성된다: 
 
-A Resolution is composed of:
+* `ComplaintHash ([]byte)`: 응답하는 분쟁 `Complaint`의 해쉬값
 
-* `ComplaintHash ([]byte)`: The hash of the matched complaint
+* `Disposal (enum)`: `Refund` 또는 `Redo`
 
-* `Disposal (enum)`: Can be one of `Refund` or `Redo`
+* `Refund (uint64)`: 환불할 서비스 비용의 값 *선택*
 
-* `Refund (uint64)`: Service fee refund. *Optional*
+* `OutputValue ([]byte)`: 구조화된 아웃풋 결과(output result). (상황에 따라 암호화될 수 있다) *선택*
 
-* `OutputValue ([]byte)`: A structured (potentially encrypted)
-  representation of output result. *Optional*
+위에 설명된 분쟁 해결 절차는 법적 유효성을 가지지 않을 수 있다. 하지만 아이리스는 이런 절차가 가장 흔한 분쟁에 대한 해결책을 제시할 수 있을 것이라고 생각한다.
 
-Our intended dispute resolution process, as outlined above, may not be legally binding.  Nonetheless, we believe that it will provide an efficient means of resolving common disputes on the IRIS network.
+**서비스 프로파일링**
 
-**Service Profiling**
+iService 생태계를 구축하는데에는 몇가지 문제점들이 있따. 가장 큰 문제 중 하나는 소비자들이 적합한 서비스 제공자를 찾는 것이다. 소비자는 서비스를 선택하기 위해서 서비스 제공자들의 성능 지표를 원하지만, 소비자 사용률이 저조한 경우 서비스 제공자에 대한 데이터 부족으로 성능 지표가 제공될 수 없을 수 있다.
 
-Bootstrapping the iService ecosystem presents a few challenges.  A major challenge is finding a way to make it easy for consumers to discover suitable providers - consumers need performance metrics to evaluate and select a provider, yet without consumer usage no performance metrics will be available.
+이런 원형된 문제를 해결하는 의도에서, 아이리스 네트워크는 특수 상위 권한을 보유한 시스템 유저를 통해 프로파일링 메커니즘을 소개하려 한다. *프로파일러(Profiler)* 는 특정 기간마다 활성화된 모든 서비스에 요청을 하고 관련 정보를 기록한다. 프로파일러는 기록된 데이터를 토대로 서비스 제공자에 대한 객관적인 성능 지표(응답 속도, 사용 가능성(availability), 분쟁 처리 등)를 소비자에게 제공하는 역할을 한다.
 
-With the intention to solve this circular issue, we plan to introduce a profiling mechanism where a privileged system user, the profiler, invokes all the active services on a regular schedule.  This would leave objective performance data in the network (such as response time, availability, complaint handling etc.) that are useful for real consumers.
+소비자의 서비스 요청과는 달리, 서비스 프로파일링 요청은 서비스 비용과 예치금에서 면제되지만 네트워크 사용료는 지불해야 한다. 이런 프로파일링 요청은 지정된 특정 주소에서만 발생하며, 애플리케이션은 이를 인지하여 처리를 한다.
 
-Service profiling calls would be exempt from service fees and consumer
-deposits, but they would incur network transaction fees. These calls
-would originate from a few reserved addresses that are intended to be recognized and honored by the application.
+프로파일링 활동은 신규 서비스에 대해서 규칙적이게 발생하며, 이후 소비자 사용률이 높아지는 서비스는 실제 소비자 데이터 기반으로 성능 지표를 제공하여 프로파일링 활동이 줄어들게 한다. 
 
-Profiling activities would stay at a relatively stable level for new services
-and gradually decline for individual services as they start to
-attract real consumer calls, which is expected to generate more performance data on their own.
+프로파일링 활동에서 발생하는 네트워크 수수료(transaction fees)는 기본적으로 시스템의 예치금에서 지급되며, 추후 필요에 따라 재단이 개입할 수 있다.
 
-Transaction fees incurred during profiling would be paid out from the system reserve by default, and the Foundation reserve would step in if necessary.
+**쿼리(Query)**
 
-**Query**
+상단에 설명된 모든 서비스는 ABCI의 쿼리 인터페이스(query interface)[\[3\]][3]를 통해 요청될 수 있다. 이런 쿼리들은 *쿼리 연결(Query connection)* 을 통해서 이루어지며, 합의 프로세스에 참가하지 않는다. 상단에 `GetServiceRequest` 과 `GetServiceResponse` 같은 쿼리들이 작동하는지 설명되어있다.
 
-All the service related lifecycle objects described above can be queried
-using the ABCI Query interface [\[3\]][3]. These queries would be executed over
-the Query connection and do not participate in the consensus process. We
-have already seen how `GetServiceRequest` and `GetServiceResponse` queries
-work as part of the service invocation process.
+다음은 (포괄적이지 않은) 쿼리들에 대한 요약이다 Below is a non-exhaustive summary of our currently planned queries:
 
-Below is a non-exhaustive summary of our currently planned queries:
+**서비스 오브젝트(Service object)**
 
-**Service Objects**
-
-| Object                               | Commonly Used Filters                | Authorization                        |
+| 오브젝트                               | 흔히 이용되는 필터            | 권한                        |
 | ---------------------------------------- | ---------------------------------------- | ---------------------------------------- |
-| Service Definition                       | Name, keywords, source (chain ID), messaging type, with active bindings... | Anyone can query                         |
-| Service Binding (for a given definition) | Location (local or remote), pricing, service level, expiration... | Anyone can query                         |
-| Service Request                          | Service definition and binding, blockchain height, batch size | Only matched provider(s) |
-| Service Response                         | Service request, blockchain height, batch size | Only matched consumer                    |
+| 서비스 정의(service definition)                       | Name, keywords, source (chain ID), messaging type, with active bindings... | 모두 가능                         |
+| (특정 정의에 대한) 서비스 바인딩 | Location (local or remote), pricing, service level, expiration... | 모두 가능                         |
+| 서비스 요청(service request)                          | Service definition and binding, blockchain height, batch size | 요청 관계자 |
+| 서비스 응답(service response)                         | Service request, blockchain height, batch size | 요청/응답 관련 소비자                    |
 
 
-**Performance Metrics**
+**성능 지표**
 
-| Area                    | Metrics                              | Authorization |
+| 분야                    | 지표                              | 권한 |
 | --------------------------- | ---------------------------------------- | ----------------- |
-| Provider (address)          | Number of services provided (ever and active), response time (min, max and average), requests served (local and remote), requests missed, complaints received, complaints ignored, ... | Anyone can query  |
-| Provider (binding)          | Active time, response time (min, max and average), requests served (local and remote), requests missed, complaints received, complaints ignored, ... | Anyone can query  |
-| Consumer          | Number of services ever used, requests made, requests confirmed (in time and missed), complaints made, resolutions confirmed, ... | Anyone can query  |
-| Consumer (service, binding) | Requests made, requests confirmed (in time and missed), complaints made, resolutions confirmed, ... | Anyone can query  |
+| 제공자 (주소)          | 서비스 제공 횟수 (과거/현재 제공중), 응답 시간 (최소, 최대, 평균), 처리된 요청 (로컬, 원격), 미처리 요청 , 받은 컴플레인, 무시한 컴플레인, ... | 모두 가능  |
+| 제공자 (바인딩)          | 활성화 시간, 응답 시간 (최소, 최대, 평균), 처리된 요청 (로컬, 원격), 미처리 요청, 받은 컴플레인, 무시한 컴플레인, ... | 모두 가능  |
+| 소비자          | 서비스 이용 횟수, 요청 횟수, 확인한 요청 (확인 기간 내 / 확인 기간 초과), 요청한 컴플레인, 확인한 해결책(resolution), ... | 모두 가능  |
+| 소비자 (서비스, 바인딩) | 요청 횟수, 확인한 요청 (확인 기간 내 / 확인 기간 초과), 요청한 컴플레인, 확인한 해결책(resolution), ... | 모두 가능  |
 
 
 ### IBC Enhancement
