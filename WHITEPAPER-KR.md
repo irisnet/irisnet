@@ -179,7 +179,7 @@ _NOTE: 원문 백서는 [아이리스 GitHub]<https://github.com/irisnet/irisnet
 
 아이리스 SDK(코스모스 SDK를 기반으로 만들어져 아이리스에 특화된 확장된 기능을 제공하는 도구)를 기반으로 만들어진 아이리스 풀 노드(full node)들은 아이리스 네트워크의 서비스 인프라를 제공하며 IPFS(InterPlanetary File System) 노드의 기능을 내장 한다.
 
-iService(아이리스 서비스, IRIS Services)는 블록체인 생태계와 기존 비즈니스 애플리케이션 생태계를 이어주는 다리 역할을 한다. iService는 오프체인 서비스의 서비스 정의 부터 서비스 바인딩(binding, 제공자 등록), 서비스 요청(invocation), 거버넌스(프로파일링과 분쟁 해결)까지 서비스 라이프사이클(lifecycle)의 포괄적인 중재 역할을 한다.  아이리스 SDK는 IBC 처리 로직에 서비스 의미(service semantics)를 지원하여 분산화 비즈니스 서비스가 블록체인에도 제공될 수 있게 한다.
+iService(아이리스 서비스, IRIS Services)는 블록체인 생태계와 기존 비즈니스 애플리케이션 생태계를 이어주는 다리 역할을 한다. iService는 오프체인 서비스의 서비스 정의 부터 서비스 바인딩(binding), 서비스 요청(invocation), 거버넌스(프로파일링과 분쟁 해결)까지 서비스 라이프사이클(lifecycle)의 포괄적인 중재 역할을 한다.  아이리스 SDK는 IBC 처리 로직에 서비스 의미(service semantics)를 지원하여 분산화 비즈니스 서비스가 블록체인에도 제공될 수 있게 한다.
 
 아이리스 네트워크는 자체적으로 혁신적인 분산화 비즈니스 솔루션을 제공하는데 초점을 두지만, 포괄적인 코스모스 생태계의 일원이기도 하다. 그렇기 때문에, 아이리스 허브에 연결된 모든 존은 표준 IBC 프로토콜을 이용해 코스모스 네트워크에 있는 모든 존들과 소통할 수 있다. 또한, 아이리스는 서비스 의미(service semantics) 계층을 추가하여 새로운 비즈니스 시나리오들이 펼쳐지며 코스모스 생태계 크기와 다양성을 키우는데 기여할 것으로 기대하고 있다.
 
@@ -187,11 +187,11 @@ iService(아이리스 서비스, IRIS Services)는 블록체인 생태계와 기
 
 1. **소비자** 네트워크에 요청을 하고 응답을 받아 오프체인 서비스를 사용하는 유저.
 
-2. **제공자** 하나 또는 그 이상의 iService 정의 제공자로써 오프체인 서비스와 다른 퍼블릭/컨소시엄 블록체인/기존 엔터프라이즈 시스템의 리소스를 제공하는 유저이다. 제공자는 들어오는 요청을 모니터링한 후 처리하고, 네트워크에 응답(response)한다. 제공자는 소비자와 동일하게 다른 프로바이더에게 서비스 요청을 할 수도 있다.
+2. **서비스 제공자** 하나 또는 그 이상의 iService 정의의 제공자로써 오프체인 서비스와 다른 퍼블릭/컨소시엄 블록체인/기존 엔터프라이즈 시스템의 리소스를 제공하는 유저이다. 서비스 제공자는 들어오는 요청을 모니터링한 후 처리하고, 네트워크에 응답(response)한다. 서비스 제공자는 소비자와 동일하게 다른 프로바이더에게 서비스 요청을 할 수도 있다.
 
-현재 계획으로써는 제공자는 본인이 제공하는 서비스에 대해서 일정의 수수료를 요청해야 한다. 이때 수수료는 아이리스 네트워크의 고유 토큰 IRIS로 지불된다. 서비스 제공자는 본인이 승인한 다른 코스모스 수수료 토큰으로 제공받을 수 있는 방안은 추후 검토할 예정이다.
+현재 계획으로써는 서비스 제공자는 본인이 제공하는 서비스에 대해서 일정의 수수료를 요청해야 한다. 이때 수수료는 아이리스 네트워크의 고유 토큰 IRIS로 지불된다. 서비스 제공자는 본인이 승인한 다른 코스모스 수수료 토큰으로 제공받을 수 있는 방안은 추후 검토할 예정이다.
 
-3. **프로파일러** 홍콩의 기업인 아이리스 재단(IRIS Foundation Limited)을 대표하여 일하는 유저이다. 프로파일러는 아이리스 네트워크에서 유일하게 '프로파일링 모드(profiling mode)'로 iService 요청을 할 수 있는 유저이다. 프로파일러는 소비자들이 서비스 제공자를 선택할때 이용할 수 있는 제공자 프로파일을 제공하는 일을 한다.
+3. **프로파일러** 홍콩의 기업인 아이리스 재단(IRIS Foundation Limited)을 대표하여 일하는 유저이다. 프로파일러는 아이리스 네트워크에서 유일하게 '프로파일링 모드(profiling mode)'로 iService 요청을 할 수 있는 유저이다. 프로파일러는 소비자들이 서비스 제공자를 선택할때 이용할 수 있는 서비스 제공자 프로파일을 제공하는 일을 한다.
 
 ### 아이리스 서비스
 
@@ -239,41 +239,41 @@ iService(아이리스 서비스, IRIS Services)는 블록체인 생태계와 기
 
 `CreateServiceBindingTx` 는 다음과 같은 값으로 구성된다:
 
-* `DefinitionHash ([]byte)`: 제공자가 바인딩하는 서비스 정의의 해시값
+* `DefinitionHash ([]byte)`: 서비스 제공자가 바인딩하는 서비스 정의의 해시값
 
-* `ChainID (string)`: 제공자가 연결되어있는 블록체인의 ID
+* `ChainID (string)`: 서비스 제공자가 연결되어있는 블록체인의 ID
 
-* `ProviderAddress ([]byte)`: 제공자의 블록체인 주소
+* `ProviderAddress ([]byte)`: 서비스 제공자의 블록체인 주소
 
-* `BindingType (enum)`: `Local` 또는 `Global` 중 하나; 제공자가 본인의 바인딩이 전 세계의 공계되는 것을 원하는 경우 `Global`을 입력한다. 그렇지 않은 경우 `Local`을 선택한다
+* `BindingType (enum)`: `Local` 또는 `Global` 중 하나; 서비스 제공자가 본인의 바인딩이 전 세계의 공계되는 것을 원하는 경우 `Global`을 입력한다. 그렇지 않은 경우 `Local`을 선택한다
 
-* `ProviderDeposit (int64)`: 유효한 바인딩을 만들기 위해서 제공자는 시스템의 `MinProviderDeposit`이 정의하는 값 보다 많은 수량의 아이리스 토큰을 보증금(deposit)으로 예치해야 한다. 예치금이 많을 수록 제공자의 신뢰도가 높은 것을 알릴 수 있다
+* `ProviderDeposit (int64)`: 유효한 바인딩을 만들기 위해서 서비스 제공자는 시스템의 `MinProviderDeposit`이 정의하는 값 보다 많은 수량의 아이리스 토큰을 보증금(deposit)으로 예치해야 한다. 예치금이 많을 수록 서비스 제공자의 신뢰도가 높은 것을 알릴 수 있다
 
-* `ServicePricing (string)`: 각 메소드 별로 체계적으로 정리된 서비스의 가격 모델. 요청별 가격, 대량 요청 할인, 할인 행사 등이 있을 경우 모두 포함 되어야 한다. 서비스 가격 지불 수단은 기본적으로 IRIS 토큰으로 정의되나, 제공자가 원하는 수수료 토큰을 화이트리스트에 추가할 수 있다
+* `ServicePricing (string)`: 각 메소드 별로 체계적으로 정리된 서비스의 가격 모델. 요청별 가격, 대량 요청 할인, 할인 행사 등이 있을 경우 모두 포함 되어야 한다. 서비스 가격 지불 수단은 기본적으로 IRIS 토큰으로 정의되나, 서비스 제공자가 원하는 수수료 토큰을 화이트리스트에 추가할 수 있다
 
-* `ServiceLevel (string)`: 반응 시간(response time), 사용 가능여부(availability) 같은 제공자가 보장하는 서비스 레벨의 정의
+* `ServiceLevel (string)`: 반응 시간(response time), 사용 가능여부(availability) 같은 서비스 제공자가 보장하는 서비스 레벨의 정의
 
 * `BindingExpiration (int64)`: 해당 바인딩의 유효성이 만료되는 블록 높이. 마이너스 값은 '만료되지 않음'을 뜻함
 
 `UpdateServiceBindingTx` 는 다음과 같은 값으로 구성된다:
 
-* `DefinitionHash ([]byte)`: 제공자가 바인딩 한 서비스 정의의 해시값
+* `DefinitionHash ([]byte)`: 서비스 제공자가 바인딩 한 서비스 정의의 해시값
 
-* `ChainID (string)`: 제공자가 연결되어있는 블록체인의 ID
+* `ChainID (string)`: 서비스 제공자가 연결되어있는 블록체인의 ID
 
-* `ProviderAddress ([]byte)`: 제공자의 블록체인 주소
+* `ProviderAddress ([]byte)`: 서비스 제공자의 블록체인 주소
 
 * `ChangeSet (string)`: 특정 바인딩의 `DefinitionHash`, `ChainID`, `ProviderAddress` 값의 변경을 체계적으로 나열한 값
 
 ![iService 정의와 바인딩](https://github.com/irisnet/irisnet/blob/master/images/chap2-2.png?raw=true)
 
-제공자는 `ServicePricing`,`ServiceLevel` 그리고 `BindingExpiration`의 값을 언제나 변경할 수 있다. 하지만 `ServiceLevel`과 `BindingExpiration`값을 바꿀 경우 소량의 예치금이 `BindingExpirationUpdateSlash` 와`ServiceLevelUpdateSlash`의 로직에 따라 슬래싱 될 수 있다. 만약 `BindingExpiration`의 블록높이 값이 현재 블록높이보다 낮게 설정된 경우, 해당 바인딩은 즉시 무효처리 된다.
+서비스 제공자는 `ServicePricing`,`ServiceLevel` 그리고 `BindingExpiration`의 값을 언제나 변경할 수 있다. 하지만 `ServiceLevel`과 `BindingExpiration`값을 바꿀 경우 소량의 예치금이 `BindingExpirationUpdateSlash` 와`ServiceLevelUpdateSlash`의 로직에 따라 슬래싱 될 수 있다. 만약 `BindingExpiration`의 블록높이 값이 현재 블록높이보다 낮게 설정된 경우, 해당 바인딩은 즉시 무효처리 된다.
 
-`ProviderDeposit` 값의 변경은 언제나 현재 예치금에 예치금을 *추가*하는 것으로 간주한다. 만약 예치금이 `MinProviderDeposit`값 보다 낮아질 경우, 모든 바인딩 행위는 최소 예치금 값을 넘을 때까지 비활성화된다. 만약 특정 바인딩이 무효처리 되었거나 만료된 경우, 제공자는 본인의 예치금을 자동으로 돌려받게 된다.
+`ProviderDeposit` 값의 변경은 언제나 현재 예치금에 예치금을 *추가*하는 것으로 간주한다. 만약 예치금이 `MinProviderDeposit`값 보다 낮아질 경우, 모든 바인딩 행위는 최소 예치금 값을 넘을 때까지 비활성화된다. 만약 특정 바인딩이 무효처리 되었거나 만료된 경우, 서비스 제공자는 본인의 예치금을 자동으로 돌려받게 된다.
 
-`BindingType`는 `Local` 값에서 `Global`값으로 변경될 수 있지만, 반대로 `Global`에서 `Local`로 변경이 불가능하다. 반약 제공자가 본인의 바인딩을 `Global`에서 `Local`로 변경을 원하는 경우, 해당 바인딩을 우선 무효처리 한 후 새로운 `Local`바인딩을 생성해야 한다.
+`BindingType`는 `Local` 값에서 `Global`값으로 변경될 수 있지만, 반대로 `Global`에서 `Local`로 변경이 불가능하다. 반약 서비스 제공자가 본인의 바인딩을 `Global`에서 `Local`로 변경을 원하는 경우, 해당 바인딩을 우선 무효처리 한 후 새로운 `Local`바인딩을 생성해야 한다.
 
-`ProviderAdress` 값은 변경될 수 없다. 만약 제공자가 특정 바인딩을 새로운 주소로 이동해야하는 경우, 기존 바인딩을 무효처리 한 후 변경된 `ProviderAddress`값이 입력된 새로운 바인딩을 생성해야 한다.
+`ProviderAdress` 값은 변경될 수 없다. 만약 서비스 제공자가 특정 바인딩을 새로운 주소로 이동해야하는 경우, 기존 바인딩을 무효처리 한 후 변경된 `ProviderAddress`값이 입력된 새로운 바인딩을 생성해야 한다.
 
 애플리케이션이 위 두개의 트랜잭션이 성공적으로 처리되면, `ServiceBinding` 오브젝트가 생성/변경된다.
 
@@ -297,7 +297,7 @@ iService(아이리스 서비스, IRIS Services)는 블록체인 생태계와 기
 
 ![서비스 요청 도안](https://github.com/irisnet/irisnet/blob/master/images/chap2-3.png?raw=true)
 
-소비자와 제공자는 서로 *엔드포인트*를 통해 소통한다. 엔드포인트는 *요청 테이블(request table)* 과 *응답 테이블(response table)* 형태로 존재한다. 모든 서비스 요청은 요청 테이블에 합산되며, 서비스 제공자들은 이 테이블을 모니터링 할 수 있다. 서비스 제공자는 요청 테이블에 올라온 서비스 요청 중 본인이 대상인 것을 처리하고, 이후 결과(또는 에러)를 응답 테이블에 합산한다. 소비자는 이 응답 테이블을 모니터링 한다.
+소비자와 서비스 제공자는 서로 *엔드포인트*를 통해 소통한다. 엔드포인트는 *요청 테이블(request table)* 과 *응답 테이블(response table)* 형태로 존재한다. 모든 서비스 요청은 요청 테이블에 합산되며, 서비스 제공자들은 이 테이블을 모니터링 할 수 있다. 서비스 제공자는 요청 테이블에 올라온 서비스 요청 중 본인이 대상인 것을 처리하고, 이후 결과(또는 에러)를 응답 테이블에 합산한다. 소비자는 이 응답 테이블을 모니터링 한다.
 
 `Multicast` 서비스의 경우, 모든 바인딩은 하나의 요청테이블을 공유한다. `Unicast` 서비스의 경우 각 바인딩 별로 새로운 요청 테이블이 생산되고 유지되며, 각 소비자 별로 다른 응답 테이블이 생성되고 유지된다.
 
@@ -334,9 +334,9 @@ iService(아이리스 서비스, IRIS Services)는 블록체인 생태계와 기
 
 * `DefinitionHash ([]byte)`: 서비스 정의의 해쉬값
 
-* `BindingHash ([]byte)`: 특정 서비스 바인딩을 제공하는 제공자의 해쉬값. 애플리케이션은 해당 바인딩의 유효성을 확인하고 요청 값이 제공자의 `ChainID`와 `ProviderAddress`와 일치하는지 확인한다.
+* `BindingHash ([]byte)`: 특정 서비스 바인딩을 제공하는 서비스 제공자의 해쉬값. 애플리케이션은 해당 바인딩의 유효성을 확인하고 요청 값이 서비스 제공자의 `ChainID`와 `ProviderAddress`와 일치하는지 확인한다.
 
-* `BeginHeight (uint64)`: 애플리케이션이 제공자에게 요청(request)을 전달하기 시작하는 블록 높이. `BatchSize`와 `MaxRequestBatch`의 값 중 작은 숫자로 처리된다.
+* `BeginHeight (uint64)`: 애플리케이션이 서비스 제공자에게 요청(request)을 전달하기 시작하는 블록 높이. `BatchSize`와 `MaxRequestBatch`의 값 중 작은 숫자로 처리된다.
 
 * `BatchSize (int)`: 최대 요청 응답 수 
 
@@ -354,7 +354,7 @@ iService(아이리스 서비스, IRIS Services)는 블록체인 생태계와 기
 
 * `Responses ([]ServiceResponse)`: 응답 테이블에 게시할 서비스 응답
 
-애플리케이션은 모든 응답의 `ChainID`와 `ProviderAddress`가 제공자의 정보와 일치하는지 그리고 트랜잭션의 응답수가 `MaxResponsePostBatch`의 값 보다 낮은지 검증한다. 검증된 요청은 소비자에게 전달되기 위해 응답 테이블에 게시된다.
+애플리케이션은 모든 응답의 `ChainID`와 `ProviderAddress`가 서비스 제공자의 정보와 일치하는지 그리고 트랜잭션의 응답수가 `MaxResponsePostBatch`의 값 보다 낮은지 검증한다. 검증된 요청은 소비자에게 전달되기 위해 응답 테이블에 게시된다.
 
 `GetServiceResponse` 쿼리(Query)는 다음과 같은 값으로 구성된다:
 
@@ -438,30 +438,27 @@ iService 생태계를 구축하는데에는 몇가지 문제점들이 있따. �
 
 | 분야                    | 지표                              | 권한 |
 | --------------------------- | ---------------------------------------- | ----------------- |
-| 제공자 (주소)          | 서비스 제공 횟수 (과거/현재 제공중), 응답 시간 (최소, 최대, 평균), 처리된 요청 (로컬, 원격), 미처리 요청 , 받은 컴플레인, 무시한 컴플레인, ... | 모두 가능  |
-| 제공자 (바인딩)          | 활성화 시간, 응답 시간 (최소, 최대, 평균), 처리된 요청 (로컬, 원격), 미처리 요청, 받은 컴플레인, 무시한 컴플레인, ... | 모두 가능  |
+| 서비스 제공자 (주소)          | 서비스 제공 횟수 (과거/현재 제공중), 응답 시간 (최소, 최대, 평균), 처리된 요청 (로컬, 원격), 미처리 요청 , 받은 컴플레인, 무시한 컴플레인, ... | 모두 가능  |
+| 서비스 제공자 (바인딩)          | 활성화 시간, 응답 시간 (최소, 최대, 평균), 처리된 요청 (로컬, 원격), 미처리 요청, 받은 컴플레인, 무시한 컴플레인, ... | 모두 가능  |
 | 소비자          | 서비스 이용 횟수, 요청 횟수, 확인한 요청 (확인 기간 내 / 확인 기간 초과), 요청한 컴플레인, 확인한 해결책(resolution), ... | 모두 가능  |
 | 소비자 (서비스, 바인딩) | 요청 횟수, 확인한 요청 (확인 기간 내 / 확인 기간 초과), 요청한 컴플레인, 확인한 해결책(resolution), ... | 모두 가능  |
 
 
-### IBC Enhancement
+### IBC 확장
 
-One unique advantage of establishing our service infrastructure on top of Cosmos is the potential for services to be *deployed once and invoked
-everywhere*, over an internet of blockchains. Specifically, our plan is to
-accomplish the following:
+아이리스 네트워크가 코스모스를 기반으로 서비스 인프라를 제공하는 것의 가장 큰 장점 중 하나는 *요청과 전개*가 생태계 내에 있는 '블록체인의 인터넷'에서 가능하다는 것이다. 아이리스의 계획은 다음과 같다.
 
-1. Service definitions are broadcast to every zone in the IRIS network;
+1. 서비스 정의는 아이리스 네트워크에 있는 모든 존에 전파된다;
 
-2. Global service bindings are broadcast to every zone in the IRIS network;
+2. 글로벌 서비스 바인딩은 아이리스 네트워크에 있는 모든 존에 전파된다;
 
-3. Service requests or complaints targeting a remote provider are routed to
-  the blockchain to which the provider is connected;
+3. 특정 원격 서비스 제공자가 대상인 서비스 요청과 컴플레인은 해당 서비스 제공자가 연결되어있는 블록체인으로 라우팅된다;
 
-4. Service responses or resolution meant for a remote consumer are routed
-  back to the blockchain to which the consumer is connected.
+4. 특정 원격 소비자가 대상인 응답과 해결책(resolution)은 해당 소비자가 연결되어있는 블록체인으로 라우팅된다;
 
-When processing a `CreateServiceDefinitionTx` transaction, the application
-is designed to first validate and store the `ServiceDefinition` object locally, before creating an `IBCPacket` containing the definition for each neighboring chain.
+애플리케이션은 `CreateServiceDefinitionTx`를 처리하는 과정에서 이웃 체인들에 대한 정보가 포함된 `IBCPacket`을 생성하기 전에 `ServiceDefinition` 오브젝트를 먼저 검증하고 로컬 환경에 저장하도록 설계되어있다.
+
+각 이웃은 추후에 ##아시발이거뭐야
 
 Each neighbor eventually receives -- from the corresponding relay process --
 an `IBCPacketTx` containing the packet; if the definition does not already
@@ -471,30 +468,25 @@ chain from which it received the packet in the first place; if the
 definition already exists, the receiving chain stops passing on the
 definition.
 
-Similarly, when a `ServiceBinding` is created or updated with its
-`BindingType` set or updated to `Global`, an `IBCPacket` containing the
-binding is created for each neighboring chain, and gets propagated across
-the entire IRIS network.
+위와 비슷하게 `ServiceBinding`의`BindingType`이 `Global`로 설정되어 생성되었거나 기존 `Local`에서 `Global`로 변경된 경우, 해당 바인딩이 포함된 `IBCPacket`이 각 이웃 체인 대상으로 만들어지고 아이리스 네트워크를 통해서 모든 체인에 전파된다. 
 
-An `IBCPacket` described above is composed of:
+위에 설명된 `IBCPacket`은 다음과 같은 값으로 구성되어있다:
 
-* `Header (IBCPacketHeader)`: The packet header
+* `Header (IBCPacketHeader)`: 패킷 헤더
 
-* `Payload (ServiceDefinition or ServiceBinding)`: The bytes of the service
-  definition or binding
+* `Payload (ServiceDefinition or ServiceBinding)`: 서비스 정의 또는 서비스 바인딩의 바이트(byte)
 
-The `IBCPacketHeader` above is composed of:
+`IBCPacketHeader`은 다음과 같은 값으로 구성되어있다:
 
-* `SrcChainID (string)`: The ID of the blockchain creating this packet
+* `SrcChainID (string)`: 해당 패킷을 생성하는 블록체인의 ID
 
-* `DstChainID (string)`: The ID of the neighboring blockchain this packet is
-  destined for
+* `DstChainID (string)`: 해당 패킷의 도착할 블록체인의 이웃 체인 ID
 
-* `Number (int)`: A unique number for all packets
+* `Number (int)`: 모든 패킷에 대한 고유 번호
 
 * `Status (enum)`: `NoAck`
 
-* `Type (string)`: "iris-service-definition" or "iris-service-binding"
+* `Type (string)`: "iris-service-definition" 또는 "iris-service-binding"
 
 Now let's take a look at how interchain service invocation happens through IBC.
 When a request is made for a `Unicast` service, the application checks if
