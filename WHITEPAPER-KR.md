@@ -4,7 +4,7 @@
 Haifeng Xi haifeng@bianjie.ai<br/>
 Harriet Cao harriet@bianjie.ai
 
-_NOTE: 원문 백서는 [아이리스 GitHub]<https://github.com/irisnet/irisnet/blob/master/WHITEPAPER.md>에 있으며 내용이 활발하게 업데이트되고 있습니다. 정기적으로 업데이트를 확인하십시오!_
+_NOTE: 원문 백서는 [아이리스 GitHub](https://github.com/irisnet/irisnet/blob/master/WHITEPAPER.md)에 있으며 내용이 활발하게 업데이트되고 있습니다. 정기적으로 업데이트를 확인하십시오!_
 <div STYLE="page-break-after: always;"></div>
 
 ## 목차 ###########################################################
