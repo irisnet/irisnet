@@ -314,9 +314,9 @@ iService(아이리스 서비스, IRIS Services)는 블록체인 생태계와 기
 
 * `InputValue (string)`: 구조화된 인풋 값
 
-* `BindingHash ([]byte)`: 타겟 바인딩의 해쉬 값 (`Unicast`인 경우 해당됨) *선택*
+* `BindingHash ([]byte)`: 타겟 바인딩의 해쉬 값 (`Unicast`인 경우 해당됨) *선택 사항*
 
-* `MaxServiceFee (int64)`: 특정 `Multicast`요청에 대해서 소비자가 지불 할 의사가 있는 최대 수수료 값 *선택*
+* `MaxServiceFee (int64)`: 특정 `Multicast`요청에 대해서 소비자가 지불 할 의사가 있는 최대 수수료 값 *선택 사항*
 
 * `Timeout (int)`: 소비자가 정의한 최대 응답 대기 기간(블록 수로 계산)
 
@@ -346,9 +346,9 @@ iService(아이리스 서비스, IRIS Services)는 블록체인 생태계와 기
 
 * `BindingHash ([]byte)`: 제공자 서비스 바인딩의 해쉬값
 
-* `OutputValue ([]byte)`: 구조화된 아웃풋 결과(output result). (상황에 따라 암호화될 수 있다) *선택*
+* `OutputValue ([]byte)`: 구조화된 아웃풋 결과(output result). (상황에 따라 암호화될 수 있다) *선택 사항*
 
-* `ErrorMsg (string)`: 구조화된 에러 메시지 *선택*
+* `ErrorMsg (string)`: 구조화된 에러 메시지 *선택 사항*
 
 `PostServiceResponseTx` 트랜잭션은 다음과 같은 값으로 구성된다:
 
@@ -400,9 +400,9 @@ iService(아이리스 서비스, IRIS Services)는 블록체인 생태계와 기
 
 * `Disposal (enum)`: `Refund` 또는 `Redo`
 
-* `Refund (uint64)`: 환불할 서비스 비용의 값 *선택*
+* `Refund (uint64)`: 환불할 서비스 비용의 값 *선택 사항*
 
-* `OutputValue ([]byte)`: 구조화된 아웃풋 결과(output result). (상황에 따라 암호화될 수 있다) *선택*
+* `OutputValue ([]byte)`: 구조화된 아웃풋 결과(output result). (상황에 따라 암호화될 수 있다) *선택 사항*
 
 위에 설명된 분쟁 해결 절차는 법적 유효성을 가지지 않을 수 있다. 하지만 아이리스는 이런 절차가 가장 흔한 분쟁에 대한 해결책을 제시할 수 있을 것이라고 생각한다.
 
