@@ -596,19 +596,13 @@ BEAN은 이런 문제를 조금 다른 형식으로 풀어나가기 위해 만�
 
 아이리스 네트워크는 코스모스 네트워크의 화이트리스트에 포함된 모든 토큰(예, [포톤](https://blog.cosmos.network/cosmos-fee-token-introducing-the-photon-8a62b2f51aa)]과 IRIS 토큰을 지원할 예정이다
 
-아이리스 네트워크는 코스모스 네트워크 화이트리스트에 포함된 모든 토큰을 지원함으로써 네트워크 참여자들에게 더욱 편리한 환경을 제공할 수 있다. 
+아이리스 네트워크는 코스모스 네트워크 화이트리스트에 포함된 모든 토큰을 지원함으로써 네트워크 참여자들에게 더욱 편리한 환경을 제공할 수 있다. 코스모스의 `network fee token`의 경우, 각 밸리데이터는 config 파일에 본인이 각 수수료 토큰에 대한 가치를 정의한다. 원한다면 크론(cron) 프로세스를 활용하여 본인이 선택한 실시간 가격 데이터를 기반으로 수수료 토큰에 대한 가치를 지정할 수도 있다.
 
-Supporting a variety of whitelisted fee tokens is a feature that we plan to adopt from Cosmos. It can provide an enhanced experience for network participants. In Cosmos, for `network fee token`, each validator has a config
-file defines his personal weighting of how much they value each fee
-token. Validator can run a separate cron job to update the config file
-based on validator preferred live market data or maybe just use a
-default config value.
+아이리스 네트워크는 `service fee token` 설계 또한 비슷한 멀티토큰 모델이 지원될 예정이다. 서비스 제공자는 본인이 원하는 토큰으로 서비스 비용을 지불받을 권리가 있으며, 이를 각자의 화이트리스트를 통해 지정할 수 있다.
 
-For the `service fee token` design, similarly a multi-token model is planned to be supported.  A service provider on the IRIS network should therefore have the freedom to charge for their services in their preferred tokens, provided that it appears on the whitelist.
+아이리스 네트워크 참가자가 암호화폐 가격 변동성에 노출되는 확률을 낮추기 위해 아이래스 재단은 다양한 거래소에서 가격 데이터를 실시간으로 제공하는 iService를 제공할 수 있으며, 일종의 '오라클(oracle)' 서비스를 추후에 출시 할수 있다.
 
-To help IRIS network participants mitigate cryptocurrency price volatility, the Foundation intends to facilitate the deployment of global iServices for retrieving market data from different exchanges, or through the potential introduction of oracles.
-
-Both staking and fee tokens are subject to further refinement to ensure compliance with legal and regulatory obligations.
+스테이킹 토큰과 수수료 토큰의 기능과 디자인은 법적 규제 준수 여부에 따라 추후에 변경될 수 있다.
 
 <div STYLE="page-break-after: always;"></div>
 
@@ -645,88 +639,77 @@ IRIS의 프라이빗 세일로 받은 수익금은 아이리스 네트워크 개
 
 <div STYLE="page-break-after: always;"></div>
 
-## Roadmap ################################################################
+## 로드맵 ################################################################
 
-The expected IRIS project is set out below. We reiterate that the roadmap is indicative only, and subject to change.
+아이리스 프로젝트의 계획은 다음과 같다. 이 정보는 예측성 지표이며 언제나 변경이 가능하다.
 
-* **PANGU** (January 2018 \~ March 2019) The first stage of the IRIS project will focus on having the IRIS Hub up and running. We also intend to release an initial version of the mobile client for the IRIS network. In this stage we also  focus on building the fundamental IRIS Service Layer. This will involve enabling service definition, binding, invocation and query. We plan to collabrate with 1-2 ecosystem parteners to release i-Services to IRIShub.  
+* **판구(PANGU)** (2019년 1월 \~ 2019년 3월) 아이리스 프로젝트의 첫 단계는 아이리스 허브 운영에 집중된다. 아이리스는 아이리스 네트워크 모바일 클라이언트를 공개할 예정이다. 이 단계에서 아이리스 프로젝트는 서비스 정의, 서비스 바인딩, 서비스 요청, 쿼리 같은 아이리스의 서비스 계층의 기초를 개발하는데 집중한다. 이 단계에서는 약 1-2개의 파트너사를 통해 iService를 공개할 예정이다.
 
-* **NUWA** (April 2019 \~ September 2019) In this stage we are aiming to have a beta version of the IRIS SDK ready for developers. We plan to upgrade IRISnet mobile client to support i-Services. We plan to establish collabrations with application specific blockchains and enable them as zones connecting to IRIShub. We also plan to accomplish the connection with Cosmos Hub at this stage.
+* **누와(NUWA)** (2018년 4월 \~ 2019년 9월) 이 단계에서는 IRIS SDK의 베타 버전을 개발자들에게 공개할 계획이다. 추가적으로 IRISnet 모바일 클라이언트에서 iService 기능을 지원할 수 있도록 업그레이드 될 예정이다. 다양한 애플리케이션 특화 블록체인들과 협력하여 아이리스 허브의 존으로 연결될 수 있게 지원하고 코스모스 허브와 연결될 계획을 추진할 예정이다. 
  
- 
-* **KUAFU** (Oct 2019 \~ Dec 2019) The third stage will focus on incremental upgrades to the IRIS network in order to support our planned advanced IRIS Service governance features.
+* **쿠아푸(KUAFU)** (2019년 10월 \~ 2019년 12월) 세번째 단계는 아이리스 네트워크의 거버넌스 기능을 지원하기 위한 순차적 업그레이드에 집중할 예정이다.
 
-
-* **HOUYI** (Beyond January 2020)
-The fourth stage will focus on further technology innovations to the IRIS network, IRIS SDK and mobile client, as well as developer engagement.
+* **호우이(HOUYI)** (2020년 이후)
+네변째 단계에서는 아이리스 네트워크를 더욱 혁신적이게 만들 수 있는 기술 개발에 집중할 예정이다. 이 외에도 개발자 지원 활동을 늘리고 IRIS SDK와 모바일 클라이언트의 기능과 성능을 개선할 예정이다.
 
 <div STYLE="page-break-after: always;"></div>
 
-## The Team ################################################################
+## 팀 ################################################################
 
-**Bianjie **
-is the core development team for the IRIS network, leveraging the team's experience established from building distributed applications. [Bianjie](https://www.bianjie.ai) is a Shanghai-based start-up established in 2016. It focuses on developing innovative products and solutions for healthcare and financial industries, using advanced Blockchain and AI technologies. Besides IRISnet, Bianjie's also building another core product ---  `BEAN (Blockchain Edge Analytics Network)` BEAN (Blockchain Edge Analytics Network), which is a permission chain which delivers distributed data analytics services for privacy preserving healthcare data analysis and exchange using NLP and machine learning technologies.
-**Bianjie AI**
-is also the operation and service partner of Cosmos Network in China.
+**Bianjie**는 아이리스 네트워크의 코어 개발팀이다. 2016년에 상하이의 스타트업으로 설립된 [Bianjie](https://www.bianjie.ai) 팀은 분산화 애플리케이션 개발에 오랜 경력을 자랑한다. Bianjie는 의료 기관과 금융 기관에 AI와 블록체인 기술을 적용한 혁신적인 제품과 솔루션을 제공하는데 집중해왔다. Bianjie는 아이리스 외에도 `BEAN (Blockchain Edge Analytics Network)`라는 코어 제품을 개발중이다. BEAN은 의료 데이터 분석 서비스를 제공하는 허가형 블록체인으로, 자연어처리, 머신러닝 같은 기술을 응용해 프라이버시를 보존하는 의료 데이터 분석을 제공한다. **Bianjie**는 코스모스 네트워크의 중국 서비스/운영 파트너이다.
 
-**Tendermint** (the team that developed the [Tendermint](https://www.tendermint.com) consensus engine and is currently building Cosmos), **Wancloud** (a subsidiary of [Wanxiang
-Blockchain](http://www.wxblockchain.com) are strategic parteners working together with **Bianjie AI** building the IRIS network's infrastructure.  
+**텐더민트** ([Tendermint](https://www.tendermint.com) 합의 알고리즘을 개발하고 현재 코스모스를 제작중에 있음), **Wancloud** ([Wanxiang
+Blockchain](http://www.wxblockchain.com)의 계열사 등이 현재 **Bianjie AI**와 함께 기술적 파트너로 아이리스 네트워크의 인프라를 개발하고 있다.
 
-Tendermint's intended role to give technical advice and development support to the IRIS project team in extending the Tendermint ABCI and the Cosmos IBC technologies.
-[Wancloud](https://www.wancloud.io) is envisaged as the key strategy partner to both the Cosmos and IRIS ecosystems, and we understand that it intends to participate in Cosmos and IRIS development across Asia.
+텐더민트는 아이리스 프로젝트 팀에게 기술적 고문과 개발 지원을 제공하여 아이리스 프로젝트를 통해 텐더민트 ABCI와 코스모스 IBC 활용도를 높히는데 지원하고 있다.
+[Wancloud](https://www.wancloud.io)는 코스모스와 아이리스 생태계의 전략적 파트너로써 아시아 지역의 코스모스/아이리스 개발을 지원하고 있다.
 
-### Core Members
+### 핵심 멤버
 
 **Haifeng Xi**
 
-[Haifeng](https://www.linkedin.com/in/haifengxi/) is a senior technologist and entrepreneur. Haifeng has an M.S degree in ECE from the University of Maryland. Haifeng worked as CTO for Wanxiang Blockchain Wancloud before starting IRISnet project. He also worked as senior architect for two leading financial companies In US (Tudor Investment & RBS Sempra), then he came back to China worked in the capacity of CTO for three companies, one of which is NASDAQ listed (China Finance Online).
+[Haifeng](https://www.linkedin.com/in/haifengxi/)은 시니어 기술자이자 사업가다. 그는 University of Maryland에서 전자컴퓨터공학 석사 학위를 취득했다. 아이리스 네트워크를 시작하기 전에 Haifeng은 Wanxiang Blockchain의 Wancloud에서 CTO를 했으며, 그 외에도 미국 금융 기업 Tudor Investment와 RBS Sempra에서 시니어 아키텍트, NASDAQ 상장기업을 포함한 3개의 중국 기업에서 CTO 직위를 역임했다.
 
 
 **Harriet Cao**
 
-[Harriet](https://www.linkedin.com/in/harrietcao/) is the founder of Bianjie AI, which a Shanghai-based start-up focusing on building smart services for blockchain that enable trustworthy and efficient business collaborations using distributed AI technology. Harriet is an award-winning practitioner of data analytics and artificial intelligence technologies, and was the recipient of 2010 INFORMS Daniel H. Wagner Prize. Prior to establishing Bianjie AI, Harriet worked for IBM Research for more than 16 years in various capacities including Director of IBM Research Shanghai Lab and Big Data Analytics Leader for IBM Global Labs.
-Harriet has an M.S degree in Robotics from Carnegie Mellon University and an M.S. degree in Automation Control from Tsinghua University.
+[Harriet](https://www.linkedin.com/in/harrietcao/) 은 블록체인 기반 스마트 서비스와 분산화 AI 기술을 제공하는 상하이 기반 Bianjie AI의 창립자다. Harriet은 데이터 분석과 인공지능 기술에서 수차례 수상했으며, 2010 INFORMS Daniel H. Wageris Prize를 받기도 했다. Bianjie AI를 창립하기 전, 그는 IBM Research에서 16년 동안 일했으며, IBM Research Shanghai Lab의 디렉터, IBM Global Labs의 빅데이터 분석 리드 등의 역할을 맡았다. Harriet은 Carnegie Mellon University의 로보트공학 석사 학위와 칭화대학교의 자동화 컨트롤 석사 학위를 보유하고 있다.
 
 **Jae Kwon**
 
-After graduating from Cornell in 2005 with an undergraduate degree in computer science, [Jae](https://www.linkedin.com/in/yjkwon/) worked as a software developer in Silicon Valley, first at Amazon (where he worked on the Alexa digital assistant), then later at Yelp, where he led their mobile app development team.
-After getting the blockchain bug, Jae created the Tendermint BFT consensus algorithm and the Tendermint Core blockchain engine, with the intent of creating a provably secure proof-of-stake algorithm.
-In addition to Tendermint, Jae is also the creator of Cosmos.
-
+2005년 코넬 대학교에서 졸업한 후, 재권은 다양한 실리콘 밸리 기업들(아마존, Yelp)에서 소프트웨어 개발자로 일했다. 이후 그는 블록체인 생태계에 빠지며 텐더민트 BFT 합의 알고리즘을 개발하였고, 이후 학술적 검증이 가능한 지분증명 알고리즘을 만들기 위해 텐더민트 코어 블록체인 엔진을 개발하였다. 재권은 코스모스의 창립자로써 현재 '블록체인의 인터넷'을 그리는 코스모스를 개발하고 있다.
 
 **Tom Tao**
 
-Since joining Wanxiang in August 2016, [Tom](https://www.linkedin.com/in/tom-tao-14763a45/) is responsible for Wanxiang Blockhain Group's consulting service, Wancloud BaaS Platform as well as the ChainBase accelerator and incubator service. Before Wanxiang, Tom worked in service management and business management for over 18 years in a number of global leading companies.
-Tom has spearheaded the introduction of cloud services, IoT data service platforms, and creative accelerator technologies into the Chinese market.
-Tom has been tracking trends in the blockchain, cloud computing, IoT and smart manufacturing industries since 2013. Tom has a Master's degree in Physics from Fudan University and a Bachelor's degree in Electrical Engineering from Nankai University.
+2016년에 Wanxiang에 합류한 [Tom](https://www.linkedin.com/in/tom-tao-14763a45/)은 Wanxiang Blockchain Group의 컨설팅 서비스, Wancloud BaaS 플랫폼과 ChainBase 액셀레레이터/인큐베이터 서비스를 담당하고 있다. Tom Tao는 Wanxiang을 합류하기 전에 세계적인 기업에서 서비스 관리와 비즈니스 매니지먼트 역할을 무려 18년 동안 했다. 그는 2013년 부터 클라우드 서비스, IoT 데이터 서비스 플랫폼, 그리고 액셀레레이터 프로그램을 중국 시장에 소개하며 기술적 트렌드를 빠르게 따라잡는 역할을 했다.
 
+그는 Nankai University에서 전기공학 학사, 그리고 Fudan University에서 물리학 석사 학위를 수료했다.
 
-### Advisors
+### 어드바이저
 
 **Dr. Shuo Bai**
 
-Dr. Bai is the director of ChinaLedger Technical Committee, and former Chief Architect of Shanghai Stock Exchange. He is a senior blockchain professional who graduated from Peking University with doctorate of science. He worked in various capacities including researcher, doctoral student advisor, director of software department, and chief scientist in the Institute of Computing Technology, Chinese Academy of Sciences. He also led the establishment of China National Internet Emergency Center (CNCERT/CC) since 2000. Dr. Bai has rich experiences in theoretical research and technical practices in the fields of financial exchanges, consortium and public blockchains.
+Bai 박사는 현 ChainaLedger Technical Committee 위원장이자 전 상하이 증권 거래소의 총 아키텍트였다. 그는 중국 업계의 시니어 블록체인 전문가이며, Peking Univeristy에서 박사 학위를 수료한 후 학술, 연구, 개발 등의 전문 분야에서 활동을 했다. 또한 Chinese Academy of Sciences와 Institute of Computing Technology의 수석 과학자, 소프트웨어 개발 디렉터 등 고위 직위에서 일을했다. 그는 2000년 부터 China National Internet Emergency Center (CNCERT/CC) 설립을 주도하였다.
+
+그는 학술적 이론 연구 외에도 금융 거래소, 컨소시엄 블록체인, 퍼블릭 블록체인 기술 분야에 전문성과 경험을 보유하고 있다.
 
 **Jim Yang**
 
-[Jim Yang](https://www.linkedin.com/in/jimyang/) runs Strategy for Tendermint. He was the founder and CEO at ChatX, mobile messaging studio. ChatX developed various mobile messaging/social apps. He also co-founded Identyx, where he served as CEO until its acquisition by Red Hat. Identyx developed an open source enterprise identity management software.
+[Jim Yang](https://www.linkedin.com/in/jimyang/) 은 텐더민트에서 전략을 맡고있다. 모바일 메시징 스투디오 ChatX를 설립했으며, 그 외에도 레드햇(Red Hat)에 인수된 Identyx의 공동 설립자이자 대표를 역임했다. Identyx는 오픈소스 엔터프라이즈 신원 관리 소프트웨어다.
 
 **Zaki Manian**
 
-[Zaki Manian](https://zaki.manian.org), Executive Director of Trusted IoT Alliance, is a prolific contributor to the development of blockchain and cryptocurrency technology. Zaki has deep expertise in cryptography and distributed consensus system. He is also an advisor to the Cosmos project, and several other investment funds and startup in the space.
+[Zaki Manian](https://zaki.manian.org), Trusted IoT Alliance 전무이사로써 블록체인과 암호화폐 기술에 큰 기여를 하고있다. 그는 암호학과 분산화 합의 시스템에 높은 전문성을 보유하고 있으며, 코스모스 프로젝트의 어드바이저 역할을 하고 있다.
 
 **Adrian Brink**
 
-[Adrian Brink](https://adrianbrink.com), Core Developer & Head of Community of Tendermint / Cosmos Network.
+[Adrian Brink](https://adrianbrink.com), 테조스, 코스모스, 폴카닷 등 다수의 지분증명 블록체인 시스템의 검증인을 운영하는 Cryptium Labs의 설립자다. 그는 과거 텐더민트와 코스모스에서 파트너십 디렉터와 코어 개발자로써 일했다.
 
 **Michael Yuan**
 
-[Dr. Michael Yuan](http://www.michaelyuan.com) is the Director of the [CyberMiles Foundation](https://cm.5miles.com). Michael received a PhD in Astrophysics from University of Texas at Austin. He is the author of 5 books on software development, published by Prentice Hall, Addison-Wesley, and O'Reilly. Michael was an active code committer in large Open Source projects such as Firefox, Fedora, JBoss, and others. He is an expert on enterprise and mobile software, and was a Principle Investigator on multiple research projects funded by the US government.
+[Dr. Michael Yuan](http://www.michaelyuan.com)는 [사이버마일즈 재단](https://cm.5miles.com)의 이사다. 그는 University of Texas at Austin 우주물리학 박사 학위를 수료했다. 지금까지 그는 무려 5개의 소프트웨어 개발 관련 책의 저자로써 Prentice Hall, Addison-Wesley 그리고 O'Reilly 같은 유명 출판사를 통해 출판되었다. Michael Yuan 박사는 파이어폭스, Fedora, JBoss 등 다수의 오픈소스 프로젝트에서 활동했으며, 모바일 및 엔터프라이즈 소프트웨어 전문가이다. 그는 미국 정부의 스폰서를 받은 다수의 연구 프로젝트를 이끌기도 했다.
 
-**Yubo Ruan**
-
-[Yubo](https://www.linkedin.com/in/yubo-ruan/) is the founder of 8 Decimal Capital. The fund invested in IRISnet，0x、Kyber、Ontology、Fcoin、Zilliqa、ICON、Wanchian、Bibox、BiShiJie. Yubo is the co-founder of Skylight Investment, a boston based venture fund backed by New Oriental(NYSE:EDU). Previously, Yubo started two highly successful companies, including Alisimba (Acquired by TopHacker Group) held 4 national patents and won the 2017 AACYF 30 under 30, Silver Medal Winner, iENA International Inventions Competition, 2012.
-
+[Yubo](https://www.linkedin.com/in/yubo-ruan/)는 IRISnet에 투자한 펀드 중 하나인 8 Decimal Capital의 창립자다. 8 Decimal Capital은 IRISnet 외에도 0x, Kyber, Ontology, Fcoin, Zilliqa, ICON, Wanchain, Bibox, BiShiJie 등 다수의 프로젝트에 투자했다. Yubo는 보스턴에 위치한 Skylight Investment의 공동 창립자이며, Skylight Investment는 뉴욕거래소에 상장된 New Oriental의 투자를 받기도 했다. 과거에 그는 Alisimba(TopHacker Group에 인수) 등 2개의 기업을 성공적으로 창립했으며, 4개의 특허를 보유하고 있다. 그는 2017 AACYF 30 under 30의 수상자이며, 2012년 iENA 국제 발명자 대회에서 은상을 수상했다.
 <div STYLE="page-break-after: always;"></div>
 
 ## References ################################################################
