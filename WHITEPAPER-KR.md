@@ -7,11 +7,11 @@ Harriet Cao harriet@bianjie.ai
 _NOTE: 원문 백서는 [아이리스 GitHub]<https://github.com/irisnet/irisnet/blob/master/WHITEPAPER.md>에 있으며 내용이 활발하게 업데이트되고 있습니다. 정기적으로 업데이트를 확인하십시오!_
 <div STYLE="page-break-after: always;"></div>
 
-## Table of Contents ###########################################################
+## 목차 ###########################################################
 
-* [Disclaimer](#disclaimer)
-* [IRIS Overview](#iris-overview)
-  * [Cosmos and Tendermint](#cosmos-and-tendermint)
+* [주의사항](#주의사항)
+* [아이리스 네트워크 개요](#아이리스-네트워크-개요)
+  * [코스모스와 텐더민트](#코스모스와-텐더민트)
   * [IRIS Innovations](#iris-innovations)
 * [IRIS Network Design](#iris-network-design)
   * [Network Actors](#network-actors)
@@ -72,7 +72,7 @@ _NOTE: 원문 백서는 [아이리스 GitHub]<https://github.com/irisnet/irisnet
 
 <div STYLE="page-break-after: always;"></div>
 
-## 아이리스  개요 ################################################################
+## 아이리스 네트워크 개요 ################################################################
 
 > 아이리스 네트워크는 그리스 신화에서 무지개의 화신이자 천국과 인간 사이의 충실한 메신저인‘아이리스’신에서 유래합니다.
 
