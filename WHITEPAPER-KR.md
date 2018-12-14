@@ -659,7 +659,7 @@ IRIS의 프라이빗 세일로 받은 수익금은 아이리스 네트워크 개
 **Bianjie**는 아이리스 네트워크의 코어 개발팀이다. 2016년에 상하이의 스타트업으로 설립된 [Bianjie](https://www.bianjie.ai) 팀은 분산화 애플리케이션 개발에 오랜 경력을 자랑한다. Bianjie는 의료 기관과 금융 기관에 AI와 블록체인 기술을 적용한 혁신적인 제품과 솔루션을 제공하는데 집중해왔다. Bianjie는 아이리스 외에도 `BEAN (Blockchain Edge Analytics Network)`라는 코어 제품을 개발중이다. BEAN은 의료 데이터 분석 서비스를 제공하는 허가형 블록체인으로, 자연어처리, 머신러닝 같은 기술을 응용해 프라이버시를 보존하는 의료 데이터 분석을 제공한다. **Bianjie**는 코스모스 네트워크의 중국 서비스/운영 파트너이다.
 
 **텐더민트** ([Tendermint](https://www.tendermint.com) 합의 알고리즘을 개발하고 현재 코스모스를 제작중에 있음), **Wancloud** ([Wanxiang
-Blockchain](http://www.wxblockchain.com)의 계열사 등이 현재 **Bianjie AI**와 함께 기술적 파트너로 아이리스 네트워크의 인프라를 개발하고 있다.
+Blockchain](http://www.wxblockchain.com)의 계열사) 등이 현재 **Bianjie AI**와 함께 기술적 파트너로 아이리스 네트워크의 인프라를 개발하고 있다.
 
 텐더민트는 아이리스 프로젝트 팀에게 기술적 고문과 개발 지원을 제공하여 아이리스 프로젝트를 통해 텐더민트 ABCI와 코스모스 IBC 활용도를 높히는데 지원하고 있다.
 [Wancloud](https://www.wancloud.io)는 코스모스와 아이리스 생태계의 전략적 파트너로써 아시아 지역의 코스모스/아이리스 개발을 지원하고 있다.
