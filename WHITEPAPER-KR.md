@@ -12,19 +12,19 @@ _NOTE: 원문 백서는 [아이리스 GitHub]<https://github.com/irisnet/irisnet
 * [주의사항](#주의사항)
 * [아이리스 네트워크 개요](#아이리스-네트워크-개요)
   * [코스모스와 텐더민트](#코스모스와-텐더민트)
-  * [IRIS Innovations](#iris-innovations)
-* [IRIS Network Design](#iris-network-design)
-  * [Network Actors](#network-actors)
-  * [IRIS Services](#iris-services)
-  * [IBC Enhancement](#ibc-enhancement)
-* [Use Cases](#use-cases)
-* [Token Economics](#token-economics)
-* [Initial Token Distribution](#initial-token-distribution)
-* [Roadmap](#roadmap)
-* [The Team](#the-team)
-  * [Core Members](#core-members)
-  * [Advisors](#advisors)
-* [References](#references)
+  * [아이리스의 혁신](#아이리스의-혁신)
+* [아이리스 네트워크 디자인](#아이리스-네트워크-디자인)
+  * [네트워크 참가자](#네트워크-참가자)
+  * [아이리스 서비스](#아이리스-서비스)
+  * [IBC 확장](#ibc-확장)
+* [적용사례](#적용사례)
+* [토큰경제학](#토큰경제학)
+* [초기 토큰 분배](#초기-토큰-분배)
+* [로드맵](#로드맵)
+* [팀](#팀)
+  * [핵심 멤버](#핵심-멤버)
+  * [어드바이저](#어드바이저)
+* [레퍼런스](#레퍼런스)
 
 <div STYLE="page-break-after: always;"></div>
 
@@ -141,7 +141,7 @@ _NOTE: 원문 백서는 [아이리스 GitHub]<https://github.com/irisnet/irisnet
 
 또한 코스모스 SDK를 이용해 누구나 상호호환이 가능한 블록체인을 개발할 수 있다. 일종의 '블록체인 스타터 키트'인 코스모스 SDK는 높은 적응성을 제공하여 목적에 따른 특수화 또한 가능하다.
 
-### IRIS의 혁신 ################################################################
+### 아이리스의 혁신 ################################################################
 
 아이리스 네트워크는 분산화 비즈니스 애플리케이션 개발을 위한 기술적 기반을 제공하는 것이 목표다. 이런 점에서 아이리스는 디지털 자산에 특화되어있는 기존 블록체인  시스템과 차별점을 제공한다.
 
@@ -523,7 +523,7 @@ iService 생태계를 구축하는데에는 몇가지 문제점들이 있따. �
 
 <div STYLE="page-break-after: always;"></div>
 
-## 이용 사례 ################################################################
+## 적용사례 ################################################################
 
 다음 부분에서는 아이리스 네트워크의 이용 사례에 대해서 설명한다.
 
@@ -712,7 +712,7 @@ Bai 박사는 현 ChainaLedger Technical Committee 위원장이자 전 상하이
 [Yubo](https://www.linkedin.com/in/yubo-ruan/)는 IRISnet에 투자한 펀드 중 하나인 8 Decimal Capital의 창립자다. 8 Decimal Capital은 IRISnet 외에도 0x, Kyber, Ontology, Fcoin, Zilliqa, ICON, Wanchain, Bibox, BiShiJie 등 다수의 프로젝트에 투자했다. Yubo는 보스턴에 위치한 Skylight Investment의 공동 창립자이며, Skylight Investment는 뉴욕거래소에 상장된 New Oriental의 투자를 받기도 했다. 과거에 그는 Alisimba(TopHacker Group에 인수) 등 2개의 기업을 성공적으로 창립했으며, 4개의 특허를 보유하고 있다. 그는 2017 AACYF 30 under 30의 수상자이며, 2012년 iENA 국제 발명자 대회에서 은상을 수상했다.
 <div STYLE="page-break-after: always;"></div>
 
-## References ################################################################
+## 레퍼런스 ################################################################
 
 [1]: https://drive.google.com/file/d/1bI7JIOe-CfJ5fPHKxYlFub2Kg-KCGU6r/view?usp=sharing
 [2]: http://ethdocs.org/en/latest/
