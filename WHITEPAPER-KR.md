@@ -539,11 +539,11 @@ BEAN은 이런 문제를 조금 다른 형식으로 풀어나가기 위해 만�
 1. 파라메트릭 데이터의 일부분만 블록체인에서 교환되기 때문에 성능에 향상에 도움을 줄 수 있다
 2. 데이터 사용 감사(audit)이 실용적이다 (의료 분야에서 필요한 부분 중 하나) 
 
-의료 데이터에서 프라이버시는 가장 중요한 것 중에 하나이다. 그렇기 때문에, 수많은 필수 보안 요소들이 적용되어있다. 이런 보안적 요소 때문에 의료기관 간의 협력(병원 간 진료 기록 공유, 다기관 임상실험 참여자 자료 공유, 보험 청구 자동화)을 위해 의료 정보 데이터를 공유하는 것이 쉽지가 않다. 이 의료데이터 서비스 계층의 최소기능제품(MVP, Minimum Viable Product)은 `Ethermint`를 이용해 다수의 병원, 보험 회사, 그리고 데이터 분석 회사를 의료 데이터의 프라이버시를 보존하면서 연결할 수 있도록 한다.
+의료 데이터에서 프라이버시는 가장 중요한 것 중에 하나이다. 그렇기 때문에, 수많은 필수 보안 요소들이 적용되어있다. 이런 보안적 요소 때문에 의료기관 간의 협력(병원 간 진료 기록 공유, 다기관 임상실험 참여자 자료 공유, 보험 청구 자동화)을 위해 의료 정보 데이터를 공유하는 것이 쉽지가 않다. 이 의료데이터 서비스 계층의 최소기능제품(MVP, Minimum Viable Product)은 `Ethermint`를 이용해 다수의 병원, 보험 회사, 그리고 데이터 분석 회사를 의료 데이터의 프라이버시를 보존하면서 연결할 수 있도록 한다. 온체인 서비스 등록과 호출(invocation)은 스마트 컨트랙트를 이용해 될 수 있다.
 
+이런 서비스 계층을 이용한 오프체인 데이터 처리의 예시 중 하나는 '진단 관련 그룹(DRG, Diagnosis Related Group)' 분석 서비스이다. 예를 들어, 특정 병원이 DRG 서비스를 호출하게 되면, 요청된 의료정보는 서비스 제공자가 제공한 소비자 NLP 클라인언트(예를 들어 SQL/파이썬 기반 NLP)를 통해 필요한 부분만 전달이 될수 있다. 전달되는 DRG 데이터는 서비스 제공자의 원칙에 따라 오프체인에서 처리가 될수 있으며 개인 프라이버시를 보존하는 형태로 처리될 수 있다. 
 
-
-Smart contracts have been implemented to support on-chain service registration and invocation. One example of the off-chain data processing could be to support a Diagnosis Related Group ("DRG") grouping analytics service. More specifically, when a hospital user invokes the DRG service, the raw medical record is processed off-chain using service provider provided client side NLP (implemented as SQL and Python) code stub to exact structured data inputs for receiving DRGs service over blockchain without passing the highly confidential raw medical records.
+`BEAN`의 샘플 
 
 The `BEAN`
 scenario demonstrates a more complicated service use case including
