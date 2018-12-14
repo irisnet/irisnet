@@ -543,69 +543,60 @@ BEAN은 이런 문제를 조금 다른 형식으로 풀어나가기 위해 만�
 
 이런 서비스 계층을 이용한 오프체인 데이터 처리의 예시 중 하나는 '진단 관련 그룹(DRG, Diagnosis Related Group)' 분석 서비스이다. 예를 들어, 특정 병원이 DRG 서비스를 호출하게 되면, 요청된 의료정보는 서비스 제공자가 제공한 소비자 NLP 클라인언트(예를 들어 SQL/파이썬 기반 NLP)를 통해 필요한 부분만 전달이 될수 있다. 전달되는 DRG 데이터는 서비스 제공자의 원칙에 따라 오프체인에서 처리가 될수 있으며 개인 프라이버시를 보존하는 형태로 처리될 수 있다. 
 
-`BEAN`의 샘플 
+`BEAN`의 경우 위에 있는 사례 외에도 분산화 분석(distributed analytics), 서비스 제공자와 서비스 소비자의 연결, 안전한 거래 장부 기록, 분산 컴퓨팅 등 다양한 분야에서 이용될 수 있을 것으로 기대되고 있다.
 
-The `BEAN`
-scenario demonstrates a more complicated service use case including
-implementing distributed analytics, and connecting service providers as
-well as service consumers, utilizing blockchain to provide audible
-transaction ledge as well as trustworthy distributed computing
-foundation.
+### 데이터 분석 거래소
 
-### Data and analytics e-marketplace
+다수의 AI+블록체인 서비스를 분석한 결과, 대다수의 프로젝트는 데이터 거래소와 분석 API 거래소를 제공할 것을 염두하고 있다. `IRIS`의 인프라의 경우, 데이터 서비를 이용해 데이터 공유 서비스를 제공할 수 있고 `IRIS` 서비스 제공자 SDK를 이용해 래핑 분석 API(wrapping analytics API)를 쉽게 구현할 수 있다.
 
-From studying several proposed AI+Blockchain projects, it seems that most of the projects aim to provide data exchange markets and analytics API markets. With proposed `IRIS` infrastructure, those
-networks could potentially be built with ease through publishing data as data services and wrapping analytics API as analytics services utilizing the `IRIS` service provider SDK.
+### 분산화 전자상거래
 
-### Distributed e-commerce
+`IRIS` 인프라를 이용한다면 `ERP` 같은 기존 인벤토리 정보를 이용하거나 신뢰될 수 있는 데이터 소스의 인터체인 쿼리(query)를 하는 것은 기존 엔터프라이즈 애플리케이션 환경과 유사하게 구축할 수 있다. 이런 환경은 기존 애플리케이션 개발자들에게 큰 장점으로 작용될 수 있을 것으로 기대된다. 아이리스 네트워크 환경을 이용한다면 아마존이나 알리바바 같은 기존 중앙화 전자상거래 시스템과 유사한 분산화 전자상거래 시스템을 구축할 수 있을 것이다.
 
-With the proposed `IRIS` infrastructure, integration with traditional systems
-like `ERP` to obtain inventory information, or inter-chain query on trusted data sources to obtain information such as transportation and weather data, will be quite similar to the approach with which many enterprise application developers are already familiar. With those services integrated to support
-distributed e-commerce applications, it could be possible for distributed e-commerce applications to provide a similar user experience as centralized systems, such as Amazon or Alibaba.
+### 퍼블릭 블록체인과 컨소시엄 블록체인의 결합
 
-### Combining public chains & consortium chains
+다수의 비즈니스 시나리오를 고려한다면 컨소시엄 블록체인과 퍼블릭 블록체인의 각 강점을 결합한 하이브리드 아키텍처를 이용하는 것이 큰 강점일 수 있다. 이런 시스템은 높은 성능, 우수 보안 그리고 경제적 인센티브를 제공하기 때문이다.
 
-For many business scenarios, taking a hybrid architecture of combining the good features of a public chain and a consortium chain can provide beneficial results, particularly with regards to performance, security and economic incentives.
+예를 들어, 병원과 보험사는 다수의 의료 보험 거래를 처리할 수 있는 성능의 컨소시엄 구축할 수 있다. 추가적으로 공유될 수 있는 특정 정보는 퍼블릭 블록체인으로 공유하여 특정 질병에 대한 통계를 공유하거나 글로벌 서비스 구축에 이용할 수 있을 것으로 기대된다. 또한 퍼블릭 블록체인에서 발생하는 경제적 인센티브는 기존 데이터를 제공하는 컨소시엄 블록체인 참여자에게 분배되어 서비스 품질을 높이는데 기여될 수 있다.
 
-For example, hospitals and insurance companies could form a consortium blockchain to support high performance medical insurance transactions, whilst identifying other information such as statistics regarding certain diseases as a global service, which can be invoked from other public chains. The tokens received from public chains can be awarded back to
-those information providers in the consortium chain, which motivate the
-system participants to improve and promote services. With this infrastructure provided by `IRIS`, large-scale spontaneous collaboration could be made possible while still supporting stringent performance and security requirements.
+`IRIS`가 제공하는 인프라를 이용한다면 블록체인 시스템의 고질적인 성능, 보안, 개인정보 보호 측면의 단점을 가지지 않고도 대량의 자발적 공동 작업이 이루어질 수 있을 것이다.
 
-There are many use cases that could be supported by the `IRIS` service
-infrastructure, such as more efficient asset based security systems,
-distributed regulation technology such as due diligence, mutual aid
-marketplace etc. One of `IRIS` project plans is also working closely with
-such application project teams to support and enable them with needed
-blockchain infrastructure and allow them to focus on delivering the
-envisioned business value more efficiently.
+`IRIS` 서비스 인프라는 이 외에도 자산 기반 보안 시스템(asset based security system), 분산화 규제 기술, 공제 시스템 등 다양한 측면에서 이용될 수 있을 것으로 기대된다. 아이리스 프로젝트는 앞으로 수 많은 애플리케이션 프로젝트들과 협력하여 그들이 생각하는 비즈니스 가치를 블록체인 인프라를 통해 더 효율적으로 구축할 수 있도록 지원할 예정이다.
 
 <div STYLE="page-break-after: always;"></div>
 
-## Token Economics ################################################################
+## 토큰경제학 ################################################################
 
-Similar to the Cosmos Network, the IRIS network, as presently designed, is intended to support a multi-token model. The tokens will be held on the various zones, and can be moved from one zone to another via the IRIS Hub. There are two types of tokens that are expected to support IRIS network's operation:
+아이리스 네트워크는 코스모스 네트워크와 같이 멀티 토큰 모델을 지원할 수 있도록 설계되었다. 생태계 내에 있는 토큰들은 다른 존에서 보관이 가능하며, 아이리스 허브를 통해서 존 간 이동이 가능하다.
 
-* staking token
-* fee token
+현재 아이리스 네트워크의 운영에서 이용될 토큰은 두가지가 있다:
 
-### Staking token
+* 스테이킹 토큰
+* 수수료 토큰
 
-Adopting the same staking mechanism design used in the Cosmos network [\[15\]][15], the IRIS Hub will have its own special native token for staking. This token will be called "IRIS". We have a number of ideas in mind regarding the specific functionality of the IRIS token, including:
+### 스테이킹 토큰
 
-* integration of the IRIS token in the IRIS network's consensus engine validators, through a system of validators and delegators;
+아이리스 네트워크는 코스모스 네트워크의 스테이킹 메커니즘 디자인을 응용한 고유 스테이킹 토큰을 이용한다. 이 토큰의 명칭은 `IRIS`다. 현재로써 IRIS 토큰의 기능은 다음과 같다:
 
-* voting power to participate in the IRIS network's governance
+* 검증인(validator)과 위임자(delegator)를 기반으로 설계된 아이리스 네트워크의 합의 기능
+
+* 아이리스 네트워크 거버넌스의 투표권을 부여하는 기능
 
 
-### Fee token
+### 수수료 토큰
 
-There are two types of fee tokens in IRIS network:
-* **Network fee** token is for spam-prevention and payment to validators in maintaining the
-  ledger;
-* **Service fee** token is used for payment to service providers
-  who deploy iServices and the default payment service token is IRIS token.
+아이리스 네트워크에는 두가지 수수료 토큰이 존재한다:
 
-The IRIS network is intended to support all whitelisted fee tokens from the Cosmos network, e.g [Photon](https://blog.cosmos.network/cosmos-fee-token-introducing-the-photon-8a62b2f51aa), plus the IRIS token.
+
+
+* **네트워크 수수료** 이 토큰은 스팸 방지 용도와 원장을 관리하는 밸리데이터에게 경제적 인센티브로 지급되는 용도
+
+
+* **서비스 수수료** 이 토큰은 아이리스 네트워크의 iService를 제공하는 서비스 제공자들에게 지급되는 용도로 이용된다. 아이리스 네트워크의 기본 결제용 토큰이다.
+
+아이리스 네트워크는 코스모스 네트워크의 화이트리스트에 포함된 모든 토큰(예, [포톤](https://blog.cosmos.network/cosmos-fee-token-introducing-the-photon-8a62b2f51aa)]과 IRIS 토큰을 지원할 예정이다
+
+아이리스 네트워크는 코스모스 네트워크 화이트리스트에 포함된 모든 토큰을 지원함으로써 네트워크 참여자들에게 더욱 편리한 환경을 제공할 수 있다. 
 
 Supporting a variety of whitelisted fee tokens is a feature that we plan to adopt from Cosmos. It can provide an enhanced experience for network participants. In Cosmos, for `network fee token`, each validator has a config
 file defines his personal weighting of how much they value each fee
