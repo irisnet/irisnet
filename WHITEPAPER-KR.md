@@ -710,6 +710,7 @@ Bai 박사는 현 ChainaLedger Technical Committee 위원장이자 전 상하이
 [Dr. Michael Yuan](http://www.michaelyuan.com)는 [사이버마일즈 재단](https://cm.5miles.com)의 이사다. 그는 University of Texas at Austin 우주물리학 박사 학위를 수료했다. 지금까지 그는 무려 5개의 소프트웨어 개발 관련 책의 저자로써 Prentice Hall, Addison-Wesley 그리고 O'Reilly 같은 유명 출판사를 통해 출판되었다. Michael Yuan 박사는 파이어폭스, Fedora, JBoss 등 다수의 오픈소스 프로젝트에서 활동했으며, 모바일 및 엔터프라이즈 소프트웨어 전문가이다. 그는 미국 정부의 스폰서를 받은 다수의 연구 프로젝트를 이끌기도 했다.
 
 **Yubo Ruan**
+
 [Yubo](https://www.linkedin.com/in/yubo-ruan/)는 IRISnet에 투자한 펀드 중 하나인 8 Decimal Capital의 창립자다. 8 Decimal Capital은 IRISnet 외에도 0x, Kyber, Ontology, Fcoin, Zilliqa, ICON, Wanchain, Bibox, BiShiJie 등 다수의 프로젝트에 투자했다. Yubo는 보스턴에 위치한 Skylight Investment의 공동 창립자이며, Skylight Investment는 뉴욕거래소에 상장된 New Oriental의 투자를 받기도 했다. 과거에 그는 Alisimba(TopHacker Group에 인수) 등 2개의 기업을 성공적으로 창립했으며, 4개의 특허를 보유하고 있다. 그는 2017 AACYF 30 under 30의 수상자이며, 2012년 iENA 국제 발명자 대회에서 은상을 수상했다.
 <div STYLE="page-break-after: always;"></div>
 
