@@ -1000,7 +1000,7 @@ Dr. Bai is the director of ChinaLedger Technical Committee, and former Chief Arc
 * [4] Gavin Wood, "Polkadot: Vision For a Heterogeneous Muilti-chain
   Framework", https://polkadot.io/
 
-* [5] Tendermint, https://tendermint.readthedocs.io/en/master/
+* [5] Tendermint, https://tendermint.com/docs/
 
 * [6] Ethermint, https://ethermint.zone/
 
