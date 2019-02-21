@@ -865,7 +865,7 @@ On Genesis, the initial token supply will be 2,000,000,000 IRIS tokens.  The dis
 
 * **Ecosystem Development**: 30% (swap with zones connecting to IRIS Hub; grant to potential users; awards to outstanding partners; potential public sale)
 
-* **Cosmos ATOM Holder Airdrop**: 5% (airdrop to ATOM holders through a special airdrop to a wallet owned by the Cosmos Hub for ATOM holders subject to an one year vesting period. The vesting period will begin on the date of the IRIS Hub Launch, and the tokens will vest monthly over a one-year period such that 1/12th of the tokens vest each month).
+* **Cosmos ATOM Holder Airdrop**: 5% 
 
 If and when the IRIS network is fully deployed, the annual inflation rate of IRIS tokens will be adjusted to account for the fact that a substantial portion of IRIS tokens in circulation may be voluntarily staked by participants to participate in the consensus engine.
 
