@@ -352,8 +352,10 @@ A `CreateServiceBindingTx` transaction is composed of:
 * `ProviderAddress ([]byte)`: The provider's blockchain address
 
 * `BindingType (enum)`: Can be one of `Local` or `Global`; choose `Global` if a
-  provider wants the binding to be exposed to the rest of the world;
-  otherwise, use `Local`
+  provider wants the binding to be exposed to outside of its own chain as defined in`BindingExposedChainIDs ([]enum)` ;
+  otherwise, use `Local` which means only the binding is only exposed within the local blockchain
+
+* `BindingExposedChainIDs ([]enum)`: The ID of the blockchains where the binding can be exposed. This parameter can be empty if the `BindingType (enum)` takes value as `Local`
 
 * `ProviderDeposit (int64)`: To create an effective binding, the provider
   must put down a deposit (in terms of IRIS token amount) that is greater than
