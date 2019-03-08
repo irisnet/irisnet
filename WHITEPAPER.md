@@ -352,8 +352,10 @@ A `CreateServiceBindingTx` transaction is composed of:
 * `ProviderAddress ([]byte)`: The provider's blockchain address
 
 * `BindingType (enum)`: Can be one of `Local` or `Global`; choose `Global` if a
-  provider wants the binding to be exposed to the rest of the world;
-  otherwise, use `Local`
+  provider wants the binding to be exposed to outside of its own chain as defined in`BindingExposedChainIDs ([]enum)` ;
+  otherwise, use `Local` which means only the binding is only exposed within the local blockchain
+
+* `BindingExposedChainIDs ([]enum)`: The ID of the blockchains where the binding can be exposed. This parameter can be empty if the `BindingType (enum)` takes value as `Local`
 
 * `ProviderDeposit (int64)`: To create an effective binding, the provider
   must put down a deposit (in terms of IRIS token amount) that is greater than
@@ -768,7 +770,7 @@ To protect data access, the (partial) model that runs on the data side needs to 
 Other potential benefits could include the following:
 1.	Only a small amount of parametric data being exchanged on-chain, which can help enhance performance.
 
-	.	A more practical way for data usage auditing, which is often needed in the healthcare domain.
+2.	A more practical way for data usage auditing, which is often needed in the healthcare domain.
 
 Healthcare data is highly private, involving numerous security requirements. This puts forward the challenge for healthcare data to be used for the purposes of cross-organization collaboration (such as a cross-hospital clinic records search for diagnosis assistance, new drug clinic test patient identification, health insurance automatic claim processing etc.). This minimum viable product ("MVP") service layer implementation is built on top of `Ethermint` in attempt to connect hospitals, insurance companies and analytics service providers to provide privacy preserving healthcare data analytics capability.
 
@@ -865,7 +867,7 @@ On Genesis, the initial token supply will be 2,000,000,000 IRIS tokens.  The dis
 
 * **Ecosystem Development**: 30% (swap with zones connecting to IRIS Hub; grant to potential users; awards to outstanding partners; potential public sale)
 
-* **Cosmos ATOM Holder Airdrop**: 5% (airdrop to ATOM holders through a special airdrop to a wallet owned by the Cosmos Hub for ATOM holders subject to an one year vesting period. The vesting period will begin on the date of the IRIS Hub Launch, and the tokens will vest monthly over a one-year period such that 1/12th of the tokens vest each month).
+* **Cosmos ATOM Holder Airdrop**: 5% (The goal for this airdrop is to support the long term successs of both Cosmos and IRIS hubs.  One of the design thinking is to have this airdrop to ATOM holders arranged through a special airdrop to a wallet owned by the Cosmos Hub for ATOM holders and stake to IRISnet. This could enhance security for both Hubs also ATOM holders can enjoy the block rewards from another HUB)
 
 If and when the IRIS network is fully deployed, the annual inflation rate of IRIS tokens will be adjusted to account for the fact that a substantial portion of IRIS tokens in circulation may be voluntarily staked by participants to participate in the consensus engine.
 
@@ -903,9 +905,9 @@ The fourth stage will focus on further technology innovations to the IRIS networ
 
 ## The Team ################################################################
 
-**Bianjie **
+**Bianjie**
 is the core development team for the IRIS network, leveraging the team's experience established from building distributed applications. [Bianjie](https://www.bianjie.ai) is a Shanghai-based start-up established in 2016. It focuses on developing innovative products and solutions for healthcare and financial industries, using advanced Blockchain and AI technologies. Besides IRISnet, Bianjie's also building another core product ---  `BEAN (Blockchain Edge Analytics Network)` BEAN (Blockchain Edge Analytics Network), which is a permission chain which delivers distributed data analytics services for privacy preserving healthcare data analysis and exchange using NLP and machine learning technologies.
-**Bianjie AI**
+**Bianjie**
 is also the operation and service partner of Cosmos Network in China.
 
 **Tendermint** (the team that developed the [Tendermint](https://www.tendermint.com) consensus engine and is currently building Cosmos), **Wancloud** (a subsidiary of [Wanxiang
@@ -1000,7 +1002,7 @@ Dr. Bai is the director of ChinaLedger Technical Committee, and former Chief Arc
 * [4] Gavin Wood, "Polkadot: Vision For a Heterogeneous Muilti-chain
   Framework", https://polkadot.io/
 
-* [5] Tendermint, https://tendermint.readthedocs.io/en/master/
+* [5] Tendermint, https://tendermint.com/docs/
 
 * [6] Ethermint, https://ethermint.zone/
 

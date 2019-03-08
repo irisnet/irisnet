@@ -746,7 +746,7 @@ Bai 박사는 현 ChainaLedger Technical Committee 위원장이자 전 상하이
 * [4] Gavin Wood, "Polkadot: Vision For a Heterogeneous Muilti-chain
   Framework", https://polkadot.io/
 
-* [5] Tendermint, https://tendermint.readthedocs.io/en/master/
+* [5] Tendermint, https://tendermint.com/docs/
 
 * [6] Ethermint, https://ethermint.zone/
 
