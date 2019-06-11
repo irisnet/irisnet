@@ -123,7 +123,7 @@ _NOTE: 원문 백서는 [아이리스 GitHub](https://github.com/irisnet/irisnet
 
 아이리스는 코스모스[\[3\]][3]와 폴카닷(Polkadot)[\[4\]][4] 같은 여러 인터체인 기술을 비교했다. 코스모스가 상호운용성(interoperability)과 확장성(scalability) 측면에서 더욱 성숙한 기반을 제공한다는 결론에 도달했다.
 
-코스모스는 “다수의 허브, 다수의 존(many hubs and many zones)” 그리고 “각자의 거버넌스 모델을 가진 독립된 블록체인(each zones are independent blockchains having independent governance models)”의 블록체인 생태계를 지향한다. 코스모스가 설계한 블록체인 생태계의 디자인은 아이리스가 지향하는 실사용 가능한 서비스-지향 아키텍(SOC, Service-Oriented Architecture)에 적합하다.
+코스모스는 “다수의 허브, 다수의 존(many hubs and many zones)” 그리고 “각자의 거버넌스 모델을 가진 독립된 블록체인(each zones are independent blockchains having independent governance models)”의 블록체인 생태계를 지향한다. 코스모스가 설계한 블록체인 생태계의 디자인은 아이리스가 지향하는 실사용 가능한 서비스-지향 아키텍처(SOC, Service-Oriented Architecture)에 적합하다.
 
 이런 이유로 아이리스는 코스모스 프레임워크를 기반으로 설계하였다. 아이리스 네트워크는 기존의 허브와 존으로 이루어진 탈중앙화 인터체인 네트워크에 코스모스/텐더민트[\[5\]][5] 기반의 서비스 인프라를 적용하였고, 토큰 활용성을 추가했다.
 
