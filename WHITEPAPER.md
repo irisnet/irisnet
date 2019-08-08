@@ -890,16 +890,15 @@ Proceeds from the private sale of IRIS tokens will be used, first and foremost, 
 
 The expected IRIS project is set out below. We reiterate that the roadmap is indicative only, and subject to change.
 
-* **PANGU** (January 2018 \~ March 2019) The first stage of the IRIS project will focus on having the IRIS Hub up and running. We also intend to release an initial version of the mobile client for the IRIS network. In this stage we also  focus on building the fundamental IRIS Service Layer. This will involve enabling service definition, binding, invocation and query. We plan to collabrate with 1-2 ecosystem parteners to release i-Services to IRIShub.  
+* **PANGU** (January 2018 \~ March 2019) The first stage of the IRIS project focused on having the IRIS Hub up and running. Initial version of the mobile client for the IRIS network was released. In this stage we also focused on building the fundamental IRIS Service Layer which was released to IRIS Hub. The fundamental IRIS Service layer enables service definition, binding, invocation and query.   
 
-* **NUWA** (April 2019 \~ September 2019) In this stage we are aiming to have a beta version of the IRIS SDK ready for developers. We plan to upgrade IRISnet mobile client to support i-Services. We plan to establish collabrations with application specific blockchains and enable them as zones connecting to IRIShub. We also plan to accomplish the connection with Cosmos Hub at this stage.
- 
- 
-* **KUAFU** (Oct 2019 \~ Dec 2019) The third stage will focus on incremental upgrades to the IRIS network in order to support our planned advanced IRIS Service governance features.
+* **NUWA** (April 2019 \~ October 2019) In this stage we are adding more fundational modules to support application development especially DeFi applications. The new modules planned to release in this stage including multi-asset management, uni-swap, multi-sig account etc. We plan to collabrate with 1-2 ecosystem parteners to develop applications using those modules. We also plan to accomplish the test connection with Cosmos Hub through IBC at this stage.
+  
+* **KUAFU** (Nov 2019 \~ March 2019) In this stage we are aiming to accomplish the connection of IRIS Hub with applications blockchains through IBC. We plan to upgrade IRISnet mobile client to support those applications. The third stage will also focus on incremental upgrades to the IRIS network in order to support our planned advanced IRIS Service features.
 
 
-* **HOUYI** (Beyond January 2020)
-The fourth stage will focus on further technology innovations to the IRIS network, IRIS SDK and mobile client, as well as developer engagement.
+* **HOUYI** (Beyond April 2020)
+The fourth stage will focus on further technology innovations to the IRIS network, SDK and mobile client, as well as developer engagement.
 
 <div STYLE="page-break-after: always;"></div>
 
