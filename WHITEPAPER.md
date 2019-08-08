@@ -888,7 +888,7 @@ Proceeds from the private sale of IRIS tokens will be used, first and foremost, 
 
 ## Roadmap ################################################################
 
-The expected IRIS project is set out below. We reiterate that the roadmap is indicative only, and subject to change.
+The expected IRIS project is set out below. We reiterate that the roadmap is indicative only, and subject to change. The IRIS project has already accomplished the Pangu stage and is currently in Nuwa stage. 
 
 * **PANGU** (January 2018 \~ March 2019) The first stage of the IRIS project focused on having the IRIS Hub up and running. Initial version of the mobile client for the IRIS network was released. In this stage we also focused on building the fundamental IRIS Service Layer which was released to IRIS Hub. The fundamental IRIS Service layer enables service definition, binding, invocation and query.   
 
