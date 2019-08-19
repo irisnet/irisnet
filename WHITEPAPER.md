@@ -867,7 +867,7 @@ On Genesis, the initial token supply will be 2,000,000,000 IRIS tokens.  The dis
 
 * **Ecosystem Development**: 30% (swap with zones connecting to IRIS Hub; grant to potential users; awards to outstanding partners)
 
-* **Cosmos ATOM Holder Airdrop**: 5% (The goal for this airdrop is to support the long term successs of both Cosmos and IRIS hubs.  One of the design thinking is to have this airdrop to ATOM holders arranged through a special airdrop to a wallet owned by the Cosmos Hub for ATOM holders and stake to IRISnet. This could enhance security for both Hubs also ATOM holders can enjoy the block rewards from another HUB)
+* **Cosmos Hub Airdrop**: 5% (The goal for this airdrop is to support the long term successs of both Cosmos and IRIS hubs.  One of the design thinking is to have this airdrop to ATOM holders arranged through a special airdrop to a wallet owned by the Cosmos Hub for ATOM holders and stake to IRISnet. This could enhance security for both Hubs also ATOM holders can enjoy the block rewards from another HUB)
 
 If and when the IRIS network is fully deployed, the annual inflation rate of IRIS tokens will be adjusted to account for the fact that a substantial portion of IRIS tokens in circulation may be voluntarily staked by participants to participate in the consensus engine.
 
