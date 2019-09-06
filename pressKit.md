@@ -4,7 +4,7 @@ ISCH is the consortium interchain service Hub. It is a blockchain developed usin
 
 ## BEAN: Blockchain Edge Analytics Network
 
-BEAN is a distributed data analytics and exchange permissioned blockchain network, developed with the iServices framework from IRISnet. It supports privacy preserving data analysis, respects the rights of data owners, and allows auditing of data usage (more details on its business case can be found at IRISnet whitepaper). Furthermore, BEAN also enables medical data to be analyzed and exchanged freely and securely with benefits povided blockchain technology. This allows institutions, like insurance companies, hospitals as well as pharmaceutical companies, to collaborate to provide better services for patients.
+BEAN is a distributed data analytics and exchange permissioned blockchain network, developed with the iServices framework from IRISnet. It supports privacy preserving data analysis, respects the rights of data owners, and allows auditing of data usage (more details on its business case can be found at IRISnet whitepaper). Furthermore, BEAN also enables medical data to be analyzed and exchanged freely and securely with benefits provided blockchain technology. This allows institutions, like insurance companies, hospitals as well as pharmaceutical companies, to collaborate to provide better services for patients.
 
 
 
