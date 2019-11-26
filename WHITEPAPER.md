@@ -892,7 +892,7 @@ The expected IRIS project is set out below. We reiterate that the roadmap is ind
 
 * **PANGU** (January 2018 \~ March 2019) The first stage of the IRIS project focused on having the IRIS Hub up and running. Initial version of the mobile client for the IRIS network was released. In this stage we also focused on building the fundamental IRIS Service Layer which was released to IRIS Hub. The fundamental IRIS Service layer enables service definition, binding, invocation and query.   
 
-* **NUWA** (April 2019 \~ October 2019) In this stage we are adding more fundational modules to support application development especially DeFi applications. The new modules planned to release in this stage including multi-asset management, uni-swap, multi-sig account etc. We plan to collabrate with 1-2 ecosystem parteners to develop applications using those modules. We also plan to accomplish the test connection with Cosmos Hub through IBC at this stage.
+* **NUWA** (April 2019 \~ October 2019) In this stage we are adding more fundational modules to support application development especially DeFi applications. The new modules planned to release in this stage including multi-asset management, Coinswap, multi-sig account etc. We plan to collabrate with 1-2 ecosystem parteners to develop applications using those modules. We also plan to accomplish the test connection with Cosmos Hub through IBC at this stage.
   
 * **KUAFU** (Nov 2019 \~ March 2020) In this stage we are aiming to accomplish the connection of IRIS Hub with applications blockchains through IBC. We plan to upgrade IRISnet mobile client to support those applications. The third stage will also focus on incremental upgrades to the IRIS network in order to support our planned advanced IRIS Service features.
 
