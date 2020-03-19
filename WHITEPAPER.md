@@ -919,13 +919,14 @@ Tendermint's intended role to give technical advice and development support to t
 
 **Haifeng Xi**
 
-[Haifeng](https://www.linkedin.com/in/haifengxi/) is a senior technologist and entrepreneur. Haifeng has an M.S degree in ECE from the University of Maryland. Haifeng worked as CTO for Wanxiang Blockchain Wancloud before starting IRISnet project. He also worked as senior architect for two leading financial companies In US (Tudor Investment & RBS Sempra), then he came back to China worked in the capacity of CTO for three companies, one of which is NASDAQ listed (China Finance Online).
+[Haifeng](https://www.linkedin.com/in/haifengxi/) is the co-founder of IRISnet proejct. He is a senior technologist and entrepreneur. Haifeng has an M.S degree in ECE from the University of Maryland. Haifeng worked as CTO for Wanxiang Blockchain Wancloud before starting IRISnet project. He also worked as senior architect for two leading financial companies In US (Tudor Investment & RBS Sempra), then he came back to China worked in the capacity of CTO for three companies, one of which is NASDAQ listed (China Finance Online).
 
 
 **Harriet Cao**
 
-[Harriet](https://www.linkedin.com/in/harrietcao/) is the founder of Bianjie AI, which a Shanghai-based start-up focusing on building smart services for blockchain that enable trustworthy and efficient business collaborations using distributed AI technology. Harriet is an award-winning practitioner of data analytics and artificial intelligence technologies, and was the recipient of 2010 INFORMS Daniel H. Wagner Prize. Prior to establishing Bianjie AI, Harriet worked for IBM Research for more than 16 years in various capacities including Director of IBM Research Shanghai Lab and Big Data Analytics Leader for IBM Global Labs.
+[Harriet](https://www.linkedin.com/in/harrietcao/) is the co-founder of IRISet project. She is also the co-founder of Bianjie, which the core development team for IRISnet. Bianjie was founded in 2016 focusing on building smart services for blockchain that enable trustworthy and efficient business collaborations. Harriet is an award-winning practitioner of distributed computing, data analytics and artificial intelligence technologies, and was the recipient of 2010 INFORMS Daniel H. Wagner Prize. Prior to establishing Bianjie, Harriet worked for IBM Research for more than 16 years in various capacities including Director of IBM Research Shanghai Lab and Big Data Analytics Leader for IBM Global Labs.
 Harriet has an M.S degree in Robotics from Carnegie Mellon University and an M.S. degree in Automation Control from Tsinghua University.
+
 
 **Jae Kwon**
 
