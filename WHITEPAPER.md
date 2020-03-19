@@ -927,6 +927,11 @@ Tendermint's intended role to give technical advice and development support to t
 [Harriet](https://www.linkedin.com/in/harrietcao/) is the co-founder of IRISet project. She is also the co-founder of Bianjie, which the core development team for IRISnet. Bianjie was founded in 2016 focusing on building smart services for blockchain that enable trustworthy and efficient business collaborations. Harriet is an award-winning practitioner of distributed computing, data analytics and artificial intelligence technologies, and was the recipient of 2010 INFORMS Daniel H. Wagner Prize. Prior to establishing Bianjie, Harriet worked for IBM Research for more than 16 years in various capacities including Director of IBM Research Shanghai Lab and Big Data Analytics Leader for IBM Global Labs.
 Harriet has an M.S degree in Robotics from Carnegie Mellon University and an M.S. degree in Automation Control from Tsinghua University.
 
+**Jeffrey Hu**
+
+Jeffrey Hu is the research director of IRISnet and heads the strategy and technology research as well as ecosystem development for IRISnet. He is also the former chief technical analyst at Huobi Research. He has extensive experience in the blockchain industry. He published many in-depth Blockchain research reports which made great influence in China. 
+
+
 
 **Jae Kwon**
 
