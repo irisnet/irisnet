@@ -1,5 +1,5 @@
 ## About IRISnet 
-(A slighterly longer version)
+(A slightly longer version)
 
 IRISnet (a.k.a IRIS Hub) is an Interchain Service Hub designed to support the next generation distributed applications. Built with Cosmos-SDK, IRIS Hub enables cross-chain interoperability through a unified service model, which supports not only token interchain transfer but also trustworthy data consumption and computation invocation cross heterogenous systems(public blockchains, consortium blockchains and legacy systems). IRIS Hub also provides a variety of modules, such as Coin Swap, HTLC, random numbers， to support DeFi applications. IRIS Hub is the first self evolutionary blockchain launched in Cosmos ecosystem. 
 
