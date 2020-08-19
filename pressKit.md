@@ -1,3 +1,8 @@
+## One Sentence On IRISnet 
+
+IRISnet: Interchain Service Hub for NextGen Distributed Applications
+
+
 ## About IRISnet 
 (A slightly longer version)
 
