@@ -668,7 +668,7 @@ Blockchain](http://www.wxblockchain.com)의 계열사) 등이 현재 **Bianjie**
 
 **Haifeng Xi**
 
-[Haifeng](https://www.linkedin.com/in/haifengxi/)은 시니어 기술자이자 사업가다. 그는 University of Maryland에서 전자컴퓨터공학 석사 학위를 취득했다. 아이리스 네트워크를 시작하기 전에 Haifeng은 Wanxiang Blockchain의 Wancloud에서 CTO를 했으며, 그 외에도 미국 금융 기업 Tudor Investment와 RBS Sempra에서 시니어 아키텍트, NASDAQ 상장기업을 포함한 3개의 중국 기업에서 CTO 직위를 역임했다.
+Haifeng 은 시니어 기술자이자 사업가다. 그는 University of Maryland에서 전자컴퓨터공학 석사 학위를 취득했다. 아이리스 네트워크를 시작하기 전에 Haifeng은 Wanxiang Blockchain의 Wancloud에서 CTO를 했으며, 그 외에도 미국 금융 기업 Tudor Investment와 RBS Sempra에서 시니어 아키텍트, NASDAQ 상장기업을 포함한 3개의 중국 기업에서 CTO 직위를 역임했다.
 
 
 **Harriet Cao**
