@@ -919,7 +919,7 @@ Tendermint's intended role to give technical advice and development support to t
 
 **Haifeng Xi**
 
-Haifeng is the co-founder of IRISnet proejct. He is a senior technologist and entrepreneur. Haifeng has an M.S degree in ECE from the University of Maryland. Haifeng worked as CTO for Wanxiang Blockchain Wancloud before starting IRISnet project. He also worked as senior architect for two leading financial companies In US (Tudor Investment & RBS Sempra), then he came back to China worked in the capacity of CTO for three companies, one of which is NASDAQ listed (China Finance Online).
+Haifeng is the co-founder of IRISnet project. He is a senior technologist and entrepreneur. Haifeng has an M.S degree in ECE from the University of Maryland. Haifeng worked as CTO for Wanxiang Blockchain Wancloud before starting IRISnet project. He also worked as senior architect for two leading financial companies In US (Tudor Investment & RBS Sempra), then he came back to China worked in the capacity of CTO for three companies, one of which is NASDAQ listed (China Finance Online).
 
 
 **Harriet Cao**
