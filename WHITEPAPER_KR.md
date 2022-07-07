@@ -1,9 +1,6 @@
 # IRIS Network 백서
 **신뢰가능한 분산화 비즈니스 애플리케이션을 위한 인터체인 서비스 인프라 프로토콜.**
 
-Haifeng Xi haifeng@bianjie.ai<br/>
-Harriet Cao harriet@bianjie.ai
-
 _NOTE: 원문 백서는 [아이리스 GitHub](https://github.com/irisnet/irisnet/blob/master/WHITEPAPER.md)에 있으며 내용이 활발하게 업데이트되고 있습니다. 정기적으로 업데이트를 확인하십시오!_
 <div STYLE="page-break-after: always;"></div>
 
@@ -22,8 +19,6 @@ _NOTE: 원문 백서는 [아이리스 GitHub](https://github.com/irisnet/irisnet
 * [초기 토큰 분배](#초기-토큰-분배)
 * [로드맵](#로드맵)
 * [팀](#팀)
-  * [핵심 멤버](#핵심-멤버)
-  * [어드바이저](#어드바이저)
 * [레퍼런스](#레퍼런스)
 
 <div STYLE="page-break-after: always;"></div>
@@ -664,54 +659,6 @@ Blockchain](http://www.wxblockchain.com)의 계열사) 등이 현재 **Bianjie**
 텐더민트는 아이리스 프로젝트 팀에게 기술적 고문과 개발 지원을 제공하여 아이리스 프로젝트를 통해 텐더민트 ABCI와 코스모스 IBC 활용도를 높이는 것을 지원하고 있다.
 [Wancloud](https://www.wancloud.io)는 코스모스와 아이리스 생태계의 전략적 파트너로서 아시아 지역의 코스모스/아이리스 개발을 지원하고 있다.
 
-### 핵심 멤버
-
-**Haifeng Xi**
-
-Haifeng 은 시니어 기술자이자 사업가다. 그는 University of Maryland에서 전자컴퓨터공학 석사 학위를 취득했다. 아이리스 네트워크를 시작하기 전에 Haifeng은 Wanxiang Blockchain의 Wancloud에서 CTO를 했으며, 그 외에도 미국 금융 기업 Tudor Investment와 RBS Sempra에서 시니어 아키텍트, NASDAQ 상장기업을 포함한 3개의 중국 기업에서 CTO 직위를 역임했다.
-
-
-**Harriet Cao**
-
-[Harriet](https://www.linkedin.com/in/harrietcao/) 은 블록체인 기반 스마트 서비스와 분산화 AI 기술을 제공하는 상하이 기반 Bianjie AI의 창립자다. Harriet은 데이터 분석과 인공지능 기술에서 수차례 수상했으며, 2010 INFORMS Daniel H. Wageris Prize를 받기도 했다. Bianjie AI를 창립하기 전, 그는 IBM Research에서 16년 동안 일했으며, IBM Research Shanghai Lab의 디렉터, IBM Global Labs의 빅데이터 분석 리드 등의 역할을 맡았다. Harriet은 Carnegie Mellon University의 로봇공학 석사 학위와 칭화대학교의 자동화 컨트롤 석사 학위를 보유하고 있다.
-
-**Jae Kwon**
-
-2005년 코넬 대학교에서 졸업한 후, 재권은 다양한 실리콘 밸리 기업들(아마존, Yelp)에서 소프트웨어 개발자로 일했다. 이후 그는 블록체인 생태계에 빠지며 텐더민트 BFT 합의 알고리즘을 개발하였고, 이후 학술적 검증이 가능한 지분증명 알고리즘을 만들기 위해 텐더민트 코어 블록체인 엔진을 개발하였다. 재권은 코스모스의 창립자로서 현재 '블록체인의 인터넷'을 그리는 코스모스를 개발하고 있다.
-
-**Tom Tao**
-
-2016년에 Wanxiang에 합류한 [Tom](https://www.linkedin.com/in/tom-tao-14763a45/)은 Wanxiang Blockchain Group의 컨설팅 서비스, Wancloud BaaS 플랫폼과 ChainBase 액셀레레이터/인큐베이터 서비스를 담당하고 있다. Tom Tao는 Wanxiang을 합류하기 전에 세계적인 기업에서 서비스 관리와 비즈니스 매니지먼트 역할을 무려 18년 동안 했다. 그는 2013년부터 클라우드 서비스, IoT 데이터 서비스 플랫폼, 그리고 액셀레레이터 프로그램을 중국 시장에 소개하며 기술적 트렌드를 빠르게 따라잡는 역할을 했다.
-
-그는 Nankai University에서 전기공학 학사, 그리고 Fudan University에서 물리학 석사 학위를 수료했다.
-
-### 어드바이저
-
-**Dr. Shuo Bai**
-
-Bai 박사는 현 ChainaLedger Technical Committee 위원장이자 전 상하이 증권 거래소의 총 아키텍트였다. 그는 중국 업계의 시니어 블록체인 전문가이며, Peking Univeristy에서 박사 학위를 수료한 후 학술, 연구, 개발 등의 전문 분야에서 활동을 했다. 또한 Chinese Academy of Sciences와 Institute of Computing Technology의 수석 과학자, 소프트웨어 개발 디렉터 등 고위 직위에서 일을 했다. 그는 2000년부터 China National Internet Emergency Center (CNCERT/CC) 설립을 주도하였다.
-
-그는 학술적 이론 연구 외에도 금융 거래소, 컨소시엄 블록체인, 퍼블릭 블록체인 기술 분야에 전문성과 경험을 보유하고 있다.
-
-**Jim Yang**
-
-[Jim Yang](https://www.linkedin.com/in/jimyang/) 은 텐더민트에서 전략을 맡고 있다. 모바일 메시징 스튜디오 ChatX를 설립했으며, 그 외에도 레드햇(Red Hat)에 인수된 Identyx의 공동 설립자이자 대표를 역임했다. Identyx는 오픈소스 엔터프라이즈 신원 관리 소프트웨어다.
-
-**Zaki Manian**
-
-[Zaki Manian](https://zaki.manian.org), Trusted IoT Alliance 전무이사로써 블록체인과 암호화폐 기술에 큰 기여를 하고 있다. 그는 암호학과 분산화 합의 시스템에 높은 전문성을 보유하고 있으며, 코스모스 프로젝트의 어드바이저 역할을 하고 있다.
-
-**Adrian Brink**
-
-[Adrian Brink](https://adrianbrink.com), 테조스, 코스모스, 폴카닷 등 다수의 지분증명 블록체인 시스템의 검증인을 운영하는 Cryptium Labs의 설립자다. 그는 과거 텐더민트와 코스모스에서 파트너십 디렉터와 코어 개발자로 일했다.
-
-**Michael Yuan**
-
-[Dr. Michael Yuan](http://www.michaelyuan.com)는 [사이버마일즈 재단](https://cm.5miles.com)의 이사다. 그는 University of Texas at Austin 우주물리학 박사 학위를 수료했다. 지금까지 그는 무려 5개의 소프트웨어 개발 관련 책의 저자로써 Prentice Hall, Addison-Wesley 그리고 O'Reilly 같은 유명 출판사를 통해 출판되었다. Michael Yuan 박사는 파이어폭스, Fedora, JBoss 등 다수의 오픈소스 프로젝트에서 활동했으며, 모바일 및 엔터프라이즈 소프트웨어 전문가이다. 그는 미국 정부의 스폰서를 받은 다수의 연구 프로젝트를 이끌기도 했다.
-
-**Yubo Ruan**
-
-[Yubo](https://www.linkedin.com/in/yubo-ruan/)는 IRISnet에 투자한 펀드 중 하나인 8 Decimal Capital의 창립자다. 8 Decimal Capital은 IRISnet 외에도 0x, Kyber, Ontology, Fcoin, Zilliqa, ICON, Wanchain, Bibox, BiShiJie 등 다수의 프로젝트에 투자했다. Yubo는 보스턴에 위치한 Skylight Investment의 공동 창립자이며, Skylight Investment는 뉴욕거래소에 상장된 New Oriental의 투자를 받기도 했다. 과거에 그는 Alisimba(TopHacker Group에 인수) 등 2개의 기업을 성공적으로 창립했으며, 4개의 특허를 보유하고 있다. 그는 2017 AACYF 30 under 30의 수상자이며, 2012년 iENA 국제 발명자 대회에서 은상을 수상했다.
 <div STYLE="page-break-after: always;"></div>
 
 ## 레퍼런스 ################################################################
