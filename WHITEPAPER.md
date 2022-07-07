@@ -1,9 +1,6 @@
 # The IRIS Network
 **Inter-chain service infrastructure and protocol for building trustworthy and distributed business applications**
 
-Haifeng Xi haifeng@bianjie.ai<br/>
-Harriet Cao harriet@bianjie.ai
-
 _NOTE: If you can read this on GitHub, then we're still actively developing this
 document.  Please check regularly for updates!_
 <div STYLE="page-break-after: always;"></div>
@@ -23,8 +20,6 @@ document.  Please check regularly for updates!_
 * [Initial Token Distribution](#initial-token-distribution)
 * [Roadmap](#roadmap)
 * [The Team](#the-team)
-  * [Core Members](#core-members)
-  * [Advisors](#advisors)
 * [References](#references)
 
 <div STYLE="page-break-after: always;"></div>
@@ -906,72 +901,12 @@ The fourth stage will focus on further technology innovations to the IRIS networ
 
 **Bianjie**
 is the core development team for the IRIS network, leveraging the team's experience established from building distributed applications. [Bianjie](https://www.bianjie.ai) is a Shanghai-based start-up established in 2016. It focuses on developing innovative products and solutions for healthcare and financial industries, using advanced Blockchain and AI technologies. Besides IRISnet, Bianjie's also building another core product ---  `BEAN (Blockchain Edge Analytics Network)` BEAN (Blockchain Edge Analytics Network), which is a permission chain which delivers distributed data analytics services for privacy preserving healthcare data analysis and exchange using NLP and machine learning technologies.
-**Bianjie**
-is also the operation and service partner of Cosmos Network in China.
 
 **Tendermint** (the team that developed the [Tendermint](https://www.tendermint.com) consensus engine and is currently building Cosmos), **Wancloud** (a subsidiary of [Wanxiang
 Blockchain](http://www.wxblockchain.com) are strategic parteners working together with **Bianjie AI** building the IRIS network's infrastructure.  
 
 Tendermint's intended role to give technical advice and development support to the IRIS project team in extending the Tendermint ABCI and the Cosmos IBC technologies.
 [Wancloud](https://www.wancloud.io) is envisaged as the key strategy partner to both the Cosmos and IRIS ecosystems, and we understand that it intends to participate in Cosmos and IRIS development across Asia.
-
-### Core Members
-
-**Haifeng Xi**
-
-Haifeng is the co-founder of IRISnet project. He is a senior technologist and entrepreneur. Haifeng has an M.S degree in ECE from the University of Maryland. Haifeng worked as CTO for Wanxiang Blockchain Wancloud before starting IRISnet project. He also worked as senior architect for two leading financial companies In US (Tudor Investment & RBS Sempra), then he came back to China worked in the capacity of CTO for three companies, one of which is NASDAQ listed (China Finance Online).
-
-
-**Harriet Cao**
-
-[Harriet](https://www.linkedin.com/in/harrietcao/) is the co-founder of IRISet project. She is also the co-founder of Bianjie, which the core development team for IRISnet. Bianjie was founded in 2016 focusing on building smart services for blockchain that enable trustworthy and efficient business collaborations. Harriet is an award-winning practitioner of distributed computing, data analytics and artificial intelligence technologies, and was the recipient of 2010 INFORMS Daniel H. Wagner Prize. Prior to establishing Bianjie, Harriet worked for IBM Research for more than 16 years in various capacities including Director of IBM Research Shanghai Lab and Big Data Analytics Leader for IBM Global Labs.
-Harriet has an M.S degree in Robotics from Carnegie Mellon University and an M.S. degree in Automation Control from Tsinghua University.
-
-**Jeffrey Hu**
-
-Jeffrey Hu is the research director of IRISnet and heads the strategy and technology research as well as ecosystem development for IRISnet. He is also the former chief technical analyst at Huobi Research. He has extensive experience in the blockchain industry. He published many in-depth Blockchain research reports which made great influence in China. 
-
-
-
-**Jae Kwon**
-
-After graduating from Cornell in 2005 with an undergraduate degree in computer science, [Jae](https://www.linkedin.com/in/yjkwon/) worked as a software developer in Silicon Valley, first at Amazon (where he worked on the Alexa digital assistant), then later at Yelp, where he led their mobile app development team.
-After getting the blockchain bug, Jae created the Tendermint BFT consensus algorithm and the Tendermint Core blockchain engine, with the intent of creating a provably secure proof-of-stake algorithm.
-In addition to Tendermint, Jae is also the creator of Cosmos.
-
-
-**Tom Tao**
-
-Since joining Wanxiang in August 2016, [Tom](https://www.linkedin.com/in/tom-tao-14763a45/) is responsible for Wanxiang Blockhain Group's consulting service, Wancloud BaaS Platform as well as the ChainBase accelerator and incubator service. Before Wanxiang, Tom worked in service management and business management for over 18 years in a number of global leading companies.
-Tom has spearheaded the introduction of cloud services, IoT data service platforms, and creative accelerator technologies into the Chinese market.
-Tom has been tracking trends in the blockchain, cloud computing, IoT and smart manufacturing industries since 2013. Tom has a Master's degree in Physics from Fudan University and a Bachelor's degree in Electrical Engineering from Nankai University.
-
-
-### Advisors
-
-**Dr. Shuo Bai**
-
-Dr. Bai is the director of ChinaLedger Technical Committee, and former Chief Architect of Shanghai Stock Exchange. He is a senior blockchain professional who graduated from Peking University with doctorate of science. He worked in various capacities including researcher, doctoral student advisor, director of software department, and chief scientist in the Institute of Computing Technology, Chinese Academy of Sciences. He also led the establishment of China National Internet Emergency Center (CNCERT/CC) since 2000. Dr. Bai has rich experiences in theoretical research and technical practices in the fields of financial exchanges, consortium and public blockchains.
-
-**Jim Yang**
-
-[Jim Yang](https://www.linkedin.com/in/jimyang/) runs Strategy for Tendermint. He was the founder and CEO at ChatX, mobile messaging studio. ChatX developed various mobile messaging/social apps. He also co-founded Identyx, where he served as CEO until its acquisition by Red Hat. Identyx developed an open source enterprise identity management software.
-
-**Zaki Manian**
-
-[Zaki Manian](https://zaki.manian.org), Executive Director of Trusted IoT Alliance, is a prolific contributor to the development of blockchain and cryptocurrency technology. Zaki has deep expertise in cryptography and distributed consensus system. He is also an advisor to the Cosmos project, and several other investment funds and startup in the space.
-
-**Adrian Brink**
-
-[Adrian Brink](https://adrianbrink.com), Core Developer & Head of Community of Tendermint / Cosmos Network.
-
-**Michael Yuan**
-
-[Dr. Michael Yuan](http://www.michaelyuan.com) is the Director of the [CyberMiles Foundation](https://cm.5miles.com). Michael received a PhD in Astrophysics from University of Texas at Austin. He is the author of 5 books on software development, published by Prentice Hall, Addison-Wesley, and O'Reilly. Michael was an active code committer in large Open Source projects such as Firefox, Fedora, JBoss, and others. He is an expert on enterprise and mobile software, and was a Principle Investigator on multiple research projects funded by the US government.
-
-**Yubo Ruan**
-
-[Yubo](https://www.linkedin.com/in/yubo-ruan/) is the founder of 8 Decimal Capital. The fund invested in IRISnet，0x、Kyber、Ontology、Fcoin、Zilliqa、ICON、Wanchian、Bibox、BiShiJie. Yubo is the co-founder of Skylight Investment, a boston based venture fund backed by New Oriental(NYSE:EDU). Previously, Yubo started two highly successful companies, including Alisimba (Acquired by TopHacker Group) held 4 national patents and won the 2017 AACYF 30 under 30, Silver Medal Winner, iENA International Inventions Competition, 2012.
 
 <div STYLE="page-break-after: always;"></div>
 
